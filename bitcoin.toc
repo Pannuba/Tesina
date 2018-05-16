@@ -1,1 +1,25 @@
-\contentsline {section}{\numberline {1}La prima criptovaluta}{1}
+\contentsline {section}{\numberline {1}Il funzionamento del Bitcoin}{1}
+\contentsline {subsection}{\numberline {1.1}Blockchain: cos'\IeC {\`e} e come funziona}{1}
+\contentsline {subsubsection}{\numberline {1.1.1}Gli effetti del mining sull'ambiente}{1}
+\contentsline {subsection}{\numberline {1.2}Wallets, addresses, seeds, keys: how Bitcoin is stored DIVIDERE IN SUBSUBSECIONS}{2}
+\contentsline {subsection}{\numberline {1.3}Come ottenere e utilizzare Bitcoin}{2}
+\contentsline {subsubsection}{\numberline {1.3.1}Exchange}{2}
+\contentsline {subsubsection}{\numberline {1.3.2}ATMs}{3}
+\contentsline {subsubsection}{\numberline {1.3.3}Mining}{3}
+\contentsline {subsubsection}{\numberline {1.3.4}Vendere roba}{3}
+\contentsline {section}{\numberline {2}Le origini del Bitcoin e il suo obiettivo PE RPRIMA OCAS\IeC {\`a}}{3}
+\contentsline {section}{\numberline {3}Non solo Bitcoin}{3}
+\contentsline {subsection}{\numberline {3.1}Ethereum}{3}
+\contentsline {subsection}{\numberline {3.2}Litecoin}{4}
+\contentsline {subsection}{\numberline {3.3}Monero}{4}
+\contentsline {subsection}{\numberline {3.4}Nano}{4}
+\contentsline {subsection}{\numberline {3.5}Stellar?}{4}
+\contentsline {subsection}{\numberline {3.6}Bitcoin "hard forks"}{4}
+\contentsline {subsubsection}{\numberline {3.6.1}Roger Ver e la truffa di "Bitcoin Cash"}{4}
+\contentsline {section}{\numberline {4}Bitcoin oggi}{4}
+\contentsline {subsection}{\numberline {4.1}Lo stato attuale dell'adozione}{4}
+\contentsline {subsubsection}{\numberline {4.1.1}Il villaggio in Austria.. come si chiama?}{4}
+\contentsline {subsection}{\numberline {4.2}Il boom del 2017: cause e conseguenze}{4}
+\contentsline {subsubsection}{\numberline {4.2.1}La ricorrenza dei "crash" dei mercati}{4}
+\contentsline {subsection}{\numberline {4.3}Controversie}{4}
+\contentsline {section}{\numberline {5}Il futuro delle criprtovalute}{5}
