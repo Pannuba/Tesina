@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.5.12)  17 MAY 2018 21:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.5.12)  25 MAY 2018 18:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -368,18 +368,18 @@ File: pdftex.def 2017/06/24 v1.0g Graphics/color driver for pdftex
 (./bitcoin.aux)
 \openout1 = `bitcoin.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -451,11 +451,11 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 10.
+(Font)              <12> on input line 19.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 10.
+(Font)              <8> on input line 19.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 10.
+(Font)              <6> on input line 19.
 
 [1
 
@@ -469,45 +469,77 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \openout3 = `bitcoin.toc'.
 
  [1]
+Overfull \hbox (11.59326pt too wide) in paragraph at lines 37--42
+\OT1/cmr/m/n/10 2009. Il mondo ^^Re scon-volto dalla catas-trofica crisi dell'a
+nno prece-dente. L'economia
+ []
+
 [1]
-Overfull \hbox (8.39444pt too wide) in paragraph at lines 71--72
+Overfull \hbox (24.8343pt too wide) in paragraph at lines 94--95
+\OT1/cmr/m/n/10 ing? PROOFG OF WORK SOME-WHERE AAAAAAAAAAAAAAAAAAAAAAAA 
+ []
+
+
+Overfull \hbox (11.33171pt too wide) in paragraph at lines 110--112
+\OT1/cmr/m/n/10 I miner ASIC us-ano una notev-ole quan-tit^^Ra di en-er-gia ele
+t-trica, tanto che CRITOCA
+ []
+
+[2]
+Overfull \hbox (20.04247pt too wide) in paragraph at lines 146--147
+\OT1/cmr/m/n/10 COLD???? ATEH TEHER COLD APP WAL-LETS??????????????????????????
+???? 
+ []
+
+[3]
+Overfull \hbox (8.39444pt too wide) in paragraph at lines 180--181
 []\OT1/cmr/m/n/10 PARLARE DI AL-TRI AL-GO-RITMI E AL-TRE VA-LUTE, AJCHE SE PARL
 O
  []
 
-[2] [3]
-<media/hard_fork.png, id=23, 605.26125pt x 199.74625pt>
+[4] [5]
+Overfull \hbox (476.8399pt too wide) in paragraph at lines 304--311
+\OT1/cmr/m/n/10 zare il bi-lan-cio. Sul sito (https://moneroblocks.info/search/
+44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt
+7f2wfn3RVGQBEP3A),
+ []
+
+[6]
+<media/hard_fork.png, id=36, 605.26125pt x 199.74625pt>
 File: media/hard_fork.png Graphic file (type png)
 <use media/hard_fork.png>
-Package pdftex.def Info: media/hard_fork.png  used on input line 124. on input 
-line 124.
+Package pdftex.def Info: media/hard_fork.png  used on input line 338. on input 
+line 338.
 Package pdftex.def Info: Requested size: 284.52756pt x 93.89903pt on input line
- 124.
+ 338.
 
-Overfull \hbox (1.5979pt too wide) in paragraph at lines 126--133
+Overfull \hbox (1.5979pt too wide) in paragraph at lines 342--343
 []\OT1/cmr/m/n/10 Oggi es-istono nu-mero-sis-sime "fork" del Bit-coin: Bit-coin
  Gold, Bit-coin Candy,
  []
 
-[4 <./media/hard_fork.png>] [5] [6] (./bitcoin.aux) ) 
+[7 <./media/hard_fork.png>] [8] [9] [10] (./bitcoin.aux) ) 
 Here is how much of TeX's memory you used:
  1758 strings out of 494931
  23214 string characters out of 6180851
- 79561 words of memory out of 5000000
+ 78561 words of memory out of 5000000
  5055 multiletter control sequences out of 15000+600000
  8194 words of font info for 29 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 41i,6n,25p,589b,201s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr17.pfb>
-Output written on bitcoin.pdf (8 pages, 108954 bytes).
+ 41i,8n,25p,1145b,201s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
+>
+Output written on bitcoin.pdf (12 pages, 143285 bytes).
 PDF statistics:
- 52 PDF objects out of 1000 (max. 8388607)
- 35 compressed objects within 1 object stream
+ 76 PDF objects out of 1000 (max. 8388607)
+ 52 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
