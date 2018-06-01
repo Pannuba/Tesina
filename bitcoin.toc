@@ -1,38 +1,38 @@
-\contentsline {section}{\numberline {1}Le origini del Bitcoin}{1}
-\contentsline {section}{\numberline {2}Blockchain: cos'\IeC {\`e} e come funziona}{1}
-\contentsline {subsection}{\numberline {2.1}Mining}{2}
-\contentsline {subsubsection}{\numberline {2.1.1}Gli effetti del mining sull'ambiente}{3}
-\contentsline {subsection}{\numberline {2.2}How and where Bitcoin is stored}{3}
-\contentsline {subsubsection}{\numberline {2.2.1}Wallets}{3}
-\contentsline {paragraph}{Cold wallets}{3}
-\contentsline {paragraph}{Hot wallets}{3}
-\contentsline {paragraph}{Hardware wallets}{3}
-\contentsline {subsubsection}{\numberline {2.2.2}Keys}{3}
-\contentsline {subsubsection}{\numberline {2.2.3}Seeds}{4}
-\contentsline {subsection}{\numberline {2.3}Cuscinetti / integrazioni}{4}
-\contentsline {subsubsection}{\numberline {2.3.1}Segregated Witness}{4}
-\contentsline {subsubsection}{\numberline {2.3.2}Lightning Network}{4}
-\contentsline {section}{\numberline {3}Utilizzare Bitcoin}{4}
-\contentsline {subsection}{\numberline {3.1}Come ottenere criptovaluta}{4}
-\contentsline {paragraph}{Exchange}{4}
-\contentsline {paragraph}{ATMs}{5}
-\contentsline {paragraph}{Mining}{5}
-\contentsline {paragraph}{Vendere roba}{5}
-\contentsline {subsection}{\numberline {3.2}Spendere Bitcoin}{5}
-\contentsline {section}{\numberline {4}Bitcoin oggi}{5}
-\contentsline {subsection}{\numberline {4.1}Lo stato attuale dell'adozione}{5}
-\contentsline {subsubsection}{\numberline {4.1.1}Il villaggio in Austria.. come si chiama?}{6}
-\contentsline {subsection}{\numberline {4.2}Il boom del 2017: cause e conseguenze}{6}
-\contentsline {subsubsection}{\numberline {4.2.1}La ricorrenza dei "crash" dei mercati}{6}
-\contentsline {subsection}{\numberline {4.3}Controversie}{6}
-\contentsline {subsubsection}{\numberline {4.3.1}Mt. Gox}{6}
-\contentsline {subsubsection}{\numberline {4.3.2}Bitconnect}{6}
-\contentsline {section}{\numberline {5}Non solo Bitcoin}{6}
-\contentsline {subsection}{\numberline {5.1}Ethereum}{7}
-\contentsline {subsection}{\numberline {5.2}Litecoin}{7}
-\contentsline {subsection}{\numberline {5.3}Monero}{7}
-\contentsline {subsection}{\numberline {5.4}Nano}{7}
-\contentsline {subsection}{\numberline {5.5}Stellar?}{8}
-\contentsline {subsection}{\numberline {5.6}Bitcoin "hard forks"}{8}
-\contentsline {subsubsection}{\numberline {5.6.1}Roger Ver e la truffa di "Bitcoin Cash"}{8}
-\contentsline {section}{\numberline {6}Il futuro delle criprtovalute}{9}
+\contentsline {section}{\numberline {1}Le origini del Bitcoin}{2}
+\contentsline {section}{\numberline {2}Blockchain: cos'\IeC {\`e} e come funziona}{3}
+\contentsline {subsection}{\numberline {2.1}Mining}{3}
+\contentsline {subsubsection}{\numberline {2.1.1}Gli effetti del mining sull'ambiente}{4}
+\contentsline {subsection}{\numberline {2.2}How and where Bitcoin is stored}{4}
+\contentsline {subsubsection}{\numberline {2.2.1}Wallets}{4}
+\contentsline {paragraph}{Cold wallets}{4}
+\contentsline {paragraph}{Hot wallets}{4}
+\contentsline {paragraph}{Hardware wallets}{4}
+\contentsline {subsubsection}{\numberline {2.2.2}Keys}{5}
+\contentsline {subsubsection}{\numberline {2.2.3}Seeds}{5}
+\contentsline {subsection}{\numberline {2.3}Cuscinetti / integrazioni}{5}
+\contentsline {subsubsection}{\numberline {2.3.1}Segregated Witness}{5}
+\contentsline {subsubsection}{\numberline {2.3.2}Lightning Network}{5}
+\contentsline {section}{\numberline {3}Utilizzare Bitcoin}{5}
+\contentsline {subsection}{\numberline {3.1}Come ottenere criptovaluta}{6}
+\contentsline {paragraph}{Exchange}{6}
+\contentsline {paragraph}{ATMs}{6}
+\contentsline {paragraph}{Mining}{6}
+\contentsline {paragraph}{Vendere roba}{6}
+\contentsline {subsection}{\numberline {3.2}Spendere Bitcoin}{6}
+\contentsline {section}{\numberline {4}Bitcoin oggi}{7}
+\contentsline {subsection}{\numberline {4.1}Adozione}{7}
+\contentsline {paragraph}{Il villaggio in Austria.. come si chiama?}{7}
+\contentsline {subsection}{\numberline {4.2}Il boom del 2017: cause e conseguenze}{7}
+\contentsline {subsubsection}{\numberline {4.2.1}La ricorrenza dei "crash" dei mercati}{7}
+\contentsline {subsection}{\numberline {4.3}Controversie}{7}
+\contentsline {subsubsection}{\numberline {4.3.1}Mt. Gox}{7}
+\contentsline {subsubsection}{\numberline {4.3.2}Bitconnect}{8}
+\contentsline {section}{\numberline {5}Non solo Bitcoin}{8}
+\contentsline {subsection}{\numberline {5.1}Ethereum}{8}
+\contentsline {subsection}{\numberline {5.2}Litecoin}{8}
+\contentsline {subsection}{\numberline {5.3}Monero}{9}
+\contentsline {subsection}{\numberline {5.4}Nano}{9}
+\contentsline {subsection}{\numberline {5.5}Stellar?}{9}
+\contentsline {subsection}{\numberline {5.6}Bitcoin "hard forks"}{9}
+\contentsline {subsubsection}{\numberline {5.6.1}Roger Ver e la truffa di "Bitcoin Cash"}{10}
+\contentsline {section}{\numberline {6}Il futuro delle criprtovalute}{11}
