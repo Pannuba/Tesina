@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.5.12)  25 MAY 2018 21:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.5.12)  26 MAY 2018 20:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -407,7 +407,10 @@ File: pdftex.def 2017/06/24 v1.0g Graphics/color driver for pdftex
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-(./bitcoin.aux)
+(/usr/share/texlive/texmf-dist/tex/latex/eurosym/eurosym.sty
+Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
+\@eurobox=\box26
+) (./bitcoin.aux)
 \openout1 = `bitcoin.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
@@ -423,14 +426,15 @@ LaTeX Font Info:    ... okay on input line 18.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
 LaTeX Font Info:    Try loading font information for T1+lmr on input line 18.
- (/usr/share/texmf/tex/latex/lm/t1lmr.fd
+
+(/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count87
 \scratchdimen=\dimen105
-\scratchbox=\box26
+\scratchbox=\box27
 \nofMPsegments=\count88
 \nofMParguments=\count89
 \everyMPshowfont=\toks17
@@ -537,24 +541,18 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 \openout3 = `bitcoin.toc'.
 
  [1]
-Overfull \hbox (11.59232pt too wide) in paragraph at lines 38--43
+Overfull \hbox (11.59232pt too wide) in paragraph at lines 36--41
 \T1/lmr/m/n/10 2009. Il mondo è scon-volto dalla catas-trofica crisi dell'anno 
 prece-dente. L'economia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--43
+Underfull \hbox (badness 10000) in paragraph at lines 36--41
 
  []
 
-[1]
-Overfull \hbox (11.33046pt too wide) in paragraph at lines 101--103
-\T1/lmr/m/n/10 I miner ASIC us-ano una notev-ole quan-tità di en-er-gia elet-tr
-ica, tanto che CRITOCA
- []
-
-[2]
-Overfull \hbox (20.03351pt too wide) in paragraph at lines 127--128
+[1] [2]
+Overfull \hbox (20.03351pt too wide) in paragraph at lines 124--125
 \T1/lmr/m/n/10 COLD???? ATEH TEHER COLD APP WAL-LETS???????????????????????????
 ??? 
  []
@@ -566,59 +564,66 @@ Overfull \hbox (8.39175pt too wide) in paragraph at lines 151--152
  []
 
 [4]
-Overfull \hbox (11.49329pt too wide) in paragraph at lines 211--217
+Overfull \hbox (7.5653pt too wide) in paragraph at lines 200--203
+\T1/lmr/m/n/10 tre va-lute??) per btc, o soldi veri e pro-pri. Nonos-tante i co
+sti dell'equipaggiamento
+ []
+
+
+Overfull \hbox (11.49329pt too wide) in paragraph at lines 214--220
 \T1/lmr/m/n/10 una pag-ina (FARE LINK DI-DAS-CALIA IN BASSSO https://99bitcoins
 .com/who-
  []
 
 
-Overfull \hbox (5.41711pt too wide) in paragraph at lines 211--217
+Overfull \hbox (5.41711pt too wide) in paragraph at lines 214--220
 \T1/lmr/m/n/10 accepts-bitcoins-payment-companies-stores-take-bitcoins/) con un
 a lista che com-
  []
 
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 240--244
+[5] [6]
+Underfull \hbox (badness 10000) in paragraph at lines 297--301
 
  []
 
-<media/monero.png, id=36, 849.1725pt x 399.4925pt>
+<media/monero.png, id=40, 849.1725pt x 399.4925pt>
 File: media/monero.png Graphic file (type png)
 <use media/monero.png>
-Package pdftex.def Info: media/monero.png  used on input line 246. on input lin
-e 246.
+Package pdftex.def Info: media/monero.png  used on input line 303. on input lin
+e 303.
 Package pdftex.def Info: Requested size: 284.52756pt x 133.85672pt on input lin
-e 246.
-[6 <./media/monero.png>]
-<media/hard_fork.png, id=40, 605.26125pt x 199.74625pt>
+e 303.
+[7 <./media/monero.png>]
+<media/hard_fork.png, id=44, 605.26125pt x 199.74625pt>
 File: media/hard_fork.png Graphic file (type png)
 <use media/hard_fork.png>
-Package pdftex.def Info: media/hard_fork.png  used on input line 270. on input 
-line 270.
+Package pdftex.def Info: media/hard_fork.png  used on input line 328. on input 
+line 328.
 Package pdftex.def Info: Requested size: 284.52756pt x 93.89903pt on input line
- 270.
- [7 <./media/hard_fork.png>] [8] [9] (./bitcoin.aux) ) 
+ 328.
+ [8 <./media/hard_fork.png>] [9] (./bitcoin.aux) ) 
 Here is how much of TeX's memory you used:
- 2095 strings out of 494931
- 27523 string characters out of 6180851
- 81816 words of memory out of 5000000
- 5351 multiletter control sequences out of 15000+600000
- 59195 words of font info for 45 fonts, out of 8000000 for 9000
+ 2158 strings out of 494931
+ 28422 string characters out of 6180851
+ 82160 words of memory out of 5000000
+ 5409 multiletter control sequences out of 15000+600000
+ 59312 words of font info for 46 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 41i,8n,25p,1168b,201s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/e
-nc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/
-share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/public/l
-m/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/tex
-mf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr1
-2.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts
-/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></us
-r/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/publ
-ic/lm/lmsy10.pfb>
-Output written on bitcoin.pdf (11 pages, 262450 bytes).
+ 41i,8n,25p,1169b,201s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/d
+vips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/shar
+e/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texlive/texmf-dist/fonts/type1
+/public/eurosym/feymr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb>
+</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type
+1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/s
+hare/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf
+/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.
+pfb>
+Output written on bitcoin.pdf (11 pages, 272535 bytes).
 PDF statistics:
- 85 PDF objects out of 1000 (max. 8388607)
- 60 compressed objects within 1 object stream
+ 89 PDF objects out of 1000 (max. 8388607)
+ 63 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
