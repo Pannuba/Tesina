@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.5.12)  1 JUN 2018 22:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.5.12)  2 JUN 2018 16:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -551,87 +551,102 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--42
 
  []
 
-[2] [3] [4]
-Overfull \hbox (8.39175pt too wide) in paragraph at lines 152--153
+[2]
+<media/farm.jpg, id=20, 831.105pt x 554.07pt>
+File: media/farm.jpg Graphic file (type jpg)
+<use media/farm.jpg>
+Package pdftex.def Info: media/farm.jpg  used on input line 93. on input line 9
+3.
+Package pdftex.def Info: Requested size: 284.52756pt x 189.68329pt on input lin
+e 93.
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--96
+
+ []
+
+[3] [4 <./media/farm.jpg>] [5]
+Overfull \hbox (8.39175pt too wide) in paragraph at lines 169--170
 []\T1/lmr/m/n/10 PARLARE DI AL-TRI AL-GO-RITMI E AL-TRE VA-LUTE, AJCHE SE PARLO
 
  []
 
-[5]
-Overfull \hbox (7.5653pt too wide) in paragraph at lines 210--213
+[6]
+Overfull \hbox (7.5653pt too wide) in paragraph at lines 227--230
 \T1/lmr/m/n/10 tre va-lute??) per btc, o soldi veri e pro-pri. Nonos-tante i co
 sti dell'equipaggiamento
  []
 
 
-Overfull \hbox (11.49329pt too wide) in paragraph at lines 224--230
+Overfull \hbox (11.49329pt too wide) in paragraph at lines 241--247
 \T1/lmr/m/n/10 una pag-ina (FARE LINK DI-DAS-CALIA IN BASSSO https://99bitcoins
 .com/who-
  []
 
 
-Overfull \hbox (5.41711pt too wide) in paragraph at lines 224--230
+Overfull \hbox (5.41711pt too wide) in paragraph at lines 241--247
 \T1/lmr/m/n/10 accepts-bitcoins-payment-companies-stores-take-bitcoins/) con un
 a lista che com-
  []
 
-[6]
-<media/crash.jpg, id=37, 1186.4325pt x 1184.425pt>
+[7]
+<media/crash.jpg, id=43, 1186.4325pt x 1184.425pt>
 File: media/crash.jpg Graphic file (type jpg)
 <use media/crash.jpg>
-Package pdftex.def Info: media/crash.jpg  used on input line 262. on input line
- 262.
+Package pdftex.def Info: media/crash.jpg  used on input line 279. on input line
+ 279.
 Package pdftex.def Info: Requested size: 284.52756pt x 284.05093pt on input lin
-e 262.
- [7 <./media/crash.jpg>]
-Overfull \hbox (18.65569pt too wide) in paragraph at lines 295--296
+e 279.
+ [8 <./media/crash.jpg>]
+Overfull \hbox (18.65569pt too wide) in paragraph at lines 312--313
 \T1/lmr/m/n/10 ben 1640. Ritengo in-dis-pens-abile spendere al-meno qualche pag
 -ina a dis-cutere/??????
  []
 
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 324--328
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 341--345
 
  []
 
-<media/monero.png, id=44, 849.1725pt x 399.4925pt>
+<media/monero.png, id=50, 849.1725pt x 399.4925pt>
 File: media/monero.png Graphic file (type png)
 <use media/monero.png>
-Package pdftex.def Info: media/monero.png  used on input line 330. on input lin
-e 330.
+Package pdftex.def Info: media/monero.png  used on input line 347. on input lin
+e 347.
 Package pdftex.def Info: Requested size: 284.52756pt x 133.85672pt on input lin
-e 330.
-[9 <./media/monero.png>]
-<media/hard_fork.png, id=48, 587.19376pt x 191.71625pt>
+e 347.
+[10 <./media/monero.png>]
+<media/hard_fork.png, id=54, 587.19376pt x 191.71625pt>
 File: media/hard_fork.png Graphic file (type png)
 <use media/hard_fork.png>
-Package pdftex.def Info: media/hard_fork.png  used on input line 356. on input 
-line 356.
+Package pdftex.def Info: media/hard_fork.png  used on input line 373. on input 
+line 373.
 Package pdftex.def Info: Requested size: 284.52756pt x 92.89743pt on input line
- 356.
- [10 <./media/hard_fork.png>] [11] (./bitcoin.aux) ) 
+ 373.
+ [11 <./media/hard_fork.png>] [12] (./bitcoin.aux) ) 
 Here is how much of TeX's memory you used:
- 2164 strings out of 494931
- 28514 string characters out of 6180851
+ 2171 strings out of 494931
+ 28620 string characters out of 6180851
  82161 words of memory out of 5000000
- 5413 multiletter control sequences out of 15000+600000
- 59312 words of font info for 46 fonts, out of 8000000 for 9000
+ 5418 multiletter control sequences out of 15000+600000
+ 63575 words of font info for 47 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  41i,8n,25p,1169b,201s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc
-/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/sh
-are/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texlive/texmf-dist/fonts/typ
-e1/public/eurosym/feymr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx10.pf
-b></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/ty
-pe1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr
-/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/publ
-ic/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/tex
-mf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy1
-0.pfb>
-Output written on bitcoin.pdf (12 pages, 1141153 bytes).
+/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/sh
+are/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm
+/lm-rm.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/eurosym/feymr10.pf
+b></usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/ty
+pe1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></u
+sr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/pu
+blic/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share
+/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/l
+mr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/font
+s/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb
+>
+Output written on bitcoin.pdf (13 pages, 1338464 bytes).
 PDF statistics:
- 93 PDF objects out of 1000 (max. 8388607)
- 65 compressed objects within 1 object stream
+ 107 PDF objects out of 1000 (max. 8388607)
+ 75 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

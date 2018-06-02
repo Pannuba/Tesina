@@ -36,7 +36,7 @@
 
 2009. Il mondo è sconvolto dalla catastrofica crisi dell'anno precedente.
 L'economia era in distruzione. Banche, borse e stati sull'orlo del crollo. Panico.
-C'era il bisogno di una soluzione a tutto questo. Un sistema monetario che fosse immune a tutto ciò che colpì le valute crollate nel 2008.Ebter BitbOiNg!!
+C'era il bisogno di una soluzione a tutto questo. Un sistema monetario che fosse immune a tutto ciò che colpì le valute crollate. Il Bitcoin, la prima criptovaluta del mondo creata a cavallo tra il 2008 e il 2009 fu la risposta a tutti questi problemi economici legati alla crisi.
 Satoshi Nakamoto è conosciuto come l'ideatore e l'iniziale sviluppatore del Bitcoin. Nessuno sa chi sia, dove abiti, se è un singolo o un gruppo di persone. Sappiamo solo che nei primi anni del Bitcoin era attivo sul forum bitcointalk.org fino al 13 Dicembre 2010.
 Satoshi scrisse il whitepaper(?) del Bitcoin, un documento contenente la sua ideologia di moneta virtuale. Il documento è altamente tecnico e include complicate spiegazioni(?) di informatica e matematica, ma mi sembra doveroso citare il primo paragrafo \footnote{http://bitcoin.org/bitcoin.pdf}:\\
 
@@ -45,6 +45,7 @@ Satoshi scrisse il whitepaper(?) del Bitcoin, un documento contenente la sua ide
 \textbf {Abstract}. A purely peer-to-peer version of electronic cash would allow online payments to be sent directly from one party to another without going through a financial institution. Digital signatures provide part of the solution, but the main benefits are lost if a trusted third party is still required to prevent double-spending. We propose a solution to the double-spending problem using a peer-to-peer network. The network timestamps transactions by hashing them into an ongoing chain of hash-based proof-of-work, forming a record that cannot be changed without redoing the proof-of-work. The longest chain not only serves as proof of the sequence of events witnessed, but proof that it came from the largest pool of CPU power. As long as a majority of CPU power is controlled by nodes that are not cooperating to attack the network, they'll generate the longest chain and outpace attackers. The network itself requires minimal structure. Messages are broadcast on a best effort basis, and nodes can leave and rejoin the network at will, accepting the longest proof-of-work chain as proof of what happened while they were gone.
 
 \end {quote}
+
 Questo paragrafo comprende/indica/dice/individua le parole chiave che rendono il Bitcoin una valuta unica, che non si era mai vista prima.
 
 Decentralizzata:
@@ -78,28 +79,41 @@ Per trovare l'oro bisogna scavare nella roccia della montagna utilizzando specia
 I blocchi, per poter essere "risolti" vengono "minati" dai cosiddetti "miners", dei computer specializzati a risolvere un certo tipo di algoritmo.
 Algoritmo, perchè il processo di mining consiste esclusivamente nella matematica.
 L'obiettivo(?) del mining è quello di indovinare la "parola chiave", chiamata "hash" che serve per risolvere un blocco.
-Il Bitcoin usa l'algoritmo SHA-256, quindi le hash indovinate dai miner sono una serie di numeri e lettere lunga 64 caratteri. Questo perché come suggerisce il nome, 256 indica il numero di "bits" che costituiscono la stringa.
+Il Bitcoin usa l'algoritmo SHA-256, quindi le hash indovinate dai miner sono una serie di numeri e lettere lunga 64 caratteri.
+Questo perché come suggerisce il nome, 256 indica il numero di "bits" che costituiscono la stringa.
 Il "bit" è la più piccola unità di misura per quanto riguarda la dimensione di file nel campo dell'informatica, e 8 bit corrispondono a 1 byte.
 Nel sistema(?) esadecimale un carattere "pesa" 8 bit, quindi $256 : 8 = 64$.
 Una hash del sistema(?) SHA-256 deve rispettare determinati parametri per essere considerata tale, di cui non scriverò per evitare di complicare ulteriormente la situazione.
 In succinto, per trovare il numero di hash totali che si possono ottenere bisogna effettuare il  calcolo $2^{256}$, che corrisponde a circa \textasciitilde 1,158 $\times 10^{77}$ possibili hash da indovinare.
 MA NON E FINITA CUI! https://en.bitcoin.it/wiki/Target
 I miner di Bitcoin che si usano oggi lavorano a velocità comprese tra i \textasciitilde 10 e i \textasciitilde 14 TH/s (tera-hash al secondo) in base al loro consumo energetico, ovvero a oltre dieci trilioni di tentativi in un secondo.
-Questi apparecchi sono molto costosi (quelli di ultima generazione superano i \euro{} 1000 per unità) e utilizzano un'elevata quantità di energia elettrica per funzionare.
-Perchè, allora, c'è gente che spende tutti questi soldi per fare il lavoro di mining? PROOFG  OF WORK SOMEWHERE AAAAAAAAAAAAAAAAAAAAAAAA
+Questi apparecchi sono molto costosi (quelli di ultima generazione superano i \euro{} 700 per unità) e utilizzano un'elevata quantità di energia elettrica per funzionare (v dopo, o posso scriverlo qua?).
+Perchè, allora, c'è gente che spende tutti questi soldi per fare il lavoro di mining? PROOFG  OF WORK SOMEWHERE AAAAAAAAAA
 Ebbene, quando si "risolve" un blocco, il miner riceve una quantità pari a 12.5 Bitcoin, oggi pari a circa 90000 euro (parlare di halving whand?).
 Quasi mai, però, i 12 btc finiscono a una singola persona: indovinare la stringa che mina il block è estremamente difficile!
 Per questo esistono le "pool" di mining, dei siti in cui più miners uniscono gli sforzi per risolvere il blocco.
 Una volta indovinato, la ricompensa si spartisce fra tutti i miner, in base a quanto ciascuno si è impegnato per trovarla.
-Torniamo a noi, cosa succede quando il blocco è minato, e si passa a quello successivo? Tutte le transazioni che si sono accumulate nel blocco precendente (quello che i miner stavano cercando di risolvere) vengono confermate, e impiantate nella blockchain. Per questo, una transazione è considerata conclusa quando si passano almeno 6 blocchi dopo quello in cui è stata iniziata.
-3 perchè.............??
+Torniamo a noi, cosa succede quando il blocco è minato, e si passa a quello successivo?
+Tutte le transazioni che si sono accumulate nel blocco precendente (quello che i miner stavano cercando di risolvere) vengono confermate, e impiantate nella blockchain.
+Per questo, una transazione è considerata conclusa quando si passano almeno 6 blocchi dopo quello in cui è stata iniziata.
+3 perchè.............?? e da qualche parte devo parlare di DIFFICULTY
 è così che funziona la blockhain bla b la
 
 
-\subsubsection {Gli effetti del mining sull'ambiente}
+\subsubsection {(come gestire paragrafi uso elettricità, profitti e effetti su ambiente?}
 
 
-I miner ASIC usano una notevole quantità di energia
+I miner ASIC usano una notevole quantità di energia. Prendendo in considerazione quelli di ultima generazione, il più potente, il Bitmain Antminer S9 (14 TH/s) consuma circa 1300 W, il più debole (4 TH/s) 1000 W.
+In media, un S9 che lavora in una \textit{pool} di mining produce/fa guadagnare circa 0.00082 BTC al giorno, ovvero circa \euro{}5.5.
+Considerando che le \textit{farm} hanno sede / esistono /sono in paesi in cui l'elettricità costa poco, intorno ai \euro{}0.04/KWh, un S9 costa circa \euro{}1 al giorno per funzionare /in elettricità.
+Un miner, quindi, fa guadagnare almeno \euro{}4 al giorno considerando il costo dell'elettricità.
+Ho già scritto che i miner hanno un prezzo notevole, infatti un Antminer S9 costa attualmente \textasciitilde \euro{}717.
+Prima di cominciare a guadagnare un profitto nel mining, bisogna calcolare il tempo impiegato per coprire il costo dell'attrezzatura di mining.
+Questo tempo si chiama ROI (return on investment), e nel caso della situazione presa come esempio, ovvero quella di guadagnare \euro{}4 al giorno con un S9, il ROI è pari a $717 : 4 = 179.25$ giorni. (arrotondo a 180 o 179??)
+Questo è quanto vale per \textit{una} singola unità di mining che produce "solo" 0.00082 BTC al giorno, una quantità minuscola rispetto ai \textasciitilde 17.000.000 che sono stati minati fino ad oggi.
+L'"hashing power" dell'intero network del Bitcoin, la somma del lavoro dei miners in tutto il mondo espressa in H/s, è di oltre 30.000 TH/s, e consuma un a quantità di elettricità pari a 60 TWh, ovvero 60.000 miliardi di Watt consumati all'ora.
+Questo consumo di elettricità corrisponde a (piu di 0.13, perche dati dic 2017, cercare nuovi) dell'utilizzo di elettricità in tutto il mondo.
+... ... ... (citazione a powercompare.co.uk)
 
 
 \subsection {How and where Bitcoin is stored}
@@ -108,13 +122,31 @@ I miner ASIC usano una notevole quantità di energia
 \subsubsection {Addresses}
 
 
-bc1 1 3...
+The coins are stored in addresses, a string of 26 to 35 characters that starts with either 1, 3, or bc1 (I'll explain the differences between those later). An address can be seen as an IBAN address, or even an email address.
+
+\paragraph {"Legacy" addresses}
+
+
+Sono quelli che cominciano con 1 i piu schifosi ma tristemente i + famosi
+
+
+\paragraph {P2SH SegWit addresses}
+
+
+Cominciano con 3, sono cool
+
+
+\paragraph {bech32 SegWit addresses}
+
+
+I piu veloci e belli ma poco ompatibili
 
 
 \paragraph {Cold wallets}
 
 
-Cold wallets (also known as "cold storage") are the best option for those who are interested in keeping their coins safe, without actually spending them. A cold wallet is not connected to the internet, and this makes it impossible for hackers to breach into an online database and steal the private keys: FORSE NON è CORRETTO, SEND HELP. LE PRIVAKE KEYS 
+Cold wallets (also known as "cold storage") are the best option for those who are interested in keeping their coins safe, without actually spending them.
+A cold wallet is not connected to the internet, and this makes it impossible for hackers to breach into an online database and steal the private keys: FORSE NON è CORRETTO, SEND HELP. LE PRIVAKE KEYS 
 Cold wallets can be literal pieces of paper, with a public address and public key written on it. This makes it possible to store bitcoin in a bank, by putting said pieceofpaper in a safe.
 Cold wallets, as I said, are not advisable to HOW TO SPEND FROM COLD?
 
@@ -122,7 +154,7 @@ Cold wallets, as I said, are not advisable to HOW TO SPEND FROM COLD?
 \paragraph {Hot wallets}
 
 
-Hot wallets, unlike cold wallets, are the most useful wallets because they allow the user to send BUT WHY????? CANT US END BTC FROM COLD???? ATEH TEHER COLD APP WALLETS?????
+Hot wallets, unlike cold wallets, are the most useful wallets because they allow the user to send BUT WHY?????
 
 
 \paragraph {Hardware wallets}
@@ -142,7 +174,7 @@ A private key, as the name suggests, is a key that gives full access to the coin
 \subsubsection {Seeds}
 
 
-New (as in...............)Hot wallets work with SEEDS: a seed is kind of a password that gives you access to your coins (stored online?) a seed is typically 12 or 15 english words that, when put into the wallet ocnfiguration makes magically appear all your coins.
+Most hot wallets work with SEEDS: a seed is kind of a password that gives you access to your coins (stored online?) a seed is typically 12 or 15 english words that, when put into the wallet ocnfiguration makes magically appear all your coins.
 That's the reason why "seed stealing" is the most common tactic of stealing funds: with a bunch of apparently useless words, new users can be tricked into sending them to a scammer who quickly steals alltheir coins and runs away.
 A seed is associated with x different Bitcoin addresses, for privacy purposes: despite not being linked with private information such as name, surname and address, we saw that every transaction is permanently written into the blockchain, and anyone can see any address' current BTC balance.
 For this reason, having different addresses helps in making the user less traceable (SCRIVERE PRIMA COME SI POSSONO TRACCIARE), as it's impossible to link the seed's different addresses.
@@ -167,7 +199,7 @@ Segregated Witness (comunemente abbreviato in SegWit) è una roba che riduce le 
 \subsubsection {Lightning Network}
 
 
-ANche LN lol
+Il Lighning Network è un network lightning.
 
 
 \section {Utilizzare Bitcoin}
@@ -181,7 +213,6 @@ Ho notato che nonostante se ne parli sempre di più in televisione e su internet
 
 A wallet is the software used to make the user interact with their coins / that makes you send and recieve Bitcoin.
 It can be an app for smartphones, a program on a computer, or even an online service.
-While wallets are the software itself, they are not the "place" where bitcoins are stored. The coins are stored in addresses, a string of x characters that starts with either 1, 3, or bc1 (I'll explain the differences between those later). An address can be seen as an IBAN address, or even an email address.
 Bitcoin can be stored in two different ways: cold wallets and hot wallets.
 
 
@@ -241,7 +272,7 @@ si sta usando un po', blabla
 Sempre più gente lo usa, blahhhhhh negozi
 
 
-\paragraph {Il villaggio in Austria.. come si chiama?}
+\paragraph {Elizavetovska: il villaggio in Ucraina in cui tutti utilizzano criptovaluta/e}
 
 
 è bellus
@@ -341,10 +372,10 @@ Monero ha tuttavia dei limiti e non si può considerare come una valuta "perfett
 BEST COIN
 
 
-\subsection {Stellar?}
+\subsection {Ripple}
 
 
-idk much tbh smh
+Ripple è un altcoin che è brutto perche legato alle banche centralizzato il 90\% è posseduto dai ricconi ma comunque riesce ad essere al terzo posto per market cap smh
 
 
 \subsection {Bitcoin "hard forks"}
@@ -387,7 +418,7 @@ Ver possiede anche l'account twitter @bitcoin, che svolge le stesse opere di pro
 \section {Il futuro delle criprtovalute}
 
 
-Come si può vedere dalla figura, nel 2018 ci troviamo alla primissima fase dell'adozione di questa nuova tecnologia.
+Come si può vedere dalla figura (se riesco a ritrovarla), nel 2018 ci troviamo alla primissima fase dell'adozione di questa nuova tecnologia.
 
 
 \end {document}
