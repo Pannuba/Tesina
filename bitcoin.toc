@@ -5,7 +5,7 @@
 \contentsline {subsection}{\numberline {2.2}How and where Bitcoin is stored}{4}
 \contentsline {subsubsection}{\numberline {2.2.1}Addresses}{4}
 \contentsline {paragraph}{"Legacy" addresses}{4}
-\contentsline {paragraph}{P2SH SegWit addresses}{5}
+\contentsline {paragraph}{P2SH SegWit addresses}{4}
 \contentsline {paragraph}{bech32 SegWit addresses}{5}
 \contentsline {paragraph}{Cold wallets}{5}
 \contentsline {paragraph}{Hot wallets}{5}
@@ -25,7 +25,7 @@
 \contentsline {subsection}{\numberline {3.3}Spendere Bitcoin}{7}
 \contentsline {section}{\numberline {4}Bitcoin oggi}{7}
 \contentsline {subsection}{\numberline {4.1}Adozione}{7}
-\contentsline {paragraph}{Elizavetovska: il villaggio in Ucraina in cui tutti utilizzano criptovaluta/e}{7}
+\contentsline {paragraph}{Elizavetovska: il villaggio in Ucraina in cui tutti utilizzano criptovalute}{7}
 \contentsline {subsection}{\numberline {4.2}Il boom del 2017: cause e conseguenze}{7}
 \contentsline {subsubsection}{\numberline {4.2.1}La ricorrenza dei "crash" dei mercati}{8}
 \contentsline {subsection}{\numberline {4.3}Controversie}{8}
