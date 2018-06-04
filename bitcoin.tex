@@ -7,6 +7,7 @@
 \usepackage[official]{eurosym}
 
 \renewcommand {\contentsname} {Indice}
+\renewcommand {\figurename} {Fig.}
 
 \title {{\Huge Bitcoin, blockchain, crypto}}
 
@@ -19,6 +20,12 @@
 
 
 \maketitle
+
+\vspace {2.5cm}
+
+\begin {center}
+   \includegraphics [width = 5.5cm] {media/logo.png}
+\end {center}
 
 \pagenumbering {gobble}
 
@@ -111,7 +118,7 @@ Un miner, quindi, fa guadagnare almeno \euro{4} al giorno considerando il costo 
 Ho già scritto che i miner hanno un prezzo notevole, infatti un Antminer S9 costa attualmente \textasciitilde \euro{717}.
 Prima di cominciare a guadagnare un profitto nel mining, bisogna calcolare il tempo impiegato per coprire il costo dell'attrezzatura di mining.
 Questo tempo si chiama ROI (\textit{return on investment}), e nel caso della situazione presa come esempio, ovvero quella di guadagnare \euro{4} al giorno con un S9, il ROI è pari a 179 giorni ($717 : 4 = 179.25$).
-Questo è quanto vale per \textit{una} singola unità di mining che produce "solo" 0.00082 BTC al giorno, una quantità minuscola rispetto ai \textasciitilde 17.000.000 che sono stati minati fino ad oggi.
+Questo è quanto vale per \emph{una} singola unità di mining che produce "solo" 0.00082 BTC al giorno, una quantità minuscola rispetto ai \textasciitilde 17.000.000 che sono stati minati fino ad oggi.
 L'\textit{hashing power} dell'intero network del Bitcoin, la somma del lavoro dei miners in tutto il mondo espressa in H/s, è di oltre 30.000 TH/s, e consuma un a quantità di elettricità pari a 60 TWh, ovvero 60.000 miliardi di Watt consumati all'ora.
 Questo consumo di elettricità corrisponde a (piu di 0.13, perche dati dic 2017, cercare nuovi) dell'utilizzo di elettricità in tutto il mondo.
 ... ... ... (citazione a powercompare.co.uk)
@@ -297,12 +304,15 @@ https://www.coindesk.com/information/comparing-litecoin-bitcoin/ adesso no sbatt
 Monero (XMR) è un altcoin creato in Aprile 2014 che ha come prima preoccupazione quella della privacy.
 Monero è l'unica criptovaluta che è completamente intracciabile. Come abbiamo visto con il Bitcoin, nella blockchain possiamo trovare informazioni su tutto quello che avviene: il bilancio di qualunque indirizzo, chi manda quanto a chi.
 Con Monero tutto questo non è possibile. Mentre ha una blockchain come tutti gli altri coin, non è possibile vedere le transazioni che avvengono dall'uno all'altro indirizzo, e non è nemmeno possibile visualizzare il saldo.
-Sul sito https://moneroblocks.info, infatti, viene mostrato il seguente messaggio se si cercano informazioni legate a un indirizzo:\\
+Sul sito https://moneroblocks.info, infatti, viene mostrato il seguente messaggio se si cercano informazioni legate a un indirizzo:
 
 \vspace {0.5cm}
+\begin {figure}[h]
 \includegraphics [width = 10cm] {media/monero.png}
+\caption {ecco che succede}
+\end {figure}
 \vspace {0.5cm}
-\\
+
 Questo rende Monero una valuta estremamente utile a chiunque voglia nascondere i propri fondi.
 Purtroppo, come tutte le tecnologie a favore della privacy, Monero viene utilizzato anche da evasori delle tasse, truffatori e da venditori di merce illegale (V CONTROVERSIE O ADOPTION?).
 Monero ha tuttavia dei limiti e non si può considerare come una valuta "perfetta": non eccelle nel campo "transazioni veloci e cheap????": in confronto al Bitcoin POST SU RMONERO BC NON TROVO INFO.
