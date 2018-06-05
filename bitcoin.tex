@@ -10,9 +10,7 @@
 \renewcommand {\figurename} {Fig.}
 
 \title {{\Huge Bitcoin, blockchain, crypto}}
-
 \author {Carlomaria Occhipinti\\Liceo Scientifico Arturo Tosi}
-
 \date {Giugno 2018}
 
 
@@ -49,22 +47,29 @@ Satoshi scrisse il whitepaper(?) del Bitcoin, un documento contenente la sua ide
 
 \begin {quote}
 
-\textbf {Abstract}. A purely peer-to-peer version of electronic cash would allow online payments to be sent directly from one party to another without going through a financial institution. Digital signatures provide part of the solution, but the main benefits are lost if a trusted third party is still required to prevent double-spending. We propose a solution to the double-spending problem using a peer-to-peer network. The network timestamps transactions by hashing them into an ongoing chain of hash-based proof-of-work, forming a record that cannot be changed without redoing the proof-of-work. The longest chain not only serves as proof of the sequence of events witnessed, but proof that it came from the largest pool of CPU power. As long as a majority of CPU power is controlled by nodes that are not cooperating to attack the network, they'll generate the longest chain and outpace attackers. The network itself requires minimal structure. Messages are broadcast on a best effort basis, and nodes can leave and rejoin the network at will, accepting the longest proof-of-work chain as proof of what happened while they were gone.
+\textbf {Abstract}. A purely peer-to-peer version of electronic cash would allow online payments to be sent directly from one party to another without going through a financial institution.
+Digital signatures provide part of the solution, but the main benefits are lost if a trusted third party is still required to prevent double-spending.
+We propose a solution to the double-spending problem using a peer-to-peer network.
+The network timestamps transactions by hashing them into an ongoing chain of hash-based proof-of-work, forming a record that cannot be changed without redoing the proof-of-work.
+The longest chain not only serves as proof of the sequence of events witnessed, but proof that it came from the largest pool of CPU power.
+As long as a majority of CPU power is controlled by nodes that are not cooperating to attack the network, they'll generate the longest chain and outpace attackers.
+The network itself requires minimal structure.
+Messages are broadcast on a best effort basis, and nodes can leave and rejoin the network at will, accepting the longest proof-of-work chain as proof of what happened while they were gone.
 
 \end {quote}
 
-Questo paragrafo comprende le parole chiave che rendono il Bitcoin una valuta unica, che non si era mai vista prima.
+Tradotto in italiano:
 
-Decentralizzata:
+\begin {quote}
 
-Privata:
-
-Deinflazionaria:
-
-Sicura:
-
---no, leggendolo attentamente non include nessuna di queste parole. sistemo dopo
-
+\textbf {Riassunto}. Una versione puramente PIRTUPIR di soldi elettronici permetterebbero ai pagamenti online di essere inviati direttamente da un party all'altro senza passare attraverso un'istituzione finanziaria.
+Firme digitali sono? parte della soluzione, ma i benefici principali sono persi se un ente di terza parte creduto? è sempre/comunque richiesto per prevenire la doppia spesa.
+Proponiamo una soluzione al problema della doppia spesa usando una rete PIRTUPIR.
+La rete registra? le transazioni hashing? them in una catena ongoing di hashbased pow, formando un registro che non può essere modificato senza ripetere la pow.
+La catena più lunga non serve solo come prova per la sequenza di eventi testimoniati/accaduti, ma la prova che è venuta/derivata dalla pool più grande di potenza cpu. Finché la maggioranza del potere cpu è controllato da nodi? che non stanno cooperando per attaccare la rete, genereranno la cantena più lunga e supereranno gli attaccatori.
+La rete stessa richiede una struttura minimale.
+I messaggi sono trasmessi su una base del miglior sforzo, e i nodi possono lasciare e rientrare la rete a voglia, accettando la più lunga pow catena come prova di cos'è avvenuto mentre erano via.
+\end {quote}
 
 \section {Blockchain: cos'è e come funziona}
 
@@ -84,7 +89,7 @@ Mi tocca introdurre il concetto di "mining". (mi manca la parte sul peso in kb d
 Sebbene non sia tecnicamente corretto, il modo più semplice per spiegare il concetto di "mining" è quello di paragonare i bitcoin a una montagna nella cui roccia sono contenuti minerali preziosi.
 I bitcoin sono, per esempio, l'oro nella roccia.
 Per trovare l'oro bisogna scavare nella roccia della montagna utilizzando speciali apparecchiature quali ruspe, trapani, trivelle.
-I blocchi, per poter essere "risolti" vengono "minati" dai cosiddetti "miners", dei computer specializzati a risolvere un certo tipo di algoritmo.
+I blocchi, per poter essere "risolti" vengono "minati" dai cosiddetti miner ASIC (\textit{application specific integrated circuit}), dei computer specializzati a risolvere un certo tipo di algoritmo.
 Algoritmo, perchè il processo di mining consiste esclusivamente nella matematica.
 L'obiettivo del mining è quello di indovinare la "parola chiave", chiamata "hash" che serve per risolvere un blocco.
 Il Bitcoin usa l'algoritmo SHA-256, quindi le hash indovinate dai miner sono una serie di numeri e lettere lunga 64 caratteri.
@@ -108,7 +113,7 @@ Per questo, una transazione è considerata conclusa quando si passano almeno 6 b
 è così che funziona la blockhain bla b la
 
 
-\subsubsection {(come gestire paragrafi uso elettricità, profitti e effetti su ambiente?}
+\subsubsection {L'uso di elettricità del mining}
 
 
 I miner ASIC usano una notevole quantità di energia. Prendendo in considerazione quelli di ultima generazione, il più potente, il Bitmain Antminer S9 (14 TH/s) consuma circa 1300 W, il più debole (4 TH/s) 1000 W.
@@ -124,7 +129,38 @@ Questo consumo di elettricità corrisponde a (piu di 0.13, perche dati dic 2017,
 ... ... ... (citazione a powercompare.co.uk)
 
 
+\subsection {"Soft forks"}
+
+
+Il Bitcoin è la prima criptovaluta mai creata, e questo la rende anche la più vecchia e obsoleta sotto il punto di vista tecnologico. Come vedremo in seguito, infatti, oggi esistono molte valute che riducono, o in certi casi sistemano i principali "problemi" del Bitcoin.
+
+
+\subsubsection {Segregated Witness}
+
+
+Segregated Witness (comunemente abbreviato in SegWit) è una roba che riduce le tasse
+
+
+\subsubsection {Lightning Network}
+
+
+Il Lightning Network è un network lightning.
+
+
 \subsection {How and where Bitcoin is stored}
+
+
+\subsubsection {Keys}
+
+
+\paragraph {Seeds}
+
+
+A seed is kind of a password that gives you access to your coins (stored online?) a seed is typically 12 or 15 english words that, when put into the wallet ocnfiguration makes magically appear all your coins.
+That's the reason why "seed stealing" is the most common tactic of stealing funds: with a bunch of apparently useless words, new users can be tricked into sending them to a scammer who quickly steals alltheir coins and runs away.
+A seed is associated with x different Bitcoin addresses, for privacy purposes: despite not being linked with private information such as name, surname and address, we saw that every transaction is permanently written into the blockchain, and anyone can see any address' current BTC balance.
+For this reason, having different addresses helps in making the user less traceable (SCRIVERE PRIMA COME SI POSSONO TRACCIARE), as it's impossible to link the seed's different addresses.
+Wallets that use seeds still report the total balance as the sum of funds in each seed's address.
 
 
 \subsubsection {Addresses}
@@ -132,16 +168,18 @@ Questo consumo di elettricità corrisponde a (piu di 0.13, perche dati dic 2017,
 
 The coins are stored in addresses, a string of 26 to 35 characters that starts with either 1, 3, or bc1 (I'll explain the differences between those later). An address can be seen as an IBAN address, or even an email address.
 
+
 \paragraph {"Legacy"}
 
 
-Sono quelli che cominciano con 1 i piu schifosi ma tristemente i + famosi
+Con "legacy" mi riferisco al primo formato di indirizzo, utilizzato esclusivamente fino all'agosto del 2017.
+Questi indirizzi si riconoscono dal fatto che iniziano col carattere '1', per esempio mioindirizzo.
 
 
 \paragraph {P2SH SegWit}
 
 
-Cominciano con 3, sono cool
+P2SH significa "Pay 2 Script Hash", 
 
 
 \paragraph {bech32 SegWit}
@@ -150,7 +188,14 @@ Cominciano con 3, sono cool
 I piu veloci e belli ma poco ompatibili
 
 
-\paragraph {Cold wallets}
+\subsubsection {Wallets}
+
+
+A wallet is the software used to let the user interact with their coins. not really, non sono gli hot?
+It can be an app for smartphones, a program on a computer, or even an online service.
+
+
+\paragraph {Cold storage}
 
 
 Cold wallets (also known as "cold storage") are the best option for those who are interested in keeping their coins safe, without actually spending them.
@@ -172,56 +217,20 @@ Hardware wallets are, as the name sucggests, small devices as big as a USB drive
 definitely the safest way to store cryptocurrency as the private key is exclusively stored on the device itself, and noone can access them. Unhackable, net even sunvb.
 
 
-\subsubsection {Keys}
-
-
-Every Bitcoin address is associated with a private key.
-A private key, as the name suggests, is a key that gives full access to the coins stored in its address.
-
-
-\subsubsection {Seeds}
-
-
-Most hot wallets work with SEEDS: a seed is kind of a password that gives you access to your coins (stored online?) a seed is typically 12 or 15 english words that, when put into the wallet ocnfiguration makes magically appear all your coins.
-That's the reason why "seed stealing" is the most common tactic of stealing funds: with a bunch of apparently useless words, new users can be tricked into sending them to a scammer who quickly steals alltheir coins and runs away.
-A seed is associated with x different Bitcoin addresses, for privacy purposes: despite not being linked with private information such as name, surname and address, we saw that every transaction is permanently written into the blockchain, and anyone can see any address' current BTC balance.
-For this reason, having different addresses helps in making the user less traceable (SCRIVERE PRIMA COME SI POSSONO TRACCIARE), as it's impossible to link the seed's different addresses.
-Wallets that use seeds still report the total balance as the sum of funds in each seed's address.
-
-
-PARLARE DI ALTRI ALGORITMI E ALTRE VALUTE, AJCHE SE PARLO DOPO DELLE ALTE VALUTE, ONON SO CSAO FARE AOITUO.....
-
-
-\subsection {Cuscinetti / integrazioni}
-
-
-Il Bitcoin è la prima criptovaluta mai creata, e questo la rende anche la più vecchia e obsoleta sotto il punto di vista tecnologico. Come vedremo in seguito, infatti, oggi esistono molte valute che riducono, o in certi casi sistemano i principali "problemi" del Bitcoin.
-
-
-\subsubsection {Segregated Witness}
-
-
-Segregated Witness (comunemente abbreviato in SegWit) è una roba che riduce le tasse
-
-
-\subsubsection {Lightning Network}
-
-
-Il Lighning Network è un network lightning.
-
-
 \section {Utilizzare Bitcoin}
 
 
 Ho notato che nonostante se ne parli sempre di più in televisione e su internet, il Bitcoin è sempre visto come un concetto astratto, un'entità misteriosa di cui non si sa esattamente come si usa, dove si prende, e in cosa si spende.
 
 
-\subsection {Conservare Bitcoin}
+\subsection {Creazione del portafoglio}
 
 
-A wallet is the software used to make the user interact with their coins / that makes you send and recieve Bitcoin.
-It can be an app for smartphones, a program on a computer, or even an online service.
-Bitcoin can be stored in two different ways: cold wallets and hot wallets.
+Come descritto in X.X, il portafoglio è quel software (ma non solo.. questione del cold) che ci dà l'accesso ai bitcoin salvati nella blockchain (dire che è sbagliato dire che sono \emph{nel} portafoglio)
+HOW ARE ADDRESSES MADE
+Per comodità è consigliabile usare un app per smartphone, ma volendo esistono anche programmi per computer e servizi online.
+A proposito di smartphone, sull'App Store dei dispositivi Apple e sul Play Store di quelli Android sono disponibili numerosi portafogli di Bitcoin, ma il funzionamento è lo stesso per tutti.
+Una volta scaricato il portafoglio e cominciato il processo di setup (?) SEED, ...
 
 
 \subsection {Come ottenere criptovaluta}
@@ -232,8 +241,10 @@ Bitcoin can be stored in two different ways: cold wallets and hot wallets.
 
 Il metodo più veloce e utilizzato è quello di acquistarlo su un sito di exchange (cambio valutario). Esistono moltissimi siti che permettono di acquistare Bitcoin con bonifico bancario o semplicemente con una carta di credito, come se si stesse acquistando un oggetto.
 Coinbase è di gran lunga l'exchange più famosa del mondo.
-Basta aprire un account, collegare il proprio conto o la carta di credito, e compare btc è questione di secondi.
-Una volta acquistato, è consigliabile spostare i propri bitcoin su un "wallet" indipendente dal sito dell'exchange. Coinbase è la più sicura e attendibile, ma ci sono stati tragici episodi di exchange hacked, mln lost. (v sub...)
+Basta aprire un account, collegare il proprio conto o la carta di credito, e compare bitcoin è questione di secondi.
+Una volta acquistato, è consigliabile spostare i propri bitcoin su un "wallet" indipendente dal sito dell'exchange.
+Quasi tutte le exchange più reputabili sono dotate di sistemi di sicurezza ad elevatissimo livello che riducono la possibilità di una \textit{security breach} al minimo, ma ci sono stati tragici episodi di exchange colpite da attacchi hacker, derubate di quantità di bitcoin che oggi valgono milioni di Euro.
+Ritengo che non valga la pena di rischiare di perdere tutti i propri bitcoin per la pigrizia di non volerli mettere al sicuro.
 
 
 \paragraph {ATMs}
@@ -241,7 +252,7 @@ Una volta acquistato, è consigliabile spostare i propri bitcoin su un "wallet" 
 
 Esistono dei veri e propri bancomat in cui anzichè prelevare soldi dal proprio conto bancario è possibile acquistare e vendere criptovalute.
 Sono comodi, veloci ed anonimi, ma c'è sempre il rischio di venire derubati tramite forza fisica; si paga un bonus per la comodità (fee, higher trade price) e al giorno d'oggi sono ancora molto poco diffuse.
-Si può trovare una mappa online con la posizione di questi ATM in tutto il mondo su https://coinatmradar.com.
+Si può trovare una mappa online con la posizione di questi ATM in tutto il mondo su coinatmradar.com.
 
 
 \paragraph {Mining}
@@ -251,27 +262,32 @@ Come spiegato in precedenza, il processo di mining porta i miners a guadagnare c
 Nonostante i costi dell'equipaggiamento di mining e dell'elettricità utilizzata, i miner ricavano comunque un profitto dai coin che guadagnano.
 Ovvio che per una persona inesperta il mining è fuori portata, ma è certamente un modo valido per ottenere dei coin
 
-\paragraph {Vendere roba}
+
+\paragraph {Forma di pagamento}
 
 
-Se si vende qualcosa su internet o nella vita reale si può comunicare ai clienti che è preferibile accettare pagamenti in Bitcoin.
+Al posto di soldi in contanti o cartacredito?? è possibile accettare Bitcoin come forma di pagamento per merce o servizi offerti in vita reale e online.
+Esistono infatti diversi sistemi automatizzati che consentono ai mercanti di accettare criptovalute velocemente e in sicurezza.
+Per esempio, 
 
 
-\subsection {Spendere Bitcoin}
+\subsection {Trasferire Bitcoin}
 
 
-Il Bitcoin è una valuta relativamente nuova, nata neanche 10 anni fa, e il fatto che utilizza una tecnologia sconosiuta prima d'ora, limita l'adozione da parte di mercanti e servizi.
-Nonostante ciò, sempre più negozi online e nella vita reale stanno cominciando ad accettare criptovalute come forma di pagamento. Esiste una pagina (FARE LINK DIDASCALIA IN BASSSO https://99bitcoins.com/who-accepts-bitcoins-payment-companies-stores-take-bitcoins/) con una lista che comprende (ma non è limitata a) luoghi e siti web sui quali si può pagare in bitcoin.
-La lista comprende un numero limitato di attività commerciali, ma in realtà sono molti di più.
-Tra i più rilevanti ci sono: ELENCO PUNTATO
-Oltre a questi servizi, è anche possibile acquistare merce su siti che non accettano ancora criptovalute.
-Bitcoinsuperstore.us, coinbought.com
+Una volta che i bitcoin sono arrivati al nostro indirizzo, è possibile interagirci con un apposito "portafoglio". Un portafoglio può esser bla bla
+Tutti i portafogli degni di essere chiamati tali hanno la funzione di inviare bitcoin ad altri indirizzi, e per riceverli lol
+Un tipico trasferimento da persona a persona avviene con gli smartphone.
+Il ricevente va nella sezione "ricevi" della propria app, che gli mostrerà un codice QR che decifrato corrisponde all'indirizzo di pagamento.
+Il pagatore va nella sezione (che brutto) "paga", e tramite la fotocamera del proprio telefono scansiona il codice QR del ricevente.
+Una volta scansionato, l'app del pagatore chiederà la quantità di bitcoin da inviare. Una volta stabilito, il pagamento avverrà e il ricevente rieceve si dai.
+\\
+Per i pagamenti online è possibile anche utilizzare un computer. Il processo è lo stesso, l'unica differenza è che anziché scansionare un codice QR, colui o colei che effettua il pagamento dovrà semplicemente copiare e incollare l'indirizzo nel campo di pagamento del portafoglio.
 
 
 \section {Non solo Bitcoin}
 
 
-Esistono numerosissime criptovalute. Il sito https://coinmarketcap.com ne lista ben 1640. Ritengo indispensabile spendere almeno qualche pagina per parlare delle valute più rilevanti, perchè a common misconception is that Bitcoin is the only cryptocurrency. This is simply not true. Tutte le criptovalute che non sono Bitcoin prendono il nome di Altcoin (alternative coin).
+Esistono numerosissime criptovalute. Il sito coinmarketcap.com ne lista ben 1640. Ritengo indispensabile spendere almeno qualche pagina per parlare delle valute più rilevanti, perchè a common misconception is that Bitcoin is the only cryptocurrency. This is simply not true. Tutte le criptovalute che non sono Bitcoin prendono il nome di Altcoin (alternative coin).
 
 
 \subsection {Ethereum}
@@ -304,12 +320,11 @@ https://www.coindesk.com/information/comparing-litecoin-bitcoin/ adesso no sbatt
 Monero (XMR) è un altcoin creato in Aprile 2014 che ha come prima preoccupazione quella della privacy.
 Monero è l'unica criptovaluta che è completamente intracciabile. Come abbiamo visto con il Bitcoin, nella blockchain possiamo trovare informazioni su tutto quello che avviene: il bilancio di qualunque indirizzo, chi manda quanto a chi.
 Con Monero tutto questo non è possibile. Mentre ha una blockchain come tutti gli altri coin, non è possibile vedere le transazioni che avvengono dall'uno all'altro indirizzo, e non è nemmeno possibile visualizzare il saldo.
-Sul sito https://moneroblocks.info, infatti, viene mostrato il seguente messaggio se si cercano informazioni legate a un indirizzo:
 
 \vspace {0.5cm}
 \begin {figure}[h]
 \includegraphics [width = 10cm] {media/monero.png}
-\caption {ecco che succede}
+\caption {Sul sito moneroblocks.info viene mostrato il seguente messaggio se si cercano informazioni legate a un indirizzo}
 \end {figure}
 \vspace {0.5cm}
 
@@ -321,7 +336,12 @@ Monero ha tuttavia dei limiti e non si può considerare come una valuta "perfett
 \subsection {Nano}
 
 
-BEST COIN
+Inizialmente chiamata RaiBlocks, Nano è una criptovaluta creata nel da.
+È veramente interessante sotto il punto di vista tecnico perché è la prima che usa la tecnologia \textit{Block Lattice} (BLOK LAH-DES): in sostanza, anzichè dipendere da una singola blockchain come fanno tutte le altre valute, ogni singolo indirizzo \emph{è} una blockchain a sè/se/sé stante.
+Questa tecnologia permette di effettuare transazioni estremamente veloci rispetto a quelle del Bitcoin (che impiegano in media 20 minuti), con una durata inferiore ai 2 secondi, talvolta letteralmente istantanee.
+Non è l'unico vantaggio. Ho spiegato in 1.1/2? che ad ogni transazione di Bitcoin è necessario pagare una piccola tassa di conferma che varia da un centesimo a un'Euro a seconda di quanto i blocchi sono "intasati" di transazioni.
+La \textit{Block Lattice} , poichè...SPIEGARE, rende tutte le transazioni di Nano completamente gratuite.
+Nano inoltre non richiede mining perché... reddit? ricerca?
 
 
 \subsection {Ripple}
@@ -370,13 +390,18 @@ Ver possiede anche l'account twitter @bitcoin, che svolge le stesse opere di pro
 \section {Crypto oggi}
 
 
-si sta usando un po', blabla
+In questa sezione andrò a parlare dell'impatto del Bitcoin nella società di oggi
 
 
 \subsection {Adozione}
 
 
-Sempre più gente lo usa, blahhhhhh negozi
+Il Bitcoin è una valuta relativamente nuova nata neanche 10 anni fa, e il fatto che utilizza una tecnologia sconosiuta prima d'ora, limita l'adozione da parte di mercanti e imprese.
+Nonostante ciò, sempre più negozi online e nella vita reale stanno cominciando ad accettare criptovalute come forma di pagamento. Esiste una pagina (FARE LINK DIDASCALIA IN BASSSO https://99bitcoins.com/who-accepts-bitcoins-payment-companies-stores-take-bitcoins/) con una lista che comprende (ma non è limitata a) luoghi e siti web sui quali si può pagare in bitcoin.
+La lista comprende un numero limitato di attività commerciali, ma in realtà sono molti di più.
+Tra i più rilevanti ci sono: ELENCO PUNTATO
+Oltre a questi servizi, è anche possibile acquistare merce su siti che non accettano ancora criptovalute.
+Bitcoinsuperstore.us, coinbought.com
 
 
 \paragraph {Elizavetovska: il villaggio in Ucraina in cui tutti utilizzano criptovalute}
@@ -388,25 +413,34 @@ Sempre più gente lo usa, blahhhhhh negozi
 \subsection {Il boom del 2017: cause e conseguenze}
 
 
-MOOON BOIS LAMBO LETS GO
-
-
-\subsubsection {La ricorrenza dei "crash" dei mercati}
-
+A partire da Settembre 2017 il prezzo del Bitcoin ha subito un'esponenziale crescita, passando dai \euro{} del X Settembre fino a raggiungere un picco di \euro{17.230} il 12 Dicembre.
 
 Il prezzo del Bitcoin, ma anche della stragrande maggioranza delle altre criptovalute è precipitato nel Dicembre del 2017, andando dall'ATH (\textit{all time high}) del 12 Dicembre di \euro{17.230} ai \euro{6000} del 5 Febbraio 2018. Un calo di più del 65\%!
 
+
+\paragraph {L'analogia con la crisi del '29}
+
+
+Il X XX 1929 è un giorno conosciuto per essere il giorno in cui la banca di Wall Street crollò a seguito di
+
+
+\paragraph {La ricorrenza dei "crash" dei mercati}
+
+
 \vspace {0.5cm}
-\includegraphics [width = 10cm] {media/crash.jpg}
+\begin {figure}[h]
+\includegraphics [width = 10cm] {media/crash2.png}
+\caption {Confronto tra il crollo del prezzo del Bitcoin nel 2013 e nel 2017}
+\end {figure}
 \vspace {0.5cm}
-\\
+
 E quindi sì.
 
 
 \subsection {Controversie}
 
 
-Il Bitcoin e le criptovalute in generale sono frequentemente soggetto di controversie. La nuova tecnologia della blockchain è criticata da molti imprenditori, e numerosissime truffe girano intorno all'anonimità della valuta (wut lol)
+Il Bitcoin e le criptovalute in generale sono frequentemente soggetto di controversie. La nuova tecnologia della blockchain è criticata da molti imprenditori, e numerosissime truffe girano intorno alla parziale anonimità della valuta.
 
 
 \subsubsection {Mt. Gox}
@@ -427,9 +461,15 @@ Il nome Ponzi deriva da Charles Ponzi, un italo-americano che si arricchì notev
 Oggi tutti coloro coinvolti nel pubblicizzare Bitconnect, soprattutto Youtuber (spiegare chi sono?) sono sotto investigazione
 
 
-\section {Il futuro delle criprtovalute}
+\subsection {Il futuro delle criprtovalute}
 
 
+Molti ritengono che quella del Bitcoin sia solo una moda passeggera, simile a quella dei film in 3D al cinema e Google Glass, che ha avuto il suo picco nell'inverno del 2017 e che è destinato a sparire.
+Personalmente sono ottimista nello sviluppo delle criptovalute.
+Osservando l'andamento dei grafici, pur avendo subito gravi crolli in brevi intervalli di tempo, il prezzo delle valute è in una regolare crescita.
+Il fatto che se ne parli sempre più nei media (i media parlino piu), sebbene spesso in negativo, rende la gente comune consapevole dell'esistenza di questa tecnologia, e fra tanti che la ignorano sono sicuro che qualcuno come me si interessi.
+La natura deflazionaria della valuta aiuta sicuramente il prezzo: abbiamo visto che non possono esistere più di 21 milioni di bitcoin, e ciò rende un'inflazione del prezzo tecnicamente impossibile. paragone all'inizio btcoro?
+Tutte le inflazioni sono dovute a un'eccessiva stampa di soldi cartacei, cosa che è impossibile nell'ambito delle criptovalute.
 Come si può vedere dalla figura (se riesco a ritrovarla), nel 2018 ci troviamo alla primissima fase dell'adozione di questa nuova tecnologia.
 
 
