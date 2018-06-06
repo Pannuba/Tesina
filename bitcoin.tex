@@ -9,21 +9,33 @@
 \renewcommand {\contentsname} {Indice}
 \renewcommand {\figurename} {Fig.}
 
-\title {{\Huge Bitcoin, blockchain, crypto}}
-\author {Carlomaria Occhipinti\\Liceo Scientifico Arturo Tosi}
-\date {Giugno 2018}
+%\title {{\Huge Bitcoin, blockchain, crypto}}
+%\author {Carlomaria Occhipinti\\Liceo Scientifico Arturo Tosi}
+%\date {Giugno 2018}
 
 
 \begin {document}
 
 
-\maketitle
+%\maketitle
 
-\vspace {2.5cm}
+%\vspace {2.5cm}
 
-\begin {center}
-   \includegraphics [width = 5.5cm] {media/logo.png}
-\end {center}
+\begin {titlepage}
+
+\centering
+{\LARGE Liceo Scientifico Arturo Tosi \par}
+\vspace{1cm}
+{\Large Tesina di Maturità\par}
+\vspace{1.5cm}
+{\huge Bitcoin, Blockchain, Crypto\par}
+\vspace{2cm}
+{\Large Carlomaria Occhipinti 5F\par}
+\vfill
+\includegraphics [width = 5.5cm] {media/logo.png}
+\vfill
+
+\end {titlepage}
 
 \pagenumbering {gobble}
 
@@ -69,7 +81,9 @@ La rete registra? le transazioni hashing? them in una catena ongoing di hashbase
 La catena più lunga non serve solo come prova per la sequenza di eventi testimoniati/accaduti, ma la prova che è venuta/derivata dalla pool più grande di potenza cpu. Finché la maggioranza del potere cpu è controllato da nodi? che non stanno cooperando per attaccare la rete, genereranno la cantena più lunga e supereranno gli attaccatori.
 La rete stessa richiede una struttura minimale.
 I messaggi sono trasmessi su una base del miglior sforzo, e i nodi possono lasciare e rientrare la rete a voglia, accettando la più lunga pow catena come prova di cos'è avvenuto mentre erano via.
+
 \end {quote}
+
 
 \section {Blockchain: cos'è e come funziona}
 
@@ -124,7 +138,7 @@ Ho già scritto che i miner hanno un prezzo notevole, infatti un Antminer S9 cos
 Prima di cominciare a guadagnare un profitto nel mining, bisogna calcolare il tempo impiegato per coprire il costo dell'attrezzatura di mining.
 Questo tempo si chiama ROI (\textit{return on investment}), e nel caso della situazione presa come esempio, ovvero quella di guadagnare \euro{4} al giorno con un S9, il ROI è pari a 179 giorni ($717 : 4 = 179.25$).
 Questo è quanto vale per \emph{una} singola unità di mining che produce "solo" 0.00082 BTC al giorno, una quantità minuscola rispetto ai \textasciitilde 17.000.000 che sono stati minati fino ad oggi.
-L'\textit{hashing power} dell'intero network del Bitcoin, la somma del lavoro dei miners in tutto il mondo espressa in H/s, è di oltre 30.000 TH/s, e consuma un a quantità di elettricità pari a 60 TWh, ovvero 60.000 miliardi di Watt consumati all'ora.
+L'\textit{hashing power} dell'intero network del Bitcoin, la somma del lavoro dei miners in tutto il mondo espressa in H/s, è di oltre 30.000 TH/s, e consuma un a quantità di elettricità pari a 60 TWh, ovvero 60.000 miliardi di Joule consumati all'ora.
 Questo consumo di elettricità corrisponde a (piu di 0.13, perche dati dic 2017, cercare nuovi) dell'utilizzo di elettricità in tutto il mondo.
 ... ... ... (citazione a powercompare.co.uk)
 
@@ -185,8 +199,9 @@ P2SH significa "Pay 2 Script Hash",
 \paragraph {bech32 SegWit}
 
 
-I piu veloci e belli ma poco ompatibili
-
+Gli indirizzi Bitcoin bech32 implementano SegWit al 100\%, e di conseguenza sono quelli con le tasse di transazione/i più inferiori.
+Questo tipo di indirizzo è stato creato nel XXXX, ed essendo sotto un punto di vista tecnico molto diverso dagli indirizzi tradizionali (che cominciano con 1 e 3), non sono supportati da una moltitudine di siti di compravendita e da portafogli, (di cui parlerò in seguito).
+Gli indirizzi bech32, infatti, hanno il prefisso "bc1", e tutt'oggi 
 
 \subsubsection {Wallets}
 
@@ -287,7 +302,7 @@ Per i pagamenti online è possibile anche utilizzare un computer. Il processo è
 \section {Non solo Bitcoin}
 
 
-Esistono numerosissime criptovalute. Il sito coinmarketcap.com ne lista ben 1640. Ritengo indispensabile spendere almeno qualche pagina per parlare delle valute più rilevanti, perchè a common misconception is that Bitcoin is the only cryptocurrency. This is simply not true. Tutte le criptovalute che non sono Bitcoin prendono il nome di Altcoin (alternative coin).
+Esistono numerosissime criptovalute. Il sito coinmarketcap.com ne lista ben 1640. Ritengo indispensabile spendere almeno qualche pagina per parlare delle valute più rilevanti, perchè una diffusa convinzione, per quanto falsa, è che il Bitcoin è l'unica criptovaluta, che è semplicemente invero. Tutte le criptovalute che non sono Bitcoin prendono il nome di Altcoin (alternative coin).
 
 
 \subsection {Ethereum}
@@ -302,6 +317,15 @@ https://www.ethereum.org/ether
 https://theethereum.wiki/w/index.php/MainUNDERSCOREPage
 
 https://www.coindesk.com/information/ethereum-smart-contracts-work/
+
+
+\paragraph {Mining e il crollo del mercato di schede grafiche}
+
+
+In precedenza mi sono concentrato sul processo di mining del Bitcoin, ma come quasi tutte le valute (nano xk no mining?) anche Ethereum funziona grazie al mining.
+La principale differenza tra il mining di Bitcoin e di Ethereum è che Ethereum non richiede gli ASIC, ma si può effettuare con l'uso di schede grafiche per computer.
+Questo rende Ethereum "minabile" da chiunque ha/avesse un computer, e di conseguenza i miner di ETH sono per quantità molti più dei miner "tradizionali".
+Il boom del mining di ETH, come quello del prezzo di tutte le criptovalute, avvenne tra la fine del 2017 e l'inizio del 2018.
 
 
 \subsection {Litecoin}
@@ -397,11 +421,15 @@ In questa sezione andrò a parlare dell'impatto del Bitcoin nella società di og
 
 
 Il Bitcoin è una valuta relativamente nuova nata neanche 10 anni fa, e il fatto che utilizza una tecnologia sconosiuta prima d'ora, limita l'adozione da parte di mercanti e imprese.
-Nonostante ciò, sempre più negozi online e nella vita reale stanno cominciando ad accettare criptovalute come forma di pagamento. Esiste una pagina (FARE LINK DIDASCALIA IN BASSSO https://99bitcoins.com/who-accepts-bitcoins-payment-companies-stores-take-bitcoins/) con una lista che comprende (ma non è limitata a) luoghi e siti web sui quali si può pagare in bitcoin.
-La lista comprende un numero limitato di attività commerciali, ma in realtà sono molti di più.
-Tra i più rilevanti ci sono: ELENCO PUNTATO
-Oltre a questi servizi, è anche possibile acquistare merce su siti che non accettano ancora criptovalute.
-Bitcoinsuperstore.us, coinbought.com
+Nonostante ciò, sempre più negozi online e nella vita reale stanno cominciando ad accettare criptovalute come forma di pagamento,\footnote{https://99bitcoins.com/who-accepts-bitcoins-payment-companies-stores-take-bitcoins/}, tra cui:
+Questi 
+Oltre a questi servizi, è anche possibile acquistare merce su siti che non accettano ancora criptovalute. bitcoinsuperstore.us e coinbought.com
+
+
+\paragraph {Rovereto: città nelle Dolomiti di 40.000 abitanti dove quasi tutti accettano Bitcoin}
+
+
+Sì, certo, sicuro.
 
 
 \paragraph {Elizavetovska: il villaggio in Ucraina in cui tutti utilizzano criptovalute}
@@ -410,18 +438,26 @@ Bitcoinsuperstore.us, coinbought.com
 è bellus
 
 
-\subsection {Il boom del 2017: cause e conseguenze}
+\subsection {La bolla del 2017: cause e conseguenze}
 
 
-A partire da Settembre 2017 il prezzo del Bitcoin ha subito un'esponenziale crescita, passando dai \euro{} del X Settembre fino a raggiungere un picco di \euro{17.230} il 12 Dicembre.
-
+A partire da Settembre 2017 il prezzo del Bitcoin ha subito un'esponenziale crescita, passando dai \euro{3000} del 16 Settembre fino a raggiungere un picco di \euro{17.230} il 12 Dicembre.
+Le cose(?) che hanno causato questo boom non sono certe, ma
 Il prezzo del Bitcoin, ma anche della stragrande maggioranza delle altre criptovalute è precipitato nel Dicembre del 2017, andando dall'ATH (\textit{all time high}) del 12 Dicembre di \euro{17.230} ai \euro{6000} del 5 Febbraio 2018. Un calo di più del 65\%!
+futures?
 
 
 \paragraph {L'analogia con la crisi del '29}
 
 
-Il X XX 1929 è un giorno conosciuto per essere il giorno in cui la banca di Wall Street crollò a seguito di
+Il 24 Ottobre del 1929 è il giorno che marcò(?) il crollo della Borsa di Wall Street, che ebbe come conseguenza il fallimento di molte imprese, una riduzione della domanda da parte di altri stati, e una forte crescita della disoccupazione, raggiungendo i 13 milioni di disoccupati nel 1932.
+Tra le principali cause di questa crisi ci sono la sovrapproduzione di merce. detto così sembra fatto da un bambino delle elementari
+Gli Stati Uniti erano grandi fornitori di merce e dané all'Europa, e il progressivo aumento della domanda ha portato gli USA ad incrementare la produzione industriale, grazie anche alla diffusione del Taylorismo () e della generale innovazione tecnologica().
+A partire dal 1926, però, l'Europa e poi il Giappone ridussero notevolmente la domanda agli Stati Uniti perché anche loro(?) beneficiarono del progresso tecnologico che ha avuto inizio in America(?).
+Questo portò a un'eccessiva produzione di merce che non venne mai venduta all'Europa perché non richiesta.
+Un'altra enorme causa di questa crisi fu l'andamento dell'economia mondiale(?): era puramente un'economia di carta, basata su opinioni e speculazioni.
+Gli scambi di azioni e gli investimenti di imprenditori verso le diverse aziende era una scommessa su quale attività avrebbe fatto successo, facendo ricavare profitti a chi avesse investito.
+Questo è estremamente simile a quello che è successo al Bitcoin perché sì.
 
 
 \paragraph {La ricorrenza dei "crash" dei mercati}
@@ -443,6 +479,12 @@ E quindi sì.
 Il Bitcoin e le criptovalute in generale sono frequentemente soggetto di controversie. La nuova tecnologia della blockchain è criticata da molti imprenditori, e numerosissime truffe girano intorno alla parziale anonimità della valuta.
 
 
+\subsubsection {Il ban del Bitcoin in certi stati}
+
+
+boh
+
+
 \subsubsection {Mt. Gox}
 
 
@@ -455,13 +497,13 @@ Ai tempi il Bitcoin aveva un valore ben più basso del \textasciitilde 9000 di o
 
 Bitconnect è un altcoin con un tasso di interesse variabile (dal 0.1\% all'1\%) che aumentava quotidianamente i profitti di chiunque ne possedesse.
 Non era ben chiaro chi fosse il creatore, e molti erano già dubiosi del claim di arricchire magicamente chiunque ne comprasse.
-Tra il 14 e il 17 Gennaio 2018 il prezzo di Bitconnect è crollato da (farecalcolo\%)usd320 a 35usd, arrivando ai 0.65usd di oggi. Si è scoperto che l'intero progetto Bitconnect non era altro che un' "exit scam", una truffa in cui i truffatori spariscono improvvisamente, lasciando gli investitori a mani vuote.
+Tra il 14 e il 17 Gennaio 2018 il prezzo di Bitconnect è crollato da \euro{273} a \euro{30}, arrivando agli \euro{0.55} di oggi. Si è scoperto che l'intero progetto Bitconnect non era altro che un' "exit scam", una truffa in cui i truffatori spariscono improvvisamente, lasciando gli investitori a mani vuote.
 In particolare Bitconenct è stato uno schema Ponzi, un tipo di truffa in cui il truffatore promette guadagni a chiunque si indebitasse con lui, per poi sparire.
-Il nome Ponzi deriva da Charles Ponzi, un italo-americano che si arricchì notevolmetne negli anni '30(??????) compiendo ripetutamente questo tipo di truffa.
+Il nome Ponzi deriva da Charles Ponzi, un italo-americano che si arricchì notevolmente negli anni '30(??????) compiendo ripetutamente questo tipo di truffa.
 Oggi tutti coloro coinvolti nel pubblicizzare Bitconnect, soprattutto Youtuber (spiegare chi sono?) sono sotto investigazione
 
 
-\subsection {Il futuro delle criprtovalute}
+\subsection {Il futuro delle criptovalute}
 
 
 Molti ritengono che quella del Bitcoin sia solo una moda passeggera, simile a quella dei film in 3D al cinema e Google Glass, che ha avuto il suo picco nell'inverno del 2017 e che è destinato a sparire.
@@ -470,7 +512,14 @@ Osservando l'andamento dei grafici, pur avendo subito gravi crolli in brevi inte
 Il fatto che se ne parli sempre più nei media (i media parlino piu), sebbene spesso in negativo, rende la gente comune consapevole dell'esistenza di questa tecnologia, e fra tanti che la ignorano sono sicuro che qualcuno come me si interessi.
 La natura deflazionaria della valuta aiuta sicuramente il prezzo: abbiamo visto che non possono esistere più di 21 milioni di bitcoin, e ciò rende un'inflazione del prezzo tecnicamente impossibile. paragone all'inizio btcoro?
 Tutte le inflazioni sono dovute a un'eccessiva stampa di soldi cartacei, cosa che è impossibile nell'ambito delle criptovalute.
-Come si può vedere dalla figura (se riesco a ritrovarla), nel 2018 ci troviamo alla primissima fase dell'adozione di questa nuova tecnologia.
+
+\vspace {0.5cm}
+\begin {figure}[h]
+\includegraphics [width = 10cm] {media/adoption.png}
+\caption {Adozione del Bitcoin paragonata ad altre tecnologie}
+\end {figure}
+\vspace {0.5cm}
+
 
 
 \end {document}
