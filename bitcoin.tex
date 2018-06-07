@@ -7,19 +7,11 @@
 \usepackage[official]{eurosym}
 
 \renewcommand {\contentsname} {Indice}
-%\renewcommand {\figurename} {Fig.}
-
-%\title {{\Huge Bitcoin, blockchain, crypto}}
-%\author {Carlomaria Occhipinti\\Liceo Scientifico Arturo Tosi}          I PROBLEMI DEL BITCOIN: PARZIALE CENTRALIZZAZIONE, SMALLBLOX, E POI PARAGRAFO SOLUZIONI
-%\date {Giugno 2018}
+\renewcommand {\figurename} {Fig.}
+\graphicspath { {./media/} }
 
 
 \begin {document}
-
-
-%\maketitle
-
-%\vspace {2.5cm}
 
 \begin {titlepage}
 
@@ -32,7 +24,7 @@
 \vspace{2cm}
 {\Large Carlomaria Occhipinti 5F\par}
 \vfill
-\includegraphics [width = 5.5cm] {media/logo.png}
+\includegraphics [width = 5.5cm] {logo.png}
 \vfill
 
 \end {titlepage}
@@ -42,7 +34,6 @@
 \newpage
 
 \tableofcontents
-
 \pagenumbering {arabic}
 
 \newpage
@@ -55,7 +46,7 @@
 L'economia era in distruzione. Banche, borse e stati sull'orlo del crollo. Panico.
 C'era il bisogno di una soluzione a tutto questo. Un sistema monetario che fosse immune a tutto ciò che colpì le valute crollate. Il Bitcoin, la prima criptovaluta del mondo creata a cavallo tra il 2008 e il 2009 fu la risposta a tutti questi problemi economici legati alla crisi.
 Satoshi Nakamoto è conosciuto come l'ideatore e l'iniziale sviluppatore del Bitcoin. Nessuno sa chi sia, dove abiti, se è un singolo o un gruppo di persone. Sappiamo solo che nei primi anni del Bitcoin era attivo sul forum bitcointalk.org fino al 13 Dicembre 2010.
-Satoshi scrisse il whitepaper(?) del Bitcoin, un documento contenente la sua ideologia di moneta virtuale. Il documento è altamente tecnico e richiede un'elevata conoscenza di informatica e matematica, ma mi sembra doveroso citare il primo paragrafo \footnote{http://bitcoin.org/bitcoin.pdf}:\\
+Satoshi scrisse il whitepaper\footnote{"Libro bianco", è Nel marketing la parola può indicare anche un documento redatto da un professionista esperto di una materia che offre informazioni di qualità e di interesse ad un pubblico selezionato di utenti.} del Bitcoin contenente la sua ideologia di moneta virtuale. Il documento è altamente tecnico e richiede un'elevata conoscenza di informatica e matematica, ma mi sembra doveroso citare il primo paragrafo \footnote{http://bitcoin.org/bitcoin.pdf}:\\
 
 \begin {quote}
 
@@ -69,7 +60,7 @@ The network itself requires minimal structure.
 Messages are broadcast on a best effort basis, and nodes can leave and rejoin the network at will, accepting the longest proof-of-work chain as proof of what happened while they were gone.
 
 \end {quote}
-
+%
 Tradotto in italiano:
 
 \begin {quote}
@@ -90,11 +81,22 @@ I messaggi sono trasmessi su una base del miglior sforzo, e i nodi possono lasci
 
 La tecnologia rivoluzionaria utilizzata dal Bitcoin e da tutte le altre criptovalute è chiamata Blockchain.
 Come suggerisce il nome, "blockchain" indica una catena di blocchi.
-Ciascun blocco contiene informazioni su \emph{alcune} transazioni di bitcoin che sono state effettuate di recente. Entrerò dopo in dettaglio su cosa intendo per "di recente" e "alcune".
+
+\vspace {0.5cm}
+\begin {figure}[h]
+\includegraphics [width = 10cm] {blockchain2.png}
+\caption {Schema semplificato della blockchain}
+\end {figure}
+\vspace {0.5cm}
+%
+Ciascun blocco contiene informazioni sulle transazioni di bitcoin che sono state effettuate di recente.
+Il blocco può essere visto come un contenitore, un hard disk grande 1MB che contiene un determinato numero di transazioni.
+Le transazioni hanno un determinato peso espresso per comodità in kilobyte minerpreferisconoleggg
 Tutte le transazioni di BTC sono permanentemente, irreversibilmente (nella maggior parte dei casi, V X.X) memorizzate nella Blockchain.
-Su un qualunque sito avente la funzione di "block explorer" posso cercare informazioni su ciascun indirizzo Bitcoin (per ora pensiamolo come se fosse un codice IBAN bancario): posso vedere quanti Bitcoin quell'indirizzo possiede, da quali indirizzi ha ricevuto quanti bitcoin, e a chi ne ha mandati.
+Su un qualunque sito avente la funzione di "block explorer" posso cercare informazioni su ciascun indirizzo Bitcoin (per ora pensiamolo come se fosse un codice IBAN): posso vedere quanti Bitcoin quell'indirizzo possiede, da quali indirizzi ha ricevuto quanti bitcoin, e a chi ne ha mandati.
 Sotto un punto di vista pratico, la blockchain del Bitcoin è un file di dimensioni oggi pari a circa 170 Gigabyte.
-La dimensione è così elevata perché in quel file sono contenute le informazioni di oltre 500.000 blocchi scoperti a partire dal \textit{genesis block}, trovato il 3 Gennaio 2009. PARLARE DEL FUNZIONAMENTO SPECIFICO DI BLOCCO + FOTO
+DOVELOMETTO?L'aspetto decentralizzato del Bitcoin gira intorno al fatto che chiunque può scaricare la blockchain e far sì che si aggiorni in tempo reale: ciò significa che finché esiste in tutto il mondo \emph{almeno} un computer con la blockchain attiva (quando definizione full node?) l'intera rete del Bitcoin e il registro delle transazioni rimangono autentiche e inviolate.
+La dimensione è così elevata perché in quel file sono contenute le informazioni di oltre 520.000 blocchi scoperti a partire dal primo, chiamato \textit{genesis block}, trovato il 3 Gennaio 2009.
 "Scoperti"? "Trovati"? In che senso? Da dove vengono questi blocchi? Mi tocca introdurre il concetto di \textit{mining}.
 
 
@@ -106,29 +108,28 @@ I bitcoin sono, per esempio, l'oro nella roccia.
 Per trovare l'oro bisogna scavare nella roccia della montagna utilizzando speciali apparecchiature quali ruspe, trapani, trivelle.
 I blocchi, per poter essere "scoperti" vengono "minati" dai cosiddetti miner ASIC (\textit{application specific integrated circuit}), dei computer specializzati a risolvere un certo tipo di algoritmo.
 Algoritmo, perchè il processo di mining dipende interamente dalla matematica.
-Questa è quella che nel WHITEPAPER Satoshi definisce come \textit{proof of work}.
+Questa è quella che nel whitepaper Satoshi definisce come \textit{proof of work}.
 
 
 \paragraph {Proof of work}
 
 
-\textit {Proof of work}, tradotto "prova di lavoro" o "di funzionamento" è il sistema che rende il Bitcoin una rete sicura... difficile... irreversibile
+Tradotto "prova di lavoro" o "di funzionamento" è il sistema che rende il Bitcoin una rete sicura... difficile... irreversibile
 
-
-L'obiettivo del mining è quello di indovinare una "parola chiave", chiamata \textit{hash}, una serie di numeri e lettere che serve per risolvere un blocco.
+L'obiettivo del mining è quello di indovinare una "parola chiave", chiamata \textit{hash}, una serie di numeri e lettere che serve per trovare un blocco.
 Il Bitcoin usa l'algoritmo SHA-256, quindi le hash indovinate dai miner sono lunghe 64 caratteri.
 Questo perché come suggerisce il nome, 256 indica il numero di \textit{bits} che costituiscono la stringa.
 Il \textit{bit} è la più piccola unità di misura per quanto riguarda la dimensione di file nel campo dell'informatica, e 8 bit corrispondono a 1 byte.
 Nel sistema numerico esadecimale un carattere "pesa" 8 bit, quindi $256 : 8 = 64$.
-Una hash facente parte dell'algoritmo SHA-256 deve rispettare determinati parametri per essere considerata tale, di cui non scriverò per evitare di complicare ulteriormente la situazione.
+Una hash facente parte dell'algoritmo SHA-256 non può essere una qualunque combinazione di 64 numeri e lettere, ma deve rispettare determinati parametri per essere considerata tale, di cui non scriverò per evitare di complicare ulteriormente la situazione.
 In succinto, per trovare il numero di hash totali che si possono ottenere bisogna effettuare il  calcolo $2^{256}$, che corrisponde a circa $1,158 \times 10^{77}$ possibili hash da indovinare.
 %target, difficulty, 0000000000
-Le hash che portano alla scoperta di un singolo/specifico blocco, però, possono essere più di una.
+Le hash che portano alla scoperta di uno specifico blocco, però, possono essere più di una.
 
 \paragraph {Difficoltà di mining}
 
-Per trovare un blocco è necessario che i miner trovino un'\textit{hash} che sia inferiore al cosiddetto \textit{target}. Il target è come il "confine" sotto al quale tutte le hash sono accettabili.
-Il \textit{nonce} sono tanti zeri.
+Per trovare un blocco è necessario che i miners trovino un'\textit{hash} che sia inferiore al cosiddetto \textit{target}. Il target è come il "confine" sotto al quale tutte le hash sono accettabili.
+Il \textit{nonce} sono tanti zeri. %blocco intorno a 10min, difficolta scala a seconda di...... sopra manca halving
 Quando il nonce aumenta di ha un'aumento di difficoltà nel mining. 
 I miner di Bitcoin che si usano oggi lavorano a velocità comprese tra i \textasciitilde 10 e i \textasciitilde 14 TH/s (tera-hash al secondo) in base al loro consumo energetico, ovvero a oltre dieci trilioni di hash trovate in un secondo.
 Questi apparecchi sono molto costosi (quelli di ultima generazione superano i \euro{700} per unità) e utilizzano un'elevata quantità di energia elettrica per funzionare.
@@ -141,30 +142,32 @@ Per questo esistono le \textit{pool} di mining.
 \paragraph {Mining pools}
 
 
-Le \textit{pool} sono dei siti in cui più miners uniscono gli sforzi per trovare un blocco.
+Le \textit{pool} sono dei siti in cui più miners\footnote{Con "miner" ci si può riferire sia ai computer che compiono il lavoro, sia alle persone che li operano e che guadagnano bitcoin} uniscono gli sforzi per trovare un blocco.
 Nella configurazione del software che fa compiere il mining agli ASIC bisogna inserire l'indirizzo web della \textit{pool} per la quale si vuole lavorare, e il miner comincierà ad inviare le hash che calcola alla pool.
 Una volta trovato il blocco, la ricompensa di bitcoin si spartisce fra tutti i miner, in base a quanto ciascuno si è impegnato per trovarla.
 Esistono diversi sistemi per spartire il "bottino". Tra i più diffusi troviamo:
 
 \begin{itemize}
-\item PPLNS:
+\item PPLNS: \textit{Pay Per Last N Shares}
 \item PPS:
 \item Score:
 \item FPPS:
 \end{itemize}
-
+%
 È possibile controllare il lavoro dei miners tramite un'interfaccia remota. Su tutti i siti delle \textit{pool} è possibile inserire in un campo di ricerca l'indirizzo Bitcoin verso cui i bitcoin ricavati saranno inviati.
 
+\paragraph {Tassa di transazione}
+
 La scoperta dei blocchi non è l'unico metodo con cui coloro che praticano mining guadagnano Bitcoin.
-Ogni transazione di Bitcoin prevede il pagamento di una piccola quota, solitamente compresa tra \euro{0.01} e \euro{1}, ma in DETERMINATI casi può salire a livelli pericolosi (spiego dopo).
+Ogni transazione di Bitcoin prevede il pagamento di una piccola quota, solitamente compresa tra \euro{0.01} e \euro{1}.
 Questa quota, chiamata \textit{miner fee} serve per incoraggiare i miner a selezionare la nostra transazione da includere nel blocco in fase di ricerca.
+Questa tassa/commissione è espressa in sat/byte, satoshi\footnote{Un satoshi è l'unità di misura più piccola del bitcoin, e corrisponde a $1 \times 10^{-8}$ BTC} per byte.
+Una tassa più elevata riduce il tempo di conferma della transazione, perché preferita dai miner. Al contrario, una transazione effettuata con una tassa inferiore alla media impiega più tempo ad essere inclusa in un blocco e quindi ad essere processata, perché i miner guadagnano più BTC dalle transazioni più costose.
+Come ho spiegato ciascuna transazione pesa tot kilobyte, quindi, conoscendo il peso in kb della transazione e avendo stabilito il valore della tassa in sat/byte\footnote{Spiegherò come si viene a conoscenza di queste due nel punto X.Y} per scoprire quanto paghiamo effettivamente possiamo ricavare la quantità di BTC dalla proporzione
 
-Torniamo a noi, cosa succede quando il bloSBAGLIATOcco è minato, e si passa a quello successivo?
-Tutte le transazioni effettuate mentreSBAGLIAO i miner erano alla ricerca del nuovo blocco vengono memorizzae nellba vlohack ??
-
-Per questo, una transazione è considerata conclusa quando SPOSTARE IN SEZIONE PRBLEMI si passano almeno 6 blocchi dopo quello in cui è stata iniziata.
-3 perchè.............?? e da qualcANCHEhe parte devo parlare di DIFFICULTY
-è così che funziona laANCHE blockhain bla b la
+$$ nSat : 1 byte = tassa : pesoTx $$
+%
+o semplicemente utilizzando la formula $x tassa = \frac{nSat \times pesoTx}{1 byte}$.
 
 
 \subsubsection {L'uso di elettricità del mining}
@@ -172,11 +175,14 @@ Per questo, una transazione è considerata conclusa quando SPOSTARE IN SEZIONE P
 
 I miner ASIC usano una notevole quantità di energia. Prendendo in considerazione quelli di ultima generazione, il più potente, il Bitmain Antminer S9 (14 TH/s) consuma circa 1300 W, il più debole (4 TH/s) 1000 W.
 In media, un S9 che lavora in una \textit{pool} di mining fa guadagnare circa 0.00082 BTC al giorno, ovvero circa \euro{5.5}.
-Considerando che le \textit{farm} sono locate in paesi in cui l'elettricità costa poco, intorno ai \euro{0.04}/KWh, un S9 costa circa \euro{1} al giorno per funzionare /in elettricità.
+Considerando che le \textit{farm} sono locate in paesi in cui l'elettricità costa poco, intorno ai \euro{0.04}/KWh, un S9 costa circa \euro{1} al giorno in elettricità.
 Un miner, quindi, fa guadagnare almeno \euro{4} al giorno considerando il costo dell'elettricità.
 Ho già scritto che i miner hanno un prezzo notevole, infatti un Antminer S9 costa attualmente \textasciitilde \euro{717}.
 Prima di cominciare a guadagnare un profitto nel mining, bisogna calcolare il tempo impiegato per coprire il costo dell'attrezzatura di mining.
-Questo tempo si chiama ROI (\textit{return on investment}), e nel caso della situazione presa come esempio, ovvero quella di guadagnare \euro{4} al giorno con un S9, il ROI è pari a 179 giorni ($717 : 4 = 179.25$).
+Questo tempo si chiama ROI (\textit{return on investment}), e nel caso della situazione presa come esempio, ovvero quella di guadagnare \euro{4} al giorno con un S9, il ROI è pari a 179 giorni, infatti
+
+$$\textup{\euro{717}} : \frac{\textup{\euro{4}}}{1 giorno} = 179.25 giorni$$
+%
 Questo è quanto vale per \emph{una} singola unità di mining che produce "solo" 0.00082 BTC al giorno, una quantità minuscola rispetto ai \textasciitilde 17.000.000 che sono stati minati fino ad oggi.
 L'\textit{hashing power} dell'intero network del Bitcoin, la somma del lavoro dei miners in tutto il mondo espressa in H/s, è di oltre 30.000 TH/s, e consuma un a quantità di elettricità pari a 60 TWh, ovvero 60.000 miliardi di Joule consumati all'ora.
 Questo consumo di elettricità corrisponde a (piu di 0.13, perche dati dic 2017, cercare nuovi) dell'utilizzo di elettricità in tutto il mondo.
@@ -195,7 +201,9 @@ Ogni indirizzo Bitcoin è composto due chiavi: una \textit{public key} e una \te
 \paragraph {Private key}
 
 
-La \textit{private key} è un codice di x chars che consente a chiunque di avere accesso ai Bitcoin conservati nell'indirizzo.
+La \textit{private key} è un codice che consente a chiunque di avere accesso ai Bitcoin conservati nell'indirizzo.
+Come le \textit{hash} viste in precendenza, le private key sono numeri di 256 \textit{bit}, che nel sistema numerico esadecimale sono codici di 64 caratteri tra numeri e lettere.
+A differenza delle \textit{hash} SHA-256, però, le private key devono essere comprese tara 
 È paragonabile ad una password che dà accesso ad account di qualunque tipo, l'unica differenza è che non è modificabile.
 
 
@@ -211,15 +219,15 @@ In un contesto finanziario è paragonabile al codice IBAN.
 
 Un \textit{seed} è una serie di parole (solitamente 12 o 15) che svolgono una funzione simile a quella della \textit{private key}: se inserite in un software di wallet, ripristinano tutti i bitcoin associati ad esso.
 La differenza con le private keys è che a un seed non corrisponde \emph{una} private key, bensì circa/fino a ... indirizzi, ovvero \textasciitilde X coppie di private e public keys.
-Con il BIP-39 (\textit{Bitcoin Improvement Proposal}) è stato introdotto...?
+Con il BIP-39 \footnote{\textit{Bitcoin Improvement Proposal}} è stato introdotto...?
 Il vantaggio dei seeds rispetto alle singole private keys è il fatto che sono facili da ricordare. Un seed ha un aspetto simile al seguente:
 
 \begin {quote}
 
-witch collapse practice feed shame open despair creek road again ice least
+witch color pride feed shame open despair creek road again ice least
 
 \end {quote}
-
+%
 Il secondo vantaggio è che la presenza di molteplici indirizzi Bitcoin aiuta a tutelare la privacy dello spenditore?
 Come abbiamo visto nella blockchain chiunque può accedere alle informazioni di chiunque (suona male), così per rendere i fondi meno tracciabili si possono usare diversi indirizzi per diverse operazioni... spiegare.
 
@@ -355,7 +363,7 @@ Ovvio che per una persona inesperta il mining è fuori portata, ma è certamente
 \paragraph {Forma di pagamento}
 
 
-Al posto di soldi in contanti o cartacredito?? è possibile accettare Bitcoin come forma di pagamento per merce o servizi offerti in vita reale e online.
+Al posto di soldi in contanti o carta di credito è possibile accettare Bitcoin come forma di pagamento per merce o servizi offerti in vita reale e online.
 Esistono infatti diversi sistemi automatizzati che consentono ai mercanti di accettare criptovalute velocemente e in sicurezza.
 Per esempio, 
 
@@ -421,11 +429,11 @@ Con Monero tutto questo non è possibile. Mentre ha una blockchain come tutti gl
 
 \vspace {0.5cm}
 \begin {figure}[h]
-\includegraphics [width = 10cm] {media/monero.png}
+\includegraphics [width = 10cm] {monero.png}
 \caption {Sul sito moneroblocks.info viene mostrato il seguente messaggio se si cercano informazioni legate a un indirizzo}
 \end {figure}
 \vspace {0.5cm}
-
+%
 Questo rende Monero una valuta estremamente utile a chiunque voglia nascondere i propri fondi.
 Purtroppo, come tutte le tecnologie a favore della privacy, Monero viene utilizzato anche da evasori delle tasse, truffatori e da venditori di merce illegale (V CONTROVERSIE O ADOPTION?).
 Monero ha tuttavia dei limiti e non si può considerare come una valuta "perfetta": non eccelle nel campo "transazioni veloci e cheap????": in confronto al Bitcoin POST SU RMONERO BC NON TROVO INFO.
@@ -454,10 +462,13 @@ Ripple è un altcoin che è brutto perche legato alle banche centralizzato il 90
 La blockchain del Bitcoin "originale" può essere clonata indefinitamente. Chiunque può prendere il codice sorgente del Bitcoin, applicarci qualche modifica e mandarlo "live", rendendo disponibili dei wallet al download e impiegando qualche miner per processare le transazioni del "nuovo" bitcoin.
 
 \vspace {0.5cm}
-\includegraphics [width = 10cm] {media/hard_fork.png}
+\begin {figure}[h]
+\includegraphics [width = 10cm] {hard_fork.png}
+\caption {Hard fork: Non-Upgraded nodes reject the new rules, diverging the chain}
+\end {figure}
 \vspace {0.5cm}
-\\
-Oggi esistono più di 30 "fork" del Bitcoin: Bitcoin Gold, Bitcoin Candy, Bitcoin Private, Bitcoin Unlimited, Bitcoin Super... Persino Bitcoin Pizza e Bitcoin God.
+%
+Oggi esistono più di 30 \textit{fork} del Bitcoin: Bitcoin Gold, Bitcoin Candy, Bitcoin Private, Bitcoin Unlimited, Bitcoin Super... Persino Bitcoin Pizza e Bitcoin God.
 Quasi tutti i fork vengono visti come delle truffe, come valute che non possiedono nulla di nuovo rispetto all'originale Bitcoin, ma viene sempre data attenzione perché chiunque possiede Bitcoin il momento in cui la blockchain è stata clonata, entra automaticamente in possesso del coin della fork.
 Se un indirizzo ha il bilancio di X BTC \emph{prima} che venga lanciata la \textit{hard fork}, per esempio Bitcoin Top (BTT) a quell'indirizzo sarà anche associato X BTT.
 Per poter ottenere effettivamente tutti i coin che l'indirizzo "possiede", è necessario scaricare il software di wallet del coin di fork e inserire la private key dell'indirizzo con su il coin di fork.
@@ -545,7 +556,7 @@ A seguito
 
 \vspace {0.5cm}
 \begin {figure}[h]
-\includegraphics [width = 10cm] {media/crash2.png}
+\includegraphics [width = 10cm] {crash2.png}
 \caption {Confronto tra il crollo del prezzo del Bitcoin nel 2013 e nel 2017}
 \end {figure}
 \vspace {0.5cm}
@@ -593,7 +604,7 @@ Tutte le inflazioni sono dovute a un'eccessiva stampa di soldi cartacei, cosa ch
 
 \vspace {0.5cm}
 \begin {figure}[h]
-\includegraphics [width = 10cm] {media/adoption.png}
+\includegraphics [width = 10cm] {adoption.png}
 \caption {Adozione del Bitcoin paragonata ad altre tecnologie}
 \end {figure}
 \vspace {0.5cm}
