@@ -1,47 +1,49 @@
 \contentsline {section}{\numberline {1}Le origini del Bitcoin}{2}
 \contentsline {section}{\numberline {2}Blockchain: cos'\IeC {\`e} e come funziona}{3}
 \contentsline {subsection}{\numberline {2.1}Mining}{3}
-\contentsline {subsubsection}{\numberline {2.1.1}L'uso di elettricit\IeC {\`a} del mining}{4}
+\contentsline {paragraph}{Proof of work}{3}
+\contentsline {paragraph}{Mining pools}{4}
+\contentsline {subsubsection}{\numberline {2.1.1}L'uso di elettricit\IeC {\`a} del mining}{5}
 \contentsline {subsection}{\numberline {2.2}"Soft forks"}{5}
 \contentsline {subsubsection}{\numberline {2.2.1}Segregated Witness}{5}
 \contentsline {subsubsection}{\numberline {2.2.2}Lightning Network}{5}
-\contentsline {subsection}{\numberline {2.3}How and where Bitcoin is stored}{5}
-\contentsline {subsubsection}{\numberline {2.3.1}Keys}{5}
-\contentsline {paragraph}{Seeds}{5}
-\contentsline {subsubsection}{\numberline {2.3.2}Addresses}{5}
-\contentsline {paragraph}{"Legacy"}{5}
+\contentsline {subsection}{\numberline {2.3}How and where Bitcoin is stored}{6}
+\contentsline {subsubsection}{\numberline {2.3.1}Keys}{6}
+\contentsline {paragraph}{Seeds}{6}
+\contentsline {subsubsection}{\numberline {2.3.2}Addresses}{6}
+\contentsline {paragraph}{"Legacy"}{6}
 \contentsline {paragraph}{P2SH SegWit}{6}
 \contentsline {paragraph}{bech32 SegWit}{6}
 \contentsline {subsubsection}{\numberline {2.3.3}Wallets}{6}
-\contentsline {paragraph}{Cold storage}{6}
-\contentsline {paragraph}{Hot wallets}{6}
-\contentsline {paragraph}{Hardware wallets}{6}
-\contentsline {section}{\numberline {3}Utilizzare Bitcoin}{6}
-\contentsline {subsection}{\numberline {3.1}Creazione del portafoglio}{6}
+\contentsline {paragraph}{Cold storage}{7}
+\contentsline {paragraph}{Hot wallets}{7}
+\contentsline {paragraph}{Hardware wallets}{7}
+\contentsline {section}{\numberline {3}Utilizzare Bitcoin}{7}
+\contentsline {subsection}{\numberline {3.1}Creazione del portafoglio}{7}
 \contentsline {subsection}{\numberline {3.2}Come ottenere criptovaluta}{7}
 \contentsline {paragraph}{Exchange}{7}
-\contentsline {paragraph}{ATMs}{7}
-\contentsline {paragraph}{Mining}{7}
-\contentsline {paragraph}{Forma di pagamento}{7}
-\contentsline {subsection}{\numberline {3.3}Trasferire Bitcoin}{7}
-\contentsline {section}{\numberline {4}Non solo Bitcoin}{8}
-\contentsline {subsection}{\numberline {4.1}Ethereum}{8}
-\contentsline {paragraph}{Mining e il crollo del mercato di schede grafiche}{8}
-\contentsline {subsection}{\numberline {4.2}Litecoin}{8}
+\contentsline {paragraph}{ATMs}{8}
+\contentsline {paragraph}{Mining}{8}
+\contentsline {paragraph}{Forma di pagamento}{8}
+\contentsline {subsection}{\numberline {3.3}Trasferire Bitcoin}{8}
+\contentsline {section}{\numberline {4}Non solo Bitcoin}{9}
+\contentsline {subsection}{\numberline {4.1}Ethereum}{9}
+\contentsline {paragraph}{Mining e il crollo del mercato di schede grafiche}{9}
+\contentsline {subsection}{\numberline {4.2}Litecoin}{9}
 \contentsline {subsection}{\numberline {4.3}Monero}{9}
 \contentsline {subsection}{\numberline {4.4}Nano}{10}
-\contentsline {subsection}{\numberline {4.5}Ripple}{10}
-\contentsline {subsection}{\numberline {4.6}Bitcoin "hard forks"}{10}
-\contentsline {subsubsection}{\numberline {4.6.1}Roger Ver e la truffa di "Bitcoin Cash"}{11}
-\contentsline {section}{\numberline {5}Crypto oggi}{12}
-\contentsline {subsection}{\numberline {5.1}Adozione}{12}
-\contentsline {paragraph}{Rovereto: quasi tutti accettano Bitcoin}{12}
-\contentsline {paragraph}{Elizavetovska: il villaggio in Ucraina in cui tutti utilizzano criptovalute}{12}
-\contentsline {subsection}{\numberline {5.2}La bolla del 2017: cause e conseguenze}{12}
+\contentsline {subsection}{\numberline {4.5}Ripple}{11}
+\contentsline {subsection}{\numberline {4.6}Bitcoin "hard forks"}{11}
+\contentsline {subsubsection}{\numberline {4.6.1}Roger Ver e la truffa di "Bitcoin Cash"}{12}
+\contentsline {section}{\numberline {5}Crypto oggi}{13}
+\contentsline {subsection}{\numberline {5.1}Adozione}{13}
+\contentsline {paragraph}{Rovereto: quasi tutti accettano Bitcoin}{13}
+\contentsline {paragraph}{Elizavetovska: il villaggio in Ucraina in cui tutti utilizzano criptovalute}{13}
+\contentsline {subsection}{\numberline {5.2}La bolla del 2017: cause e conseguenze}{13}
 \contentsline {paragraph}{L'analogia con la crisi del '29}{13}
-\contentsline {paragraph}{La ricorrenza dei "crash" dei mercati}{13}
-\contentsline {subsection}{\numberline {5.3}Controversie}{13}
-\contentsline {subsubsection}{\numberline {5.3.1}Il ban del Bitcoin in certi stati}{13}
-\contentsline {subsubsection}{\numberline {5.3.2}Mt. Gox}{13}
-\contentsline {subsubsection}{\numberline {5.3.3}Bitconnect}{13}
-\contentsline {subsection}{\numberline {5.4}Il futuro delle criptovalute}{14}
+\contentsline {paragraph}{La ricorrenza dei "crash" dei mercati}{14}
+\contentsline {subsection}{\numberline {5.3}Controversie}{14}
+\contentsline {subsubsection}{\numberline {5.3.1}Il ban del Bitcoin in certi stati}{15}
+\contentsline {subsubsection}{\numberline {5.3.2}Mt. Gox}{15}
+\contentsline {subsubsection}{\numberline {5.3.3}Bitconnect}{15}
+\contentsline {subsection}{\numberline {5.4}Il futuro delle criptovalute}{15}
