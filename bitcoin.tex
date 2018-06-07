@@ -10,7 +10,7 @@
 \renewcommand {\figurename} {Fig.}
 
 %\title {{\Huge Bitcoin, blockchain, crypto}}
-%\author {Carlomaria Occhipinti\\Liceo Scientifico Arturo Tosi}
+%\author {Carlomaria Occhipinti\\Liceo Scientifico Arturo Tosi}          I PROBLEMI DEL BITCOIN: PARZIALE CENTRALIZZAZIONE, SMALLBLOX, E POI PARAGRAFO SOLUZIONI
 %\date {Giugno 2018}
 
 
@@ -74,9 +74,9 @@ Tradotto in italiano:
 
 \begin {quote}
 
-\textbf {Riassunto}. Una versione puramente PIRTUPIR di soldi elettronici permetterebbero ai pagamenti online di essere inviati direttamente da un party all'altro senza passare attraverso un'istituzione finanziaria.
+\textbf {Riassunto}. Una versione puramente \textit{peer-to-peer}\footnote{Da pari a pari, senza la necessità di passare da un ente centrale come una banca} di soldi elettronici permetterebbe ai pagamenti online di essere inviati direttamente da un party all'altro senza passare attraverso un'istituzione finanziaria.
 Firme digitali sono? parte della soluzione, ma i benefici principali sono persi se un ente di terza parte creduto? è sempre/comunque richiesto per prevenire la doppia spesa.
-Proponiamo una soluzione al problema della doppia spesa usando una rete PIRTUPIR.
+Proponiamo una soluzione al problema della doppia spesa usando una rete \textit{peer-to-peer}.
 La rete registra? le transazioni hashing? them in una catena ongoing di hashbased pow, formando un registro che non può essere modificato senza ripetere la pow.
 La catena più lunga non serve solo come prova per la sequenza di eventi testimoniati/accaduti, ma la prova che è venuta/derivata dalla pool più grande di potenza cpu. Finché la maggioranza del potere cpu è controllato da nodi? che non stanno cooperando per attaccare la rete, genereranno la cantena più lunga e supereranno gli attaccatori.
 La rete stessa richiede una struttura minimale.
@@ -88,38 +88,67 @@ I messaggi sono trasmessi su una base del miglior sforzo, e i nodi possono lasci
 \section {Blockchain: cos'è e come funziona}
 
 
-La tecnologia rivoluzionaria utilizzata dal Bitcoin e da tutte le altre criptovalute è chiamata Blockchain.\\
-Come suggerisce il nome, "blockchain" indica/significa una catena di blocchi.
-Come la figura mette bene, tutte le transazioni di BTC sono permanentemente, incancellabilmente memorizzate nella Blockchain.
-Volendo, posso vedere quanti bitcoin X ha spedito a Y.
-Ogni blocco, infatti, contiene informazioni su tutte le transazioni che sono state compiute nell'intervallo di tempo che passa dalla scoperta del blocco precedente a quello nuovo (foto).
-In che senso "rimane attivo"? Quando un blocco diventa "inattivo"?
-Mi tocca introdurre il concetto di "mining". (mi manca la parte sul peso in kb delle tx, cos'è in pratica la blockchain (file)).
+La tecnologia rivoluzionaria utilizzata dal Bitcoin e da tutte le altre criptovalute è chiamata Blockchain.
+Come suggerisce il nome, "blockchain" indica una catena di blocchi.
+Ciascun blocco contiene informazioni su \emph{alcune} transazioni di bitcoin che sono state effettuate di recente. Entrerò dopo in dettaglio su cosa intendo per "di recente" e "alcune".
+Tutte le transazioni di BTC sono permanentemente, irreversibilmente (nella maggior parte dei casi, V X.X) memorizzate nella Blockchain.
+Su un qualunque sito avente la funzione di "block explorer" posso cercare informazioni su ciascun indirizzo Bitcoin (per ora pensiamolo come se fosse un codice IBAN bancario): posso vedere quanti Bitcoin quell'indirizzo possiede, da quali indirizzi ha ricevuto quanti bitcoin, e a chi ne ha mandati.
+Sotto un punto di vista pratico, la blockchain del Bitcoin è un file di dimensioni oggi pari a circa 170 Gigabyte.
+La dimensione è così elevata perché in quel file sono contenute le informazioni di oltre 500.000 blocchi scoperti a partire dal \textit{genesis block}, trovato il 3 Gennaio 2009.
+"Scoperti"? "Trovati"? In che senso? Da dove vengono questi blocchi? Mi tocca introdurre il concetto di \textit{mining}.
 
 
 \subsection {Mining}
 
 
-Sebbene non sia tecnicamente corretto, il modo più semplice per spiegare il concetto di "mining" è quello di paragonare i bitcoin a una montagna nella cui roccia sono contenuti minerali preziosi.
+Sebbene non sia tecnicamente corretto, il modo più semplice per spiegare il concetto di "mining"(corsivo?) è quello di paragonare i bitcoin a una montagna nella cui roccia sono contenuti minerali preziosi.
 I bitcoin sono, per esempio, l'oro nella roccia.
 Per trovare l'oro bisogna scavare nella roccia della montagna utilizzando speciali apparecchiature quali ruspe, trapani, trivelle.
-I blocchi, per poter essere "risolti" vengono "minati" dai cosiddetti miner ASIC (\textit{application specific integrated circuit}), dei computer specializzati a risolvere un certo tipo di algoritmo.
-Algoritmo, perchè il processo di mining consiste esclusivamente nella matematica.
-L'obiettivo del mining è quello di indovinare la "parola chiave", chiamata "hash" che serve per risolvere un blocco.
-Il Bitcoin usa l'algoritmo SHA-256, quindi le hash indovinate dai miner sono una serie di numeri e lettere lunga 64 caratteri.
-Questo perché come suggerisce il nome, 256 indica il numero di "bits" che costituiscono la stringa.
-Il "bit" è la più piccola unità di misura per quanto riguarda la dimensione di file nel campo dell'informatica, e 8 bit corrispondono a 1 byte.
-Nel sistema(?) esadecimale un carattere "pesa" 8 bit, quindi $256 : 8 = 64$.
-Una hash del sistema(?) SHA-256 deve rispettare determinati parametri per essere considerata tale, di cui non scriverò per evitare di complicare ulteriormente la situazione.
-In succinto, per trovare il numero di hash totali che si possono ottenere bisogna effettuare il  calcolo $2^{256}$, che corrisponde a circa \textasciitilde 1,158 $\times 10^{77}$ possibili hash da indovinare.
-MA NON E FINITA CUI! https://en.bitcoin.it/wiki/Target
-I miner di Bitcoin che si usano oggi lavorano a velocità comprese tra i \textasciitilde 10 e i \textasciitilde 14 TH/s (tera-hash al secondo) in base al loro consumo energetico, ovvero a oltre dieci trilioni di tentativi in un secondo.
-Questi apparecchi sono molto costosi (quelli di ultima generazione superano i \euro{700} per unità) e utilizzano un'elevata quantità di energia elettrica per funzionare (v dopo, o posso scriverlo qua?).
-Perchè, allora, c'è gente che spende tutti questi soldi per fare il lavoro di mining? PROOFG  OF WORK SOMEWHERE AAAAAAAAAA
-Ebbene, quando si "risolve" un blocco, il miner riceve una quantità pari a 12.5 bitcoin, oggi pari a circa \euro{90000} (parlare di halving whand?).
-Quasi mai, però, i 12 btc finiscono a una singola persona: indovinare la stringa che mina il block è estremamente difficile!
-Per questo esistono le "pool" di mining, dei siti in cui più miners uniscono gli sforzi per risolvere il blocco.
-Una volta indovinato, la ricompensa si spartisce fra tutti i miner, in base a quanto ciascuno si è impegnato per trovarla.
+I blocchi, per poter essere "scoperti" vengono "minati" dai cosiddetti miner ASIC (\textit{application specific integrated circuit}), dei computer specializzati a risolvere un certo tipo di algoritmo.
+Algoritmo, perchè il processo di mining dipende interamente dalla matematica.
+Questa è quella che nel WHITEPAPER Satoshi definisce come \textit{proof of work}.
+
+
+\paragraph {Proof of work}
+
+
+\textit {Proof of work}, tradotto "prova di lavoro" o "di funzionamento" è il sistema che rende il Bitcoin una rete sicura... difficile... irreversibile
+
+
+L'obiettivo del mining è quello di indovinare una "parola chiave", chiamata \textit{hash}, una serie di numeri e lettere che serve per risolvere un blocco.
+Il Bitcoin usa l'algoritmo SHA-256, quindi le hash indovinate dai miner sono lunghe 64 caratteri.
+Questo perché come suggerisce il nome, 256 indica il numero di \textit{bits} che costituiscono la stringa.
+Il \textit{bit} è la più piccola unità di misura per quanto riguarda la dimensione di file nel campo dell'informatica, e 8 bit corrispondono a 1 byte.
+Nel sistema numerico esadecimale un carattere "pesa" 8 bit, quindi $256 : 8 = 64$.
+Una hash facente parte dell'algoritmo SHA-256 deve rispettare determinati parametri per essere considerata tale, di cui non scriverò per evitare di complicare ulteriormente la situazione.
+In succinto, per trovare il numero di hash totali che si possono ottenere bisogna effettuare il  calcolo $2^{256}$, che corrisponde a circa $1,158 \times 10^{77}$ possibili hash da indovinare.
+%target, difficulty, 0000000000
+Le hash che portano alla scoperta di un singolo/specifico blocco, però, possono essere più di una.
+I miner di Bitcoin che si usano oggi lavorano a velocità comprese tra i \textasciitilde 10 e i \textasciitilde 14 TH/s (tera-hash al secondo) in base al loro consumo energetico, ovvero a oltre dieci trilioni di hash trovate in un secondo.
+Questi apparecchi sono molto costosi (quelli di ultima generazione superano i \euro{700} per unità) e utilizzano un'elevata quantità di energia elettrica per funzionare.
+Perchè, allora, c'è gente che spende tutti questi soldi per fare il lavoro di mining?
+Ebbene, quando si "risolve" un blocco, il miner riceve una quantità pari a 12.5 BTC, oggi pari a circa \euro{90.000}.
+Quasi mai, però, i 12.5 BTC finiscono a una singola persona: indovinare l'hash che trova il blocco è estremamente difficile!
+Per questo esistono le \textit{pool} di mining.
+
+
+\paragraph {Mining pools}
+
+
+Le \textit{pool} sono dei siti in cui più miners uniscono gli sforzi per trovare un blocco.
+Nella configurazione del software che fa compiere il mining agli ASIC bisogna inserire l'indirizzo web della \textit{pool} per la quale si vuole lavorare, e il miner comincierà ad inviare le hash che calcola alla pool.
+Una volta trovato il blocco, la ricompensa di bitcoin si spartisce fra tutti i miner, in base a quanto ciascuno si è impegnato per trovarla.
+Esistono diversi sistemi per spartire il "bottino". Tra i più diffusi troviamo:
+
+\begin{itemize}
+\item PPLNS:
+\item PPS:
+\item Score:
+\item FPPS:
+\end{itemize}
+
+È possibile controllare il lavoro dei miners tramite un'interfaccia remota. Su tutti i siti delle \textit{pool} è possibile inserire in un campo di ricerca l'indirizzo Bitcoin verso cui i bitcoin ricavati saranno inviati.
+
 Torniamo a noi, cosa succede quando il blocco è minato, e si passa a quello successivo?
 Tutte le transazioni effettuate mentre i miner erano alla ricerca del nuovo blocco vengono memorizzae nellba vlohack ??
 Per questo, una transazione è considerata conclusa quando si passano almeno 6 blocchi dopo quello in cui è stata iniziata.
@@ -407,8 +436,10 @@ Il team di sviluppatori di Bitcoin si ostina a mantenere la dimensione del blocc
 Una difficoltà così elevata di mining porta necessariamente a una centralizzazione dell'hashing power, che va contro il concetto di Bitcoin e di criptovalute in generale (valute decentralizzate, internazionali, v 1.1).
 Roger è entrato in possesso del sito bitcoin.com, che su numerose pagine (tra cui quella in fig. 5) ripete come BCH è una versione aggiornata di BTC. Una cosa che irrita la stragrande maggioranza delle persone è il fatto che su bitcoin.com il Bitcoin originale, BTC, è chiamato Bitcoin Core.
 Il nome Bitcoin Core, paragonato a Bitcoin Cash, fa sembrare le due valute due alternative sullo stesso livello, invece uno (BCH) è un clone dell'originale (BTC).
-In Aprile del 2018, \textbf{MODIFICATO BTC BCORE AND BCH BITCOIN SOAWSUIT MAY REVERSED BUT ITS NOT OOVER YET}
-bitcoin.com, essendo il secondo risultato su google perl la ricerca "bitcoin", ha portato molte persone nuove nel mondo delle criptovalute che cercavano di acquistare dei Bitcoin ad acquistare BCH anziché BTC.
+In Aprile del 2018 bitcoin.com penalizzò ulteriormente la situazione del "vero" Bitcoin definendo "BTC" "Bitcoin Core" e "BCH" (che sarebbe Bitcoin Cash) "Bitcoin".
+Questa mossa fu la goccia che fece traboccare il vaso, perché mentre il fatto di chiamare BTC Bitcoin Core era già una bugia di per sé/sè, sostituire "Bitcoin Cash" con "Bitcoin" era semplicemente inaccettabile.
+A seguito di questa modifica dei termini, bitcoin.com venne denunciato da oltre 600? persone e fu eventualmente costretto a tornare alle vecchie denominazioni delle valute che, purché volontariamente misleading, non facevano apparire BCH come il "vero" Bitcoin.
+bitcoin.com, essendo il secondo risultato su Google per la ricerca "bitcoin", ha portato molte persone nuove nel mondo delle criptovalute che cercavano di acquistare dei Bitcoin ad acquistare BCH anziché BTC.
 Ver possiede anche l'account twitter @bitcoin, che svolge le stesse opere di propaganda di bitcoin.com
 
 
@@ -427,10 +458,11 @@ Questi
 Oltre a questi servizi, è anche possibile acquistare merce su siti che non accettano ancora criptovalute. bitcoinsuperstore.us e coinbought.com
 
 
-\paragraph {Rovereto: città nelle Dolomiti di 40.000 abitanti dove quasi tutti accettano Bitcoin}
+\paragraph {Rovereto: quasi tutti accettano Bitcoin}
 
 
-Sì, certo, sicuro.
+Rovereto è una cittadina nelle Dolomiti di 40.000 abitanti in cui l'uso del Bitcoin come forma di pagamento è estremamente diffusa.
+Tutto ebbe inizio
 
 
 \paragraph {Elizavetovska: il villaggio in Ucraina in cui tutti utilizzano criptovalute}
@@ -464,14 +496,14 @@ Questo è estremamente simile a quello che è successo al Bitcoin perché sì.
 \paragraph {La ricorrenza dei "crash" dei mercati}
 
 
+A seguito 
+
 \vspace {0.5cm}
 \begin {figure}[h]
 \includegraphics [width = 10cm] {media/crash2.png}
 \caption {Confronto tra il crollo del prezzo del Bitcoin nel 2013 e nel 2017}
 \end {figure}
 \vspace {0.5cm}
-
-E quindi sì.
 
 
 \subsection {Controversie}
