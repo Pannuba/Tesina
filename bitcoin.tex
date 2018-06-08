@@ -46,7 +46,7 @@
 L'economia era in distruzione. Banche, borse e stati sull'orlo del crollo. Panico.
 C'era il bisogno di una soluzione a tutto questo. Un sistema monetario che fosse immune a tutto ciò che colpì le valute crollate. Il Bitcoin, la prima criptovaluta del mondo creata a cavallo tra il 2008 e il 2009 fu la risposta a tutti questi problemi economici legati alla crisi.
 Satoshi Nakamoto è conosciuto come l'ideatore e l'iniziale sviluppatore del Bitcoin. Nessuno sa chi sia, dove abiti, se è un singolo o un gruppo di persone. Sappiamo solo che nei primi anni del Bitcoin era attivo sul forum bitcointalk.org fino al 13 Dicembre 2010.
-Satoshi scrisse il whitepaper\footnote{"Libro bianco", è Nel marketing la parola può indicare anche un documento redatto da un professionista esperto di una materia che offre informazioni di qualità e di interesse ad un pubblico selezionato di utenti.} del Bitcoin contenente la sua ideologia di moneta virtuale. Il documento è altamente tecnico e richiede un'elevata conoscenza di informatica e matematica, ma mi sembra doveroso citare il primo paragrafo \footnote{http://bitcoin.org/bitcoin.pdf}:\\
+Satoshi scrisse il whitepaper\footnote{"Libro bianco", un documento redatto da un professionista esperto di una materia che offre informazioni di qualità e di interesse ad un pubblico selezionato di utenti.} del Bitcoin contenente la sua ideologia di moneta virtuale. Il documento è altamente tecnico e richiede un'elevata conoscenza di informatica e matematica, ma mi sembra doveroso citare il primo paragrafo \footnote{http://bitcoin.org/bitcoin.pdf}:\\
 
 \begin {quote}
 
@@ -123,19 +123,29 @@ Il \textit{bit} è la più piccola unità di misura per quanto riguarda la dimen
 Nel sistema numerico esadecimale un carattere "pesa" 8 bit, quindi $256 : 8 = 64$.
 Una hash facente parte dell'algoritmo SHA-256 non può essere una qualunque combinazione di 64 numeri e lettere, ma deve rispettare determinati parametri per essere considerata tale, di cui non scriverò per evitare di complicare ulteriormente la situazione.
 In succinto, per trovare il numero di hash totali che si possono ottenere bisogna effettuare il  calcolo $2^{256}$, che corrisponde a circa $1,158 \times 10^{77}$ possibili hash da indovinare.
-%target, difficulty, 0000000000
 Le hash che portano alla scoperta di uno specifico blocco, però, possono essere più di una.
 
-\paragraph {Difficoltà di mining}
+\paragraph {Target e difficoltà di mining}
 
 Per trovare un blocco è necessario che i miners trovino un'\textit{hash} che sia inferiore al cosiddetto \textit{target}. Il target è come il "confine" sotto al quale tutte le hash sono accettabili.
-Il \textit{nonce} sono tanti zeri. %blocco intorno a 10min, difficolta scala a seconda di...... sopra manca halving
-Quando il nonce aumenta di ha un'aumento di difficoltà nel mining. 
-I miner di Bitcoin che si usano oggi lavorano a velocità comprese tra i \textasciitilde 10 e i \textasciitilde 14 TH/s (tera-hash al secondo) in base al loro consumo energetico, ovvero a oltre dieci trilioni di hash trovate in un secondo.
+(temp) se le hash sono numeri da 1 a ..., il target è uno di quei numeri.
+Tutte le hash trovate dai miners che hanno valore minore del target sono valide, e portano alla scoperta di un nuovo blocco.
+Con "difficoltà" si intende, ovviamente, quanto è difficile trovare un blocco, e se facciamo ragionare un po' la testolina possiamo capire che è in un modo o nell'altro collegata al valore del target.
+Più si abbassa il target, più si alza la difficoltà, perché abbassandosi il target le hash valide diventano meno, quindi la probabilità che i miners ne trovino una valida si riduce.
+Ma perché dovrebbe abbassarsi il target?
+Satoshi ha deciso che ogni blocco deve impiegare un tempo di circa 10 minuti per essere scoperto (perché?).
+Man mano che sempre più miners cominciano a lavorare, elevando l'\textit{hashing power} complessivo del network del Bitcoin, se non ci fossero cambi di target i blocchi verrebbero trovati con frequenza sempre più elevata.
+Aumentando la difficoltà in modo proporzionale all'\textit{hashing power} si fa in modo che in media i blocchi continuino ad essere trovati ogni \textasciitilde 10 minuti.
+L'innalzamento o talvolta anche l'abbassamento della difficoltà avviene ogni 2016 blocchi (circa 2 settimane), quando il network controlla la frequenza con cui questi ultimi blocchi sono stati trovati. https://blockchain.info/charts/difficulty mettere grafico
+Il \textit{nonce} è un numero di 32bit (...) che determina la quantità di zeri dell'\textit{hash} del blocco.
+
+\paragraph {nome paragrafo?}
+
+I miner di Bitcoin che si usano oggi lavorano a velocità comprese tra i 10 e i 14 TH/s (tera-hash al secondo) in base al loro consumo energetico, ovvero a oltre dieci trilioni di hash trovate in un secondo.
 Questi apparecchi sono molto costosi (quelli di ultima generazione superano i \euro{700} per unità) e utilizzano un'elevata quantità di energia elettrica per funzionare.
 Perchè, allora, c'è gente che spende tutti questi soldi per fare il lavoro di mining?
-Ebbene, quando si "risolve" un blocco, il miner riceve una quantità pari a 12.5 BTC, oggi pari a circa \euro{90.000}.
-Quasi mai, però, i 12.5 BTC finiscono a una singola persona: indovinare l'hash che trova il blocco è estremamente difficile!
+Ebbene, quando si trova un blocco, oggi il miner riceve una quantità pari a 12.5 BTC, pari a circa \euro{90.000} secondo il prezzo attuale.
+Quasi mai, però, la \textit{block reward} finisce a una singola persona: indovinare l'hash che trova il blocco è estremamente difficile!
 Per questo esistono le \textit{pool} di mining.
 
 
@@ -163,11 +173,21 @@ Ogni transazione di Bitcoin prevede il pagamento di una piccola quota, solitamen
 Questa quota, chiamata \textit{miner fee} serve per incoraggiare i miner a selezionare la nostra transazione da includere nel blocco in fase di ricerca.
 Questa tassa/commissione è espressa in sat/byte, satoshi\footnote{Un satoshi è l'unità di misura più piccola del bitcoin, e corrisponde a $1 \times 10^{-8}$ BTC} per byte.
 Una tassa più elevata riduce il tempo di conferma della transazione, perché preferita dai miner. Al contrario, una transazione effettuata con una tassa inferiore alla media impiega più tempo ad essere inclusa in un blocco e quindi ad essere processata, perché i miner guadagnano più BTC dalle transazioni più costose.
-Come ho spiegato ciascuna transazione pesa tot kilobyte, quindi, conoscendo il peso in kb della transazione e avendo stabilito il valore della tassa in sat/byte\footnote{Spiegherò come si viene a conoscenza di queste due nel punto X.Y} per scoprire quanto paghiamo effettivamente possiamo ricavare la quantità di BTC dalla proporzione
+Come ho spiegato ciascuna transazione pesa tot kilobyte, quindi, conoscendo il peso in kb della transazione e avendo stabilito il valore della tassa in sat/byte\footnote{Spiegherò come si viene a conoscenza di queste due nel punto X.Y} per scoprire quanto paghiamo effettivamente possiamo ricavare la quantità di BTC dalla proporzione.
 
 $$ nSat : 1 byte = tassa : pesoTx $$
 %
 o semplicemente utilizzando la formula $x tassa = \frac{nSat \times pesoTx}{1 byte}$.
+
+\paragraph {Il futuro del mining}
+
+In precendenza ho detto che la scoperta di un blocco porta al guadagno dei miners di 12.5 BTC.
+Questa ricompensa, però, non è un valore costante: ogni 210.000 blocchi trovati la quantità di bitcoin che i miners ricevono si dimezza, infatti la ricompensa iniziale era di ben 50 BTC. Questo processo di dimezzamento è chiamato \textit{halving}.
+Oggi abbiamo superato il blocco numero 526000, infatti essendo 526.000 : 210.000 = \textasciitilde 2.5, fin ora ci sono stati due \textit{halving}.
+50 : 2 = 25, 25 : 2 = 12.5, la ricompensa attuale.
+I bitcoin, però, esistono in quantità limitata, infatti il limite massimo è di 21.000.000 BTC.
+Fino ad oggi sono stati minati circa 17.000.000 BTC, ovvero l'81\% della quantità totale.
+Eventualmente tutti i bitcoin verranno minati, e i profitti dei miners dipenderanno esclusivamente dalle tasse di transazione.
 
 
 \subsubsection {L'uso di elettricità del mining}
