@@ -11,9 +11,9 @@
 \graphicspath { {./media/} }
 
 
-\begin {document}
+\begin{document}
 
-\begin {titlepage}
+\begin{titlepage}
 
 \centering
 {\LARGE Liceo Scientifico Arturo Tosi \par}
@@ -27,7 +27,7 @@
 \includegraphics [width = 5.5cm] {logo.png}
 \vfill
 
-\end {titlepage}
+\end{titlepage}
 
 \pagenumbering {gobble}
 
@@ -48,7 +48,7 @@ C'era il bisogno di una soluzione a tutto questo. Un sistema monetario che fosse
 Satoshi Nakamoto è conosciuto come l'ideatore e l'iniziale sviluppatore del Bitcoin. Nessuno sa chi sia, dove abiti, se è un singolo o un gruppo di persone. Sappiamo solo che nei primi anni del Bitcoin era attivo sul forum bitcointalk.org fino al 13 Dicembre 2010.
 Satoshi scrisse il whitepaper\footnote{"Libro bianco", un documento redatto da un professionista esperto di una materia che offre informazioni di qualità e di interesse ad un pubblico selezionato di utenti.} del Bitcoin contenente la sua ideologia di moneta virtuale. Il documento è altamente tecnico e richiede un'elevata conoscenza di informatica e matematica, ma mi sembra doveroso citare il primo paragrafo \footnote{http://bitcoin.org/bitcoin.pdf}:\\
 
-\begin {quote}
+\begin{quote}
 
 \textbf {Abstract}. A purely peer-to-peer version of electronic cash would allow online payments to be sent directly from one party to another without going through a financial institution.
 Digital signatures provide part of the solution, but the main benefits are lost if a trusted third party is still required to prevent double-spending.
@@ -59,11 +59,11 @@ As long as a majority of CPU power is controlled by nodes that are not cooperati
 The network itself requires minimal structure.
 Messages are broadcast on a best effort basis, and nodes can leave and rejoin the network at will, accepting the longest proof-of-work chain as proof of what happened while they were gone.
 
-\end {quote}
+\end{quote}
 %
 Tradotto in italiano:
 
-\begin {quote}
+\begin{quote}
 
 \textbf {Riassunto}. Una versione puramente \textit{peer-to-peer}\footnote{Da pari a pari, senza la necessità di passare da un ente centrale come una banca} di soldi elettronici permetterebbe ai pagamenti online di essere inviati direttamente da un party all'altro senza passare attraverso un'istituzione finanziaria.
 Firme digitali sono? parte della soluzione, ma i benefici principali sono persi se un ente di terza parte creduto? è sempre/comunque richiesto per prevenire la doppia spesa.
@@ -83,19 +83,21 @@ La tecnologia rivoluzionaria utilizzata dal Bitcoin e da tutte le altre criptova
 Come suggerisce il nome, "blockchain" indica una catena di blocchi.
 
 \vspace {0.5cm}
-\begin {figure}[h]
+\begin{figure}[h]
 \includegraphics [width = 10cm] {blockchain2.png}
+\centering
 \caption {Schema semplificato della blockchain}
-\end {figure}
-\vspace {0.5cm}
+\end{figure}
+\vspace {0.2cm}
+\noindent
 %
 Ciascun blocco contiene informazioni sulle transazioni di bitcoin che sono state effettuate di recente.
 Il blocco può essere visto come un contenitore, un hard disk grande 1MB che contiene un determinato numero di transazioni.
-Le transazioni hanno un determinato peso espresso per comodità in kilobyte minerpreferisconoleggg
+Le transazioni hanno un determinato peso espresso per comodità in kilobyte fare paragrafo mempool+foto, dove lo metto? (domanda:come fanno le transazioni ad essere messe nei blocchi?)
 Tutte le transazioni di BTC sono permanentemente, irreversibilmente (nella maggior parte dei casi, V X.X) memorizzate nella Blockchain.
 Su un qualunque sito avente la funzione di "block explorer" posso cercare informazioni su ciascun indirizzo Bitcoin (per ora pensiamolo come se fosse un codice IBAN): posso vedere quanti Bitcoin quell'indirizzo possiede, da quali indirizzi ha ricevuto quanti bitcoin, e a chi ne ha mandati.
 Sotto un punto di vista pratico, la blockchain del Bitcoin è un file di dimensioni oggi pari a circa 170 Gigabyte.
-DOVELOMETTO?L'aspetto decentralizzato del Bitcoin gira intorno al fatto che chiunque può scaricare la blockchain e far sì che si aggiorni in tempo reale: ciò significa che finché esiste in tutto il mondo \emph{almeno} un computer con la blockchain attiva (quando definizione full node?) l'intera rete del Bitcoin e il registro delle transazioni rimangono autentiche e inviolate.
+L'aspetto decentralizzato del Bitcoin gira intorno al fatto che chiunque può scaricare la blockchain e far sì che si aggiorni in tempo reale: ciò significa che finché esiste in tutto il mondo \emph{almeno} un computer con la blockchain attiva (quando definizione full node?) l'intera rete del Bitcoin e il registro delle transazioni rimangono autentiche e inviolate.
 La dimensione è così elevata perché in quel file sono contenute le informazioni di oltre 520.000 blocchi scoperti a partire dal primo, chiamato \textit{genesis block}, trovato il 3 Gennaio 2009.
 "Scoperti"? "Trovati"? In che senso? Da dove vengono questi blocchi? Mi tocca introdurre il concetto di \textit{mining}.
 
@@ -135,8 +137,17 @@ Più si abbassa il target, più si alza la difficoltà, perché abbassandosi il 
 Ma perché dovrebbe abbassarsi il target?
 Satoshi ha deciso che ogni blocco deve impiegare un tempo di circa 10 minuti per essere scoperto (perché?).
 Man mano che sempre più miners cominciano a lavorare, elevando l'\textit{hashing power} complessivo del network del Bitcoin, se non ci fossero cambi di target i blocchi verrebbero trovati con frequenza sempre più elevata.
+
+\vspace {0.5cm}
+\begin{figure}[h]
+\makebox [\textwidth] [c] {\includegraphics [width=15cm] {hashdiff.png}}
+\caption {Confronto tra difficoltà (sopra) e hashrate globale (sotto)}
+\end{figure}
+\vspace {0.2cm}
+\noindent
+%
 Aumentando la difficoltà in modo proporzionale all'\textit{hashing power} si fa in modo che in media i blocchi continuino ad essere trovati ogni \textasciitilde 10 minuti.
-L'innalzamento o talvolta anche l'abbassamento della difficoltà avviene ogni 2016 blocchi (circa 2 settimane), quando il network controlla la frequenza con cui questi ultimi blocchi sono stati trovati. https://blockchain.info/charts/difficulty mettere grafico
+L'innalzamento o talvolta anche l'abbassamento della difficoltà avviene ogni 2016 blocchi (circa 2 settimane), quando il network controlla la frequenza con cui questi ultimi blocchi sono stati trovati.
 Il \textit{nonce} è un numero di 32bit (...) che determina la quantità di zeri dell'\textit{hash} del blocco.
 
 \paragraph {nome paragrafo?}
@@ -199,11 +210,11 @@ Considerando che le \textit{farm} sono locate in paesi in cui l'elettricità cos
 Un miner, quindi, fa guadagnare almeno \euro{4} al giorno considerando il costo dell'elettricità.
 Ho già scritto che i miner hanno un prezzo notevole, infatti un Antminer S9 costa attualmente \textasciitilde \euro{717}.
 Prima di cominciare a guadagnare un profitto nel mining, bisogna calcolare il tempo impiegato per coprire il costo dell'attrezzatura di mining.
-Questo tempo si chiama ROI (\textit{return on investment}), e nel caso della situazione presa come esempio, ovvero quella di guadagnare \euro{4} al giorno con un S9, il ROI è pari a 179 giorni, infatti
+Questo tempo si chiama ROI \footnote{\textit{return on investment}}, e nel caso della situazione presa come esempio, ovvero quella di guadagnare \euro{4} al giorno con un S9, il ROI è pari a 179 giorni, infatti
 
 $$\textup{\euro{717}} : \frac{\textup{\euro{4}}}{1 giorno} = 179.25 giorni$$
 %
-Questo è quanto vale per \emph{una} singola unità di mining che produce "solo" 0.00082 BTC al giorno, una quantità minuscola rispetto ai \textasciitilde 17.000.000 che sono stati minati fino ad oggi.
+Questo è quanto vale per \emph{un} singolo ASIC che produce "solo" 0.00082 BTC al giorno, una quantità minuscola rispetto ai \textasciitilde 17.000.000 che sono stati minati fino ad oggi.
 L'\textit{hashing power} dell'intero network del Bitcoin, la somma del lavoro dei miners in tutto il mondo espressa in H/s, è di oltre 30.000 TH/s, e consuma un a quantità di elettricità pari a 60 TWh, ovvero 60.000 miliardi di Joule consumati all'ora.
 Questo consumo di elettricità corrisponde a (piu di 0.13, perche dati dic 2017, cercare nuovi) dell'utilizzo di elettricità in tutto il mondo.
 ... ... ... (citazione a powercompare.co.uk)
@@ -242,11 +253,11 @@ La differenza con le private keys è che a un seed non corrisponde \emph{una} pr
 Con il BIP-39 \footnote{\textit{Bitcoin Improvement Proposal}} è stato introdotto...?
 Il vantaggio dei seeds rispetto alle singole private keys è il fatto che sono facili da ricordare. Un seed ha un aspetto simile al seguente:
 
-\begin {quote}
+\begin{quote}
 
 witch color pride feed shame open despair creek road again ice least
 
-\end {quote}
+\end{quote}
 %
 Il secondo vantaggio è che la presenza di molteplici indirizzi Bitcoin aiuta a tutelare la privacy dello spenditore?
 Come abbiamo visto nella blockchain chiunque può accedere alle informazioni di chiunque (suona male), così per rendere i fondi meno tracciabili si possono usare diversi indirizzi per diverse operazioni... spiegare.
@@ -269,7 +280,10 @@ Questi indirizzi si riconoscono dal fatto che iniziano col carattere '1', per es
 \paragraph {P2SH SegWit}
 
 
-P2SH significa "Pay 2 Script Hash", (informale) è meglio di legacy ma non quanto bc1, tasse etc
+P2SH significa "Pay 2 Script Hash".
+Gli indirizzi P2SH sono stati ideati il 18 Ottobre del 2011 con il BIP-13 e mandati live l'1 Aprile del 2012.
+Il lancio di questi indirizzi non avvenne affatto in modo liscio e "indolore": il problema principale è che tutti i miners che non hanno aggiornato il proprio software/full node? stavano includendo nei blocchi transazioni ritenute invalide dai loro software (ripetizione, suona male).
+La differenza sostanziale con gli indirizzi "normali" è che ..multisig...sigh...è difficile
 
 
 \paragraph {bech32 SegWit}
@@ -302,13 +316,40 @@ Hot wallets, unlike cold wallets, are the most useful wallets because they allow
 
 
 I portafogli hardware, come suggerisce il nome, sono dei piccoli dispositivi simili a chiavette USB (singolare o plurare?), in cui la \textit{private key} è contenuta.
-Sono il metodo più sicuro per conservare criptovaluta, in quanto è impossibile estrarre le chiavi.... hot/cold?? mettere foto ledger nano s.
+Sono il metodo più sicuro per conservare criptovaluta, in quanto è impossibile estrarre le chiavi.... hot/cold??
+
+\vspace {0.5cm}
+\begin{figure}[h]
+\includegraphics [width = 5cm] {ledger.jpg}
+\centering
+\caption {Un Ledger Nano S}
+\end{figure}
+\vspace {0.2cm}
+\noindent
+%
+aa
 
 
 \subsection {I problemi del Bitcoin}
 
 
 \subsubsection {La parziale centralizzazione}
+
+
+L'intenzione di Satoshi, con la creazione della blockchain e di un sistema di mining universale, fu/è/era quella di creare una valuta decentralizzata, e in parte ci è riuscito.
+Purtroppo, il lavoro dei miners è concentrato in una piccola (nicchia? giro? gruppo?) di pools.
+https://medium.com/@homakov/stop-calling-bitcoin-decentralized-cb703d69dc27 poi aggiungerlo alla bibliography se capisco come si fa
+
+\vspace {0.5cm}
+\begin{figure}[h]
+\includegraphics [width = 10cm] {pools.png}
+\centering
+\caption {pie-chart della percentuale di hashrate controllata dalle più grandi pool}
+\end{figure}
+\vspace {0.2cm}
+\noindent
+%
+aa
 
 
 \subsubsection {Gli attacchi al network} %Come suddividere double spending, 51% attack.... sono la stessa cosa?
@@ -433,11 +474,12 @@ Il boom del mining di ETH, come quello del prezzo di tutte le criptovalute, avve
 \subsection {Litecoin}
 
 
-Litecoin è una criptovaluta creata nel 2011 dallo sviluppatore Charlie Lee. L'obbiettivo di questa valuta è quello di comportarsi come l'argento fa con l'oro  /  se bitcon è l'oro, ltc è l'argento.
-Come per questi metalli, infatti, l'oro è usato come uno \textit{store of value}, una riserva di valore, essendo un metallo prezioso con elevato valore (oggi circa \euro{42} per grammo). L'argento è un metallo più comune con valore ben inferiore all'oro (oggi circa \euro{16} per grammo), usato come forma di pagamento.
+Litecoin (LTC) è una criptovaluta creata nell'Ottobre del 2011 dallo sviluppatore Charles Lee, comunemente chiamato Charlie Lee. L'obiettivo di questa valuta è quello di relazionarsi al Bitcoin come l'argento fa con l'oro.
+Tecnicamente, Litecoin è una fork del Bitcoin (ma hard come quelle dopo?)
+Come per questi metalli, infatti, l'oro è usato come uno \textit{store of value}\footnote{Riserva di valore}, essendo un metallo prezioso con elevato valore (oggi circa \euro{42} per grammo). L'argento è un metallo più comune con valore ben inferiore all'oro (oggi circa \euro{16} per grammo), usato anche dalle industrie.
 Lo stesso vale per Bitcoin e Litecoin. Come abbiamo visto in precedenza la quantità totale di bitcoin è limitata a 21.000.000 BTC, e il valore attuale per bitcoin è di circa \euro{7000}. Di litecoin invece ne possono esistere ben 84.000.000, e il prezzo per ltc è di \euro{100].
-Questa è la differenza principale, ma di certo non l'unica.
-https://www.coindesk.com/information/comparing-litecoin-bitcoin/ adesso no sbatty
+Il tempo stabilito per trovare un nuovo blocco è di 2.5 minuti anziché 10(perché?). Questo rende le transazioni notevolmente più veloci.
+Per bilanciare la maggior quantità di litecoin che possono esistere, l'\textit{halving} avviene ogni 840.000 blocchi anziché ogni 210.000.
 
 
 \subsection {Monero}
@@ -448,22 +490,23 @@ Monero è l'unica criptovaluta che è completamente intracciabile. Come abbiamo 
 Con Monero tutto questo non è possibile. Mentre ha una blockchain come tutti gli altri coin, non è possibile vedere le transazioni che avvengono dall'uno all'altro indirizzo, e non è nemmeno possibile visualizzare il saldo.
 
 \vspace {0.5cm}
-\begin {figure}[h]
+\begin{figure}[h]
 \includegraphics [width = 10cm] {monero.png}
+\centering
 \caption {Sul sito moneroblocks.info viene mostrato il seguente messaggio se si cercano informazioni legate a un indirizzo}
-\end {figure}
-\vspace {0.5cm}
+\end{figure}
+\vspace {0.2cm}
+\noindent
 %
 Questo rende Monero una valuta estremamente utile a chiunque voglia nascondere i propri fondi.
-Purtroppo, come tutte le tecnologie a favore della privacy, Monero viene utilizzato anche da evasori delle tasse, truffatori e da venditori di merce illegale (V CONTROVERSIE O ADOPTION?).
-Monero ha tuttavia dei limiti e non si può considerare come una valuta "perfetta": non eccelle nel campo "transazioni veloci e cheap????": in confronto al Bitcoin POST SU RMONERO BC NON TROVO INFO.
-
+Purtroppo, come tutte le tecnologie a favore della privacy, Monero viene utilizzato anche da evasori delle tasse, truffatori e da venditori di merce illegale
+Monero ha tuttavia dei limiti e non si può considerare come una valuta "perfetta": 
 
 \subsection {Nano}
 
 
 Inizialmente chiamata RaiBlocks, Nano è una criptovaluta creata nel da.
-È veramente interessante sotto il punto di vista tecnico perché è la prima che usa la tecnologia \textit{Block Lattice} (BLOK LAH-DES): in sostanza, anzichè dipendere da una singola blockchain come fanno tutte le altre valute, ogni singolo indirizzo \emph{è} una blockchain a sè/se/sé stante.
+È veramente interessante sotto il punto di vista tecnico perché è la prima che usa la tecnologia \textit{Block Lattice}\footnote{Da non confondere con la parola italiana, \textit{lattice [/'let.is/]} significa reticolo, intreccio} in sostanza, anzichè dipendere da una singola blockchain come fanno tutte le altre valute, ogni singolo indirizzo \emph{è} una blockchain a sè/se/sé stante.
 Questa tecnologia permette di effettuare transazioni estremamente veloci rispetto a quelle del Bitcoin (che impiegano in media 20 minuti), con una durata inferiore ai 2 secondi, talvolta letteralmente istantanee.
 Non è l'unico vantaggio. Ho spiegato in 1.1/2? che ad ogni transazione di Bitcoin è necessario pagare una piccola tassa di conferma che varia da un centesimo a un'Euro a seconda di quanto i blocchi sono "intasati" di transazioni.
 La \textit{Block Lattice} , poichè...SPIEGARE, rende tutte le transazioni di Nano completamente gratuite.
@@ -473,7 +516,12 @@ Nano inoltre non richiede mining perché... reddit? ricerca?
 \subsection {Ripple}
 
 
-Ripple è un altcoin che è brutto perche legato alle banche centralizzato il 90\% è posseduto dai ricconi ma comunque riesce ad essere al terzo posto per market cap smh
+Ripple è un altcoin creato nel dalla Ripple Foundation. (each transaction destroys a small amount XRP, is the supply of coins getting smaller?)
+
+La sua particolarità sta nel fatto che Ripple mira ad essere una valuta fortemente legata all'ambito bancario, utilizzata per...?
+La principale critica a Ripple è quella di non essere decentralizzato come la stragrande maggioranza delle criptovalute, bensì la Ripple Foundation ha una forte influenza sull'andamento della valuta.
+Ripple è un coin \textit{premined}, che non è generato tramite mining, infatti per entrarne in possesso è solamente possibile acquistarne direttamente dalla Foundation.
+Per questo, la Ripple Foundation possiede oltre il 50\% di tutti i ripple, circa 50.000.000.000 XRP. Questo le permette di modificare artificialmente il prezzo.
 
 
 \subsection {Bitcoin "hard forks"}
@@ -482,11 +530,13 @@ Ripple è un altcoin che è brutto perche legato alle banche centralizzato il 90
 La blockchain del Bitcoin "originale" può essere clonata indefinitamente. Chiunque può prendere il codice sorgente del Bitcoin, applicarci qualche modifica e mandarlo "live", rendendo disponibili dei wallet al download e impiegando qualche miner per processare le transazioni del "nuovo" bitcoin.
 
 \vspace {0.5cm}
-\begin {figure}[h]
+\begin{figure}[h]
 \includegraphics [width = 10cm] {hard_fork.png}
+\centering
 \caption {Hard fork: Non-Upgraded nodes reject the new rules, diverging the chain}
-\end {figure}
-\vspace {0.5cm}
+\end{figure}
+\vspace {0.2cm}
+\noindent
 %
 Oggi esistono più di 30 \textit{fork} del Bitcoin: Bitcoin Gold, Bitcoin Candy, Bitcoin Private, Bitcoin Unlimited, Bitcoin Super... Persino Bitcoin Pizza e Bitcoin God.
 Quasi tutti i fork vengono visti come delle truffe, come valute che non possiedono nulla di nuovo rispetto all'originale Bitcoin, ma viene sempre data attenzione perché chiunque possiede Bitcoin il momento in cui la blockchain è stata clonata, entra automaticamente in possesso del coin della fork.
@@ -530,8 +580,25 @@ In questa sezione andrò a parlare dell'impatto del Bitcoin nella società di og
 
 Il Bitcoin è una valuta relativamente nuova nata neanche 10 anni fa, e il fatto che utilizza una tecnologia sconosiuta prima d'ora, limita l'adozione da parte di mercanti e imprese.
 Nonostante ciò, sempre più negozi online e nella vita reale stanno cominciando ad accettare criptovalute come forma di pagamento,\footnote{https://99bitcoins.com/who-accepts-bitcoins-payment-companies-stores-take-bitcoins/}, tra cui:
-Questi 
+
+\begin{itemize}
+\item PPLNS: \textit{Pay Per Last N Shares}
+\item PPS:
+\item Score:
+\item FPPS:
+\end{itemize}
 Oltre a questi servizi, è anche possibile acquistare merce su siti che non accettano ancora criptovalute. bitcoinsuperstore.us e coinbought.com
+Un fattore concreto che indica l'adozione del Bitcoin è il numero di transazioni giornaliere:
+
+\vspace {0.5cm}
+\begin{figure}[h]
+\makebox [\textwidth] [c] {\includegraphics [width=15cm] {transactions.png}}
+\caption {Transazioni giornaliere a partire dal 2009}
+\end{figure}
+\vspace {0.2cm}
+\noindent
+%
+aa
 
 
 \paragraph {Rovereto: quasi tutti accettano Bitcoin}
@@ -556,7 +623,7 @@ Il prezzo del Bitcoin, ma anche della stragrande maggioranza delle altre criptov
 futures?
 
 
-\paragraph {L'analogia con la crisi del '29}
+\subsubsection {L'analogia con la crisi del '29}
 
 
 Il 24 Ottobre del 1929 è il giorno che marcò(?) il crollo della Borsa di Wall Street, che ebbe come conseguenza il fallimento di molte imprese, una riduzione della domanda da parte di altri stati, e una forte crescita della disoccupazione, raggiungendo i 13 milioni di disoccupati nel 1932.
@@ -575,12 +642,14 @@ Questo è estremamente simile a quello che è successo al Bitcoin perché sì.
 A seguito 
 
 \vspace {0.5cm}
-\begin {figure}[h]
+\begin{figure}[h]
 \includegraphics [width = 10cm] {crash2.png}
+\centering
 \caption {Confronto tra il crollo del prezzo del Bitcoin nel 2013 e nel 2017}
-\end {figure}
-\vspace {0.5cm}
-
+\end{figure}
+\vspace {0.2cm}
+\noindent
+%
 
 \subsection {Controversie}
 
@@ -615,7 +684,7 @@ Oggi tutti coloro coinvolti nel pubblicizzare Bitconnect, soprattutto Youtuber (
 \subsection {Il futuro delle criptovalute}
 
 
-Molti ritengono che quella del Bitcoin sia solo una moda passeggera, simile a quella dei film in 3D al cinema e Google Glass, che ha avuto il suo picco nell'inverno del 2017 e che è destinato a sparire.
+Molti ritengono che quella del Bitcoin sia solo una moda passeggera, simile a quella dei film in 3D e Google Glass, che ha avuto il suo picco nell'inverno del 2017 e che è destinato a sparire.
 Personalmente sono ottimista nello sviluppo delle criptovalute.
 Osservando l'andamento dei grafici, pur avendo subito gravi crolli in brevi intervalli di tempo, il prezzo delle valute è in una regolare crescita.
 Il fatto che se ne parli sempre più nei media (i media parlino piu), sebbene spesso in negativo, rende la gente comune consapevole dell'esistenza di questa tecnologia, e fra tanti che la ignorano sono sicuro che qualcuno come me si interessi.
@@ -623,11 +692,15 @@ La natura deflazionaria della valuta aiuta sicuramente il prezzo: abbiamo visto 
 Tutte le inflazioni sono dovute a un'eccessiva stampa di soldi cartacei, cosa che è impossibile nell'ambito delle criptovalute.
 
 \vspace {0.5cm}
-\begin {figure}[h]
+\begin{figure}[h]
 \includegraphics [width = 10cm] {adoption.png}
+\centering
 \caption {Adozione del Bitcoin paragonata ad altre tecnologie}
-\end {figure}
-\vspace {0.5cm}
+\end{figure}
+\vspace {0.2cm}
+\noindent
+%
+aa
 
 
-\end {document}
+\end{document}
