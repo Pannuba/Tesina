@@ -83,7 +83,7 @@ La tecnologia rivoluzionaria utilizzata dal Bitcoin e da tutte le altre criptova
 Come suggerisce il nome, "blockchain" indica una catena di blocchi.
 
 \vspace {0.5cm}
-\begin{figure}[h]
+\begin{figure}
 \includegraphics [width = 10cm] {blockchain2.png}
 \centering
 \caption {Schema semplificato della blockchain}
@@ -139,7 +139,7 @@ Satoshi ha deciso che ogni blocco deve impiegare un tempo di circa 10 minuti per
 Man mano che sempre più miners cominciano a lavorare, elevando l'\textit{hashing power} complessivo del network del Bitcoin, se non ci fossero cambi di target i blocchi verrebbero trovati con frequenza sempre più elevata.
 
 \vspace {0.5cm}
-\begin{figure}[h]
+\begin{figure}
 \makebox [\textwidth] [c] {\includegraphics [width=15cm] {hashdiff.png}}
 \caption {Confronto tra difficoltà (sopra) e hashrate globale (sotto)}
 \end{figure}
@@ -223,10 +223,50 @@ Questo consumo di elettricità corrisponde a (piu di 0.13, perche dati dic 2017,
 \subsection {Come e dove si conserva il Bitcoin}
 
 
+\subsubsection {Indirizzi}
+
+
+Gli indirizzi sono delle stringhe di circa 30/40 caratteri che sono il luogo(?) in cui ci sono i bitcoin. suona male. cioè nella blockhain si dice "a indirizzo x sono associati y btc"
+Un indirizzo Bitcoin può essere visto come un codice IBAN se si vuo,e rimanere in un contesto finanziario, o anche come un indirizzo email.
+Esistono diversi tipi di indirizzo.
+
+
+\paragraph {P2PKH}
+
+
+Gli indirizzi P2PKH "\textit{Pay To PubKey Hash}", comunemente chiamati indirizzi "legacy", sono il primo formato di indirizzo, utilizzato esclusivamente fino all'agosto del 2017.
+Questi indirizzi si riconoscono dal fatto che iniziano col carattere '1', per esempio 12dmWhp2dyog8GQRX3GMFqmFmV3duWUMmN. %scrivere tipo code%
+
+
+\paragraph {P2SH SegWit}
+
+
+P2SH significa "Pay 2 Script Hash".
+Gli indirizzi P2SH sono stati ideati il 18 Ottobre del 2011 con il BIP-13 e mandati live l'1 Aprile del 2012.
+Il lancio di questi indirizzi non avvenne affatto in modo liscio e "indolore": il problema principale è che tutti i miners che non hanno aggiornato il proprio software/full node? stavano includendo nei blocchi transazioni ritenute invalide dai loro software (ripetizione, suona male).
+La differenza sostanziale con gli indirizzi "normali" è che ..multisig...sigh...è difficile
+
+
+\paragraph {bech32 SegWit}
+
+
+Gli indirizzi Bitcoin bech32 implementano SegWit al 100\%, e di conseguenza sono quelli con le tasse di transazione/i più inferiori.
+Questo tipo di indirizzo è stato creato nel XXXX, ed essendo sotto un punto di vista tecnico molto diverso dagli indirizzi tradizionali (che cominciano con 1 e 3), non sono supportati da una moltitudine di siti di compravendita e da portafogli, (di cui parlerò in seguito).
+Gli indirizzi bech32, infatti, hanno il prefisso "bc1", e tutt'oggi cose
+
 \subsubsection {Keys}
 
 
-Ogni indirizzo Bitcoin è composto due chiavi: una \textit{public key} e una \textit{private key}. (come nascono? come sono unite? BIP39 e co.? come fanno i btc a starci dentro?)
+Ogni indirizzo Bitcoin è composto due chiavi: una \textit{public key} e una \textit{private key}. dovementtto come si generano e che ne esistono un casino?
+
+
+\paragraph {Public key}
+
+
+Da non confondere con l'indirizzo in sé, la chiave pubblica(key lo dico in ing o ita?)Every public key is 256 bits long — sorry, this is mathematical stuff — and the final hash (your wallet address) is 160 bits long.
+The public key is used to ensure you are the owner of an address that can receive funds.
+The public key is also mathematically derived from your private key, but using reverse mathematics to derive the private key would take the world’s most powerful supercomputer many trillion years to crack.
+dal sito dei dammis. quando dico n tot indiriziz? dopo devo anche scrivere di come funziona lo storage offline (come indirizzo email che puo ricevere ma non mandare v preferiti windows
 
 
 \paragraph {Private key}
@@ -236,13 +276,6 @@ La \textit{private key} è un codice che consente a chiunque di avere accesso ai
 Come le \textit{hash} viste in precendenza, le private key sono numeri di 256 \textit{bit}, che nel sistema numerico esadecimale sono codici di 64 caratteri tra numeri e lettere.
 A differenza delle \textit{hash} SHA-256, però, le private key devono essere comprese tara 
 È paragonabile ad una password che dà accesso ad account di qualunque tipo, l'unica differenza è che non è modificabile.
-
-
-\paragraph {Public key}
-
-
-La \textit{public key}, invece, è l'indirizzo a cui i pagatori(?) effettuano i pagamenti.
-In un contesto finanziario è paragonabile al codice IBAN.
 
 
 \paragraph {Seeds}
@@ -263,71 +296,49 @@ Il secondo vantaggio è che la presenza di molteplici indirizzi Bitcoin aiuta a 
 Come abbiamo visto nella blockchain chiunque può accedere alle informazioni di chiunque (suona male), così per rendere i fondi meno tracciabili si possono usare diversi indirizzi per diverse operazioni... spiegare.
 
 
-\subsubsection {Indirizzi} %se lo mettessi dopo quando parlo di segwit? sennò concetto inspiegato.
-
-
-Con "indirizzi" mi riferisco in realtà alle \textit{public keys} di cui ho parlato in precedenza.
-Esistono diversi tipi di indirizzo.
-
-
-\paragraph {"Legacy"}
-
-
-Con "legacy" mi riferisco al primo formato di indirizzo, utilizzato esclusivamente fino all'agosto del 2017.
-Questi indirizzi si riconoscono dal fatto che iniziano col carattere '1', per esempio mioindirizzo.
-
-
-\paragraph {P2SH SegWit}
-
-
-P2SH significa "Pay 2 Script Hash".
-Gli indirizzi P2SH sono stati ideati il 18 Ottobre del 2011 con il BIP-13 e mandati live l'1 Aprile del 2012.
-Il lancio di questi indirizzi non avvenne affatto in modo liscio e "indolore": il problema principale è che tutti i miners che non hanno aggiornato il proprio software/full node? stavano includendo nei blocchi transazioni ritenute invalide dai loro software (ripetizione, suona male).
-La differenza sostanziale con gli indirizzi "normali" è che ..multisig...sigh...è difficile
-
-
-\paragraph {bech32 SegWit}
-
-
-Gli indirizzi Bitcoin bech32 implementano SegWit al 100\%, e di conseguenza sono quelli con le tasse di transazione/i più inferiori.
-Questo tipo di indirizzo è stato creato nel XXXX, ed essendo sotto un punto di vista tecnico molto diverso dagli indirizzi tradizionali (che cominciano con 1 e 3), non sono supportati da una moltitudine di siti di compravendita e da portafogli, (di cui parlerò in seguito).
-Gli indirizzi bech32, infatti, hanno il prefisso "bc1", e tutt'oggi cose
-
-
 \subsubsection {Portafogli}
 
 
-Un portafoglio è il metodo (software ma non solo) usato per conservare e interagire con i Bitcoin che si possiede.
+Un portafoglio è il metodo usato per conservare e interagire con i Bitcoin che si possiede.
+I portafogli contengono le chiavi pubbliche e private e di conseguenza l'indirizzo stesso.
 
 
 \paragraph {Cold storage}
 
 
-\textit{Cold storage} significa che i btc sono offline
+\textit{Cold storage} Con il \textit{cold storage}\footnote{Archiviazione a freddo}, \textit{public} e \textit{private} keys sono conservate offline, ovvero in un posto(?) non collegato a internet.
+I principali tipi di \textit{cold storage} sono:
 
-
-\paragraph {Hot wallets}
-
-
-Hot wallets, unlike cold wallets, are the most useful wallets because they allow the user to send BUT WHY?????
-
-
-\paragraph {Hardware wallets}
-
-
-I portafogli hardware, come suggerisce il nome, sono dei piccoli dispositivi simili a chiavette USB (singolare o plurare?), in cui la \textit{private key} è contenuta.
-Sono il metodo più sicuro per conservare criptovaluta, in quanto è impossibile estrarre le chiavi.... hot/cold??
+\begin{itemize}
+\item Digitale: le keys sono salvate sottoforma di file su un computer, un CD, una chiavetta USB...
+\item Carta: si possono scrivere le keys su un pezzo di carta, o stamparle su un "portafoglio" bello tipo figo.. (foto + descrizopne dopo) metodo poco sicuro per la fragilità del materiale
+\item Metallo: le keys possono essere incise su una lamina di metallo, preferibilmente oro, argento, bronzo, nickel, ottone o cobalto per la resistenza alle alte temperature.
+\item \textit{Hardware wallet}:I portafogli hardware, come suggerisce il nome, sono dei piccoli dispositivi simili a chiavette USB (singolare o plurare?), in cui la \textit{private key} è contenuta.
+\end{itemize}
 
 \vspace {0.5cm}
-\begin{figure}[h]
+\begin{figure}
 \includegraphics [width = 5cm] {ledger.jpg}
 \centering
 \caption {Un Ledger Nano S}
 \end{figure}
 \vspace {0.2cm}
 \noindent
-%
-aa
+METTERE FOTO DI UN FOGLIO STAPATO FIGO ACCANTO
+Esistono anche dei veri e propri "Bitcoin" fisici, ovvero delle monete materiali con incise le keys (gia caricatte a volte, si)?
+Hot wallets are like checking accounts while cold wallets are similar to savings accounts.x me poi tolgo
+
+\paragraph {Hot wallets}
+
+
+Gli \textit{hot wallets} sono invece dei portafogli che utilizzano un collegamento a internet per permettere di effettuare pagamenti \emph{da} l'indirizzo associato?importato? che si usa?
+Gli \textit{hot wallets} esistono come software, ma è comunque possibile dividerli in tre principali categorie:
+
+\begin{itemize}
+\item App per smartphone
+\item Programma per computer
+\item Servizio online
+\end{itemize}
 
 
 \subsection {I problemi del Bitcoin}
@@ -341,7 +352,7 @@ Purtroppo, il lavoro dei miners è concentrato in una piccola (nicchia? giro? gr
 https://medium.com/@homakov/stop-calling-bitcoin-decentralized-cb703d69dc27 poi aggiungerlo alla bibliography se capisco come si fa
 
 \vspace {0.5cm}
-\begin{figure}[h]
+\begin{figure}
 \includegraphics [width = 10cm] {pools.png}
 \centering
 \caption {pie-chart della percentuale di hashrate controllata dalle più grandi pool}
@@ -461,14 +472,32 @@ https://theethereum.wiki/w/index.php/MainUNDERSCOREPage
 
 https://www.coindesk.com/information/ethereum-smart-contracts-work/
 
-
-\paragraph {Mining e il crollo del mercato di schede grafiche}
-
-
-In precedenza mi sono concentrato sul processo di mining del Bitcoin, ma come quasi tutte le valute (nano xk no mining?) anche Ethereum funziona grazie al mining.
+In precedenza mi sono concentrato sul processo di mining del Bitcoin, ma come quasi tutte le criptovalute anche Ethereum funziona grazie al mining.
 La principale differenza tra il mining di Bitcoin e di Ethereum è che Ethereum non richiede gli ASIC, ma si può effettuare con l'uso di schede grafiche per computer.
-Questo rende Ethereum "minabile" da chiunque ha/avesse un computer, e di conseguenza i miner di ETH sono per quantità molti più dei miner "tradizionali".
-Il boom del mining di ETH, come quello del prezzo di tutte le criptovalute, avvenne tra la fine del 2017 e l'inizio del 2018.
+Questo perché il mining di Ethereum non utilizza l'algoritmo SHA-256 come il Bitcoin, bensì l'algoritmo Ethash\footnote{Chiamato in passato Dagger-Hashimoto perché include delle caratteristiche presenti in questi due algoritmi}.
+La più grande differenza tra i due algoritmi è che Ethash richiede una quantità di RAM\footnote{\textit{Random Access Memory, memoria ad accesso casuale che serve per memorizzare cose...}} ben maggiore di quella dei miner ASIC. spiegare DAG
+Le schede grafiche dei computer desktop, comunemente chiamate GPU\footnote{\textit{Graphics Processing Unit}}, grazie alla maggior quantità di RAM (superiore a 4GB nella maggior parte delle schede moderne), sono effettivamente l'unico mezzo in grado di cercare e trovare i blocchi di Ethereum.
+In questo modo Vitalik ha impedito agli ASIC di minare Ethereum, rendendo il lavoro possibile esclusivamente alle GPU. Ma perché?
+I miner ASIC sono apparecchiature costose ed estremamente potenti, presenti in quantità limitata perché concentrate in enormi \textit{farm} e sottomesse al monopolio delle \textit{pools} cinesi.
+Questi due fattori (come abbiamo visto in...? o se lo mettessi già su?) sono grandi minacce per la decentralizzazione della valuta.
+Le schede grafiche sono possedute da chiunque possieda/possedesse un computer di fascia medio-alta, e il prezzo di una GPU è normalmente intorno ai \euro{200} - \euro{400}.
+Questo rende Ethereum potenzialmente "minabile" da una grandissima quantità di persone, e ciò impedisce la concentrazione dell'\textit{hashing power} in siti singoli?come dire?, di conseguenza riducendo la possibilità di attacchi alla rete descritti in X.X.
+parlare del dilemma gpuvsasic?
+
+\paragraph {L'inflazione del mercato di schede grafiche}
+
+Come si dice qunado costa di piò?
+Il boom del mining di ETH, come quello del prezzo di tutte le criptovalute, avvenne nell'estate del 2017.
+Sempre più persone si resero conto della possibilità di poter guadagnare soldi veri facendo lavorare delle schede grafiche (come?), così gli interessati cominciarono ad acquistare GPU in negozi veri(?) e online. (posso mettere che anche io lo faccio?)
+Certi miners di Ethereum, però, acquistarono schede grafiche in quantità colossali per creare delle vere e proprie \textit{farm}, con centinaia, se non migliaia di GPU ciascuna.
+Si verificò una vera e propria crisi nel mercato delle schede grafiche: i negozi erano quasi costantemente \textit{sold out??}, e appena arrivava un nuovo carico(?) di GPU queste venivano istantaneamente acquistate.
+Ovviamente i mercanti videro questa come un'opportunità per aumentare i profitti della loro merce, e così aumentarono esponenzialmente i prezzi di tutti i modelli di scheda/e grafica.
+Per esempio le AMD RX 580 8GB con MSRP\footnote{\textit{Manufacturer's Suggested Retail Price}, il prezzo di un oggetto consigliato dal manufattore} pari a \euro{159} raggiunsero prezzi ben oltre \euro{300}.
+Questa inflazione è in corso tutt'oggi, e FOTO FARM DA QUALCHE PARTE
+
+\paragraph {Genesis mining}
+
+video, cose.
 
 
 \subsection {Litecoin}
@@ -477,7 +506,8 @@ Il boom del mining di ETH, come quello del prezzo di tutte le criptovalute, avve
 Litecoin (LTC) è una criptovaluta creata nell'Ottobre del 2011 dallo sviluppatore Charles Lee, comunemente chiamato Charlie Lee. L'obiettivo di questa valuta è quello di relazionarsi al Bitcoin come l'argento fa con l'oro.
 Tecnicamente, Litecoin è una fork del Bitcoin (ma hard come quelle dopo?)
 Come per questi metalli, infatti, l'oro è usato come uno \textit{store of value}\footnote{Riserva di valore}, essendo un metallo prezioso con elevato valore (oggi circa \euro{42} per grammo). L'argento è un metallo più comune con valore ben inferiore all'oro (oggi circa \euro{16} per grammo), usato anche dalle industrie.
-Lo stesso vale per Bitcoin e Litecoin. Come abbiamo visto in precedenza la quantità totale di bitcoin è limitata a 21.000.000 BTC, e il valore attuale per bitcoin è di circa \euro{7000}. Di litecoin invece ne possono esistere ben 84.000.000, e il prezzo per ltc è di \euro{100].
+Lo stesso vale per Bitcoin e Litecoin. Come abbiamo visto in precedenza la quantità totale di bitcoin è limitata a 21.000.000 BTC, e il valore attuale per bitcoin è di circa \euro{7000}.
+Di litecoin invece ne possono esistere ben 84.000.000, e il prezzo per ltc è di \euro{100].
 Il tempo stabilito per trovare un nuovo blocco è di 2.5 minuti anziché 10(perché?). Questo rende le transazioni notevolmente più veloci.
 Per bilanciare la maggior quantità di litecoin che possono esistere, l'\textit{halving} avviene ogni 840.000 blocchi anziché ogni 210.000.
 
@@ -490,7 +520,7 @@ Monero è l'unica criptovaluta che è completamente intracciabile. Come abbiamo 
 Con Monero tutto questo non è possibile. Mentre ha una blockchain come tutti gli altri coin, non è possibile vedere le transazioni che avvengono dall'uno all'altro indirizzo, e non è nemmeno possibile visualizzare il saldo.
 
 \vspace {0.5cm}
-\begin{figure}[h]
+\begin{figure}
 \includegraphics [width = 10cm] {monero.png}
 \centering
 \caption {Sul sito moneroblocks.info viene mostrato il seguente messaggio se si cercano informazioni legate a un indirizzo}
@@ -505,12 +535,14 @@ Monero ha tuttavia dei limiti e non si può considerare come una valuta "perfett
 \subsection {Nano}
 
 
-Inizialmente chiamata RaiBlocks, Nano è una criptovaluta creata nel da.
+Inizialmente chiamata RaiBlocks\footnote{il passaggio da RaiBlocks a Nano è avvenuto il 31 Gennaio 2018}, Nano è una criptovaluta creata nel MESE 2015 dallo sviluppatore Colin LeMahieu.
+A differenza delle valute che dipendono da \textit{proof of work}, Nano non prevede l'impiego di miners per validare le proprie transazioni https://nano.org/en/faq.
+sistma di representers... ecc. dovrei metterlo dopo?
+Esistono in totale 133.248.290 NANO, distribuiti gratuitamente fino all'Ottobre 2017 tramite un sito che inviava una piccola quantità di Nano a chiunque completasse un \textit{captcha}, una parola da trascrivere in una casella di testo per confermare di non essere un robot programmato per abusare del sistema di distribuzione gratuita.
 È veramente interessante sotto il punto di vista tecnico perché è la prima che usa la tecnologia \textit{Block Lattice}\footnote{Da non confondere con la parola italiana, \textit{lattice [/'let.is/]} significa reticolo, intreccio} in sostanza, anziché dipendere da una singola blockchain come fanno tutte le altre valute, ogni singolo indirizzo \emph{è} una blockchain a sé stante.
-Questa tecnologia permette di effettuare transazioni estremamente veloci rispetto a quelle del Bitcoin (che impiegano in media 20 minuti), con una durata inferiore ai 2 secondi, talvolta letteralmente istantanee.
-Non è l'unico vantaggio. Ho spiegato in 1.1/2? che ad ogni transazione di Bitcoin è necessario pagare una piccola tassa di conferma che varia da un centesimo a un'Euro a seconda di quanto i blocchi sono "intasati" di transazioni.
+Questa tecnologia permette di effettuare transazioni estremamente veloci rispetto a quelle del Bitcoin (che impiegano un'ora per essere ritenute pienamente concluse), con una durata inferiore ai 2 secondi, talvolta letteralmente istantanee.
+Non è l'unico vantaggio. A differenzaaa
 La \textit{Block Lattice} , poichè...SPIEGARE, rende tutte le transazioni di Nano completamente gratuite.
-Nano inoltre non richiede mining perché... reddit? ricerca?
 
 
 \subsection {Ripple}
@@ -530,7 +562,7 @@ Per questo, la Ripple Foundation possiede oltre il 50\% di tutti i ripple, circa
 La blockchain del Bitcoin "originale" può essere clonata indefinitamente. Chiunque può prendere il codice sorgente del Bitcoin, applicarci qualche modifica e mandarlo "live", rendendo disponibili dei wallet al download e impiegando qualche miner per processare le transazioni del "nuovo" bitcoin.
 
 \vspace {0.5cm}
-\begin{figure}[h]
+\begin{figure}
 \includegraphics [width = 10cm] {hard_fork.png}
 \centering
 \caption {Hard fork: Non-Upgraded nodes reject the new rules, diverging the chain}
@@ -572,7 +604,7 @@ Ver possiede anche l'account Twitter @bitcoin, che svolge le stesse opere di pro
 \section {Crypto oggi}
 
 
-In questa sezione andrò a parlare dell'impatto del Bitcoin nella società di oggi
+In questa sezione andrò a parlare dell'impatto del Bitcoin nella società di oggi.
 
 
 \subsection {Adozione}
@@ -582,7 +614,7 @@ Il Bitcoin è una valuta relativamente nuova nata neanche 10 anni fa, e il fatto
 Nonostante ciò, sempre più negozi online e nella vita reale stanno cominciando ad accettare criptovalute come forma di pagamento,\footnote{https://99bitcoins.com/who-accepts-bitcoins-payment-companies-stores-take-bitcoins/}, tra cui:
 
 \begin{itemize}
-\item 
+\item case...
 \item 
 \item 
 \item 
@@ -591,7 +623,7 @@ Oltre a questi servizi, è anche possibile acquistare merce su siti che non acce
 Un fattore concreto che indica l'adozione del Bitcoin è il numero di transazioni giornaliere:
 
 \vspace {0.5cm}
-\begin{figure}[h]
+\begin{figure}
 \makebox [\textwidth] [c] {\includegraphics [width=15cm] {transactions.png}}
 \caption {Transazioni giornaliere a partire dal 2009}
 \end{figure}
@@ -642,7 +674,7 @@ Questo è estremamente simile a quello che è successo al Bitcoin perché sì.
 A seguito 
 
 \vspace {0.5cm}
-\begin{figure}[h]
+\begin{figure}
 \includegraphics [width = 10cm] {crash2.png}
 \centering
 \caption {Confronto tra il crollo del prezzo del Bitcoin nel 2013 e nel 2017}
@@ -675,7 +707,8 @@ Ai tempi il Bitcoin aveva un valore ben più basso del \textasciitilde 9000 di o
 
 Bitconnect è un altcoin con un tasso di interesse variabile (dal 0.1\% all'1\%) che aumentava quotidianamente i profitti di chiunque ne possedesse.
 Non era ben chiaro chi fosse il creatore, e molti erano già dubiosi del claim di arricchire magicamente chiunque ne comprasse.
-Tra il 14 e il 17 Gennaio 2018 il prezzo di Bitconnect è crollato da \euro{273} a \euro{30}, arrivando agli \euro{0.55} di oggi. Si è scoperto che l'intero progetto Bitconnect non era altro che un' "exit scam", una truffa in cui i truffatori spariscono improvvisamente, lasciando gli investitori a mani vuote.
+Tra il 14 e il 17 Gennaio 2018 il prezzo di Bitconnect è crollato da \euro{273} a \euro{30}, arrivando agli \euro{0.55} di oggi.
+Si è scoperto che l'intero progetto Bitconnect non era altro che un' "exit scam", una truffa in cui i truffatori spariscono improvvisamente, lasciando gli investitori a mani vuote.
 In particolare Bitconenct è stato uno schema Ponzi, un tipo di truffa in cui il truffatore promette guadagni a chiunque si indebitasse con lui, per poi sparire.
 Il nome Ponzi deriva da Charles Ponzi, un italo-americano che si arricchì notevolmente negli anni '30(??????) compiendo ripetutamente questo tipo di truffa.
 Oggi tutti coloro coinvolti nel pubblicizzare Bitconnect, soprattutto Youtuber (spiegare chi sono?) sono sotto investigazione
@@ -692,7 +725,7 @@ La natura deflazionaria della valuta aiuta sicuramente il prezzo: abbiamo visto 
 Tutte le inflazioni sono dovute a un'eccessiva stampa di soldi cartacei, cosa che è impossibile nell'ambito delle criptovalute.
 
 \vspace {0.5cm}
-\begin{figure}[h]
+\begin{figure}
 \includegraphics [width = 10cm] {adoption.png}
 \centering
 \caption {Adozione del Bitcoin paragonata ad altre tecnologie}
@@ -702,5 +735,12 @@ Tutte le inflazioni sono dovute a un'eccessiva stampa di soldi cartacei, cosa ch
 %
 aa
 
+\newpage
+
+\section*{Donazioni}
+
+
+Se la tesina ti è piaciuta dammi soldi gratis!
+indirizzo btc ltc xmr nano eth 
 
 \end{document}
