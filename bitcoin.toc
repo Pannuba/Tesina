@@ -1,59 +1,63 @@
-\contentsline {section}{\numberline {1}Le origini del Bitcoin}{2}
-\contentsline {section}{\numberline {2}Blockchain: cos'\IeC {\`e} e come funziona}{3}
-\contentsline {subsection}{\numberline {2.1}Mining}{4}
-\contentsline {paragraph}{Proof of work}{4}
-\contentsline {paragraph}{Target e difficolt\IeC {\`a} di mining}{4}
-\contentsline {paragraph}{nome paragrafo?}{6}
-\contentsline {paragraph}{Mining pools}{6}
-\contentsline {paragraph}{Tassa di transazione}{6}
-\contentsline {paragraph}{Il futuro del mining}{7}
-\contentsline {subsubsection}{\numberline {2.1.1}L'uso di elettricit\IeC {\`a} del mining}{7}
-\contentsline {subsection}{\numberline {2.2}Come e dove si conserva il Bitcoin}{8}
-\contentsline {subsubsection}{\numberline {2.2.1}Indirizzi}{8}
-\contentsline {paragraph}{P2PKH}{8}
-\contentsline {paragraph}{P2SH SegWit}{8}
-\contentsline {paragraph}{bech32 SegWit}{8}
-\contentsline {subsubsection}{\numberline {2.2.2}Keys}{8}
-\contentsline {paragraph}{Public key}{8}
-\contentsline {paragraph}{Private key}{9}
-\contentsline {paragraph}{Seeds}{9}
-\contentsline {subsubsection}{\numberline {2.2.3}Portafogli}{9}
-\contentsline {paragraph}{Cold storage}{9}
-\contentsline {paragraph}{Hot wallets}{10}
-\contentsline {subsection}{\numberline {2.3}I problemi del Bitcoin}{11}
-\contentsline {subsubsection}{\numberline {2.3.1}La parziale centralizzazione}{11}
-\contentsline {subsubsection}{\numberline {2.3.2}Gli attacchi al network}{11}
-\contentsline {subsubsection}{\numberline {2.3.3}Il limite dei blocchi da 1 Megabyte}{11}
-\contentsline {subsection}{\numberline {2.4}Soluzioni ai problemi}{11}
-\contentsline {subsubsection}{\numberline {2.4.1}Segregated Witness}{12}
-\contentsline {subsubsection}{\numberline {2.4.2}Lightning Network}{12}
-\contentsline {section}{\numberline {3}Utilizzare Bitcoin}{12}
-\contentsline {subsection}{\numberline {3.1}Creazione del portafoglio}{12}
-\contentsline {subsection}{\numberline {3.2}Come ottenere criptovaluta}{12}
-\contentsline {paragraph}{Exchange}{12}
-\contentsline {paragraph}{ATMs}{12}
-\contentsline {paragraph}{Mining}{13}
-\contentsline {paragraph}{Forma di pagamento}{13}
-\contentsline {subsection}{\numberline {3.3}Trasferire Bitcoin}{13}
-\contentsline {section}{\numberline {4}Non solo Bitcoin}{13}
-\contentsline {subsection}{\numberline {4.1}Ethereum}{13}
-\contentsline {paragraph}{L'inflazione del mercato di schede grafiche}{14}
-\contentsline {paragraph}{Genesis mining}{15}
-\contentsline {subsection}{\numberline {4.2}Litecoin}{15}
-\contentsline {subsection}{\numberline {4.3}Monero}{15}
-\contentsline {subsection}{\numberline {4.4}Nano}{15}
-\contentsline {subsection}{\numberline {4.5}Ripple}{16}
-\contentsline {subsection}{\numberline {4.6}Bitcoin "hard forks"}{17}
-\contentsline {subsubsection}{\numberline {4.6.1}Roger Ver e la truffa di "Bitcoin Cash"}{17}
-\contentsline {section}{\numberline {5}Crypto oggi}{18}
-\contentsline {subsection}{\numberline {5.1}Adozione}{19}
-\contentsline {paragraph}{Rovereto: quasi tutti accettano Bitcoin}{19}
-\contentsline {paragraph}{Elizavetovska: il villaggio in Ucraina in cui tutti utilizzano criptovalute}{19}
-\contentsline {subsection}{\numberline {5.2}La bolla del 2017: cause e conseguenze}{20}
-\contentsline {subsubsection}{\numberline {5.2.1}L'analogia con la crisi del '29}{20}
-\contentsline {paragraph}{La ricorrenza dei "crash" dei mercati}{20}
-\contentsline {subsection}{\numberline {5.3}Controversie}{20}
-\contentsline {subsubsection}{\numberline {5.3.1}Il ban del Bitcoin in certi stati}{20}
-\contentsline {subsubsection}{\numberline {5.3.2}Mt. Gox}{22}
-\contentsline {subsubsection}{\numberline {5.3.3}Bitconnect}{22}
-\contentsline {subsection}{\numberline {5.4}Il futuro delle criptovalute}{22}
+\contentsline {section}{\numberline {1}Le origini del Bitcoin}{3}
+\contentsline {section}{\numberline {2}Blockchain: cos'\IeC {\`e} e come funziona}{5}
+\contentsline {subsection}{\numberline {2.1}Cosa sono i blocchi e che compito svolgono}{5}
+\contentsline {subsection}{\numberline {2.2}Mining}{6}
+\contentsline {paragraph}{Le \textit {hash}}{6}
+\contentsline {subsubsection}{\numberline {2.2.1}Target e difficolt\IeC {\`a} di mining}{6}
+\contentsline {paragraph}{Blocchi di 10 minuti}{7}
+\contentsline {subsubsection}{\numberline {2.2.2}Costi del mining}{8}
+\contentsline {paragraph}{L'uso di elettricit\IeC {\`a} del mining}{8}
+\contentsline {subsubsection}{\numberline {2.2.3}Profitti del mining}{9}
+\contentsline {paragraph}{Mining pools}{9}
+\contentsline {paragraph}{Tassa di transazione}{10}
+\contentsline {subsubsection}{\numberline {2.2.4}Il futuro del mining}{10}
+\contentsline {section}{\numberline {3}Aspetto tecnico del Bitcoin}{11}
+\contentsline {subsection}{\numberline {3.1}Come e dove si conserva}{11}
+\contentsline {subsubsection}{\numberline {3.1.1}Indirizzi}{11}
+\contentsline {paragraph}{P2PKH}{11}
+\contentsline {paragraph}{P2SH SegWit}{11}
+\contentsline {paragraph}{bech32 SegWit}{11}
+\contentsline {subsubsection}{\numberline {3.1.2}Keys}{11}
+\contentsline {paragraph}{Public key}{11}
+\contentsline {paragraph}{Private key}{11}
+\contentsline {paragraph}{Seeds}{12}
+\contentsline {subsubsection}{\numberline {3.1.3}Portafogli}{12}
+\contentsline {paragraph}{Cold storage}{12}
+\contentsline {paragraph}{Hot wallets}{13}
+\contentsline {subsection}{\numberline {3.2}I problemi del Bitcoin}{13}
+\contentsline {subsubsection}{\numberline {3.2.1}La parziale centralizzazione}{13}
+\contentsline {subsubsection}{\numberline {3.2.2}Gli attacchi al network}{14}
+\contentsline {subsubsection}{\numberline {3.2.3}Il limite dei blocchi da 1 Megabyte}{14}
+\contentsline {subsection}{\numberline {3.3}Soluzioni ai problemi}{14}
+\contentsline {subsubsection}{\numberline {3.3.1}Segregated Witness}{14}
+\contentsline {subsubsection}{\numberline {3.3.2}Lightning Network}{14}
+\contentsline {section}{\numberline {4}Utilizzare Bitcoin}{15}
+\contentsline {subsection}{\numberline {4.1}Creazione del portafoglio}{15}
+\contentsline {subsection}{\numberline {4.2}Come ottenere criptovaluta}{15}
+\contentsline {paragraph}{Exchange}{15}
+\contentsline {paragraph}{ATMs}{15}
+\contentsline {paragraph}{Mining}{15}
+\contentsline {paragraph}{Forma di pagamento}{16}
+\contentsline {subsection}{\numberline {4.3}Trasferire Bitcoin}{16}
+\contentsline {section}{\numberline {5}Non solo Bitcoin}{17}
+\contentsline {subsection}{\numberline {5.1}Ethereum}{17}
+\contentsline {paragraph}{L'inflazione del mercato di schede grafiche}{17}
+\contentsline {paragraph}{Genesis mining}{18}
+\contentsline {subsection}{\numberline {5.2}Litecoin}{18}
+\contentsline {subsection}{\numberline {5.3}Monero}{18}
+\contentsline {subsection}{\numberline {5.4}Nano}{19}
+\contentsline {subsection}{\numberline {5.5}Ripple}{20}
+\contentsline {subsection}{\numberline {5.6}Bitcoin "hard forks"}{20}
+\contentsline {subsubsection}{\numberline {5.6.1}Roger Ver e la truffa di "Bitcoin Cash"}{21}
+\contentsline {section}{\numberline {6}Crypto oggi}{23}
+\contentsline {subsection}{\numberline {6.1}Adozione}{23}
+\contentsline {paragraph}{Rovereto: quasi tutti accettano Bitcoin}{24}
+\contentsline {paragraph}{Elizavetovska: il villaggio in Ucraina in cui tutti utilizzano criptovalute}{24}
+\contentsline {subsection}{\numberline {6.2}La bolla del 2017: cause e conseguenze}{24}
+\contentsline {subsubsection}{\numberline {6.2.1}L'analogia con la crisi del '29}{24}
+\contentsline {paragraph}{La ricorrenza dei "crash" dei mercati}{24}
+\contentsline {subsection}{\numberline {6.3}Controversie}{24}
+\contentsline {subsubsection}{\numberline {6.3.1}Il ban del Bitcoin in certi stati}{25}
+\contentsline {subsubsection}{\numberline {6.3.2}Mt. Gox}{25}
+\contentsline {subsubsection}{\numberline {6.3.3}Bitconnect}{25}
+\contentsline {subsection}{\numberline {6.4}Il futuro delle criptovalute}{26}
