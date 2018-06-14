@@ -1,16 +1,16 @@
-\contentsline {section}{\numberline {1}Le origini del Bitcoin}{3}
-\contentsline {section}{\numberline {2}Blockchain: cos'\IeC {\`e} e come funziona}{5}
-\contentsline {subsection}{\numberline {2.1}Cosa sono i blocchi e che compito svolgono}{5}
-\contentsline {subsection}{\numberline {2.2}Mining}{6}
-\contentsline {paragraph}{Le \textit {hash}}{6}
-\contentsline {subsubsection}{\numberline {2.2.1}Target e difficolt\IeC {\`a} di mining}{6}
-\contentsline {paragraph}{Blocchi di 10 minuti}{7}
-\contentsline {subsubsection}{\numberline {2.2.2}Costi del mining}{8}
-\contentsline {paragraph}{L'uso di elettricit\IeC {\`a} del mining}{8}
-\contentsline {subsubsection}{\numberline {2.2.3}Profitti del mining}{9}
-\contentsline {paragraph}{Mining pools}{9}
-\contentsline {paragraph}{Tassa di transazione}{10}
-\contentsline {subsubsection}{\numberline {2.2.4}Il futuro del mining}{10}
+\contentsline {section}{\numberline {1}Le origini del Bitcoin}{2}
+\contentsline {section}{\numberline {2}Blockchain: cos'\IeC {\`e} e come funziona}{4}
+\contentsline {subsection}{\numberline {2.1}Cosa sono i blocchi e che compito svolgono}{4}
+\contentsline {subsection}{\numberline {2.2}Mining}{5}
+\contentsline {paragraph}{Le hash}{5}
+\contentsline {subsubsection}{\numberline {2.2.1}Target e difficolt\IeC {\`a} di mining}{5}
+\contentsline {paragraph}{Blocchi di 10 minuti}{6}
+\contentsline {subsubsection}{\numberline {2.2.2}Costi del mining}{7}
+\contentsline {paragraph}{L'uso di elettricit\IeC {\`a} del mining}{7}
+\contentsline {subsubsection}{\numberline {2.2.3}Profitti del mining}{8}
+\contentsline {paragraph}{Mining pools}{8}
+\contentsline {paragraph}{Tassa di transazione}{9}
+\contentsline {paragraph}{Il futuro del mining}{10}
 \contentsline {section}{\numberline {3}Aspetto tecnico del Bitcoin}{11}
 \contentsline {subsection}{\numberline {3.1}Come e dove si conserva}{11}
 \contentsline {subsubsection}{\numberline {3.1.1}Indirizzi}{11}
@@ -28,26 +28,27 @@
 \contentsline {subsubsection}{\numberline {3.2.1}La parziale centralizzazione}{13}
 \contentsline {subsubsection}{\numberline {3.2.2}Gli attacchi al network}{14}
 \contentsline {subsubsection}{\numberline {3.2.3}Il limite dei blocchi da 1 Megabyte}{14}
-\contentsline {subsection}{\numberline {3.3}Soluzioni ai problemi}{14}
-\contentsline {subsubsection}{\numberline {3.3.1}Segregated Witness}{14}
-\contentsline {subsubsection}{\numberline {3.3.2}Lightning Network}{14}
+\contentsline {paragraph}{Segregated Witness}{14}
+\contentsline {paragraph}{Lightning Network}{14}
 \contentsline {section}{\numberline {4}Utilizzare Bitcoin}{15}
 \contentsline {subsection}{\numberline {4.1}Creazione del portafoglio}{15}
-\contentsline {subsection}{\numberline {4.2}Come ottenere criptovaluta}{15}
+\contentsline {subsection}{\numberline {4.2}Come ottenere Bitcoin}{15}
 \contentsline {paragraph}{Exchange}{15}
 \contentsline {paragraph}{ATMs}{15}
-\contentsline {paragraph}{Mining}{15}
+\contentsline {paragraph}{Mining}{16}
 \contentsline {paragraph}{Forma di pagamento}{16}
 \contentsline {subsection}{\numberline {4.3}Trasferire Bitcoin}{16}
 \contentsline {section}{\numberline {5}Non solo Bitcoin}{17}
 \contentsline {subsection}{\numberline {5.1}Ethereum}{17}
-\contentsline {paragraph}{L'inflazione del mercato di schede grafiche}{17}
+\contentsline {paragraph}{Smart contracts}{17}
+\contentsline {paragraph}{Mining}{17}
+\contentsline {paragraph}{La deflazione del mercato di schede grafiche}{18}
 \contentsline {paragraph}{Genesis mining}{18}
-\contentsline {subsection}{\numberline {5.2}Litecoin}{18}
-\contentsline {subsection}{\numberline {5.3}Monero}{18}
-\contentsline {subsection}{\numberline {5.4}Nano}{19}
+\contentsline {subsection}{\numberline {5.2}Litecoin}{19}
+\contentsline {subsection}{\numberline {5.3}Monero}{19}
+\contentsline {subsection}{\numberline {5.4}Nano}{20}
 \contentsline {subsection}{\numberline {5.5}Ripple}{20}
-\contentsline {subsection}{\numberline {5.6}Bitcoin "hard forks"}{20}
+\contentsline {subsection}{\numberline {5.6}Bitcoin "hard forks"}{21}
 \contentsline {subsubsection}{\numberline {5.6.1}Roger Ver e la truffa di "Bitcoin Cash"}{21}
 \contentsline {section}{\numberline {6}Crypto oggi}{23}
 \contentsline {subsection}{\numberline {6.1}Adozione}{23}
