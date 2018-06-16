@@ -16,20 +16,272 @@
   {}
 \endgroup
 
-\entry{roger}{article}{}
+\entry{whitepaper}{article}{}
   \name{author}{1}{}{%
     {{}%
-     {Doe}{D.}%
-     {John}{J.}%
+     {Nakamoto}{N.}%
+     {Satoshi}{S.}%
      {}{}%
      {}{}}%
   }
-  \strng{namehash}{DJ1}
-  \strng{fullhash}{DJ1}
-  \field{sortinit}{D}
-  \field{title}{Title}
-  \field{journaltitle}{International Journal of Nonsense}
-  \field{year}{1999}
+  \strng{namehash}{NS1}
+  \strng{fullhash}{NS1}
+  \field{title}{Bitcoin: A Peer-to-Peer Electronic Cash System}
+  \verb{url}
+  \verb https://bitcoin.org/bitcoin.pdf
+  \endverb
+  \field{journaltitle}{bitcoin.org}
+  \field{day}{31}
+  \field{month}{10}
+  \field{year}{2008}
+\endentry
+
+\entry{staleorphans}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Wuille}{W.}%
+     {Pieter}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{WP1}
+  \strng{fullhash}{WP1}
+  \verb{url}
+  \verb https://bitcoin.stackexchange.com/questions/5859/what-are-orphaned-and-
+  \verb stale-blocks
+  \endverb
+  \field{journaltitle}{Bitcoin StackExchange}
+  \field{year}{2015}
+\endentry
+
+\entry{attacks}{article}{}
+  \field{title}{Irreversible Transactions}
+  \verb{url}
+  \verb https://en.bitcoin.it/wiki/Irreversible_Transactions
+  \endverb
+  \field{journaltitle}{Bitcoin Wiki}
+  \field{year}{2017}
+\endentry
+
+\entry{centralization}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Homakov}{H.}%
+     {Egor}{E.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{HE1}
+  \strng{fullhash}{HE1}
+  \field{title}{Stop. Calling. Bitcoin. Decentralized.}
+  \verb{url}
+  \verb https://medium.com/@homakov/stop-calling-bitcoin-decentralized-cb703d69
+  \verb dc27
+  \endverb
+  \field{journaltitle}{Medium.com}
+  \field{year}{2017}
+\endentry
+
+\entry{ethboom}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {CustardFilled}{C.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{C1}
+  \strng{fullhash}{C1}
+  \field{title}{Video card prices and Cryptocurrency mining - what's going on?}
+  \verb{url}
+  \verb https://www.reddit.com/r/buildapc/comments/6jl60i/video_card_prices_and
+  \verb _cryptocurrency_mining_whats/
+  \endverb
+  \field{journaltitle}{BuildAPC subreddit}
+  \field{month}{06}
+  \field{year}{2017}
+\endentry
+
+\entry{ltcvsbtc}{article}{}
+  \field{title}{What is the Difference Between Litecoin and Bitcoin?}
+  \verb{url}
+  \verb https://coindesk.com/information/comparing-litecoin-bitcoin/
+  \endverb
+  \field{year}{2014}
+\endentry
+
+\entry{ripple}{misc}{}
+  \verb{url}
+  \verb https://ripple.com/xrp/market-performance/
+  \endverb
+\endentry
+
+\entry{dubai}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Williams-Grut}{W.-G.}%
+     {Oscar}{O.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{WGO1}
+  \strng{fullhash}{WGO1}
+  \field{title}{50 luxury flats in Dubai have been sold for bitcoin — and one
+  buyer bought 10}
+  \verb{url}
+  \verb http://uk.businessinsider.com/50-dubai-luxury-flats-sold-for-bitcoin-an
+  \verb d-one-buyer-bought-10-2018-2?IR=T
+  \endverb
+  \field{journaltitle}{Business Insider UK}
+  \field{day}{10}
+  \field{month}{02}
+  \field{year}{2018}
+\endentry
+
+\entry{accepting}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Chokun}{C.}%
+     {Jonas}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{CJ1}
+  \strng{fullhash}{CJ1}
+  \field{title}{Who Accepts Bitcoins As Payment? List of Companies, Stores,
+  Shops}
+  \verb{url}
+  \verb https://99bitcoins.com/who-accepts-bitcoins-payment-companies-stores-ta
+  \verb ke-bitcoins/
+  \endverb
+  \field{journaltitle}{99Bitcoins.com}
+  \field{day}{15}
+  \field{month}{03}
+  \field{year}{2018}
+\endentry
+
+\entry{rovereto}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Pianesi}{P.}%
+     {Luca}{L.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{PL1}
+  \strng{fullhash}{PL1}
+  \field{title}{A Rovereto nella Bitcoin Valley, dove puoi comprare tutto con
+  la criptovaluta e dei dipendenti si fanno già pagare l'intero stipendio
+  così}
+  \verb{url}
+  \verb http://ildolomiti.it/societa/rovereto-nella-bitcoin-valley-dove-puoi-co
+  \verb mprare-tutto-con-la-criptovaluta-e-dei-dipendenti
+  \endverb
+  \field{journaltitle}{Il Dolomiti}
+  \field{day}{10}
+  \field{month}{03}
+  \field{year}{2017}
+\endentry
+
+\entry{elizavetovka}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Chandra}{C.}%
+     {Sharat}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{CS1}
+  \strng{fullhash}{CS1}
+  \field{title}{A Ukranian Village Where Everyone Owns Cryptocurrency}
+  \verb{url}
+  \verb https://bcfocus.com/news/latest-news-news/a-ukranian-village-where-ever
+  \verb yone-owns-cryptocurrency/7977/
+  \endverb
+  \field{journaltitle}{BCFocus}
+  \field{day}{05}
+  \field{month}{05}
+  \field{year}{2018}
+\endentry
+
+\entry{crisi29}{inbook}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Bernardi}{B.}%
+     {Alberto~De}{A.~D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Guarracino}{G.}%
+     {Scipione}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \name{editor}{1}{}{%
+    {{}%
+     {Mondadori}{M.}%
+     {Bruno}{B.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{BADGS1}
+  \strng{fullhash}{BADGS1}
+  \field{chapter}{La Grande depressione}
+  \field{pages}{561}
+  \field{title}{La realtà del passato 3: il novecento e il mondo attuale}
+  \field{year}{2014}
+\endentry
+
+\entry{controversy}{article}{}
+  \field{title}{Why is Bitcoin so controversial?}
+  \verb{url}
+  \verb https://blog.unocoin.com/why-is-bitcoin-so-controversial-527caf8ee4c7
+  \endverb
+  \field{journaltitle}{Unocoin Blog}
+  \field{month}{10}
+  \field{year}{2017}
+\endentry
+
+\entry{bigblocks}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Young}{Y.}%
+     {Joseph}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{YJ1}
+  \strng{fullhash}{YJ1}
+  \field{title}{The Centralization Issue of Scaling BTC Solely by Block Size
+  Increase}
+  \verb{url}
+  \verb https://newsbtc.com/2017/11/12/61408/
+  \endverb
+  \field{journaltitle}{News BTC}
+  \field{month}{11}
+  \field{year}{2017}
+\endentry
+
+\entry{verlawsuit}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Huillet}{H.}%
+     {Marie}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{HM1}
+  \strng{fullhash}{HM1}
+  \field{title}{Bitcoin Cash Opposers Scrap Lawsuit Against Bitcoin.com, Citing
+  Lack Of Cash}
+  \verb{url}
+  \verb https://cointelegraph.com/news/pro-btc-movement-scraps-lawsuit-against-
+  \verb vers-bitcoincom-citing-lack-of-funds
+  \endverb
+  \field{journaltitle}{Cointelegraph}
+  \field{day}{04}
+  \field{month}{05}
+  \field{year}{2018}
 \endentry
 
 \lossort
