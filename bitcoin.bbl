@@ -1,0 +1,38 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 2.6 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{roger}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Doe}{D.}%
+     {John}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{DJ1}
+  \strng{fullhash}{DJ1}
+  \field{sortinit}{D}
+  \field{title}{Title}
+  \field{journaltitle}{International Journal of Nonsense}
+  \field{year}{1999}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput

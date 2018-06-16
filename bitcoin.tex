@@ -6,38 +6,28 @@
 \usepackage{graphicx}
 \usepackage[official]{eurosym}
 \usepackage{subcaption}
+\usepackage[backend=bibtex8]{biblatex}
+
+\addbibresource {database.bib}
 
 \renewcommand {\contentsname} {Indice}
 \renewcommand {\figurename} {Fig.}
 \graphicspath { {./media/} }
-%TODO:DEFINIZIONE STALE BLOCK, MEMPOOL + GRAFICO, PRIVATE KEY (QUANTE, RELAZIONE CON PUBLIC), N TOT ADDRESSES O KEYS, PROBABILITA(WIKI)BLOCCHI
+%TODO:EMPOOL + GRAFICO, PRIVATE KEY (QUANTE, RELAZIONE CON PUBLIC), N TOT ADDRESSES O KEYS, PROBABILITA(WIKI)BLOCCHI
 
 \begin{document}
 
 \begin{titlepage}
-
-%\centering
-%{\LARGE Liceo Scientifico Arturo Tosi \par}
-%\vspace{1cm}
-%{\Large Tesina di Maturità\par}
-%\vspace{2cm}
-%{\Huge Bitcoin, Blockchain, Crypto\par}
-%\vspace{2cm}
-%{\Large Carlomaria Occhipinti 5F\par}
-%\vfill
-%\includegraphics [width = 6cm] {logo.png}
-%\vfill
 
 \centering
 {\Huge Bitcoin, Blockchain, Crypto\par}
 \vfill
 \includegraphics [width = 6cm] {logo.png}
 \vfill
-{\LARGE Carlomaria Occhipinti 5F\par}
+{\Huge Carlomaria Occhipinti 5F\par}
 \vspace{1cm}
 {\LARGE Liceo Scientifico Arturo Tosi \par}
 \vspace{1cm}
-{\LARGE Tesina di Maturità\par}
 
 \end{titlepage}
 
@@ -56,36 +46,42 @@
 
 2009. Il mondo è sconvolto dalla catastrofica crisi dell'anno precedente.
 L'economia era in distruzione. Banche, borse e stati sull'orlo del crollo. Panico.
-C'era il bisogno di una soluzione a tutto questo. Un sistema monetario che fosse immune a tutto ciò che colpì le valute crollate. Il Bitcoin, la prima criptovaluta del mondo creata a cavallo tra il 2008 e il 2009 fu la risposta a tutti questi problemi economici legati alla crisi.
-Satoshi Nakamoto è conosciuto come l'ideatore e l'iniziale sviluppatore del Bitcoin. Nessuno sa chi sia, dove abiti, se è un singolo o un gruppo di persone. Sappiamo solo che nei primi anni del Bitcoin era attivo sul forum bitcointalk.org fino al 13 Dicembre 2010.
-Satoshi scrisse il whitepaper\footnote{"Libro bianco", un documento redatto da un professionista esperto di una materia che offre informazioni di qualità e di interesse ad un pubblico selezionato di utenti.} del Bitcoin contenente la sua ideologia di moneta virtuale. Il documento è altamente tecnico e richiede un'elevata conoscenza di informatica e matematica, ma mi sembra doveroso citare il primo paragrafo \footnote{http://bitcoin.org/bitcoin.pdf}:\\
+C'era il bisogno di una soluzione a tutto questo. Un sistema monetario che fosse immune a tutto ciò che colpì le valute crollate. Il Bitcoin\footnote{Nella tesina scriverò "Bitcoin" con la 'B' maiuscola per riferirmi alla valuta in generale, mentre con "bitcoin" con la 'b' minuscola mi riferisco ai bitcoin in sé, la moneta usata per fare acquisti, per esempio "5 bitcoin"}, la prima criptovaluta del mondo creata a cavallo tra il 2008 e il 2009 fu la risposta a tutti questi problemi economici legati alla crisi.
 
-\begin{quote}
+\paragraph {Satoshi}
 
-\textbf {Abstract}. A purely peer-to-peer version of electronic cash would allow online payments to be sent directly from one party to another without going through a financial institution.
-Digital signatures provide part of the solution, but the main benefits are lost if a trusted third party is still required to prevent double-spending.
-We propose a solution to the double-spending problem using a peer-to-peer network.
-The network timestamps transactions by hashing them into an ongoing chain of hash-based proof-of-work, forming a record that cannot be changed without redoing the proof-of-work.
-The longest chain not only serves as proof of the sequence of events witnessed, but proof that it came from the largest pool of CPU power.
-As long as a majority of CPU power is controlled by nodes that are not cooperating to attack the network, they'll generate the longest chain and outpace attackers.
-The network itself requires minimal structure.
-Messages are broadcast on a best effort basis, and nodes can leave and rejoin the network at will, accepting the longest proof-of-work chain as proof of what happened while they were gone.
+Satoshi Nakamoto è conosciuto come l'ideatore e l'iniziale sviluppatore del Bitcoin.
+Nessuno sa chi sia, dove abiti, se è un singolo o un gruppo di persone. Sappiamo solo che nei primi anni del Bitcoin era attivo sul forum bitcointalk.org fino al 13 Dicembre 2010. e... qualcos altro, dai.
+Satoshi scrisse il whitepaper\footnote{"Libro bianco", un documento redatto da un professionista esperto di una materia che offre informazioni di qualità e di interesse ad un pubblico selezionato di utenti.} del Bitcoin contenente la sua ideologia di moneta virtuale. Il documento è altamente tecnico e richiede un'elevata conoscenza di informatica e matematica, \footnote{http://bitcoin.org/bitcoin.pdf}:\\
 
-\end{quote}
-%
-Tradotto in italiano:
+quando scrive w paper?
 
-\begin{quote}
+%\begin{quote}
 
-\textbf {Sommario}. Una versione puramente \textit{peer-to-peer}\footnote{Da pari a pari, senza la necessità di passare da un ente centrale come una banca} di soldi elettronici permetterebbe ai pagamenti online di essere inviati direttamente da un party all'altro senza passare attraverso un'istituzione finanziaria.
-Firme digitali sono? parte della soluzione, ma i benefici principali sono persi se un ente di terza parte creduto? è sempre/comunque richiesto per prevenire la doppia spesa.
-Proponiamo una soluzione al problema della doppia spesa usando una rete \textit{peer-to-peer}.
-La rete registra? le transazioni hashing? them in una catena ongoing di hashbased pow, formando un registro che non può essere modificato senza ripetere la pow.
-La catena più lunga non serve solo come prova per la sequenza di eventi testimoniati/accaduti, ma la prova che è venuta/derivata dalla pool più grande di potenza cpu. Finché la maggioranza del potere cpu è controllato da nodi? che non stanno cooperando per attaccare la rete, genereranno la cantena più lunga e supereranno gli attaccatori.
-La rete stessa richiede una struttura minimale.
-I messaggi sono trasmessi su una base del miglior sforzo, e i nodi possono lasciare e rientrare la rete a voglia, accettando la più lunga pow catena come prova di cos'è avvenuto mentre erano via.
+%\textbf {Abstract}. A purely peer-to-peer version of electronic cash would allow online payments to be sent directly from one party to another without going %%%%through a financial institution.
+%Digital signatures provide part of the solution, but the main benefits are lost if a trusted third party is still required to prevent double-spending.
+%We propose a solution to the double-spending problem using a peer-to-peer network.
+%The network timestamps transactions by hashing them into an ongoing chain of hash-based proof-of-work, forming a record that cannot be changed without redoing the proof-of-work.
+%The longest chain not only serves as proof of the sequence of events witnessed, but proof that it came from the largest pool of CPU power.
+%As long as a majority of CPU power is controlled by nodes that are not cooperating to attack the network, they'll generate the longest chain and outpace attackers.
+%The network itself requires minimal structure.
+%Messages are broadcast on a best effort basis, and nodes can leave and rejoin the network at will, accepting the longest proof-of-work chain as proof of what %happened while they were gone.
 
-\end {quote}
+%\end{quote}
+%%
+%Tradotto in italiano:
+
+%\begin{quote}
+
+%\textbf {Sommario}. Una versione puramente \textit{peer-to-peer}\footnote{Da pari a pari, senza la necessità di passare da un ente centrale come una banca} di soldi elettronici permetterebbe ai pagamenti online di essere inviati direttamente da un party all'altro senza passare attraverso un'istituzione finanziaria.
+%Firme digitali sono? parte della soluzione, ma i benefici principali sono persi se un ente di terza parte creduto? è sempre/comunque richiesto per prevenire la doppia spesa.
+%Proponiamo una soluzione al problema della doppia spesa usando una rete \textit{peer-to-peer}.
+%La rete registra? le transazioni hashing? them in una catena ongoing di hashbased pow, formando un registro che non può essere modificato senza ripetere la pow.
+%La catena più lunga non serve solo come prova per la sequenza di eventi testimoniati/accaduti, ma la prova che è venuta/derivata dalla pool più grande di potenza cpu. Finché la maggioranza del potere cpu è controllato da nodi? che non stanno cooperando per attaccare la rete, genereranno la cantena più lunga e supereranno gli attaccatori.
+%La rete stessa richiede una struttura minimale.
+%I messaggi sono trasmessi su una base del miglior sforzo, e i nodi possono lasciare e rientrare la rete a voglia, accettando la più lunga pow catena come prova di cos'è avvenuto mentre erano via.
+
+%\end {quote}
 
 
 \newpage
@@ -96,13 +92,13 @@ I messaggi sono trasmessi su una base del miglior sforzo, e i nodi possono lasci
 
 La tecnologia rivoluzionaria utilizzata dal Bitcoin e da tutte le altre criptovalute è chiamata Blockchain.
 Come suggerisce il nome, "blockchain" indica una catena di blocchi.
-L'aspetto decentralizzato del Bitcoin gira intorno al fatto che chiunque può scaricare la blockchain e far sì che si aggiorni in tempo reale: ciò significa che finché esiste in tutto il mondo \emph{almeno} un computer con la blockchain salvata, che prende il nome di \textit{full node}, l'intera rete del Bitcoin e il registro delle transazioni rimangono autentiche e inviolate. (lo tengo sopra o sotto?)
+L'aspetto decentralizzato del Bitcoin gira intorno al fatto che chiunque può scaricare la blockchain e far sì che si aggiorni in tempo reale: ciò significa che finché esiste in tutto il mondo \emph{almeno} un computer con la blockchain salvata, che prende il nome di \textit{full node}, l'intera rete del Bitcoin e il registro delle transazioni rimangono autentiche e inviolate.
 
 \vspace {0.5cm}
 \begin{figure}[htb!]
 \includegraphics [width = 10cm] {blockchain2.png}
 \centering
-\caption {Schema "semplificato" della blockchain}
+\caption {Schema della blockchain}
 \end{figure}
 \vspace {0.2cm}
 
@@ -115,7 +111,6 @@ Le transazioni hanno un determinato peso espresso per comodità in kilobyte fare
 Tutte le transazioni di Bitcoin sono permanentemente, irreversibilmente (nella maggior parte dei casi, V X.X) memorizzate nella Blockchain.
 Su un qualunque sito avente la funzione di "block explorer" posso cercare informazioni su ciascun indirizzo Bitcoin (per ora pensiamolo come se fosse un codice IBAN): posso vedere quanti Bitcoin quell'indirizzo possiede, da quali indirizzi ha ricevuto quanti bitcoin, e a chi ne ha mandati.
 Sotto un punto di vista pratico, la blockchain del Bitcoin è un file di dimensioni oggi pari a circa 170 Gigabyte.
-L'aspetto decentralizzato del Bitcoin gira intorno al fatto che chiunque può scaricare la blockchain e far sì che si aggiorni in tempo reale: ciò significa che finché esiste in tutto il mondo \emph{almeno} un computer con la blockchain salvata, che prende il nome di \textit{full node}, l'intera rete del Bitcoin e il registro delle transazioni rimangono autentiche e inviolate. (sopra o sotto?)
 La dimensione è così elevata perché in quel file sono contenute le informazioni di oltre 520.000 blocchi scoperti a partire dal primo, chiamato \textit{genesis block}, trovato il 3 Gennaio 2009.
 "Scoperti"? "Trovati"? In che senso? Da dove vengono questi blocchi? Mi tocca introdurre il concetto di \textit{mining}.
 
@@ -162,13 +157,19 @@ Man mano che sempre più miners cominciano a lavorare, elevando l'\textit{hashin
 L'innalzamento o talvolta anche l'abbassamento della difficoltà avviene ogni 2016 blocchi (circa 2 settimane), quando il network controlla la frequenza con cui questi ultimi blocchi sono stati trovati.
 Modificando la difficoltà in modo proporzionale all'\textit{hashing power} si fa in modo che in media i blocchi continuino ad essere trovati ogni \textasciitilde 10 minuti. Perché 10 minuti?
 
-\paragraph {Blocchi di 10 minuti}
+\paragraph {Tempo per blocco}
 
 Satoshi ha deciso che ogni blocco deve impiegare un tempo di circa 10 minuti per essere scoperto.
 Il motivo della scelta è quello di aver trovato un compromesso: sacrificare conferme e quindi transazioni più veloci per avere un processo di mining più efficiente.
 Nell'intervallo di 10 minuti tutti i \textit{full nodes} hanno tempo sufficiente per accettare e validare l'ultimo blocco trovato e far sì che si propaghi in tutta la rete, impedendo eventuali conflitti su qual è la blockchain autentica. %more bandwith??
-Quando non avviene ciò, può capitare che fra due blocchi che vengono trovati in istanti vicini solo uno dei due venga accettato dalla maggioranza dei \textit{full nodes}. Il blocco che viene abbandonato è definito \textit{orphaned block}\footnote{Blocco orfano}, ovvero un blocco inizialmente considerato valido, ma poi abbandonato perché l'altro blocco trovato è stato accettato più velocemente, dando origine alla blockchain più lunga tra le due, quindi quella più reputabile.
-Per questo con i blocchi di 10 minuti si ha un mining più efficiente, perché si riduce la quantità di energia elettrica sprecata per far funzionare dei miners che trovano un blocco orfano.mancAdefbloccoinstallo
+Quando non avviene ciò, può capitare che fra due blocchi che vengono trovati in istanti vicini solo uno dei due venga accettato dalla maggioranza dei \textit{full nodes}.
+Il blocco che viene abbandonato è definito \textit{stale block}\footnote{Blocco in stallo}, ovvero un blocco inizialmente considerato valido, ma poi abbandonato perché l'altro blocco trovato è stato accettato più velocemente, dando origine alla blockchain più lunga tra le due, quindi quella più reputabile.
+Per questo con i blocchi di 10 minuti si ha un mining più efficiente, perché si riduce la quantità di energia elettrica sprecata per far funzionare dei miners che trovano un blocco orfano.
+Quando viene trovato un blocco, tutti i miners devono interrompere la ricerca del blocco ormai trovato e cominciare a lavorare su quello successivo.
+Se questi non si fermano, troveranno eventualmente un blocco che è gia stato trovato, e che quindi non può essere "attaccato" alla blockchain.
+Un blocco orfano, \textit{orphan block}, invece, è un blocco minato da un miner che non può essere accettato nella blockchain perché il \textit{node} del miner non si è ancora aggiornato alla blockchain più recente che include il blocco precedente a quello appena trovato.
+Non avendo un "genitore" (\textit{parent}), il blocco trovato dal miner non viene propagato agli altri \textit{full nodes} perché non è "collegato" ad altri blocchi.
+A partire dalla versione 0.10 del software del Bitcoin, però, non possono più esistere blocchi orfani a seguito di una modifica radicale del sistema con cui i \textit{nodes} scaricano i nuovi blocchi.
 
 \vspace {0.5cm}
 \begin{figure}[htb!]
@@ -176,8 +177,9 @@ Per questo con i blocchi di 10 minuti si ha un mining più efficiente, perché s
 \centering
 \caption {Rappresentazione di blocchi in stallo e orfani}
 \end{figure}
-%\vspace {0.2cm}
-%Il \textit{nonce} è un numero di 32bit (...) che determina la quantità di zeri dell'\textit{hash} del blocco.
+\vspace {0.2cm}
+%
+Il tempo di 10 minuti di certo riduce la probabilità che vengano creati blocchi in stallo; tuttavia è sempre possibile che nascano.
 
 \subsubsection {Costi del mining}
 
@@ -200,7 +202,7 @@ Questo tempo si chiama ROI \footnote{\textit{Return on investment}}, e nel caso 
 
 $$\textup{\euro{717}} : \frac{\textup{\euro{4}}}{1 giorno} = 179.25 giorni$$
 %
-Questo è quanto vale per \emph{un} singolo ASIC che produce "solo" 0.00082 BTC al giorno, una quantità minuscola rispetto ai \textasciitilde 17.000.000 che sono stati minati fino ad oggi.
+Questo è quanto vale per \emph{un} singolo ASIC che produce solo 0.00082 BTC al giorno, una quantità minuscola rispetto ai \textasciitilde 17.000.000 che sono stati minati fino ad oggi.
 L'\textit{hashing power} dell'intero network del Bitcoin, la somma del lavoro dei miners in tutto il mondo espressa in H/s, è di oltre 30.000 TH/s, e consuma un a quantità di elettricità pari a 60 TWh, ovvero 60.000 miliardi di Joule consumati all'ora.
 Questo consumo di elettricità corrisponde a (piu di 0.13, perche dati dic 2017, cercare nuovi) dell'utilizzo di elettricità in tutto il mondo.
 ... ... ... (citazione a powercompare.co.uk)
@@ -268,14 +270,21 @@ Eventualmente tutti i bitcoin verranno minati, e i profitti dei miners dipendera
 \section {Aspetto tecnico del Bitcoin}
 
 
+\subsection {Mempool: il primo passo delle transazioni}
+
+
+La mempool si è dove stanno le tx non confermate ma sempre nei full nodes...
+
+
 \subsection {Come e dove si conserva}
 
 
 \subsubsection {Indirizzi}
 
 
-Gli indirizzi sono delle stringhe di circa 30/40 caratteri che sono il luogo(?) in cui ci sono i bitcoin. suona male. cioè nella blockhain si dice "a indirizzo x sono associati y btc"
-Un indirizzo Bitcoin può essere visto come un codice IBAN se si vuole rimanere in un contesto finanziario, o anche come un indirizzo email.
+Poiché i bitcoin non sono oggetti materiali, si dice che nella blockchain sono associati X BTC a ciascun indirizzo.
+sono presenti tanti tanti (numero tot indirizi?)
+Gli indirizzi sono delle stringhe di circa 30/40 caratteri che possono essere visti come codici IBAN se si vuole rimanere in un contesto finanziario, o anche come indirizzi email.
 Esistono diversi tipi di indirizzo.
 
 \paragraph {P2PKH}
@@ -317,10 +326,13 @@ Come le \textit{hash} viste in precendenza, le private key sono numeri di 256 \t
 A differenza delle \textit{hash} SHA-256, però, le private key devono essere comprese tra ... ... 
 È paragonabile ad una password che dà accesso ad account di qualunque tipo, l'unica differenza è che non è modificabile.
 
-\paragraph {Seeds} %https://en.bitcoin.it/wiki/Deterministic_wallet
+\paragraph {Seeds}
 
-Un \textit{seed} è una serie di parole (solitamente 12 o 15) che svolgono una funzione simile a quella della \textit{private key}: se inserite in un software di wallet, ripristinano tutti i bitcoin associati ad esso.
-La differenza con le private keys è che a un seed non corrisponde \emph{una} private key, bensì circa/fino a ... indirizzi, ovvero \textasciitilde X coppie di private e public keys.
+Un \textit{seed} è un codice che svolge una funzione simile a quella della \textit{private key}: se inserito in un software di wallet, ripristina tutti i bitcoin associati ad esso.
+La differenza con le \textit{private keys} è che un seed "genera" una o più private keys, dalle quali si possono ricavare le public keys e quindi gli indirizzi stessi.
+Di conseguenza, ad un seed possono corrispondere un numero indefinito di indirizzi, ovvero di coppie di public e private keys.
+Realisticamente, quasi tutti i seed usati nei portafogli software comprendono da 1 a 20 indirizzi.
+Esistono diversi tipi di seed, ma il formato più famoso è quello della cosiddetta \textit{mnemonic phrase}, una frase di 12 - 20 parole, introdotta nel 2 Febbraio 2012 con il BIP-32.
 Con il BIP-39 \footnote{\textit{Bitcoin Improvement Proposal}} è stato introdotto...?
 Il vantaggio dei seeds rispetto alle singole private keys è il fatto che sono facili da ricordare. Un seed ha un aspetto simile al seguente:
 
@@ -352,7 +364,7 @@ I principali tipi di \textit{cold storage} sono:
 
 \begin{itemize}
 \item Digitale: le keys sono salvate sottoforma di file su un computer, un CD, una chiavetta USB...
-\item Carta: si possono scrivere le keys su un pezzo di carta, o stamparle su un "portafoglio" bello tipo figo.. (foto + descrizopne dopo) metodo poco sicuro per la fragilità del materiale
+\item Carta: si possono scrivere le keys su un pezzo di carta o stampare un \textit{paper wallet}, metodo poco sicuro per la fragilità del materiale.
 \item Metallo: le keys possono essere incise su una lamina di metallo, preferibilmente oro, argento, bronzo, nickel, ottone o cobalto per la resistenza alle alte temperature.
 \item \textit{Hardware wallet}: I portafogli hardware sono dei piccoli dispositivi simili a chiavette USB, in cui la \textit{private key} è contenuta.
 \end{itemize}
@@ -415,7 +427,9 @@ Questa centralizzazione aumenta il rischio che vengano effettuati attacchi alla 
 \subsubsection {Gli attacchi al network}
 
 
+Esistono tre principali modi per fare double spending:
 
+paragraph 0-conf, 51 atk, altro
 
 
 \subsubsection {Il limite dei blocchi da 1 Megabyte}
@@ -634,27 +648,6 @@ Per evitare che un qualche malintenzionato sfrutti la sbadataggine dell'utente e
 Infatti, sarà comunque possibile prelevare i BTT dal vecchio indirizzo BTC ora svuotato, e non si ha nulla da perdere nel caso qualcuno riuscisse a rubare la private key: all'indirizzo sono associati 0 BTC.
 
 
-\subsubsection {Roger Ver e la truffa di "Bitcoin Cash"}
-
-
-Bitcoin Cash è di gran lunga l'hard fork più popolare di tutte, al quarto posto (!) in capitalizzazione di mercato. Come mai è l'unica che ha raggiunto un prezzo così elevato?
-Roger K. Ver è un imprenditore americano che fin dai primi anni della nascita del Bitcoin è stato coinvolto nella scena delle criptovalute, finanziando progetti (?) e tenendo discorsi (??).
-Da Agosto 2017, però, quando è stato lanciato Bitcoin Cash, Roger è stato l'esponente principale per il marketing di questa valuta. BCH è nato in Cina, infatti i suoi "CEO" sono cinesi, e Roger dev'essere stato impiegato per fare propaganda a BCH.
-Tutto ciò non sembra alcunché di preoccupante: è normale se un imprenditore pubblicizza i propri investimenti sperando di ricavare più guadagni, (nel caso che...) ed è normale che sviluppatori paghnio uno abile a parlare e a pubblcizzare un prodotto.
-è così che funziona il marketing.
-Quella di Roger, però, è una spietata propaganda anti-Bitcoin (BTC) e pro-BCH (Bitcoin Cash), che spesso e volentieri arriva alla censura, alle bugie più false e alla corruzione di persone.
-La tesi base che accomuna Roger e tutti i fan di BCH (pagati o no non si sa), è quella che BCH introduce delle modifiche al codice di Bitcoin che rendono le transizioni notevolmente più veloci, sicure e con una tassa di transazione inferiore. Bitcoin Cash infatti ha come principale differenza un'incrementata dimensione del blocco (V. 1.2), che anzichè limitarsi a 1MB arriva fino a 12MB (come abbiamo visto, ogni transazione pesa tot kb. essendo il blocco più grande può farci stare più transazioni, senza "intasarsi").
-Il team di sviluppatori di Bitcoin si ostina a mantenere la dimensione del blocco a 1MB, perchè i blocchi di maggiore dimensioni sono \emph{ancora} più difficili da minare.
-Una difficoltà così elevata di mining porta necessariamente a una centralizzazione dell'hashing power, che va contro il concetto di Bitcoin e di criptovalute in generale (valute decentralizzate, internazionali, v 1.1).
-Roger è entrato in possesso del sito bitcoin.com, che su numerose pagine (tra cui quella in fig. 5) ripete come BCH è una versione aggiornata di BTC. Una cosa che irrita la stragrande maggioranza delle persone è il fatto che su bitcoin.com il Bitcoin originale, BTC, è chiamato Bitcoin Core.
-Il nome Bitcoin Core, paragonato a Bitcoin Cash, fa sembrare le due valute due alternative sullo stesso livello, invece uno (BCH) è un clone dell'originale (BTC).
-In Aprile del 2018 bitcoin.com penalizzò ulteriormente la situazione del "vero" Bitcoin definendo "BTC" "Bitcoin Core" e "BCH" (che sarebbe Bitcoin Cash) "Bitcoin".
-Questa mossa fu la goccia che fece traboccare il vaso, perché mentre il fatto di chiamare BTC Bitcoin Core era già una bugia di per sé, sostituire "Bitcoin Cash" con "Bitcoin" era semplicemente inaccettabile.
-A seguito di questa modifica dei termini, bitcoin.com venne denunciato da oltre 600? persone e fu eventualmente costretto a tornare alle vecchie denominazioni delle valute che, purché volontariamente misleading, non facevano apparire BCH come il "vero" Bitcoin.
-bitcoin.com, essendo il secondo risultato su Google per la ricerca "bitcoin", ha portato molte persone nuove nel mondo delle criptovalute che cercavano di acquistare dei Bitcoin ad acquistare BCH anziché BTC.
-Ver possiede anche l'account Twitter @bitcoin, che svolge le stesse opere di propaganda di bitcoin.com
-
-
 \newpage
 
 
@@ -717,10 +710,10 @@ futures?
 
 Il 24 Ottobre del 1929 è il giorno che marcò il crollo della Borsa di Wall Street, che ebbe come conseguenza il fallimento di molte imprese, una riduzione della domanda da parte di altri stati, e una forte crescita della disoccupazione, raggiungendo i 13 milioni di disoccupati nel 1932.
 Tra le principali cause di questa crisi ci sono la sovrapproduzione di merce. detto così sembra fatto da un bambino delle elementari
-Gli Stati Uniti erano grandi fornitori di merce e dané all'Europa, e il progressivo aumento della domanda ha portato gli USA ad incrementare la produzione industriale, grazie anche alla diffusione del Taylorismo () e della generale innovazione tecnologica().
-A partire dal 1926, però, l'Europa e poi il Giappone ridussero notevolmente la domanda agli Stati Uniti perché anche questi beneficiarono del progresso tecnologico che ha avuto inizio in America(?).
+Gli Stati Uniti erano grandi fornitori di merce e dané all'Europa, e il progressivo aumento della domanda ha portato gli USA ad incrementare la produzione industriale, grazie anche alla diffusione del Taylorismo e della generale innovazione tecnologica().
+A partire dal 1926, però, l'Europa e poi il Giappone ridussero notevolmente la domanda agli Stati Uniti perché anche questi beneficiarono del progresso tecnologico che ha avuto inizio in America.
 Questo portò a un'eccessiva produzione di merce che non venne mai venduta all'Europa perché non richiesta.
-Un'altra enorme causa di questa crisi fu l'andamento dell'economia mondiale(?): era puramente un'economia di carta, basata su opinioni e speculazioni.
+Un'altra enorme causa di questa crisi fu l'andamento dell'economia mondiale: era puramente un'economia di carta, basata su opinioni e speculazioni.
 Gli scambi di azioni e gli investimenti di imprenditori verso le diverse aziende era una scommessa su quale attività avrebbe fatto successo, facendo ricavare profitti a chi avesse investito.
 Questo è estremamente simile a quello che è successo al Bitcoin perché sì.
 
@@ -740,6 +733,15 @@ Questo è estremamente simile a quello che è successo al Bitcoin perché sì.
 
 
 Il Bitcoin e le criptovalute in generale sono frequentemente soggetto di controversie. La nuova tecnologia della blockchain è criticata da molti imprenditori, e numerosissime truffe girano intorno alla parziale anonimità della valuta.
+
+
+\subsubsection {Moneta per scambi illegali}
+
+
+Inizialmente il Bitcoin, ma oggi anche altre criptovalute (speciamente quelle centrate sulla privacy), sono usate per compiere scambi di merce proibita, principalmente droga e armi.
+Nel deep/dark web, infatti, esistono numerosi siti dove è possibile acquistare merce illegale tramite criptovalute.
+Fino al 2013, nei primi anni del Bitcoin, infatti, la valuta era quasi esclusivamente utilizzata per fare acquisti sul \textit{marketplace} chiamato Silk Road\footnote{Strada di seta}, chiuso dall'F.B.I. nel 20XX.
+L'accusa alle criptovalute di essere monete "da mercato nero" è secondo molti una forma di FUD, \textit{fear, uncertainty, doubt}\footnote{Paura, incertezza, dubbio: tecnica per incutere timore nella gente inesperta riguardo a qualcosa}, per il semplice fatto che la moneta cartacea, il \textit{cash} è anch'essa una forma di denaro da sempre usata per atti/motivi illeciti, anch'essa anonima, più del Bitcoin! 
 
 
 \subsubsection {Il ban del Bitcoin in certi stati}
@@ -763,8 +765,29 @@ Non era ben chiaro chi fosse il creatore, e molti erano già dubiosi del claim d
 Tra il 14 e il 17 Gennaio 2018 il prezzo di Bitconnect è crollato da \euro{273} a \euro{30}, arrivando agli \euro{0.55} di oggi.
 Si è scoperto che l'intero progetto Bitconnect non era altro che un' "exit scam", una truffa in cui i truffatori spariscono improvvisamente, lasciando gli investitori a mani vuote.
 In particolare Bitconenct è stato uno schema Ponzi, un tipo di truffa in cui il truffatore promette guadagni a chiunque si indebitasse con lui, per poi sparire.
-Il nome Ponzi deriva da Charles Ponzi, un italo-americano che si arricchì notevolmente negli anni '30(??????) compiendo ripetutamente questo tipo di truffa.
-Oggi tutti coloro coinvolti nel pubblicizzare Bitconnect, soprattutto Youtuber (spiegare chi sono?) sono sotto investigazione
+Il nome Ponzi deriva da Charles Ponzi, un italo-americano che si arricchì notevolmente tra il 1918 e il 1920 compiendo ripetutamente questo tipo di truffa.
+Oggi tutti coloro coinvolti nel pubblicizzare Bitconnect, soprattutto chi pubblicava video su YouTube che incitavano all'acquisto della valuta, sono sotto investigazione.
+
+
+\subsubsection {Roger Ver e la truffa di "Bitcoin Cash"}
+
+
+Bitcoin Cash è di gran lunga l'hard fork più popolare di tutte, al quarto posto (!) in capitalizzazione di mercato. Come mai è l'unica che ha raggiunto un prezzo così elevato?
+Roger K. Ver è un imprenditore americano che fin dai primi anni della nascita del Bitcoin è stato coinvolto nella scena delle criptovalute, finanziando progetti (?) e tenendo discorsi (??).
+Da Agosto 2017, però, quando è stato lanciato Bitcoin Cash, Roger è stato l'esponente principale per il marketing di questa valuta. BCH è nato in Cina, infatti i suoi "CEO" sono cinesi, e Roger dev'essere stato impiegato per fare propaganda a BCH.
+Tutto ciò non sembra alcunché di preoccupante: è normale se un imprenditore pubblicizza i propri investimenti sperando di ricavare più guadagni, (nel caso che...) ed è normale che sviluppatori paghnio uno abile a parlare e a pubblcizzare un prodotto.
+è così che funziona il marketing.
+Quella di Roger, però, è una spietata propaganda anti-Bitcoin (BTC) e pro-BCH (Bitcoin Cash), che spesso e volentieri arriva alla censura, alle bugie più false e alla corruzione di persone.
+La tesi base che accomuna Roger e tutti i fan di BCH (pagati o no non si sa), è quella che BCH introduce delle modifiche al codice di Bitcoin che rendono le transizioni notevolmente più veloci, sicure e con una tassa di transazione inferiore. Bitcoin Cash infatti ha come principale differenza un'incrementata dimensione del blocco (V. 1.2), che anzichè limitarsi a 1MB arriva fino a 12MB (come abbiamo visto, ogni transazione pesa tot kb. essendo il blocco più grande può farci stare più transazioni, senza "intasarsi").
+Il team di sviluppatori di Bitcoin si ostina a mantenere la dimensione del blocco a 1MB, perchè i blocchi di maggiore dimensioni sono \emph{ancora} più difficili da minare.
+Una difficoltà così elevata di mining porta necessariamente a una centralizzazione dell'hashing power, che va contro il concetto di Bitcoin e di criptovalute in generale (valute decentralizzate, internazionali, v 1.1).
+Roger è entrato in possesso del sito bitcoin.com, che su numerose pagine (tra cui quella in fig. 5) ripete come BCH è una versione aggiornata di BTC. Una cosa che irrita la stragrande maggioranza delle persone è il fatto che su bitcoin.com il Bitcoin originale, BTC, è chiamato Bitcoin Core.
+Il nome Bitcoin Core, paragonato a Bitcoin Cash, fa sembrare le due valute due alternative sullo stesso livello, invece uno (BCH) è un clone dell'originale (BTC).
+In Aprile del 2018 bitcoin.com penalizzò ulteriormente la situazione del "vero" Bitcoin definendo "BTC" "Bitcoin Core" e "BCH" (che sarebbe Bitcoin Cash) "Bitcoin".
+Questa mossa fu la goccia che fece traboccare il vaso, perché mentre il fatto di chiamare BTC Bitcoin Core era già una bugia di per sé, sostituire "Bitcoin Cash" con "Bitcoin" era semplicemente inaccettabile.
+A seguito di questa modifica dei termini, bitcoin.com venne denunciato da oltre 600? persone e fu eventualmente costretto a tornare alle vecchie denominazioni delle valute che, purché volontariamente misleading, non facevano apparire BCH come il "vero" Bitcoin.
+bitcoin.com, essendo il secondo risultato su Google per la ricerca "bitcoin", ha portato molte persone nuove nel mondo delle criptovalute che cercavano di acquistare dei Bitcoin ad acquistare BCH anziché BTC.
+Ver possiede anche l'account Twitter @bitcoin, che svolge le stesse opere di propaganda di bitcoin.com
 
 
 \subsection {Il futuro delle criptovalute}
@@ -786,7 +809,11 @@ Tutte le inflazioni sono dovute a un'eccessiva stampa di soldi cartacei, cosa ch
 \vspace {0.2cm}
 \noindent
 %
-aa
+According to \cite{roger}, franco pallo.
+
+\newpage
+
+\printbibliography[title = {Bibliografia}]
  
 
 \end{document}

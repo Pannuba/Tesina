@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.6.3)  14 JUN 2018 11:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.6.3)  16 JUN 2018 13:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -432,37 +432,242 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 )
 \c@subfigure=\count89
 \c@subtable=\count90
-) (./bitcoin.aux)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2016/03/03 v3.3 programmable bibliographies (PK/JW/AB)
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex_legacy.sty
+Package: biblatex_legacy 2016/03/03 v3.3 programmable bibliographies (bibtex) (
+PK/JW/AB)
+
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count91
+)
+(/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count92
+
+(/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\c@tabx@nest=\count93
+\c@listtotal=\count94
+\c@listcount=\count95
+\c@liststart=\count96
+\c@liststop=\count97
+\c@citecount=\count98
+\c@citetotal=\count99
+\c@multicitecount=\count100
+\c@multicitetotal=\count101
+\c@instcount=\count102
+\c@maxnames=\count103
+\c@minnames=\count104
+\c@maxitems=\count105
+\c@minitems=\count106
+\c@citecounter=\count107
+\c@savedcitecounter=\count108
+\c@uniquelist=\count109
+\c@uniquename=\count110
+\c@refsection=\count111
+\c@refsegment=\count112
+\c@maxextrayear=\count113
+\c@maxextraalpha=\count114
+\c@abbrvpenalty=\count115
+\c@highnamepenalty=\count116
+\c@lownamepenalty=\count117
+\c@maxparens=\count118
+\c@parenlevel=\count119
+\blx@tempcnta=\count120
+\blx@tempcntb=\count121
+\blx@tempcntc=\count122
+\blx@maxsection=\count123
+\blx@maxsegment=\count124
+\blx@notetype=\count125
+\blx@parenlevel@text=\count126
+\blx@parenlevel@foot=\count127
+\labelnumberwidth=\skip43
+\labelalphawidth=\skip44
+\shorthandwidth=\skip45
+\biblabelsep=\skip46
+\bibitemsep=\skip47
+\bibnamesep=\skip48
+\bibinitsep=\skip49
+\bibparsep=\skip50
+\bibhang=\skip51
+\blx@auxin=\read1
+\blx@auxout=\write3
+\c@mincomprange=\count128
+\c@maxcomprange=\count129
+\c@mincompwidth=\count130
+\c@labelname=\count131
+\c@savedlabelname=\count132
+\c@author=\count133
+\c@savedauthor=\count134
+\c@shortauthor=\count135
+\c@savedshortauthor=\count136
+\c@editor=\count137
+\c@savededitor=\count138
+\c@editora=\count139
+\c@savededitora=\count140
+\c@editorb=\count141
+\c@savededitorb=\count142
+\c@editorc=\count143
+\c@savededitorc=\count144
+\c@shorteditor=\count145
+\c@savedshorteditor=\count146
+\c@bookauthor=\count147
+\c@savedbookauthor=\count148
+\c@translator=\count149
+\c@savedtranslator=\count150
+\c@annotator=\count151
+\c@savedannotator=\count152
+\c@commentator=\count153
+\c@savedcommentator=\count154
+\c@introduction=\count155
+\c@savedintroduction=\count156
+\c@foreword=\count157
+\c@savedforeword=\count158
+\c@afterword=\count159
+\c@savedafterword=\count160
+\c@holder=\count161
+\c@savedholder=\count162
+\c@namea=\count163
+\c@savednamea=\count164
+\c@nameb=\count165
+\c@savednameb=\count166
+\c@namec=\count167
+\c@savednamec=\count168
+\c@institution=\count169
+\c@savedinstitution=\count170
+\c@language=\count171
+\c@savedlanguage=\count172
+\c@location=\count173
+\c@savedlocation=\count174
+\c@organization=\count175
+\c@savedorganization=\count176
+\c@origlocation=\count177
+\c@savedoriglocation=\count178
+\c@origpublisher=\count179
+\c@savedorigpublisher=\count180
+\c@pageref=\count181
+\c@savedpageref=\count182
+\c@publisher=\count183
+\c@savedpublisher=\count184
+\c@lista=\count185
+\c@savedlista=\count186
+\c@listb=\count187
+\c@savedlistb=\count188
+\c@listc=\count189
+\c@savedlistc=\count190
+\c@listd=\count191
+\c@savedlistd=\count192
+\c@liste=\count193
+\c@savedliste=\count194
+\c@listf=\count195
+\c@savedlistf=\count196
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2016/03/03 v3.3 biblatex compatibility (PK/JW/AB)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex_legacy.def' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex_legacy.def
+File: biblatex_legacy.def 
+\c@textcitecount=\count197
+\c@textcitetotal=\count198
+\c@textcitemaxnames=\count199
+\c@biburlnumpenalty=\count266
+\c@biburlucpenalty=\count267
+\c@biburllcpenalty=\count268
+\c@smartand=\count269
+)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+File: numeric.bbx 2016/03/03 v3.3 biblatex bibliography style (PK/JW/AB)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2016/03/03 v3.3 biblatex bibliography style (PK/JW/AB)
+\c@bbx:relatedcount=\count270
+\c@bbx:relatedtotal=\count271
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
+File: numeric.cbx 2016/03/03 v3.3 biblatex citation style (PK/JW/AB)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+)))
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2016/03/03 v3.3 biblatex localization (PK/JW/AB)
+)
+\@quotelevel=\count272
+\@quotereset=\count273
+
+(./bitcoin.aux)
 \openout1 = `bitcoin.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 15.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 18.
  (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count91
+\scratchcounter=\count274
 \scratchdimen=\dimen112
 \scratchbox=\box27
-\nofMPsegments=\count92
-\nofMParguments=\count93
+\nofMPsegments=\count275
+\nofMParguments=\count276
 \everyMPshowfont=\toks17
-\MPscratchCnt=\count94
+\MPscratchCnt=\count277
 \MPscratchDim=\dimen113
-\MPnumerator=\count95
-\makeMPintoPDFobject=\count96
+\MPnumerator=\count278
+\makeMPintoPDFobject=\count279
 \everyMPtoPDFconversion=\toks18
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
@@ -514,190 +719,211 @@ e
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
 
-<./media/logo.png, id=1, 501.875pt x 501.875pt>
+
+Package biblatex Warning: Data encoding is 'utf8'.
+(biblatex)                Use backend=biber.
+
+\openout3 = `bitcoin-blx.bib'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'bitcoin.bbl' found.
+(./bitcoin.bbl)
+Package biblatex Info: Reference section=0 on input line 18.
+Package biblatex Info: Reference segment=0 on input line 18.
+ <./media/logo.png, id=1, 501.875pt x 501.875pt>
 File: ./media/logo.png Graphic file (type png)
- <use ./media/logo.png>
-Package pdftex.def Info: ./media/logo.png used on input line 34.
+
+<use ./media/logo.png>
+Package pdftex.def Info: ./media/logo.png used on input line 25.
 (pdftex.def)             Requested size: 170.71652pt x 170.71947pt.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./media/logo.png>]
-(./bitcoin.toc
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 3.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./media/logo.png>] (./bitc
+oin.toc
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 9.
  (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 3.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 9.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 3.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 9.
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 3.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 9.
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 3.
+(Font)              <10> on input line 9.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 3.
+(Font)              <7> on input line 9.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 3.
+(Font)              <5> on input line 9.
 )
-\tf@toc=\write3
-\openout3 = `bitcoin.toc'.
+\tf@toc=\write4
+\openout4 = `bitcoin.toc'.
 
  [1]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 61.
+(Font)              <8> on input line 49.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 61.
+(Font)              <6> on input line 49.
 
-Overfull \hbox (11.59232pt too wide) in paragraph at lines 57--62
+Overfull \hbox (11.59232pt too wide) in paragraph at lines 47--50
 \T1/lmr/m/n/10 2009. Il mondo è scon-volto dalla catas-trofica crisi dell'anno 
 prece-dente. L'economia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--62
+Underfull \hbox (badness 10000) in paragraph at lines 53--56
 
  []
 
-[2] [3] <./media/blockchain2.png, id=26, 1071.00125pt x 410.53375pt>
+[2] <./media/blockchain2.png, id=22, 1071.00125pt x 410.53375pt>
 File: ./media/blockchain2.png Graphic file (type png)
 
 <use ./media/blockchain2.png>
-Package pdftex.def Info: ./media/blockchain2.png used on input line 103.
+Package pdftex.def Info: ./media/blockchain2.png used on input line 99.
 (pdftex.def)             Requested size: 284.52756pt x 109.06654pt.
- [4 <./media/blockchain2.png>]
-<./media/hashdiff.png, id=31, 1003.75pt x 808.01875pt>
+ [3 <./media/blockchain2.png>]
+<./media/hashdiff.png, id=28, 1003.75pt x 808.01875pt>
 File: ./media/hashdiff.png Graphic file (type png)
 
 <use ./media/hashdiff.png>
-Package pdftex.def Info: ./media/hashdiff.png used on input line 156.
+Package pdftex.def Info: ./media/hashdiff.png used on input line 151.
 (pdftex.def)             Requested size: 426.79134pt x 343.56987pt.
- [5] [6 <./media/hashdiff.png>]
-<./media/stale-orphan.png, id=44, 1055.945pt x 429.605pt>
+ [4] [5 <./media/hashdiff.png>]
+<./media/stale-orphan.png, id=40, 1055.945pt x 232.87pt>
 File: ./media/stale-orphan.png Graphic file (type png)
 
 <use ./media/stale-orphan.png>
-Package pdftex.def Info: ./media/stale-orphan.png used on input line 175.
-(pdftex.def)             Requested size: 284.52756pt x 115.75235pt.
- [7 <./media/stale-orphan.png>]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 225.
+Package pdftex.def Info: ./media/stale-orphan.png used on input line 176.
+(pdftex.def)             Requested size: 284.52756pt x 62.74426pt.
+ [6 <./media/stale-orphan.png>]
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 227.
 
 
 (/usr/share/texmf/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 225.
-
-<./media/dashboard.png, id=49, 725.71124pt x 523.9575pt>
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 227.
+ [7]
+<./media/dashboard.png, id=50, 725.71124pt x 523.9575pt>
 File: ./media/dashboard.png Graphic file (type png)
 
 <use ./media/dashboard.png>
-Package pdftex.def Info: ./media/dashboard.png used on input line 235.
+Package pdftex.def Info: ./media/dashboard.png used on input line 237.
 (pdftex.def)             Requested size: 284.52756pt x 205.42992pt.
- [8] [9 <./media/dashboard.png>] [10]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 284.
+ [8 <./media/dashboard.png>] [9]
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 293.
 
 
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [11] [12]
-<./media/ledger.png, id=74, 602.25pt x 371.3875pt>
+) [10] [11]
+<./media/ledger.png, id=70, 602.25pt x 371.3875pt>
 File: ./media/ledger.png Graphic file (type png)
  <use ./media/ledger.png>
-Package pdftex.def Info: ./media/ledger.png used on input line 372.
+Package pdftex.def Info: ./media/ledger.png used on input line 384.
 (pdftex.def)             Requested size: 184.5544pt x 113.81102pt.
 
-<./media/paper.jpg, id=75, 439.04025pt x 234.8775pt>
+<./media/paper.jpg, id=71, 439.04025pt x 234.8775pt>
 File: ./media/paper.jpg Graphic file (type jpg)
  <use ./media/paper.jpg>
-Package pdftex.def Info: ./media/paper.jpg used on input line 372.
+Package pdftex.def Info: ./media/paper.jpg used on input line 384.
 (pdftex.def)             Requested size: 212.73999pt x 113.81102pt.
 
-<./media/pools.png, id=76, 642.4pt x 463.7325pt>
+[12 <./media/ledger.png> <./media/paper.jpg>]
+<./media/pools.png, id=79, 642.4pt x 463.7325pt>
 File: ./media/pools.png Graphic file (type png)
  <use ./media/pools.png>
-Package pdftex.def Info: ./media/pools.png used on input line 407.
+Package pdftex.def Info: ./media/pools.png used on input line 419.
 (pdftex.def)             Requested size: 284.52756pt x 205.39444pt.
 
-[13 <./media/ledger.png> <./media/paper.jpg>] [14 <./media/pools.png>] [15]
-[16] [17] <./media/ethfarm.jpeg, id=96, 963.6pt x 722.7pt>
+[13 <./media/pools.png>] [14] [15] [16]
+<./media/ethfarm.jpeg, id=93, 963.6pt x 722.7pt>
 File: ./media/ethfarm.jpeg Graphic file (type jpg)
-
-<use ./media/ethfarm.jpeg>
-Package pdftex.def Info: ./media/ethfarm.jpeg used on input line 538.
+ <use ./media/ethfarm.jpeg>
+Package pdftex.def Info: ./media/ethfarm.jpeg used on input line 552.
 (pdftex.def)             Requested size: 284.52756pt x 213.39314pt.
- [18 <./media/ethfarm.jpeg>]
-<./media/monero.png, id=101, 827.09pt x 384.43625pt>
+
+[17 <./media/ethfarm.jpeg>]
+<./media/monero.png, id=97, 827.09pt x 384.43625pt>
 File: ./media/monero.png Graphic file (type png)
  <use ./media/monero.png>
-Package pdftex.def Info: ./media/monero.png used on input line 575.
+Package pdftex.def Info: ./media/monero.png used on input line 589.
 (pdftex.def)             Requested size: 284.52756pt x 132.24934pt.
 
-[19 <./media/monero.png>] [20]
-<./media/hard_fork.png, id=108, 572.1375pt x 140.525pt>
+[18 <./media/monero.png>] [19]
+<./media/hard_fork.png, id=105, 572.1375pt x 140.525pt>
 File: ./media/hard_fork.png Graphic file (type png)
 
 <use ./media/hard_fork.png>
-Package pdftex.def Info: ./media/hard_fork.png used on input line 619.
+Package pdftex.def Info: ./media/hard_fork.png used on input line 633.
 (pdftex.def)             Requested size: 284.52756pt x 69.88493pt.
- [21 <./media/hard_fork.png>] [22]
-<./media/transactions.png, id=115, 1315.91624pt x 541.02126pt>
+ [20 <./media/hard_fork.png>]
+<./media/transactions.png, id=109, 1315.91624pt x 541.02126pt>
 File: ./media/transactions.png Graphic file (type png)
 
 <use ./media/transactions.png>
-Package pdftex.def Info: ./media/transactions.png used on input line 684.
+Package pdftex.def Info: ./media/transactions.png used on input line 677.
 (pdftex.def)             Requested size: 426.79134pt x 175.46658pt.
- [23 <./media/transactions.png>]
-<./media/crash2.png, id=119, 1122.1925pt x 1301.86375pt>
+ [21 <./media/transactions.png>]
+<./media/crash2.png, id=113, 1122.1925pt x 1301.86375pt>
 File: ./media/crash2.png Graphic file (type png)
 
 <use ./media/crash2.png>
-Package pdftex.def Info: ./media/crash2.png used on input line 731.
+Package pdftex.def Info: ./media/crash2.png used on input line 724.
 (pdftex.def)             Requested size: 284.52756pt x 330.07378pt.
- [24] [25 <./media/crash2.png>]
-<./media/adoption.png, id=127, 582.175pt x 376.40625pt>
+ [22] [23 <./media/crash2.png>] [24]
+<./media/adoption.png, id=124, 582.175pt x 376.40625pt>
 File: ./media/adoption.png Graphic file (type png)
 
 <use ./media/adoption.png>
-Package pdftex.def Info: ./media/adoption.png used on input line 782.
+Package pdftex.def Info: ./media/adoption.png used on input line 805.
 (pdftex.def)             Requested size: 284.52756pt x 183.96396pt.
- [26] [27 <./media/adoption.png>] (./bitcoin.aux) ) 
+ [25] [26 <./media/adoption.png>] [27] (./bitcoin.aux)
+Package logreq Info: Writing requests to 'bitcoin.run.xml'.
+\openout1 = `bitcoin.run.xml'.
+
+ )
+(\end occurred when \iftrue on line 18 was incomplete) 
 Here is how much of TeX's memory you used:
- 3445 strings out of 494953
- 51413 string characters out of 6180978
- 108610 words of memory out of 5000000
- 6642 multiletter control sequences out of 15000+600000
+ 8292 strings out of 494953
+ 134331 string characters out of 6180978
+ 275954 words of memory out of 5000000
+ 11434 multiletter control sequences out of 15000+600000
  71809 words of font info for 48 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 42i,9n,44p,549b,475s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/
-dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/t
-exmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-m
-athit.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb
-></usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/typ
-e1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></us
-r/share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/type1/pub
-lic/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/
-texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lm
-r7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts
-/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></
-usr/share/texmf/fonts/type1/public/lm/lmri8.pfb></usr/share/texmf/fonts/type1/p
-ublic/lm/lmri9.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/sha
-re/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/l
-m/lmsy7.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf
-/fonts/type1/public/lm/lmtt10.pfb>
-Output written on bitcoin.pdf (28 pages, 1265173 bytes).
+ 42i,9n,45p,797b,854s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/e
+nc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/
+share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/
+lm/lm-rm.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/eurosym/feymr10.
+pfb></usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/
+type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb><
+/usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf/fonts/type1/
+public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/sha
+re/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm
+/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fo
+nts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb
+></usr/share/texmf/fonts/type1/public/lm/lmri8.pfb></usr/share/texmf/fonts/type
+1/public/lm/lmri9.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/
+share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/publi
+c/lm/lmsy7.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/te
+xmf/fonts/type1/public/lm/lmtt10.pfb>
+Output written on bitcoin.pdf (28 pages, 1251947 bytes).
 PDF statistics:
  204 PDF objects out of 1000 (max. 8388607)
  133 compressed objects within 2 object streams
