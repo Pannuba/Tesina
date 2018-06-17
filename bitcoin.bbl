@@ -54,6 +54,79 @@
   \field{year}{2015}
 \endentry
 
+\entry{antminers9}{misc}{}
+  \verb{url}
+  \verb https://shop.bitmain.com/antminer_s9_asic_bitcoin_miner.htm?flag=specif
+  \verb ications
+  \endverb
+  \field{journaltitle}{Bitmain.com}
+\endentry
+
+\entry{antminerv9}{misc}{}
+  \verb{url}
+  \verb https://shop.bitmain.com/product/detail?pid=000201802051016159150g4OS2h
+  \verb k0661
+  \endverb
+  \field{journaltitle}{ASICMinerValue.com}
+\endentry
+
+\entry{s9profit}{misc}{}
+  \verb{url}
+  \verb https://www.asicminervalue.com/miners/bitmain/antminer-s9-14th
+  \endverb
+  \field{journaltitle}{Bitmain.com}
+\endentry
+
+\entry{chinaaverage}{article}{}
+  \field{title}{Average electricity prices around the world: \$/kWh}
+  \verb{url}
+  \verb https://www.ovoenergy.com/guides/energy-guides/average-electricity-pric
+  \verb es-kwh.html
+  \endverb
+  \field{journaltitle}{OVOEnergy.com}
+\endentry
+
+\entry{chinaless}{article}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Han}{H.}%
+     {Shangfeng}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Zhang}{Z.}%
+     {Baosheng}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sun}{S.}%
+     {Xiaoyang}{X.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Han}{H.}%
+     {Song}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Höök}{H.}%
+     {Mikael}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{HS+1}
+  \strng{fullhash}{HSZBSXHSHM1}
+  \field{title}{China’s Energy Transition in the Power and Transport Sectors
+  from a Substitution Perspective}
+  \verb{url}
+  \verb mdpi.com/1996-1073/10/5/600/pdf
+  \endverb
+  \field{journaltitle}{Energies}
+  \field{day}{29}
+  \field{month}{04}
+  \field{year}{2017}
+\endentry
+
 \entry{attacks}{article}{}
   \field{title}{Irreversible Transactions}
   \verb{url}
@@ -82,6 +155,26 @@
   \field{year}{2017}
 \endentry
 
+\entry{nickszabo}{report}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Szabo}{S.}%
+     {Nick}{N.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SN1}
+  \strng{fullhash}{SN1}
+  \field{chapter}{The Idea of Smart Contracts}
+  \field{title}{Formalizing and Securing Relationships on Public Networks}
+  \verb{url}
+  \verb http://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literat
+  \verb ure/LOTwinterschool2006/szabo.best.vwh.net/idea.html
+  \endverb
+  \field{type}{techreport}
+  \field{year}{1997}
+\endentry
+
 \entry{ethboom}{article}{}
   \name{author}{1}{}{%
     {{}%
@@ -100,6 +193,20 @@
   \field{journaltitle}{BuildAPC subreddit}
   \field{month}{06}
   \field{year}{2017}
+\endentry
+
+\entry{silverprice}{misc}{}
+  \verb{url}
+  \verb https://silverprice.org
+  \endverb
+  \field{journaltitle}{SilverPrice.org}
+\endentry
+
+\entry{goldprice}{misc}{}
+  \verb{url}
+  \verb https://goldprice.org
+  \endverb
+  \field{journaltitle}{GoldPrice.org}
 \endentry
 
 \entry{ltcvsbtc}{article}{}
@@ -224,6 +331,9 @@
      {}{}%
      {}{}}%
   }
+  \list{publisher}{1}{%
+    {uiasdb}%
+  }
   \strng{namehash}{BADGS1}
   \strng{fullhash}{BADGS1}
   \field{chapter}{La Grande depressione}
@@ -238,6 +348,7 @@
   \verb https://blog.unocoin.com/why-is-bitcoin-so-controversial-527caf8ee4c7
   \endverb
   \field{journaltitle}{Unocoin Blog}
+  \field{day}{17}
   \field{month}{10}
   \field{year}{2017}
 \endentry
@@ -258,6 +369,7 @@
   \verb https://newsbtc.com/2017/11/12/61408/
   \endverb
   \field{journaltitle}{News BTC}
+  \field{day}{12}
   \field{month}{11}
   \field{year}{2017}
 \endentry

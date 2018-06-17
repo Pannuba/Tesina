@@ -4,136 +4,136 @@
 \defcounter {refsection}{0}\relax 
 \select@language {italian}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Le origini del Bitcoin}{2}{section.1}
+\contentsline {section}{\numberline {1}Le origini del Bitcoin}{1}{section.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Satoshi}{2}{section*.2}
+\contentsline {paragraph}{Satoshi}{1}{section*.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Confronto con i soldi "tradizionali"}{2}{section*.3}
+\contentsline {paragraph}{Confronto con i soldi "tradizionali"}{1}{section*.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Blockchain: cos'\IeC {\`e} e come funziona}{3}{section.2}
+\contentsline {section}{\numberline {2}Blockchain: cos'\IeC {\`e} e come funziona}{2}{section.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1}Cosa sono i blocchi e che compito svolgono}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.1}Cosa sono i blocchi e che compito svolgono}{2}{subsection.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2}Mining}{4}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.2}Mining}{3}{subsection.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Le hash}{4}{section*.5}
+\contentsline {paragraph}{Le hash}{3}{section*.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.1}Target e difficolt\IeC {\`a} di mining}{4}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.1}Target e difficolt\IeC {\`a} di mining}{3}{subsubsection.2.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Tempo per blocco}{5}{section*.7}
+\contentsline {paragraph}{Tempo per blocco}{4}{section*.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.2}Costi del mining}{6}{subsubsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.2}Costi del mining}{5}{subsubsection.2.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{L'uso di elettricit\IeC {\`a} del mining}{7}{section*.9}
+\contentsline {paragraph}{L'uso di elettricit\IeC {\`a} del mining}{6}{section*.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.3}Profitti del mining}{7}{subsubsection.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.3}Profitti del mining}{6}{subsubsection.2.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Mining pools}{7}{section*.10}
+\contentsline {paragraph}{Mining pools}{7}{section*.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Tassa di transazione}{8}{section*.12}
+\contentsline {paragraph}{Tassa di transazione}{7}{section*.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Il futuro del mining}{9}{section*.13}
+\contentsline {paragraph}{Il futuro del mining}{8}{section*.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Aspetto tecnico del Bitcoin}{10}{section.3}
+\contentsline {section}{\numberline {3}Aspetto tecnico del Bitcoin}{9}{section.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}Mempool: il primo passo delle transazioni}{10}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.1}Mempool: il primo passo delle transazioni}{9}{subsection.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}Come e dove si conserva}{10}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.2}Come e dove si conserva}{9}{subsection.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.1}Indirizzi}{10}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.1}Indirizzi}{9}{subsubsection.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{P2PKH}{10}{section*.14}
+\contentsline {paragraph}{P2PKH}{9}{section*.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{P2SH SegWit}{10}{section*.15}
+\contentsline {paragraph}{P2SH SegWit}{9}{section*.16}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{bech32 SegWit}{10}{section*.16}
+\contentsline {paragraph}{bech32 SegWit}{9}{section*.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.2}Keys}{10}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.2}Keys}{9}{subsubsection.3.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Public key}{10}{section*.17}
+\contentsline {paragraph}{Public key}{9}{section*.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Private key}{11}{section*.18}
+\contentsline {paragraph}{Private key}{10}{section*.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Seeds}{11}{section*.19}
+\contentsline {paragraph}{Seeds}{10}{section*.20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.3}Portafogli}{11}{subsubsection.3.2.3}
+\contentsline {subsubsection}{\numberline {3.2.3}Portafogli}{10}{subsubsection.3.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Cold storage}{11}{section*.20}
+\contentsline {paragraph}{Cold storage}{10}{section*.21}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Hot wallets}{12}{section*.22}
+\contentsline {paragraph}{Hot wallets}{11}{section*.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}I problemi del Bitcoin}{12}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.3}I problemi del Bitcoin}{11}{subsection.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.1}Gli attacchi al network}{12}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.1}Gli attacchi al network}{11}{subsubsection.3.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.2}La parziale centralizzazione}{13}{subsubsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.2}La parziale centralizzazione}{12}{subsubsection.3.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.3}Il limite dei blocchi da 1 Megabyte}{13}{subsubsection.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.3}Il limite dei blocchi da 1 Megabyte}{12}{subsubsection.3.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Segregated Witness}{13}{section*.24}
+\contentsline {paragraph}{Segregated Witness}{12}{section*.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Lightning Network}{13}{section*.25}
+\contentsline {paragraph}{Lightning Network}{12}{section*.26}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Utilizzare Bitcoin}{14}{section.4}
+\contentsline {section}{\numberline {4}Utilizzare Bitcoin}{13}{section.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Creazione del portafoglio}{14}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.1}Creazione del portafoglio}{13}{subsection.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}Come ottenere Bitcoin}{15}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.2}Come ottenere Bitcoin}{14}{subsection.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Exchange}{15}{section*.26}
+\contentsline {paragraph}{Exchange}{14}{section*.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{ATMs}{15}{section*.27}
+\contentsline {paragraph}{ATMs}{14}{section*.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Mining}{15}{section*.28}
+\contentsline {paragraph}{Mining}{14}{section*.29}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Forma di pagamento}{15}{section*.29}
+\contentsline {paragraph}{Forma di pagamento}{14}{section*.30}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}Trasferire Bitcoin}{15}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.3}Trasferire Bitcoin}{14}{subsection.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Non solo Bitcoin}{17}{section.5}
+\contentsline {section}{\numberline {5}Non solo Bitcoin}{16}{section.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1}Ethereum}{17}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.1}Ethereum}{16}{subsection.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Smart contracts}{17}{section*.30}
+\contentsline {paragraph}{Smart contracts}{16}{section*.31}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Mining}{17}{section*.31}
+\contentsline {paragraph}{Mining}{16}{section*.32}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{La deflazione del mercato di schede grafiche}{18}{section*.32}
+\contentsline {paragraph}{La deflazione del mercato di schede grafiche}{17}{section*.33}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2}Litecoin}{19}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.2}Litecoin}{18}{subsection.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3}Monero}{19}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.3}Monero}{18}{subsection.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4}Nano}{20}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.4}Nano}{19}{subsection.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5}Ripple}{20}{subsection.5.5}
+\contentsline {subsection}{\numberline {5.5}Ripple}{19}{subsection.5.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.6}Bitcoin "hard forks"}{21}{subsection.5.6}
+\contentsline {subsection}{\numberline {5.6}Bitcoin "hard forks"}{20}{subsection.5.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Crypto oggi}{22}{section.6}
+\contentsline {section}{\numberline {6}Crypto oggi}{21}{section.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1}Adozione}{22}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.1}Adozione}{21}{subsection.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Rovereto: quasi tutti accettano Bitcoin}{23}{section*.37}
+\contentsline {paragraph}{Rovereto: quasi tutti accettano Bitcoin}{22}{section*.38}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Elizavetovka: il villaggio in Ucraina in cui tutti utilizzano criptovalute}{23}{section*.38}
+\contentsline {paragraph}{Elizavetovka: il villaggio in Ucraina in cui tutti utilizzano criptovalute}{22}{section*.39}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2}La bolla del 2017: cause e conseguenze}{23}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.2}La bolla del 2017: cause e conseguenze}{22}{subsection.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.2.1}L'analogia con la crisi del '29}{23}{subsubsection.6.2.1}
+\contentsline {subsubsection}{\numberline {6.2.1}L'analogia con la crisi del '29}{22}{subsubsection.6.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{La ricorrenza dei "crash" dei mercati}{23}{figure.caption.40}
+\contentsline {paragraph}{La ricorrenza dei "crash" dei mercati}{22}{figure.caption.41}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3}Controversie}{24}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.3}Controversie}{23}{subsection.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.3.1}Moneta per scambi illegali}{24}{subsubsection.6.3.1}
+\contentsline {subsubsection}{\numberline {6.3.1}Moneta per scambi illegali}{23}{subsubsection.6.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.3.2}Il ban del Bitcoin in certi stati}{25}{subsubsection.6.3.2}
+\contentsline {subsubsection}{\numberline {6.3.2}Il ban del Bitcoin in certi stati}{24}{subsubsection.6.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.3.3}Mt. Gox}{25}{subsubsection.6.3.3}
+\contentsline {subsubsection}{\numberline {6.3.3}Mt. Gox}{24}{subsubsection.6.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.3.4}Bitconnect}{25}{subsubsection.6.3.4}
+\contentsline {subsubsection}{\numberline {6.3.4}Bitconnect}{24}{subsubsection.6.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.3.5}Roger Ver e la truffa di "Bitcoin Cash"}{25}{subsubsection.6.3.5}
+\contentsline {subsubsection}{\numberline {6.3.5}Roger Ver e la truffa di "Bitcoin Cash"}{24}{subsubsection.6.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.4}Il futuro delle criptovalute}{26}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.4}Il futuro delle criptovalute}{25}{subsection.6.4}
