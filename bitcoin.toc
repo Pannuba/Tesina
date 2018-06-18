@@ -42,7 +42,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.2.1}Indirizzi}{14}{subsubsection.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{P2PKH}{14}{section*.17}
+\contentsline {paragraph}{P2PKH}{15}{section*.17}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{P2SH SegWit}{15}{section*.18}
 \defcounter {refsection}{0}\relax 
@@ -54,7 +54,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Private key}{15}{section*.21}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Seeds}{15}{section*.22}
+\contentsline {paragraph}{Seeds}{16}{section*.22}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.2.3}Portafogli}{16}{subsubsection.3.2.3}
 \defcounter {refsection}{0}\relax 
@@ -110,30 +110,26 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.6}Bitcoin "hard forks"}{27}{subsection.5.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Crypto oggi}{28}{section.6}
+\contentsline {section}{\numberline {6}Crypto oggi}{29}{section.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1}Adozione}{28}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.1}Adozione}{29}{subsection.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Rovereto: quasi tutti accettano Bitcoin}{28}{section*.39}
+\contentsline {paragraph}{Rovereto: i pagamenti in Bitcoin sono la norma}{29}{section*.39}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Elizavetovka: il villaggio in Ucraina in cui tutti utilizzano criptovalute}{28}{section*.40}
+\contentsline {subsection}{\numberline {6.2}La bolla del 2017: cause e conseguenze}{29}{subsection.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2}La bolla del 2017: cause e conseguenze}{28}{subsection.6.2}
+\contentsline {subsubsection}{\numberline {6.2.1}L'analogia con la crisi del '29}{30}{subsubsection.6.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.2.1}L'analogia con la crisi del '29}{29}{subsubsection.6.2.1}
+\contentsline {subsection}{\numberline {6.3}Controversie}{30}{subsection.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{La ricorrenza dei "crash" dei mercati}{29}{figure.caption.42}
+\contentsline {subsubsection}{\numberline {6.3.1}Moneta per scambi illegali}{30}{subsubsection.6.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3}Controversie}{29}{subsection.6.3}
+\contentsline {subsubsection}{\numberline {6.3.2}Il ban del Bitcoin in certi stati}{31}{subsubsection.6.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.3.1}Moneta per scambi illegali}{29}{subsubsection.6.3.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.3.2}Il ban del Bitcoin in certi stati}{30}{subsubsection.6.3.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.3.3}Mt. Gox}{30}{subsubsection.6.3.3}
+\contentsline {subsubsection}{\numberline {6.3.3}Mt. Gox}{31}{subsubsection.6.3.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {6.3.4}Bitconnect}{32}{subsubsection.6.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.3.5}Roger Ver e la truffa di "Bitcoin Cash"}{32}{subsubsection.6.3.5}
+\contentsline {subsubsection}{\numberline {6.3.5}Roger Ver e la truffa di "Bitcoin Cash"}{33}{subsubsection.6.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.4}Il futuro delle criptovalute}{33}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.4}Il futuro delle criptovalute}{34}{subsection.6.4}

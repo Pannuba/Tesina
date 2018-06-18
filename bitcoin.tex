@@ -15,6 +15,7 @@
 
 \graphicspath { {./media/} }
 
+%TODO: lighting, forse rimettere elizavetovka e rivedere crisi 29, crash
 
 \begin{document}
 
@@ -269,7 +270,7 @@ Ogni transazione di Bitcoin prevede il pagamento di una piccola quota, solitamen
 Questa quota, chiamata \textit{miner fee} serve per incoraggiare i \textit{miner} a selezionare la nostra transazione da includere nel blocco in fase di ricerca.
 Questa tassa è espressa in sat/b, satoshi\footnote{Un satoshi è l'unità di misura più piccola del bitcoin, e corrisponde a $1 \times 10^{-8}$ BTC} per byte.
 Una tassa più elevata riduce il tempo di conferma della transazione, perché preferita dai \textit{miner}. Al contrario, una transazione effettuata con una tassa inferiore alla media impiega più tempo ad essere inclusa in un blocco e quindi ad essere processata, perché i \textit{miner} guadagnano più BTC dalle transazioni più costose.
-Come ho spiegato ciascuna transazione pesa tot kilobyte, quindi, conoscendo il peso in kb della transazione e avendo stabilito il valore della tassa in sat/b\footnote{Spiegherò come si viene a conoscenza di queste due nel punto X.Y} per scoprire quanto paghiamo effettivamente possiamo ricavare la quantità di BTC dalla proporzione.
+Come ho spiegato ciascuna transazione pesa tot kilobyte, quindi, conoscendo il peso in kb della transazione e avendo stabilito il valore della tassa in sat/b\footnote{Spiegherò come si viene a conoscenza di queste due nel punto 3.2.3, paragrafo "Hot wallets"} per scoprire quanto paghiamo effettivamente possiamo ricavare la quantità di bitcoin dalla proporzione.
 
 $$ nSatoshi : 1 byte = tassa : pesoTransazione $$
 %
@@ -292,12 +293,13 @@ Eventualmente tutti i bitcoin verranno minati, e i profitti dei \textit{miners} 
 \section {Aspetto tecnico del Bitcoin}
 
 
-\subsection {Mempool: il primo passo delle transazioni}  %http://www.righto.com/2014/02/bitcoins-hard-way-using-raw-bitcoin.html
+\subsection {Mempool: il primo passo delle transazioni}
 
 
 La \textit{mempool} è il luogo in cui si trovano tutte le transazioni effettuate non ancora confermate dai \textit{miners}.
-Si può dire che una volta effettuate, le transazioni si mettono in lista d'attesa nella \textit{mempool}, aspettando che un \textit{miner} la includa nel blocco che sta cercando.
+Si può dire che una volta effettuate, le transazioni si mettono in lista d'attesa nella \textit{mempool}, aspettando che un \textit{miner} le includano nel blocco in fase di ricerca.
 Ciascun \textit{full node} ha una propria mempool, di dimensione massima variabile a seconda della quantità di RAM del computer.
+Per prevenire eventuali \textit{crash} dei \textit{full nodes} causati dall'esaurimento di RAM per contenere la mempool, il software del Bitcoin stabilisce automaticamente una tassa di transazione minima che impedisce alle transazioni con tassa inferiore al limite di entrare nella \textit{mempool} di quel \textit{node} \cite{mempool}.
 
 \vspace {0.5cm}
 \begin{figure}[htb!]
@@ -325,7 +327,6 @@ In questa figura è raffigurata (suona male) la somma di tutte le tasse delle tr
 Per esempio, alle 22:25 del 17 giugno la somma delle tasse di tutte le transazioni che pagano 2 sat/b (circa 4000 secondo il grafico precedente) è pari a 0,375 BTC.
 
 
-
 \subsection {Come e dove si conserva}
 
 
@@ -345,7 +346,7 @@ Questi indirizzi si riconoscono dal fatto che iniziano col carattere '1', per es
 \paragraph {P2SH SegWit}
 
 P2SH significa "Pay To Script Hash".
-Gli indirizzi P2SH sono stati ideati il 18 ottobre del 2011 con il BIP\footnote{\textit{Bitcoin Improvement Proposal}, una proposta di un miglioramento al software del Bitcoin}-13 e lanciati l'1 Aprile del 2012 \cite{bip13}. CITE METTERE 1 APRILE 2012
+Gli indirizzi P2SH sono stati ideati il 18 ottobre del 2011 con il BIP\footnote{\textit{Bitcoin Improvement Proposal}, una proposta di un miglioramento al software del Bitcoin}-13 e lanciati l'1 Aprile del 2012 \cite{bip13}\cite{p2sh}.
 Il lancio di questi indirizzi non avvenne affatto in modo liscio e "indolore": il problema principale è che tutti i \textit{miners} che non hanno aggiornato il proprio \textit{full node} stavano includendo nei blocchi transazioni ritenute invalide dai loro software.
 La differenza sostanziale con gli indirizzi "normali" è che tramite cose tecniche utilizzano la tecnologia SegWit\footnote{Vedi punto 3.3.3} per ridurre potenzialmente la tassa di transazione.
 Il sistema/protocollo P2SH richiede però la presenza di uno script che aumenta lievemente il peso della transazione, che non è presente nell'ultimo tipo di indirizzo.
@@ -450,7 +451,8 @@ Esistono anche dei veri e propri "Bitcoin" fisici, ovvero delle monete materiali
 
 Gli \textit{hot wallets} sono invece dei portafogli che utilizzano un collegamento a internet per permettere di effettuare pagamenti \emph{dall'}indirizzo in uso.
 Esistono come software, tra cui app per smartphone, programmi per computer o servizi online.
-Certi \textit{hot wallets} permettono di stabilire manualmente la tassa in sat/b
+Certi \textit{hot wallets} permettono di stabilire manualmente la tassa in sat/b, mentre altri la decidono automaticamente in base allo stato della \textit{mempool}.
+Il calcolo della tassa da pagare avviene automaticamente, ma certi portafogli come Electrum hanno la funzione di mostrare il peso in kb della transazione.
 
 
 \subsection {I problemi del Bitcoin}
@@ -683,8 +685,10 @@ Nano non prevede l'impiego di \textit{miners} per validare le proprie transazion
 Esistono in totale 133.248.290 NANO, distribuiti gratuitamente fino all'ottobre 2017 tramite un sito che inviava una piccola quantità di Nano a chiunque completasse un \textit{captcha}, una parola da trascrivere in una casella di testo per confermare di non essere un robot programmato per abusare del sistema di distribuzione gratuita.
 È veramente interessante sotto il punto di vista tecnico perché è la prima che usa la tecnologia \textit{Block Lattice}\footnote{Da non confondere con la parola italiana, \textit{lattice [/'let.is/]} significa reticolo, intreccio} in sostanza, anziché dipendere da una singola blockchain come fanno tutte le altre valute, ogni singolo indirizzo \emph{è} una blockchain a sé stante.
 Questa tecnologia permette di effettuare transazioni estremamente veloci rispetto a quelle del Bitcoin (che impiegano un'ora per essere ritenute pienamente concluse), con una durata inferiore ai 2 secondi, talvolta letteralmente istantanee.
-Non è l'unico vantaggio. A differenzaaa %https://www.reddit.com/r/nanocurrency/comments/830ax6/how_does_nano_not_require_mining/
-La \textit{Block Lattice} rende tutte le transazioni di Nano completamente gratuite.
+Non è l'unico vantaggio.%https://www.reddit.com/r/nanocurrency/comments/830ax6/how_does_nano_not_require_mining/
+La \textit{Block Lattice} rende tutte le transazioni di Nano completamente gratuite: Nano non necessita di \textit{mining} per funzionare, quindi non è previsto il pagamento di alcuna tassa di transazione.
+Quella di Nano, però, non è una rete autosufficiente, ed è comunque necessaria una forma di pagamento da parte degli utenti.
+Gli utenti, infatti, impiegano il lavoro del processore del proprio computer o smartphone per processare la transazione da sé stessi: anziché pagare dei \textit{miners}, è possibile coprire il costo della transazione sprecando XX joule di energia grazie all'efficienza della tecnologia della \textit{block lattice}.
 
 
 \subsection {Ripple}
@@ -728,13 +732,10 @@ Infatti, sarà comunque possibile prelevare i BTT dal vecchio indirizzo BTC ora 
 \section {Crypto oggi}
 
 
-In questa sezione andrò a parlare dell'impatto del Bitcoin nella società di oggi.
-
-
 \subsection {Adozione}
 
 
-Il Bitcoin è una valuta relativamente nuova nata neanche 10 anni fa, e il fatto che utilizza una tecnologia sconosiuta prima d'ora, limita l'adozione da parte di mercanti e imprese.
+Il Bitcoin è una valuta relativamente nuova nata neanche 10 anni fa, e il fatto che utilizza una tecnologia sconosiuta prima d'ora limita l'adozione da parte di mercanti e imprese.
 Nonostante ciò, sempre più servizi stanno cominciando ad accettare criptovalute come forma di pagamento, tra cui:
 
 \begin{itemize}
@@ -744,28 +745,26 @@ Nonostante ciò, sempre più servizi stanno cominciando ad accettare criptovalut
 \item KFC Canada e Subway: due catene fast-food famose in tutto il mondo stanno incominciando ad accettare Bitcoin \cite{accepting}. 
 \end{itemize}
 %
-Questi sono i 
+Questi sono i servizi più grandi ed importanti che accettano pagamenti in Bitcoin, ma di certo non sono gli unici.
+Ogni giorno, infatti, sempre più attività accettano criptovalute: privati, piccoli commercianti, persino chi gestisce un semplice banchetto alle bancarelle.
 
-\paragraph {Rovereto: quasi tutti accettano Bitcoin}
+\paragraph {Rovereto: i pagamenti in Bitcoin sono la norma}
 
 Rovereto è una cittadina nelle Dolomiti di 40.000 abitanti in cui l'uso del Bitcoin come forma di pagamento è estremamente diffusa.
-Tutto ebbe inizio  quando ... ...
-\cite{rovereto}
-
-
-\paragraph {Elizavetovka: il villaggio in Ucraina in cui tutti utilizzano criptovalute}
-
-
-è bellus \cite{elizavetovka}
+Marco Amadori è il principale responsabile di questa vera e propria rivoluzione di Rovoreto.
+Nel 2016 lui, assieme a 20 compagni sviluppatori, fondò una \textit{startup} chiamata inbitcoin, che svolge l'attività di sviluppare software, fare ricerche in ambito blockchain e, soprattutto, ad educare gli abitanti di Rovoreto a questa nuova tecnologia.
+inbitcoin, infatti, ha sviluppato l'app Altana, un \textit{hot wallet} di Bitcoin, che diffonde ai mercanti per insegnare loro come accettare pagamenti in bitcoin \cite{rovereto}.
 
 
 \subsection {La bolla del 2017: cause e conseguenze}
 
 
 A partire dal settembre 2017 il prezzo del Bitcoin ha subito un'esponenziale crescita, passando dai \euro{3000} del 16 settembre fino a raggiungere un picco di \euro{17.230} il 12 dicembre.
-Le cose(?) che hanno causato questo boom non sono certe, ma
-Il prezzo del Bitcoin, ma anche della stragrande maggioranza delle altre criptovalute è precipitato nel dicembre del 2017, andando dall'ATH (\textit{all time high}) del 12 dicembre di \euro{17.230} ai \euro{6000} del 5 Febbraio 2018. Un calo di più del 65\%!
-futures?
+Le cause che hanno causato questo boom non sono certe visto che i mercati delle criptovalute sono quasi interamente di natura speculativa.
+Si crede che i media abbiano convinto sempre più gente ad investire in questa nuova tecnologia, diffondendo a macchia d'olio l'entusiasmo per le criptovalute.
+Il prezzo del Bitcoin, ma anche della stragrande maggioranza delle altre criptovalute è precipitato nel dicembre del 2017, andando dall'ATH\footnote{\textit{All time high}, il valore più alto del prezzo mai raggiunto prima} del 12 dicembre di \euro{17.230} ai \euro{6000} del 5 Febbraio 2018. Un calo di più del 65\%!
+Un'ipotesi molto gettonata per la causa questo crollo è quella del capodanno cinese che avviene tra il 21 gennaio e il 20 febbraio, noto per influenzare negativamente i mercati in tutto il mondo.
+Durante esso, infatti, molte fabbriche e mercati finanziari chiudono per ferie, e circa 1,4 miliardi di persone dedicano una parte dei loro risparmi (talvolta anche sotto forma di Bitcoin) all'acquisto di doni da fare ai propri cari.
 
 
 \subsubsection {L'analogia con la crisi del '29}
@@ -773,25 +772,25 @@ futures?
 
 Il 24 ottobre del 1929 è il giorno che marcò il crollo della Borsa di Wall Street, che ebbe come conseguenza il fallimento di molte imprese, una riduzione della domanda da parte di altri stati, e una forte crescita della disoccupazione, raggiungendo i 13 milioni di disoccupati nel 1932.
 Tra le principali cause di questa crisi ci sono la sovrapproduzione di merce. detto così sembra fatto da un bambino delle elementari
-Gli Stati Uniti erano grandi fornitori di merce e dané all'Europa, e il progressivo aumento della domanda ha portato gli USA ad incrementare la produzione industriale, grazie anche alla diffusione del Taylorismo e della generale innovazione tecnologica().
+Gli Stati Uniti erano grandi fornitori di merce e dané all'Europa, e il progressivo aumento della domanda ha portato gli USA ad incrementare la produzione industriale, grazie anche alla diffusione del Taylorismo e della generale innovazione tecnologica.
 A partire dal 1926, però, l'Europa e poi il Giappone ridussero notevolmente la domanda agli Stati Uniti perché anche questi beneficiarono del progresso tecnologico che ha avuto inizio in America.
 Questo portò a un'eccessiva produzione di merce che non venne mai venduta all'Europa perché non richiesta.
 Un'altra enorme causa di questa crisi fu l'andamento dell'economia mondiale: era puramente un'economia di carta, basata su opinioni e speculazioni.
 Gli scambi di azioni e gli investimenti di imprenditori verso le diverse aziende era una scommessa su quale attività avrebbe fatto successo, facendo ricavare profitti a chi avesse investito. \cite{crisi29}
-Questo è estremamente simile a quello che è successo al Bitcoin perché sì.
 
-\paragraph {La ricorrenza dei "crash" dei mercati}
-
-\vspace {0.5cm}
-\begin{figure}[htb!]
-\includegraphics [width = 10cm] {crash2.png}
-\centering
-\captionsetup{width=1.4\linewidth}
-\caption {Confronto tra il crollo del prezzo del Bitcoin nel 2013 e nel 2017\\\textit{fonte: coinmarketcap.com}}
-\end{figure}
-\vspace {0.2cm}
-\noindent
+%\paragraph {La ricorrenza dei "crash" dei mercati}
 %
+%\vspace {0.5cm}
+%\begin{figure}[htb!]
+%\includegraphics [width = 8cm] {crash2.png}
+%\centering
+%\captionsetup{width=1.4\linewidth}
+%\caption {Confronto tra il crollo del prezzo del Bitcoin nel 2013 e nel 2017\\\textit{fonte: coinmarketcap.com}}
+%\end{figure}
+%\vspace {0.2cm}
+%\noindent
+%
+%Di certo non ci si dovrebbe basare sull'andamento del prezzo del passato per prevedere 
 
 \subsection {Controversie}
 
@@ -811,7 +810,31 @@ L'accusa alle criptovalute di essere monete "da mercato nero" è secondo molti u
 \subsubsection {Il ban del Bitcoin in certi stati}
 
 
-boh, faccio dopo.
+Il Bitcoin non è ben visto dai governi perché le sue transazioni \textit{peer-to-peer} rendono obsolete le banche, da cui questi traggono guadagno, e in generale gli stati non possono controllare il prezzo e la liquidità del Bitcoin.
+Certi paesi sono addirittura arrivati a proclamare leggi che rendono illegale l'uso del Bitcoin, alcuni lasciando qualche libertà, altri nemmeno \cite{legality}.
+
+\begin{itemize}
+\item Algeria
+\item Bolivia
+\item Ecuador
+\item Bangladesh: pena di carcere
+\item Nepal
+\item Macedonia: sanzione fiscale, carcere
+\item Indonesia: vietato come forma di pagamento
+\item Vietnam: vietato come forma di pagamento
+\end{itemize}
+%
+Canada, India e Thailandia hanno vietato l'acquisto di Bitcoin utilizzando le banche statali come mezzo, per esempio tramite bonifico o carta di credito.
+Ci sono inoltre stati episodi di FUD in cui si credeva che India, Cina e Corea del Sud avessero intenzione di rendere il Bitcoin illegale.
+In tutti e tre i casi le affermazioni dei governi sono state mal interpretate: la regolazione dei mercati serve solo a renderli più stabili e sicuri, e non necessariamente la mancanza di supporto da parte dello stato significa che considera il Bitcoin illegale.
+%\paragraph {FUD sul ban di India e Corea del Sud}
+%
+%Nell'aprile del 2018 \cite{indiafud}.
+%\cite{indianot}
+%\smallskip
+%Nel dicembre del 2017 sono stati pubblicati articoli che affermavano che il governo della Corea del Sud avesse proibito lo scambio di Bitcoin \cite{koreafud}.
+%È stato poi scoperto che la Corea del Sud non stava facendo altro che vietare lo scambio di Bitcoin tramite account anonimi per rendere i mercati più stabili e %sicuri \cite{koreanot}.
+%Questi non sono altro che tentativi di FUD, storie inventate per dare una cattiva immagine al Bitcoin che portano a un abbassamento del prezzo.
 
 
 \subsubsection {Mt. Gox}
@@ -845,13 +868,13 @@ L'hacker responsabile del furto dei 630.000 BTC, Alexander Vinnik, è stato arre
 \subsubsection {Bitconnect}
 
 
-Bitconnect è un altcoin con un tasso di interesse variabile (dal 0.1\% all'1\%) che aumentava quotidianamente i profitti di chiunque ne possedesse.
-Non era ben chiaro chi fosse il creatore, e molti erano già dubiosi del claim di arricchire magicamente chiunque ne comprasse.
+Bitconnect è un altcoin con un tasso di interesse variabile dallo 0.1\% all'1\% che aumentava quotidianamente i profitti di chiunque ne possedesse.
+Non era ben chiaro chi fosse il creatore, e molti erano già dubbiosi dell'affermazione di arricchire magicamente chiunque ne comprasse.
 Tra il 14 e il 17 Gennaio 2018 il prezzo di Bitconnect è crollato da \euro{273} a \euro{30}, arrivando agli \euro{0.55} di oggi.
-Si è scoperto che l'intero progetto Bitconnect non era altro che un' "exit scam", una truffa in cui i truffatori spariscono improvvisamente, lasciando gli investitori a mani vuote.
-In particolare Bitconenct è stato uno schema Ponzi, un tipo di truffa in cui il truffatore promette guadagni a chiunque si indebitasse con lui, per poi sparire.
+Si è scoperto che l'intero progetto Bitconnect non era altro che un'\textit{exit scam}, una truffa in cui i complici spariscono improvvisamente, lasciando gli investitori a mani vuote.
+In particolare Bitconnect è stato uno schema Ponzi, un tipo di truffa in cui il truffatore promette guadagni a chiunque si indebitasse con lui, per poi sparire.
 Il nome Ponzi deriva da Charles Ponzi, un italo-americano che si arricchì notevolmente tra il 1918 e il 1920 compiendo ripetutamente questo tipo di truffa.
-Oggi tutti coloro coinvolti nel pubblicizzare Bitconnect, soprattutto chi pubblicava video su YouTube che incitavano all'acquisto della valuta, sono sotto investigazione.
+Oggi tutti coloro coinvolti nel pubblicizzare Bitconnect, soprattutto chi ha pubblicato video su YouTube che incitavano all'acquisto della valuta, sono sotto investigazione.
 
 
 \subsubsection {Roger Ver e la truffa di "Bitcoin Cash"}
@@ -866,8 +889,8 @@ Quella di Roger, però, è una spietata propaganda anti-Bitcoin (BTC) e pro-BCH 
 La tesi base che accomuna Roger e tutti i fan di Bitcoin Cash è quella che BCH introduce delle modifiche al codice di Bitcoin che aumentano la dimensione dei blocchi, che anzichè limitarsi a 1MB arrivano fino a 12MB.
 Questo riduce esponenzialmente la probabilità che i blocchi vengano riempiti di transazioni, innalzando le tasse a livelli esorbitanti\footnote{Vedi punto 3.3.3}.
 Il team di sviluppatori di Bitcoin si ostina a mantenere la dimensione del blocco a 1MB, perchè i blocchi di maggiore dimensioni sono \emph{ancora} più difficili da minare.
-Una difficoltà così elevata di \textit{mining} porta necessariamente a una centralizzazione dell'\textit{hashing power}, che va contro il concetto di Bitcoin e di criptovalute in generale. inoltre, .... \cite{bigblocks}
-Roger è entrato in possesso del sito bitcoin.com, che su numerose pagine (tra cui quella in fig. 5) ripete come BCH è una versione aggiornata di BTC. Una cosa che irrita la stragrande maggioranza delle persone è il fatto che su bitcoin.com il Bitcoin originale, BTC, è chiamato Bitcoin Core.
+Una difficoltà così elevata di \textit{mining} porta necessariamente a una centralizzazione dell'\textit{hashing power}, che va contro il concetto di Bitcoin e di criptovalute in generale. inoltre, MANCA \cite{bigblocks}
+Roger è entrato in possesso del sito bitcoin.com, che su numerose pagine ripete come BCH è una versione aggiornata di BTC. Una cosa che irrita la stragrande maggioranza delle persone è il fatto che su bitcoin.com il Bitcoin originale, BTC, è chiamato Bitcoin Core.
 Il nome Bitcoin Core, paragonato a Bitcoin Cash, fa sembrare le due valute due alternative sullo stesso livello, invece uno (BCH) è un clone dell'originale (BTC).
 In Aprile del 2018 bitcoin.com penalizzò ulteriormente la situazione del "vero" Bitcoin definendo "BTC" "Bitcoin Core" e "BCH" (che sarebbe Bitcoin Cash) "Bitcoin".
 Questa mossa fu la goccia che fece traboccare il vaso, perché mentre il fatto di chiamare BTC Bitcoin Core era già una bugia di per sé, sostituire "Bitcoin Cash" con "Bitcoin" era semplicemente inaccettabile.
@@ -882,8 +905,8 @@ Ver possiede anche l'account Twitter @bitcoin, che svolge le stesse opere di pro
 Molti ritengono che quella del Bitcoin sia solo una moda passeggera, simile a quella dei film in 3D e Google Glass, che ha avuto il suo picco nell'inverno del 2017 e che è destinato a sparire.
 Personalmente sono ottimista nello sviluppo delle criptovalute.
 Osservando l'andamento dei grafici, pur avendo subito gravi crolli in brevi intervalli di tempo, il prezzo delle valute è in una regolare crescita.
-Il fatto che se ne parli sempre più nei media (i media parlino piu), sebbene spesso in negativo, rende la gente comune consapevole dell'esistenza di questa tecnologia, e fra tanti che la ignorano sono sicuro che qualcuno come me si interessi.
-La natura deflazionaria della valuta aiuta sicuramente il prezzo: abbiamo visto che non possono esistere più di 21 milioni di bitcoin, e ciò rende un'inflazione del prezzo tecnicamente impossibile. paragone all'inizio btcoro?
+Il fatto che i media ne parlino sempre di più, sebbene spesso in negativo, rende la gente comune consapevole dell'esistenza di questa tecnologia, e fra tanti che la ignorano sono sicuro che qualcuno come me si interessi.
+La natura deflazionaria della valuta aiuta sicuramente il prezzo: abbiamo visto che non possono esistere più di 21 milioni di bitcoin, e ciò rende un'inflazione del prezzo tecnicamente impossibile.
 Tutte le inflazioni sono dovute a un'eccessiva stampa di soldi cartacei, cosa che è impossibile nell'ambito delle criptovalute.
 Un altro fattore concreto che indica un futuro promettente per il Bitcoin è il numero di transazioni giornaliere:
 
@@ -895,7 +918,8 @@ Un altro fattore concreto che indica un futuro promettente per il Bitcoin è il 
 \vspace {0.2cm}
 \noindent
 %
-Indipendentemente dal motivo per cui queste transazioni sono state effettuate, è logico pensare che un aumento così progressivo nell'uso del Bitcoin sia una cosa bella :D
+Indipendentemente dal motivo per cui queste transazioni sono state effettuate, è logico pensare che un aumento così progressivo nell'uso del Bitcoin sia un fattore promettente nel suo futuro.
+
 
 \newpage
 

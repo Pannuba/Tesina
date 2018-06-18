@@ -135,6 +135,81 @@
   \field{journaltitle}{Enerdata.net}
 \endentry
 
+\entry{mempool}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Deneuville}{D.}%
+     {Marion}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{DM1}
+  \strng{fullhash}{DM1}
+  \field{title}{An in-depth guide into how the mempool works}
+  \verb{url}
+  \verb https://blog.kaiko.com/an-in-depth-guide-into-how-the-mempool-works-c75
+  \verb 8b781c608
+  \endverb
+  \field{journaltitle}{Kaiko News}
+  \field{day}{12}
+  \field{month}{10}
+  \field{year}{2016}
+\endentry
+
+\entry{bip13}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Andresen}{A.}%
+     {Gavin}{G.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{AG1}
+  \strng{fullhash}{AG1}
+  \field{title}{Address Format for pay-to-script-hash}
+  \verb{url}
+  \verb https://github.com/bitcoin/bips/blob/master/bip-0013.mediawiki
+  \endverb
+  \field{journaltitle}{Bitcoin Improvement Proposals}
+  \field{day}{18}
+  \field{month}{10}
+  \field{year}{2011}
+\endentry
+
+\entry{p2sh}{article}{}
+  \field{title}{Pay to script hash}
+  \verb{url}
+  \verb https://en.bitcoin.it/wiki/Pay_to_script_hash
+  \endverb
+  \field{journaltitle}{Bitcoin Wiki}
+  \field{year}{2017}
+\endentry
+
+\entry{bip173}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Wuille}{W.}%
+     {Pieter}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Maxwell}{M.}%
+     {Greg}{G.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{WPMG1}
+  \strng{fullhash}{WPMG1}
+  \field{title}{Base32 address format for native v0-16 witness outputs}
+  \verb{url}
+  \verb https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki
+  \endverb
+  \field{journaltitle}{Bitcoin Improvement Proposals}
+  \field{day}{20}
+  \field{month}{03}
+  \field{year}{2017}
+\endentry
+
 \entry{bip32}{article}{}
   \name{author}{1}{}{%
     {{}%
@@ -211,7 +286,7 @@
   \strng{fullhash}{CJ1}
   \field{title}{Double Spending a 0-Conf Bitcoin Transaction}
   \verb{url}
-  \verb https://jasonc.me/blog/bitcoin-double-spend#
+  \verb https://jasonc.me/blog/bitcoin-double-spend
   \endverb
   \field{journaltitle}{Jason C. Blog}
   \field{day}{02}
@@ -236,6 +311,56 @@
   \endverb
   \field{journaltitle}{Medium.com}
   \field{year}{2017}
+\endentry
+
+\entry{highfees}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Lee}{L.}%
+     {Timothy~B.}{T.~B.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{LTB1}
+  \strng{fullhash}{LTB1}
+  \field{title}{Skyrocketing fees are fundamentally changing bitcoin}
+  \verb{url}
+  \verb https://arstechnica.com/tech-policy/2017/12/bitcoin-fees-rising-high/
+  \endverb
+  \field{journaltitle}{Ars Technica}
+  \field{day}{19}
+  \field{month}{12}
+  \field{year}{2017}
+\endentry
+
+\entry{bip141}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Lombrozo}{L.}%
+     {Eric}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lau}{L.}%
+     {Johnson}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wuille}{W.}%
+     {Pieter}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{LELJWP1}
+  \strng{fullhash}{LELJWP1}
+  \field{title}{Segregated Witness (Consensus layer)}
+  \verb{url}
+  \verb https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki
+  \endverb
+  \field{journaltitle}{Bitcoin Improvement Proposals}
+  \field{day}{21}
+  \field{month}{12}
+  \field{year}{2015}
 \endentry
 
 \entry{nickszabo}{report}{}
@@ -297,7 +422,23 @@
   \verb{url}
   \verb https://coindesk.com/information/comparing-litecoin-bitcoin/
   \endverb
+  \field{journaltitle}{CoinDesk}
   \field{year}{2014}
+\endentry
+
+\entry{nanofaq}{misc}{}
+  \verb{url}
+  \verb https://nano.org/faq/
+  \endverb
+\endentry
+
+\entry{whatsripple}{article}{}
+  \field{title}{What is Ripple?}
+  \verb{url}
+  \verb https://bitcoinmagazine.com/guides/what-ripple/
+  \endverb
+  \field{journaltitle}{Bitcoin Magazine}
+  \field{year}{2018}
 \endentry
 
 \entry{ripple}{misc}{}
@@ -353,44 +494,21 @@
 \entry{rovereto}{article}{}
   \name{author}{1}{}{%
     {{}%
-     {Pianesi}{P.}%
-     {Luca}{L.}%
+     {Gozzi}{G.}%
+     {Alessia}{A.}%
      {}{}%
      {}{}}%
   }
-  \strng{namehash}{PL1}
-  \strng{fullhash}{PL1}
-  \field{title}{A Rovereto nella Bitcoin Valley, dove puoi comprare tutto con
-  la criptovaluta e dei dipendenti si fanno già pagare l'intero stipendio
-  così}
+  \strng{namehash}{GA1}
+  \strng{fullhash}{GA1}
+  \field{title}{Rovereto e la rivoluzione bitcoin, dal dentista al caffè qui
+  si paga in criptovaluta}
   \verb{url}
-  \verb http://ildolomiti.it/societa/rovereto-nella-bitcoin-valley-dove-puoi-co
-  \verb mprare-tutto-con-la-criptovaluta-e-dei-dipendenti
+  \verb https://www.quotidiano.net/economia/rovereto-bitcoin-1.3824236
   \endverb
-  \field{journaltitle}{Il Dolomiti}
-  \field{day}{10}
-  \field{month}{03}
-  \field{year}{2017}
-\endentry
-
-\entry{elizavetovka}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Chandra}{C.}%
-     {Sharat}{S.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{CS1}
-  \strng{fullhash}{CS1}
-  \field{title}{A Ukranian Village Where Everyone Owns Cryptocurrency}
-  \verb{url}
-  \verb https://bcfocus.com/news/latest-news-news/a-ukranian-village-where-ever
-  \verb yone-owns-cryptocurrency/7977/
-  \endverb
-  \field{journaltitle}{BCFocus}
-  \field{day}{05}
-  \field{month}{05}
+  \field{journaltitle}{Quotidiano.net}
+  \field{day}{02}
+  \field{month}{04}
   \field{year}{2018}
 \endentry
 
@@ -432,6 +550,16 @@
   \field{day}{17}
   \field{month}{10}
   \field{year}{2017}
+\endentry
+
+\entry{legality}{article}{}
+  \field{title}{Legality of bitcoin by country or territory}
+  \verb{url}
+  \verb https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country_or_territo
+  \verb ry
+  \endverb
+  \field{journaltitle}{Wikipedia}
+  \field{year}{2018}
 \endentry
 
 \entry{karpelesbot}{article}{}
