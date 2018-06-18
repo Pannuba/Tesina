@@ -14,7 +14,7 @@
 \addbibresource {database.bib}
 
 \graphicspath { {./media/} }
-%TODO:EMPOOL + GRAFICO, PRIVATE KEY (QUANTE, RELAZIONE CON PUBLIC), N TOT ADDRESSES O KEYS, MTGOX, ROVORETO E ELIZA
+
 
 \begin{document}
 
@@ -35,13 +35,11 @@
 
 \end{titlepage}
 
-\pagenumbering {gobble}
 
-\newpage
+\shipout\null
 
-\tableofcontents
 
-\newpage
+\pagenumbering {arabic}
 
 \vspace {1cm}
 
@@ -76,9 +74,19 @@ L'ho scelto innanzitutto per passione, ma anche per avere l'opportunità di scri
 %
 Spero che i lettori trovino la tesina di proprio gradimento, e chiedo scusa se certe parti risultano poco chiare.
 
+
+\newpage
+\null
 \newpage
 
-\pagenumbering {arabic}
+
+\tableofcontents
+
+
+\newpage
+\null
+\newpage
+
 
 \section {Le origini del Bitcoin}
 
@@ -336,16 +344,17 @@ Questi indirizzi si riconoscono dal fatto che iniziano col carattere '1', per es
 
 \paragraph {P2SH SegWit}
 
-P2SH significa "Pay 2 Script Hash".
-Gli indirizzi P2SH sono stati ideati il 18 ottobre del 2011 con il BIP-13 e mandati live l'1 Aprile del 2012.
+P2SH significa "Pay To Script Hash".
+Gli indirizzi P2SH sono stati ideati il 18 ottobre del 2011 con il BIP\footnote{\textit{Bitcoin Improvement Proposal}, una proposta di un miglioramento al software del Bitcoin}-13 e lanciati l'1 Aprile del 2012 \cite{bip13}. CITE METTERE 1 APRILE 2012
 Il lancio di questi indirizzi non avvenne affatto in modo liscio e "indolore": il problema principale è che tutti i \textit{miners} che non hanno aggiornato il proprio \textit{full node} stavano includendo nei blocchi transazioni ritenute invalide dai loro software.
-La differenza sostanziale con gli indirizzi "normali" è che ..multisig...sigh...è difficile
+La differenza sostanziale con gli indirizzi "normali" è che tramite cose tecniche utilizzano la tecnologia SegWit\footnote{Vedi punto 3.3.3} per ridurre potenzialmente la tassa di transazione.
+Il sistema/protocollo P2SH richiede però la presenza di uno script che aumenta lievemente il peso della transazione, che non è presente nell'ultimo tipo di indirizzo.
 
-\paragraph {bech32 SegWit}
+\paragraph {bech32}
 
-Gli indirizzi Bitcoin bech32 implementano SegWit al 100\%, e di conseguenza sono quelli con le tasse di transazione/i più inferiori.
-Questo tipo di indirizzo è stato creato nel XXXX, ed essendo sotto un punto di vista tecnico molto diverso dagli indirizzi tradizionali (che cominciano con 1 e 3), non sono supportati da una moltitudine di siti di compravendita e da portafogli, (di cui parlerò in seguito).
-Gli indirizzi bech32, infatti, hanno il prefisso "bc1", e tutt'oggi cose
+Gli indirizzi Bitcoin \textit{bech32} sono stati introdotti il 20 marzo 2017 con il BIP-173 \cite{bip173}.
+Gli indirizzi bech32 implementano SegWit nativamente, e di conseguenza sono quelli con le dimensioni di transazione più inferiori.
+Questo tipo di indirizzo, essendo sotto un punto di vista tecnico molto diverso dagli indirizzi tradizionali (che cominciano con 1 e 3), non è supportato da una moltitudine di siti di compravendita e da portafogli che non riconoscono il \texttt{bc1q} presente all'inizio di tutti questi indirizzi, ma sempre più piattaforme e app si stanno aggiornando per permettere di inviare e ricevere dagli indirizzi bech32.
 
 
 \subsubsection {Keys}
@@ -372,7 +381,7 @@ Come le \textit{hash}, esistono poco meno\footnote{"Poco meno" perché esse devo
 \paragraph {Seeds}
 
 Un \textit{seed} è un codice che svolge una funzione simile a quella della \textit{private key}: se inserito in un software di wallet, ripristina tutti i bitcoin associati ad esso.
-I \textit{seeds} sono stati introdotti nel 2 febbraio 2012 con il BIP\footnote{\textit{Bitcoin Improvement Proposal}, una proposta di un miglioramento al software del Bitcoin} 32 \cite{bip32}.
+I \textit{seeds} sono stati introdotti nel 2 febbraio 2012 con il BIP 32 \cite{bip32}.
 Questi primi \textit{seed} hanno un aspetto simile a quello delle \textit{private keys}, con lunghezza variabile.
 La differenza con le \textit{private keys} è che un seed "genera" una o più private keys, dalle quali si possono ricavare le public keys e quindi gli indirizzi stessi.
 Di conseguenza, ad un seed possono corrispondere un numero indefinito di indirizzi, ovvero di coppie di public e private keys.
@@ -495,19 +504,22 @@ Non ci sono \textit{pools} con una percentuale di \textit{hashrate} maggiore al 
 
 
 Nell'inverno del 2017 l'improvviso incremento del numero di transazioni ha avuto un impatto decisamente negativo sulla tassa di transazione media.
-Un qualunque pagamento in Bitcoin poteva costare fino ai \euro{25}.
+Un qualunque pagamento in Bitcoin poteva costare fino ai \euro{25} \cite{highfees}.
 La causa di tutto questo è il fatto che la dimensione di 1MB dei blocchi non era sufficiente per farci stare tutte le transazioni nella \textit{mempool}.
 I software dei portafogli, per poter far confermare le transazioni degli utenti, hanno automaticamente aumentato il valore della tassa in sat/b per rendere la transazione effettuata preferibile ai \textit{miners}, che la includono nel blocco in fase di ricerca.
- 
+Fortunatamente, gli sviluppatori hanno elaborato due principali soluzioni per ridurre, se non eliminare, il problema delle tasse elevate.
 
 \paragraph {Segregated Witness}
 
-Segregated Witness (comunemente abbreviato in SegWit) è una roba che riduce le tasse
+Segregated Witness (comunemente abbreviato in SegWit) è una \textit{soft fork} del Bitcoin introdotta il 21 dicembre 2015 col BIP-141 \cite{bip141}.
+Una \textit{soft fork} è un aggiornamento che viene effettuato alla blockchain già esistente\footnote{A differenza delle \textit{hard forks}, descritte al punto 5.6}, e per far sì che si possa usufruire di questi aggiornamenti è necessario che gli utenti scarichino la versione più recente del software dell'\textit{hot wallet} o di Bitcoin Core (nel caso si voglia operare un \textit{full node}).
+Il funzionamento tecnico è altamente complesso e non ritengo indispensabile includerlo nella tesina.
+SegWit è una grande invenzione perché riduce il peso effettivo delle transazioni in modo da poterne includere un numero maggiore nei blocchi.
+Di conseguenza, SegWit aiuta indirettamente a pagare una tassa di transazione inferiore, perché essendo le transazioni più "leggere", è meno probabile che un blocco si riempia e inizi l'"asta" delle tasse per decidere le transazioni da processare.
 
 \paragraph {Lightning Network}
 
-Il Lightning Network è un network lightning.
-infrastruttura esterna alla blockchain che rende cose veloci
+Il Lightning Network è un'infrastruttura esterna alla blockchain che rende cose veloci
 
 \newpage
 
@@ -667,7 +679,7 @@ Le transazioni di Monero, per essere anonime, hanno un peso in kb notevole, per 
 
 
 Inizialmente chiamata RaiBlocks\footnote{il passaggio da RaiBlocks a Nano è avvenuto il 31 gennaio 2018}, Nano è una criptovaluta creata nel 2015 da Colin LeMahieu.
-A differenza delle valute che dipendono da \textit{proof of work}, Nano non prevede l'impiego di \textit{miners} per validare le proprie transazioni https://nano.org/en/faq.
+Nano non prevede l'impiego di \textit{miners} per validare le proprie transazioni \cite{nanofaq}.
 Esistono in totale 133.248.290 NANO, distribuiti gratuitamente fino all'ottobre 2017 tramite un sito che inviava una piccola quantità di Nano a chiunque completasse un \textit{captcha}, una parola da trascrivere in una casella di testo per confermare di non essere un robot programmato per abusare del sistema di distribuzione gratuita.
 È veramente interessante sotto il punto di vista tecnico perché è la prima che usa la tecnologia \textit{Block Lattice}\footnote{Da non confondere con la parola italiana, \textit{lattice [/'let.is/]} significa reticolo, intreccio} in sostanza, anziché dipendere da una singola blockchain come fanno tutte le altre valute, ogni singolo indirizzo \emph{è} una blockchain a sé stante.
 Questa tecnologia permette di effettuare transazioni estremamente veloci rispetto a quelle del Bitcoin (che impiegano un'ora per essere ritenute pienamente concluse), con una durata inferiore ai 2 secondi, talvolta letteralmente istantanee.
@@ -678,8 +690,8 @@ La \textit{Block Lattice} rende tutte le transazioni di Nano completamente gratu
 \subsection {Ripple}
 
 
-Ripple (XRP) è un altcoin creato nel dalla Ripple Foundation.%(each transaction destroys a small amount XRP, is the supply of coins getting smaller?)
-La sua particolarità sta nel fatto che Ripple mira ad essere una valuta fortemente legata all'ambito bancario, utilizzata come un bene digitale per compiere scambi di valore tra banche.
+Ripple (XRP) è un altcoin creato nel 2012 dalla Ripple Foundation.
+La sua particolarità sta nel fatto che Ripple mira ad essere una valuta fortemente legata all'ambito bancario, utilizzata come un bene digitale per compiere scambi di valore tra banche \cite{whatsripple}.
 La principale critica a Ripple è quella di non essere decentralizzato come la stragrande maggioranza delle criptovalute, bensì la Ripple Foundation ha una forte influenza sull'andamento della valuta.
 Ripple è un coin \textit{premined}, che non è generato tramite \textit{mining}, infatti per entrarne in possesso è solamente possibile acquistarne direttamente dalla Foundation.
 Per questo, la Ripple Foundation possiede oltre il 50\% di tutti i ripple, circa 50.000.000.000 XRP \cite{ripple}. Questo le permette di modificare artificialmente il prezzo.
@@ -731,17 +743,8 @@ Nonostante ciò, sempre più servizi stanno cominciando ad accettare criptovalut
 \item Gyft e eGifter: è possibile comprare codici regalo per una moltitudine di siti che non accettano Bitcoin tra cui Amazon, iTunes, Nike, eBay e Starbucks \cite{accepting}. 
 \item KFC Canada e Subway: due catene fast-food famose in tutto il mondo stanno incominciando ad accettare Bitcoin \cite{accepting}. 
 \end{itemize}
-
-Un fattore concreto che indica l'adozione del Bitcoin è il numero di transazioni giornaliere:
-
-\vspace {0.5cm}
-\begin{figure}[htb!]
-\makebox [\textwidth] [c] {\includegraphics [width=15cm] {transactions.png}}
-\caption {Transazioni giornaliere a partire dal 2009\\\textit{fonte: blockchain.info}}
-\end{figure}
-\vspace {0.2cm}
-\noindent
 %
+Questi sono i 
 
 \paragraph {Rovereto: quasi tutti accettano Bitcoin}
 
@@ -783,7 +786,8 @@ Questo è estremamente simile a quello che è successo al Bitcoin perché sì.
 \begin{figure}[htb!]
 \includegraphics [width = 10cm] {crash2.png}
 \centering
-\caption {Confronto tra il crollo del prezzo del Bitcoin nel 2013 e nel 2017}
+\captionsetup{width=1.4\linewidth}
+\caption {Confronto tra il crollo del prezzo del Bitcoin nel 2013 e nel 2017\\\textit{fonte: coinmarketcap.com}}
 \end{figure}
 \vspace {0.2cm}
 \noindent
@@ -813,7 +817,7 @@ boh, faccio dopo.
 \subsubsection {Mt. Gox}
 
 
-Mt. Gox\textit{"Mt." è \textit{mount} in inglese, "monte"} è il primo grande sito di \textit{exchange} di Bitcoin, creato da Jeb McCaleb nel 18 luglio 2010.
+Mt. Gox\footnote{"Mt." è \textit{mount} in inglese, "monte"} è il primo grande sito di \textit{exchange} di Bitcoin, creato da Jeb McCaleb nel 18 luglio 2010.
 Il dominio mtgox.com è stato poi venduto allo sviluppatore francese Mark Karpelès nel marzo del 2011; la sede è stata spostata dall'America al Giappone.
 Fin da subito l'\textit{exchange} ha avuto gravi problemi di sicurezza, infatti il 19 giugno 2011 un hacker è riuscito a rubare una grande quantità di bitcoin.
 Nel settembre del 2011 un hacker entrò in possesso delle \textit{private keys} del portafoglio dell'\textit{exchange}, e rubò una quantità di circa 630.000 BTC\footnote{Oggi valgono \euro{4.410.000.000}} fino al 7 febbraio 2014, quando Mt. Gox annunciò una "temporanea sospensione" degli scambi a causa di un \textit{bug} nel loro software.
@@ -834,7 +838,7 @@ Intorno alla fine del 2013 due utenti chiamati "Willy" e "Markus" effettuarono u
 Il fatto che l'utente facesse ordini di acquisto anche in periodi in cui il sito non era funzionante indicò che Willy e Markus non erano altro che \textit{bot}, dei computer con il compito di incrementare artificialmente il prezzo del Bitcoin.
 Il 24 febbraio 2014 Mt. Gox annunciò la perdita di 850.000 BTC, di cui 750.000 posseduti dai loro utenti, anche se il 20 marzo sono stati poi trovati 200.000 BTC in un vecchio portafoglio, rendendo il numero effettivo di bitcoin persi \textasciitilde 650.000.
 L'1 agosto 2015 Mark Karpèles venne arrestato dalle autorità di Tokyo, accusato di aver falsificato i dati del prezzo del Bitcoin e del volume di liquidità di Mt. Gox.
-L'11 luglio 2017, il giorno del processo, venne scoperto che i due \textit{bot} erano operati dallo stesso CEO Mark Karpèles \cite{karpelesbot}.
+L'11 luglio 2017, il giorno del processo, venne scoperto che i due \textit{bot} erano infatti operati dallo stesso CEO Mark Karpèles \cite{karpelesbot}.
 L'hacker responsabile del furto dei 630.000 BTC, Alexander Vinnik, è stato arrestato dalle autorità americane in Grecia il 26 luglio 2017, e BTC-e, un'\textit{exchange} russa, è stata sequestrata (ma non chiusa) dall'FBI a partire dal 25 luglio 2017, accusata di aver assistito Vinnik nel nascondere 300.000 bitcoin rubati \cite{mtgox}.
 
 
@@ -881,10 +885,29 @@ Osservando l'andamento dei grafici, pur avendo subito gravi crolli in brevi inte
 Il fatto che se ne parli sempre più nei media (i media parlino piu), sebbene spesso in negativo, rende la gente comune consapevole dell'esistenza di questa tecnologia, e fra tanti che la ignorano sono sicuro che qualcuno come me si interessi.
 La natura deflazionaria della valuta aiuta sicuramente il prezzo: abbiamo visto che non possono esistere più di 21 milioni di bitcoin, e ciò rende un'inflazione del prezzo tecnicamente impossibile. paragone all'inizio btcoro?
 Tutte le inflazioni sono dovute a un'eccessiva stampa di soldi cartacei, cosa che è impossibile nell'ambito delle criptovalute.
+Un altro fattore concreto che indica un futuro promettente per il Bitcoin è il numero di transazioni giornaliere:
+
+\vspace {0.5cm}
+\begin{figure}[htb!]
+\makebox [\textwidth] [c] {\includegraphics [width=15cm] {transactions.png}}
+\caption {Transazioni giornaliere a partire dal 2009\\\textit{fonte: blockchain.info}}
+\end{figure}
+\vspace {0.2cm}
+\noindent
+%
+Indipendentemente dal motivo per cui queste transazioni sono state effettuate, è logico pensare che un aumento così progressivo nell'uso del Bitcoin sia una cosa bella :D
 
 \newpage
 
 \printbibliography
- 
+
+\newpage
+
+\centering
+\vspace*{1cm}
+\vfill
+\Huge{Giugno 2018}
+\vspace{1cm}
+\vfill
 
 \end{document}
