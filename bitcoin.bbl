@@ -127,6 +127,69 @@
   \field{year}{2017}
 \endentry
 
+\entry{worldenergy}{misc}{}
+  \verb{url}
+  \verb https://yearbook.enerdata.net/electricity/electricity-domestic-consumpt
+  \verb ion-data.html
+  \endverb
+  \field{journaltitle}{Enerdata.net}
+\endentry
+
+\entry{bip32}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Wuille}{W.}%
+     {Pieter}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{WP1}
+  \strng{fullhash}{WP1}
+  \field{title}{Hierarchical Deterministic Wallets}
+  \verb{url}
+  \verb https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki
+  \endverb
+  \field{journaltitle}{Bitcoin Improvement Proposals}
+  \field{day}{11}
+  \field{month}{02}
+  \field{year}{2017}
+\endentry
+
+\entry{bip39}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Palatinus}{P.}%
+     {Marek}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Rusnak}{R.}%
+     {Pavol}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Voisine}{V.}%
+     {Aaron}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bowe}{B.}%
+     {Sean}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{PM+1}
+  \strng{fullhash}{PMRPVABS1}
+  \field{title}{Mnemonic code for generating deterministic keys}
+  \verb{url}
+  \verb https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki
+  \endverb
+  \field{journaltitle}{Bitcoin Improvement Proposals}
+  \field{day}{10}
+  \field{month}{09}
+  \field{year}{2013}
+\endentry
+
 \entry{attacks}{article}{}
   \field{title}{Irreversible Transactions}
   \verb{url}
@@ -134,6 +197,26 @@
   \endverb
   \field{journaltitle}{Bitcoin Wiki}
   \field{year}{2017}
+\endentry
+
+\entry{raceattack}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Chayannes}{C.}%
+     {Jason}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{CJ1}
+  \strng{fullhash}{CJ1}
+  \field{title}{Double Spending a 0-Conf Bitcoin Transaction}
+  \verb{url}
+  \verb https://jasonc.me/blog/bitcoin-double-spend#
+  \endverb
+  \field{journaltitle}{Jason C. Blog}
+  \field{day}{02}
+  \field{month}{04}
+  \field{year}{2018}
 \endentry
 
 \entry{centralization}{article}{}
@@ -253,8 +336,8 @@
      {}{}%
      {}{}}%
   }
-  \strng{namehash}{CJ1}
-  \strng{fullhash}{CJ1}
+  \strng{namehash}{CJ2}
+  \strng{fullhash}{CJ2}
   \field{title}{Who Accepts Bitcoins As Payment? List of Companies, Stores,
   Shops}
   \verb{url}
@@ -311,7 +394,7 @@
   \field{year}{2018}
 \endentry
 
-\entry{crisi29}{inbook}{}
+\entry{crisi29}{incollection}{}
   \name{author}{2}{}{%
     {{}%
      {Bernardi}{B.}%
@@ -331,14 +414,12 @@
      {}{}%
      {}{}}%
   }
-  \list{publisher}{1}{%
-    {uiasdb}%
-  }
   \strng{namehash}{BADGS1}
   \strng{fullhash}{BADGS1}
-  \field{chapter}{La Grande depressione}
+  \field{booktitle}{La realtà del passato 3: il novecento e il mondo attuale}
+  \field{chapter}{7}
   \field{pages}{561}
-  \field{title}{La realtà del passato 3: il novecento e il mondo attuale}
+  \field{title}{La Grande depressione}
   \field{year}{2014}
 \endentry
 
@@ -350,6 +431,50 @@
   \field{journaltitle}{Unocoin Blog}
   \field{day}{17}
   \field{month}{10}
+  \field{year}{2017}
+\endentry
+
+\entry{karpelesbot}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Suberg}{S.}%
+     {William}{W.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SW1}
+  \strng{fullhash}{SW1}
+  \field{title}{Mt. Gox Trial Update: Karpeles Admits ‘Willy Bot’
+  Existence}
+  \verb{url}
+  \verb https://cointelegraph.com/news/mt-gox-trial-update-karpeles-admits-will
+  \verb y-bot-existence
+  \endverb
+  \field{journaltitle}{Cointelegraph}
+  \field{day}{11}
+  \field{month}{07}
+  \field{year}{2017}
+\endentry
+
+\entry{mtgox}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Eichholz}{E.}%
+     {Liesl}{L.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{EL1}
+  \strng{fullhash}{EL1}
+  \field{title}{MtGox, BTC-e, and the Missing Coins: A living timeline of the
+  greatest cyber crime ever}
+  \verb{url}
+  \verb https://bravenewcoin.com/news/mtgox-btc-e-and-the-missing-coins-a-livin
+  \verb g-timeline-of-the-greatest-cyber-crime-ever/
+  \endverb
+  \field{journaltitle}{Brave New Coin}
+  \field{day}{17}
+  \field{month}{08}
   \field{year}{2017}
 \endentry
 

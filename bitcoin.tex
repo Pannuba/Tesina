@@ -217,19 +217,18 @@ Per questo esistono le \textit{pool} di \textit{mining}.
 \paragraph {L'uso di elettricità del mining}
 
 I \textit{miner} ASIC usano una notevole quantità di energia. Prendendo in considerazione quelli di ultima generazione, il più potente, il Bitmain Antminer S9 (14 TH/s) consuma circa 1300 W \cite{antminers9}; il più debole, l'Antminer V9 (4 TH/s) 1000 W \cite{antminerv9}.
-In media, un S9 che lavora in una \textit{pool} di \textit{mining} fa guadagnare circa 0.00082 BTC al giorno, ovvero circa \euro{5.5} \cite{s9profit}.
-Considerando che le \textit{farm} sono locate in paesi come la Cina in cui l'elettricità costa poco, intorno ai \euro{0.04}/kWh\footnote{Il costo medio per kWh in Cina è di \euro{0.07} \cite{chinaaverage}, ma l'energia pulita generata dai pannelli solari e dalle turbine costa molto meno \cite{chinaless}}, un S9 costa circa \euro{1} al giorno in elettricità.
+In media, un S9 che lavora in una \textit{pool} di \textit{mining} fa guadagnare circa 0,00082 BTC al giorno, ovvero circa \euro{5,5} \cite{s9profit}.
+Considerando che le \textit{farm} sono locate in paesi come la Cina in cui l'elettricità costa poco, intorno ai \euro{0.04}/kWh\footnote{Il costo medio per kWh in Cina è di \euro{0,07} \cite{chinaaverage}, ma l'energia pulita generata dai pannelli solari e dalle turbine costa molto meno \cite{chinaless}}, un S9 costa circa \euro{1} al giorno in elettricità.
 Un \textit{miner}, quindi, fa guadagnare almeno \euro{4} al giorno considerando il costo dell'elettricità.
 Ho già scritto che i \textit{miner} hanno un prezzo notevole, infatti un Antminer S9 costa attualmente \textasciitilde \euro{717}.
 Prima di cominciare a guadagnare un profitto nel \textit{mining}, bisogna calcolare il tempo impiegato per coprire il costo dell'attrezzatura di \textit{mining}.
 Questo tempo si chiama ROI\footnote{\textit{Return on investment}}, e nel caso della situazione presa come esempio, ovvero quella di guadagnare \euro{4} al giorno con un S9, il ROI è pari a 179 giorni, infatti
 
-$$\textup{\euro{717}} : \frac{\textup{\euro{4}}}{1 giorno} = 179.25 giorni$$
+$$\textup{\euro{717}} : \frac{\textup{\euro{4}}}{1 giorno} = 179,25 giorni$$
 %
-Questo è quanto vale per \emph{un} singolo ASIC che produce solo 0.00082 BTC al giorno, una quantità minuscola rispetto ai \textasciitilde 17.000.000 che sono stati minati fino ad oggi.
-L'\textit{hashing power} dell'intero network del Bitcoin, la somma del lavoro dei \textit{miners} in tutto il mondo espressa in H/s, è di oltre 30.000 TH/s, e consuma un a quantità di elettricità pari a 60 TWh, ovvero 60.000 miliardi di Joule consumati all'ora.
-Questo consumo di elettricità corrisponde a (piu di 0.13, perche dati dic 2017, cercare nuovi) dell'utilizzo di elettricità in tutto il mondo.
-... ... ... (citazione a powercompare.co.uk)
+Questo è quanto vale per \emph{un} singolo ASIC che produce solo 0,00082 BTC al giorno, una quantità minuscola rispetto ai \textasciitilde 17.000.000 che sono stati minati fino ad oggi.
+L'\textit{hashing power} dell'intero network del Bitcoin, la somma del lavoro dei \textit{miners} in tutto il mondo espressa in H/s, è di oltre 30.000 TH/s, e consuma un a quantità di elettricità pari a 60 TWh all'anno, ovvero $2,16 \times 10^{77}$ Joule consumati in un anno.
+Questo consumo di elettricità è maggiore dell'utilizzo di elettricità annuale di Algeria (60 TWh/anno), Colombia (52 TWh/anno), Portogallo (47 TWh/s) e Nuova Zelanda (39 TWh/anno) \cite{worldenergy}.
 
 
 \subsubsection {Profitti del mining}
@@ -260,9 +259,9 @@ Una volta trovato il blocco, la ricompensa di bitcoin si spartisce fra tutti i \
 La scoperta dei blocchi non è l'unico metodo con cui coloro che praticano \textit{mining} guadagnano Bitcoin.
 Ogni transazione di Bitcoin prevede il pagamento di una piccola quota, solitamente compresa tra \euro{0.01} e \euro{1}.
 Questa quota, chiamata \textit{miner fee} serve per incoraggiare i \textit{miner} a selezionare la nostra transazione da includere nel blocco in fase di ricerca.
-Questa tassa è espressa in sat/byte, satoshi\footnote{Un satoshi è l'unità di misura più piccola del bitcoin, e corrisponde a $1 \times 10^{-8}$ BTC} per byte.
+Questa tassa è espressa in sat/b, satoshi\footnote{Un satoshi è l'unità di misura più piccola del bitcoin, e corrisponde a $1 \times 10^{-8}$ BTC} per byte.
 Una tassa più elevata riduce il tempo di conferma della transazione, perché preferita dai \textit{miner}. Al contrario, una transazione effettuata con una tassa inferiore alla media impiega più tempo ad essere inclusa in un blocco e quindi ad essere processata, perché i \textit{miner} guadagnano più BTC dalle transazioni più costose.
-Come ho spiegato ciascuna transazione pesa tot kilobyte, quindi, conoscendo il peso in kb della transazione e avendo stabilito il valore della tassa in sat/byte\footnote{Spiegherò come si viene a conoscenza di queste due nel punto X.Y} per scoprire quanto paghiamo effettivamente possiamo ricavare la quantità di BTC dalla proporzione.
+Come ho spiegato ciascuna transazione pesa tot kilobyte, quindi, conoscendo il peso in kb della transazione e avendo stabilito il valore della tassa in sat/b\footnote{Spiegherò come si viene a conoscenza di queste due nel punto X.Y} per scoprire quanto paghiamo effettivamente possiamo ricavare la quantità di BTC dalla proporzione.
 
 $$ nSatoshi : 1 byte = tassa : pesoTransazione $$
 %
@@ -285,10 +284,38 @@ Eventualmente tutti i bitcoin verranno minati, e i profitti dei \textit{miners} 
 \section {Aspetto tecnico del Bitcoin}
 
 
-\subsection {Mempool: il primo passo delle transazioni}
+\subsection {Mempool: il primo passo delle transazioni}  %http://www.righto.com/2014/02/bitcoins-hard-way-using-raw-bitcoin.html
 
 
-La \textit{mempool} si è dove stanno le tx non confermate ma sempre nei full nodes...
+La \textit{mempool} è il luogo in cui si trovano tutte le transazioni effettuate non ancora confermate dai \textit{miners}.
+Si può dire che una volta effettuate, le transazioni si mettono in lista d'attesa nella \textit{mempool}, aspettando che un \textit{miner} la includa nel blocco che sta cercando.
+Ciascun \textit{full node} ha una propria mempool, di dimensione massima variabile a seconda della quantità di RAM del computer.
+
+\vspace {0.5cm}
+\begin{figure}[htb!]
+\makebox [\textwidth] [c] {\includegraphics [width=20cm] {mempooltx.png}}
+\captionsetup{width=1.4\linewidth}
+\caption {Grafico del numero di transazioni nella \textit{mempool}\\\textit{fonte: jochen-hoenicke.de/queue}}
+\end{figure}
+\vspace {0.2cm}
+\noindent
+%
+I diversi colori indicano il valore della tassa in sat/b usato per effettuare le transazioni.
+Le tonalità di blu rappresentano quelle comprese tra 0 e 10 sat/b, quelle verdi tra 10 sat/b e 40 sat/b e così via.
+Il 17 giugno alle ore 22:21, per esempio, sono state effettuate 4008 transazioni con una tassa di 2 sat/b e 396 con una tassa compresa tra 40 e 50 sat/b, per un totale di 5610 transazioni.
+
+\vspace {0.5cm}
+\begin{figure}[htb!]
+\makebox [\textwidth] [c] {\includegraphics [width=20cm] {mempoolfee.png}}
+\captionsetup{width=1.4\linewidth}
+\caption {Grafico della tassa complessiva in bitcoin\\\textit{fonte: jochen-hoenicke.de/queue}}
+\end{figure}
+\vspace {0.2cm}
+\noindent
+%
+In questa figura è raffigurata (suona male) la somma di tutte le tasse delle transazioni effettuate in un determinato istante.
+Per esempio, alle 22:25 del 17 giugno la somma delle tasse di tutte le transazioni che pagano 2 sat/b (circa 4000 secondo il grafico precedente) è pari a 0,375 BTC.
+
 
 
 \subsection {Come e dove si conserva}
@@ -298,8 +325,8 @@ La \textit{mempool} si è dove stanno le tx non confermate ma sempre nei full no
 
 
 Poiché i bitcoin non sono oggetti materiali, si dice che nella blockchain sono associati \textit{x} BTC a ciascun indirizzo.
-sono presenti tanti tanti (numero tot indirizi?)
-Gli indirizzi sono delle stringhe di circa 30/40 caratteri che possono essere visti come codici IBAN se si vuole rimanere in un contesto finanziario, o anche come indirizzi email.
+Esistono $2^{160}$ diversi indirizzi ( non sto a dire xk xk trpp cmplct)
+Gli indirizzi sono delle stringhe di 34\footnote{Nella stragrande maggioranza dei casi} caratteri che possono essere visti come codici IBAN se si vuole rimanere in un contesto finanziario, o anche come indirizzi email.
 Esistono diversi tipi di indirizzo.
 
 \paragraph {P2PKH}
@@ -324,7 +351,8 @@ Gli indirizzi bech32, infatti, hanno il prefisso "bc1", e tutt'oggi cose
 \subsubsection {Keys}
 
 
-Ogni indirizzo Bitcoin è composto due chiavi: una \textit{public key} e una \textit{private key}. dovementtto come si generano e che ne esistono un casino?
+Ogni indirizzo Bitcoin è composto due chiavi: una \textit{public key} e una \textit{private key}.
+
 
 \paragraph {Public key}
 
@@ -338,18 +366,19 @@ L'indirizzo è la chiave pubblica \textit{hashata}, per questo è di dimensioni 
 
 La \textit{private key} è un codice che consente a chiunque di avere accesso ai Bitcoin conservati nell'indirizzo.
 Come le \textit{hash} viste in precendenza, le private keys sono numeri di 256 \textit{bit}, che nel sistema numerico esadecimale sono codici di 64 caratteri tra numeri e lettere.
-A differenza delle \textit{hash} SHA-256, però, le private keys devono essere comprese tra ... ... 
+Come le \textit{hash}, esistono poco meno\footnote{"Poco meno" perché esse devono rispettare i parametri dell'algoritmo ECDSA, di cui non parlerò per non andare fuori tema} di $2^{256}$ \textit{private keys}.
 È paragonabile ad una password che dà accesso ad account di qualunque tipo, l'unica differenza è che non è modificabile.
 
 \paragraph {Seeds}
 
 Un \textit{seed} è un codice che svolge una funzione simile a quella della \textit{private key}: se inserito in un software di wallet, ripristina tutti i bitcoin associati ad esso.
+I \textit{seeds} sono stati introdotti nel 2 febbraio 2012 con il BIP\footnote{\textit{Bitcoin Improvement Proposal}, una proposta di un miglioramento al software del Bitcoin} 32 \cite{bip32}.
+Questi primi \textit{seed} hanno un aspetto simile a quello delle \textit{private keys}, con lunghezza variabile.
 La differenza con le \textit{private keys} è che un seed "genera" una o più private keys, dalle quali si possono ricavare le public keys e quindi gli indirizzi stessi.
 Di conseguenza, ad un seed possono corrispondere un numero indefinito di indirizzi, ovvero di coppie di public e private keys.
 Realisticamente, quasi tutti i seed usati nei portafogli software comprendono da 1 a 20 indirizzi.
-Esistono diversi tipi di seed, ma il formato più famoso è quello della cosiddetta \textit{mnemonic phrase}, una frase di 12 - 20 parole, introdotta nel 2 febbraio 2012 con il BIP-32.
-Con il BIP-39 \footnote{\textit{Bitcoin Improvement Proposal}} è stato introdotto...?
-Il vantaggio dei seeds rispetto alle singole private keys è il fatto che sono facili da ricordare. Un seed ha un aspetto simile al seguente:
+Esistono diversi tipi di seed, ma il formato più famoso è quello della cosiddetta \textit{mnemonic phrase}, una frase di 12 - 20 parole scelte a caso da un elenco di 2048 parole in lingua inglese, introdotta nel 10 settembre 2013 con il BIP-39 \cite{bip39}.
+Il vantaggio dei \textit{seeds} rispetto alle singole private keys è il fatto che sono facili da ricordare. Un seed ha un aspetto simile al seguente:
 
 \begin{quote}
 
@@ -358,7 +387,7 @@ witch color pride feed shame open despair creek road again ice least
 \end{quote}
 %
 Il secondo vantaggio è che la presenza di molteplici indirizzi Bitcoin aiuta a tutelare la propria privacy.
-Come abbiamo visto nella blockchain chiunque può accedere alle informazioni di chiunque (suona male), così per rendere i fondi meno tracciabili si possono usare diversi indirizzi per diverse operazioni.
+Come abbiamo visto nella blockchain tutte le transazioni sono visibili da chiunque, così per rendere i fondi meno tracciabili si possono usare diversi indirizzi per diverse operazioni.
 
 
 \subsubsection {Portafogli}
@@ -412,7 +441,7 @@ Esistono anche dei veri e propri "Bitcoin" fisici, ovvero delle monete materiali
 
 Gli \textit{hot wallets} sono invece dei portafogli che utilizzano un collegamento a internet per permettere di effettuare pagamenti \emph{dall'}indirizzo in uso.
 Esistono come software, tra cui app per smartphone, programmi per computer o servizi online.
-Certi \textit{hot wallets} permettono di stabilire manualmente la tassa in sat/byte
+Certi \textit{hot wallets} permettono di stabilire manualmente la tassa in sat/b
 
 
 \subsection {I problemi del Bitcoin}
@@ -423,13 +452,20 @@ Certi \textit{hot wallets} permettono di stabilire manualmente la tassa in sat/b
 
 La rete del Bitcoin può essere abusata da malintenzionati per compiere \textit{double spending}, ovvero l'atto di spendere una stessa quantità di Bitcoin due volte, effettivamente annullando il primo pagamento.
 Il \textit{double spending} è solitamente usato per truffare: dopo aver inviato \textit{x} BTC al ricevente, il truffatore fa subito un attacco di \textit{double spending} inviando a sé stesso la stessa quantità di bitcoin. Il ricevente si troverà con 0 BTC, che sono rimasti al truffatore.
-Esistono quattro principali modi per fare \textit{double spending} \cite{attacks}:
+Esistono tre principali modi per fare \textit{double spending} \cite{attacks}:
 
 \begin{itemize}
-\item \textit{Race attack}:
-\item \textit{Finney attack}:
-\item \textit{Vector76 attack}:
-\item \textit{Majority attack}: più comumemente conosciuto come "\textit{51\%}" o "\textit{>50\% attack}", è il tipo di attacco più temuto perché può essere applicato a qualunque transazione, indipendentemente dal numero di conferme ricevute\footnote{Ricordo che una conferma corrisponde a un blocco trovato dopo aver effettuato il pagamento. Più conferme rendono una transazione più sicura perché questa viene "superata" da un maggior numero di blocchi}.
+\item \textit{Race attack}: questo tipo di attacco avviene alle transazioni non ancora confermate (quindi ancora nella \textit{mempool}).
+Il truffatore fa un pagamento a sé stesso con una tassa di transazione inferiore a 1 sat/b in modo da propagare la transazione ai \textit{nodes} che accettano transazioni con una tassa molto bassa.
+Questi sono una minoranza, perché la maggior parte dei \textit{full nodes} ha un limite di 1 sat/b come tassa minima.
+Subito dopo, il truffatore ripete la transazione al mercante, questa volta con una tassa più elevata: i \textit{nodes} con una maggiore tassa minima accettano la seconda transazione considerandola come l'unica avvenuta di recente, ma quelli che avevano accettato la prima la rifiutano, perché è uguale a quella accettata in precendenza.
+Di conseguenza, la prima transazione passa alla \textit{mempool} senza problemi, mentre la seconda, quella fatta al mercante, non viene processata \cite{raceattack}.
+\item \textit{Finney attack}: un altro metodo di attacco che colpisce le transazioni con 0 conferme. L'attacco Finney richiede che il truffatore abbia la possibilità di fare \textit{mining} e quindi di generare nuovi blocchi.
+Quando questo trova un blocco, non lo diffonde ai \textit{full nodes} per poi includerlo nella blockchain, ma se lo tiene per sé.
+In questo blocco il truffatore compie una transazione a sé stesso.
+Subito dopo aver pagato il mercante, prima che la transazione legittima venga confermata, il truffatore "rilascia" il blocco che ha tenuto fermo, facendolo confermare prima di quello in cui è avvenuto il pagamento al mercante.
+\item \textit{Majority attack}: più comumemente conosciuto come "\textit{51\%}" o "\textit{>50\% attack}", è il tipo di attacco più temuto perché può essere applicato a qualunque transazione, indipendentemente dal numero di conferme ricevute\footnote{Ricordo che una conferma corrisponde a un blocco trovato dopo aver effettuato il pagamento.
+Più conferme rendono una transazione più sicura perché questa viene "superata" da un maggior numero di blocchi}.
 Un attacco 51\% si può effettuare solo se un singolo possiede più della metà dell'\textit{hashrate} di tutta la rete del Bitcoin.
 Dopo aver pagato il mercante, questo attende \textit{x} conferme e poi invia la sua merce.
 Il truffatore sdoppia la blockchain e su questa ripete il pagamento a un indirizzo in suo controllo; in seguito impiega il 51\% dell'\textit{hashrate} per minare blocchi sul suo clone privato della blockchain, e dopo aver trovato un numero di blocchi maggiore al numero di conferme attese manda "live" la sua blockchain ai \textit{full nodes} in tutto il mondo per sostituire quella più corta, nella quale il mercante aveva ricevuto bitcoin.
@@ -458,6 +494,11 @@ Non ci sono \textit{pools} con una percentuale di \textit{hashrate} maggiore al 
 \subsubsection {Il limite dei blocchi da 1 Megabyte}
 
 
+Nell'inverno del 2017 l'improvviso incremento del numero di transazioni ha avuto un impatto decisamente negativo sulla tassa di transazione media.
+Un qualunque pagamento in Bitcoin poteva costare fino ai \euro{25}.
+La causa di tutto questo è il fatto che la dimensione di 1MB dei blocchi non era sufficiente per farci stare tutte le transazioni nella \textit{mempool}.
+I software dei portafogli, per poter far confermare le transazioni degli utenti, hanno automaticamente aumentato il valore della tassa in sat/b per rendere la transazione effettuata preferibile ai \textit{miners}, che la includono nel blocco in fase di ricerca.
+ 
 
 \paragraph {Segregated Witness}
 
@@ -566,7 +607,7 @@ In questo modo Vitalik ha impedito agli ASIC di minare Ethereum, rendendo il lav
 I \textit{miner} ASIC sono apparecchiature costose ed estremamente potenti, presenti in quantità limitata perché concentrate in enormi \textit{farm} e sottomesse al monopolio delle \textit{pools} cinesi.
 Questi due fattori sono grandi minacce per la decentralizzazione della valuta.
 Le schede grafiche sono presenti in quasi tutti i computer di fascia medio-alta, e il prezzo di una GPU è normalmente intorno ai \euro{200} - \euro{400}.
-Questo rende Ethereum potenzialmente "minabile" da una grandissima quantità di persone, e ciò impedisce la centralizzazione dell'\textit{hashing power}, riducendo la possibilità di attacchi alla rete descritti in X.X.
+Questo rende Ethereum potenzialmente "minabile" da una grandissima quantità di persone, e ciò impedisce la centralizzazione dell'\textit{hashing power}, riducendo la possibilità di attacchi 51\%.
 
 \paragraph {La deflazione del mercato di schede grafiche}
 
@@ -758,8 +799,8 @@ Il Bitcoin e le criptovalute in generale sono frequentemente soggetto di controv
 
 
 Inizialmente il Bitcoin, ma oggi anche altre criptovalute (speciamente quelle centrate sulla privacy), sono usate per compiere scambi di merce proibita, principalmente droga e armi.
-Nel deep/dark web, infatti, esistono numerosi siti dove è possibile acquistare merce illegale tramite criptovalute.
-Fino al 2013, nei primi anni del Bitcoin, infatti, la valuta era quasi esclusivamente utilizzata per fare acquisti sul \textit{marketplace} chiamato Silk Road\footnote{Strada di seta}, chiuso dall'F.B.I. nel 20XX.
+Nel dark web, infatti, esistono numerosi siti dove è possibile acquistare merce illegale tramite criptovalute.
+Fino al 2013, nei primi anni del Bitcoin, infatti, la valuta era quasi esclusivamente utilizzata per fare acquisti sul \textit{marketplace} chiamato Silk Road\footnote{Strada di seta}, chiuso dall'FBI nell'ottobre del 2013.
 L'accusa alle criptovalute di essere monete "da mercato nero" è secondo molti una forma di FUD, \textit{fear, uncertainty, doubt}\footnote{Paura, incertezza, dubbio: tecnica per incutere timore nella gente inesperta riguardo a qualcosa}, per il semplice fatto che la moneta cartacea, il \textit{cash} è anch'essa una forma di denaro da sempre usata per atti/motivi illeciti, anch'essa anonima, più del Bitcoin! 
 
 
@@ -772,8 +813,29 @@ boh, faccio dopo.
 \subsubsection {Mt. Gox}
 
 
-Mt. Gox è il primo grande sito di exchange di Bitcoin, creato a Tokyo nel 2013.
-Ai tempi il Bitcoin aveva un valore ben più basso del \textasciitilde 9000 di oggi: il giorno in cui l'hack è avvenuto un bitcoin valeva solo \euro{500}. FINIRE
+Mt. Gox\textit{"Mt." è \textit{mount} in inglese, "monte"} è il primo grande sito di \textit{exchange} di Bitcoin, creato da Jeb McCaleb nel 18 luglio 2010.
+Il dominio mtgox.com è stato poi venduto allo sviluppatore francese Mark Karpelès nel marzo del 2011; la sede è stata spostata dall'America al Giappone.
+Fin da subito l'\textit{exchange} ha avuto gravi problemi di sicurezza, infatti il 19 giugno 2011 un hacker è riuscito a rubare una grande quantità di bitcoin.
+Nel settembre del 2011 un hacker entrò in possesso delle \textit{private keys} del portafoglio dell'\textit{exchange}, e rubò una quantità di circa 630.000 BTC\footnote{Oggi valgono \euro{4.410.000.000}} fino al 7 febbraio 2014, quando Mt. Gox annunciò una "temporanea sospensione" degli scambi a causa di un \textit{bug} nel loro software.
+Gli amministratori di Mt. Gox non si accorsero del trasferimento dei bitcoin da parte dell'hacker.
+Questo causò un enorme divario tra la quantità di bitcoin effettiva e quella prevista da Mt. Gox:
+
+\vspace {0.5cm}
+\begin{figure}[htb!]
+\includegraphics [width = 10cm] {mtgox.png}
+\centering
+\captionsetup{width=1.4\linewidth}
+\caption {Confronto tra i bitcoin effettivamente posseduti da Mt. Gox e quelli creduti\\\textit{fonte: wizsec.jp}}
+\end{figure}
+\vspace {0.2cm}
+\noindent
+%
+Intorno alla fine del 2013 due utenti chiamati "Willy" e "Markus" effettuarono una grande quantità di acquisti di bitcoin su Mt. Gox, con una frequenza di 5-10 BTC ogni 5-10 minuti, per un totale di oltre 250.000 BTC in pochi mesi.
+Il fatto che l'utente facesse ordini di acquisto anche in periodi in cui il sito non era funzionante indicò che Willy e Markus non erano altro che \textit{bot}, dei computer con il compito di incrementare artificialmente il prezzo del Bitcoin.
+Il 24 febbraio 2014 Mt. Gox annunciò la perdita di 850.000 BTC, di cui 750.000 posseduti dai loro utenti, anche se il 20 marzo sono stati poi trovati 200.000 BTC in un vecchio portafoglio, rendendo il numero effettivo di bitcoin persi \textasciitilde 650.000.
+L'1 agosto 2015 Mark Karpèles venne arrestato dalle autorità di Tokyo, accusato di aver falsificato i dati del prezzo del Bitcoin e del volume di liquidità di Mt. Gox.
+L'11 luglio 2017, il giorno del processo, venne scoperto che i due \textit{bot} erano operati dallo stesso CEO Mark Karpèles \cite{karpelesbot}.
+L'hacker responsabile del furto dei 630.000 BTC, Alexander Vinnik, è stato arrestato dalle autorità americane in Grecia il 26 luglio 2017, e BTC-e, un'\textit{exchange} russa, è stata sequestrata (ma non chiusa) dall'FBI a partire dal 25 luglio 2017, accusata di aver assistito Vinnik nel nascondere 300.000 bitcoin rubati \cite{mtgox}.
 
 
 \subsubsection {Bitconnect}
@@ -793,11 +855,12 @@ Oggi tutti coloro coinvolti nel pubblicizzare Bitconnect, soprattutto chi pubbli
 
 Bitcoin Cash è di gran lunga l'hard fork più popolare di tutte, al quarto posto (!) in capitalizzazione di mercato. Come mai è l'unica che ha raggiunto un prezzo così elevato?
 Roger K. Ver è un imprenditore americano che fin dai primi anni della nascita del Bitcoin è stato coinvolto nella scena delle criptovalute.
-Dall'agosto del 2017, però, quando è stato lanciato Bitcoin Cash, Roger è stato l'esponente principale per il marketing di questa valuta. BCH è nato in Cina, infatti i suoi "CEO" sono cinesi, e Roger dev'essere stato impiegato per fare propaganda a BCH.
+Dall'agosto del 2017, però, quando è stato lanciato Bitcoin Cash, Roger è stato l'esponente principale per il marketing di questa valuta. BCH è nato in Cina, infatti i suoi CEO sono cinesi, e Roger dev'essere stato impiegato per fare propaganda a BCH.
 Tutto ciò non sembra alcunché di preoccupante: è normale se un imprenditore pubblicizza i propri investimenti sperando di ricavare più guadagni, (nel caso che...) ed è normale che sviluppatori paghnio uno abile a parlare e a pubblcizzare un prodotto.
 è così che funziona il marketing.
 Quella di Roger, però, è una spietata propaganda anti-Bitcoin (BTC) e pro-BCH (Bitcoin Cash), che spesso e volentieri arriva alla censura, alle bugie più false e alla corruzione di persone.
-La tesi base che accomuna Roger e tutti i fan di BCH (pagati o no non si sa), è quella che BCH introduce delle modifiche al codice di Bitcoin che rendono le transizioni notevolmente più veloci, sicure e con una tassa di transazione inferiore. Bitcoin Cash infatti ha come principale differenza un'incrementata dimensione del blocco\footnote{Vedi punto X.X}, che anzichè limitarsi a 1MB arriva fino a 12MB% (come abbiamo visto, ogni transazione pesa tot kb. essendo il blocco più grande può farci stare più transazioni, senza "intasarsi").
+La tesi base che accomuna Roger e tutti i fan di Bitcoin Cash è quella che BCH introduce delle modifiche al codice di Bitcoin che aumentano la dimensione dei blocchi, che anzichè limitarsi a 1MB arrivano fino a 12MB.
+Questo riduce esponenzialmente la probabilità che i blocchi vengano riempiti di transazioni, innalzando le tasse a livelli esorbitanti\footnote{Vedi punto 3.3.3}.
 Il team di sviluppatori di Bitcoin si ostina a mantenere la dimensione del blocco a 1MB, perchè i blocchi di maggiore dimensioni sono \emph{ancora} più difficili da minare.
 Una difficoltà così elevata di \textit{mining} porta necessariamente a una centralizzazione dell'\textit{hashing power}, che va contro il concetto di Bitcoin e di criptovalute in generale. inoltre, .... \cite{bigblocks}
 Roger è entrato in possesso del sito bitcoin.com, che su numerose pagine (tra cui quella in fig. 5) ripete come BCH è una versione aggiornata di BTC. Una cosa che irrita la stragrande maggioranza delle persone è il fatto che su bitcoin.com il Bitcoin originale, BTC, è chiamato Bitcoin Core.
@@ -806,7 +869,7 @@ In Aprile del 2018 bitcoin.com penalizzò ulteriormente la situazione del "vero"
 Questa mossa fu la goccia che fece traboccare il vaso, perché mentre il fatto di chiamare BTC Bitcoin Core era già una bugia di per sé, sostituire "Bitcoin Cash" con "Bitcoin" era semplicemente inaccettabile.
 A seguito di questa modifica dei termini, bitcoin.com venne denunciato da oltre 1000 persone e fu eventualmente costretto a tornare alle vecchie denominazioni delle valute che, purché volontariamente misleading, non facevano apparire BCH come il "vero" Bitcoin \cite{verlawsuit}.
 bitcoin.com, essendo il secondo risultato su Google per la ricerca "bitcoin", ha portato molte persone nuove nel mondo delle criptovalute che cercavano di acquistare dei Bitcoin ad acquistare BCH anziché BTC.
-Ver possiede anche l'account Twitter @bitcoin, che svolge le stesse opere di propaganda di bitcoin.com
+Ver possiede anche l'account Twitter @bitcoin, che svolge le stesse opere di propaganda di bitcoin.com.
 
 
 \subsection {Il futuro delle criptovalute}
