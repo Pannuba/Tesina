@@ -67,14 +67,14 @@
   \verb https://shop.bitmain.com/product/detail?pid=000201802051016159150g4OS2h
   \verb k0661
   \endverb
-  \field{journaltitle}{ASICMinerValue.com}
+  \field{journaltitle}{Bitmain.com}
 \endentry
 
 \entry{s9profit}{misc}{}
   \verb{url}
   \verb https://www.asicminervalue.com/miners/bitmain/antminer-s9-14th
   \endverb
-  \field{journaltitle}{Bitmain.com}
+  \field{journaltitle}{ASICMinerValue.com}
 \endentry
 
 \entry{chinaaverage}{article}{}
@@ -128,6 +128,7 @@
 \endentry
 
 \entry{worldenergy}{misc}{}
+  \field{title}{World Power consumption}
   \verb{url}
   \verb https://yearbook.enerdata.net/electricity/electricity-domestic-consumpt
   \verb ion-data.html
@@ -363,6 +364,68 @@
   \field{year}{2015}
 \endentry
 
+\entry{lnhow}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Schor}{S.}%
+     {Lukas}{L.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SL1}
+  \strng{fullhash}{SL1}
+  \field{title}{Bitcoin Lightning Network — 7 Things You Should Know}
+  \verb{url}
+  \verb https://medium.com/@argongroup/bitcoin-lightning-network-7-things-you-s
+  \verb hould-know-604ef687af5a
+  \endverb
+  \field{journaltitle}{Argon Group}
+  \field{day}{10}
+  \field{month}{01}
+  \field{year}{2018}
+\endentry
+
+\entry{lnfees}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Goro}{G.}%
+     {Justin}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{GJ1}
+  \strng{fullhash}{GJ1}
+  \field{title}{Lightning Network Beta Goes Live on the Bitcoin Mainnet}
+  \verb{url}
+  \verb https://medium.com/social-evolution/the-economics-of-lightning-network-
+  \verb fees-76f0926da82
+  \endverb
+  \field{journaltitle}{Social Evolution}
+  \field{day}{18}
+  \field{month}{01}
+  \field{year}{2018}
+\endentry
+
+\entry{lightninglaunch}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Frumkin}{F.}%
+     {Daniel}{D.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{FD1}
+  \strng{fullhash}{FD1}
+  \field{title}{The Economics of Lightning Network Fees}
+  \verb{url}
+  \verb https://www.investinblockchain.com/lightning-network-beta-release/
+  \endverb
+  \field{journaltitle}{Invest In Blockchain}
+  \field{day}{22}
+  \field{month}{03}
+  \field{year}{2018}
+\endentry
+
 \entry{nickszabo}{report}{}
   \name{author}{1}{}{%
     {{}%
@@ -442,9 +505,19 @@
 \endentry
 
 \entry{ripple}{misc}{}
+  \field{title}{Market performance}
   \verb{url}
   \verb https://ripple.com/xrp/market-performance/
   \endverb
+  \field{journaltitle}{Ripple.com}
+\endentry
+
+\entry{btcforks}{misc}{}
+  \field{title}{Full List of Bitcoin Forks}
+  \verb{url}
+  \verb https://www.forks.net/list/Bitcoin/
+  \endverb
+  \field{journaltitle}{Forks.net}
 \endentry
 
 \entry{dubai}{article}{}
@@ -604,6 +677,17 @@
   \field{day}{17}
   \field{month}{08}
   \field{year}{2017}
+\endentry
+
+\entry{ponzi}{article}{}
+  \field{title}{Charles Ponzi Biography}
+  \verb{url}
+  \verb https://www.biography.com/people/charles-ponzi-20650909
+  \endverb
+  \field{journaltitle}{Biography.com}
+  \field{day}{03}
+  \field{month}{04}
+  \field{year}{2015}
 \endentry
 
 \entry{bigblocks}{article}{}

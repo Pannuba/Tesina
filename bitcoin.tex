@@ -15,8 +15,6 @@
 
 \graphicspath { {./media/} }
 
-%TODO: lighting, forse rimettere elizavetovka e rivedere crisi 29, crash
-
 \begin{document}
 
 \begin{titlepage}
@@ -182,7 +180,7 @@ Man mano che sempre più \textit{miners} cominciano a lavorare, elevando l'\text
 \begin{figure}[htb!]
 \makebox [\textwidth] [c] {\includegraphics [width=15cm] {hashdiff.png}}
 \captionsetup{width=1.4\linewidth}
-\caption {Confronto tra difficoltà (sopra) e \textit{hashrate globale} (sotto)\\\textit{fonte: blockchain.info}}
+\caption {Confronto tra difficoltà (sopra) e \textit{hashrate} globale (sotto)\\\textit{fonte: blockchain.info}}
 \end{figure}
 \vspace {0.2cm}
 \noindent
@@ -194,7 +192,7 @@ Modificando la difficoltà in modo proporzionale all'\textit{hashing power} si f
 
 Satoshi ha deciso che ogni blocco deve impiegare un tempo di circa 10 minuti per essere scoperto.
 Il motivo della scelta è quello di aver trovato un compromesso: sacrificare conferme e quindi transazioni più veloci per avere un processo di \textit{mining} più efficiente.
-Nell'intervallo di 10 minuti tutti i \textit{full nodes} hanno tempo sufficiente per accettare e validare l'ultimo blocco trovato e far sì che si propaghi in tutta la rete, impedendo eventuali conflitti su qual è la blockchain autentica. %more bandwith??
+Nell'intervallo di 10 minuti tutti i \textit{full nodes} hanno tempo sufficiente per accettare e validare l'ultimo blocco trovato e far sì che si propaghi in tutta la rete, impedendo eventuali conflitti su qual è la blockchain autentica.
 Quando non avviene ciò, può capitare che fra due blocchi che vengono trovati in istanti vicini solo uno dei due venga accettato dalla maggioranza dei \textit{full nodes}.
 Il blocco che viene abbandonato è definito \textit{stale block}\footnote{Blocco in stallo}, ovvero un blocco inizialmente considerato valido, ma poi abbandonato perché l'altro blocco trovato è stato accettato più velocemente, dando origine alla blockchain più lunga tra le due, quindi quella più reputabile.
 Per questo con i blocchi di 10 minuti si ha un \textit{mining} più efficiente, perché si riduce la quantità di energia elettrica sprecata per far funzionare dei \textit{miners} che trovano un blocco orfano.
@@ -356,7 +354,7 @@ Il sistema P2SH richiede però la presenza di uno script che aumenta lievemente 
 
 \paragraph {bech32}
 
-Gli indirizzi Bitcoin \textit{bech32} sono stati introdotti il 20 marzo 2017 con il BIP-173 \cite{bip173}.
+Gli indirizzi Bitcoin \textit{bech32} sono stati introdotti il 20 marzo 2017 con il BIP 173 \cite{bip173}.
 Gli indirizzi bech32 implementano SegWit nativamente, e di conseguenza sono quelli con le dimensioni di transazione più inferiori.
 Questo tipo di indirizzo, essendo sotto un punto di vista tecnico molto diverso dagli indirizzi tradizionali (che cominciano con 1 e 3), non è supportato da una moltitudine di siti di compravendita e da portafogli che non riconoscono il \texttt{bc1q} presente all'inizio di tutti questi indirizzi, ma sempre più piattaforme e app si stanno aggiornando per permettere di inviare e ricevere dagli indirizzi bech32.
 
@@ -377,21 +375,21 @@ L'indirizzo è la chiave pubblica \textit{hashata}, per questo è di dimensioni 
 
 \paragraph {Private key}
 
-La \textit{private key} è un codice che consente a chiunque di avere accesso ai Bitcoin conservati nell'indirizzo.
-Come le \textit{hash} viste in precendenza, le private keys sono numeri di 256 \textit{bit}, che nel sistema numerico esadecimale sono codici di 64 caratteri tra numeri e lettere.
-Come le \textit{hash}, esistono poco meno\footnote{"Poco meno" perché esse devono rispettare i parametri dell'algoritmo ECDSA, di cui non parlerò per non andare fuori tema} di $2^{256}$ \textit{private keys}.
+La \textit{private key} (in italiano "chiave privata") è un codice che consente a chiunque di avere accesso ai Bitcoin conservati nell'indirizzo.
+Come le \textit{hash} viste in precendenza, le chiavi private sono numeri di 256 \textit{bit}, che nel sistema numerico esadecimale sono codici di 64 caratteri tra numeri e lettere.
+Come le \textit{hash}, esistono poco meno\footnote{"Poco meno" perché esse devono rispettare i parametri dell'algoritmo ECDSA, di cui non parlerò per non andare fuori tema} di $2^{256}$ chiavi private.
 È paragonabile ad una password che dà accesso ad account di qualunque tipo, l'unica differenza è che non è modificabile.
 
 \paragraph {Seeds}
 
-Un \textit{seed} è un codice che svolge una funzione simile a quella della \textit{private key}: se inserito in un software di wallet, ripristina tutti i bitcoin associati ad esso.
+Un \textit{seed} è un codice che svolge una funzione simile a quella della chiave privata: se inserito nel software di un portafoglio ripristina tutti i bitcoin associati ad esso.
 I \textit{seeds} sono stati introdotti nel 2 febbraio 2012 con il BIP 32 \cite{bip32}.
-Questi primi \textit{seed} hanno un aspetto simile a quello delle \textit{private keys}, con lunghezza variabile.
-La differenza con le \textit{private keys} è che un seed "genera" una o più private keys, dalle quali si possono ricavare le public keys e quindi gli indirizzi stessi.
-Di conseguenza, ad un seed possono corrispondere un numero indefinito di indirizzi, ovvero di coppie di public e private keys.
-Realisticamente, quasi tutti i seed usati nei portafogli software comprendono da 1 a 20 indirizzi.
-Esistono diversi tipi di seed, ma il formato più famoso è quello della cosiddetta \textit{mnemonic phrase}, una frase di 12 - 20 parole scelte a caso da un elenco di 2048 parole in lingua inglese, introdotta nel 10 settembre 2013 con il BIP-39 \cite{bip39}.
-Il vantaggio dei \textit{seeds} rispetto alle singole private keys è il fatto che sono facili da ricordare. Un seed ha un aspetto simile al seguente:
+Questi primi \textit{seed} hanno un aspetto simile a quello delle chiavi private, con lunghezza variabile.
+La differenza con le chiavi private è che un \textit{seed} "genera" una o più chiavi private, dalle quali si possono ricavare le chiavi pubbliche e quindi gli indirizzi stessi.
+Di conseguenza, ad un \textit{seed} possono corrispondere un numero indefinito di indirizzi, ovvero di coppie di chiave pubblica e privata.
+Realisticamente, quasi tutti i \textit{seed} usati nei portafogli software comprendono da 1 a 20 indirizzi.
+Esistono diversi tipi di \textit{seed}, ma il formato più famoso è quello della cosiddetta \textit{mnemonic phrase}, una frase di 12 - 20 parole scelte a caso da un elenco di 2048 parole in lingua inglese, introdotta nel 10 settembre 2013 con il BIP 39 \cite{bip39}.
+Il vantaggio dei \textit{seed} rispetto alle singole chiavi private è il fatto che sono più facili da ricordare. Un seed ha un aspetto simile al seguente:
 
 \begin{quote}
 
@@ -402,6 +400,13 @@ witch color pride feed shame open despair creek road again ice least
 Il secondo vantaggio è che la presenza di molteplici indirizzi Bitcoin aiuta a tutelare la propria privacy.
 Come abbiamo visto nella blockchain tutte le transazioni sono visibili da chiunque, così per rendere i fondi meno tracciabili si possono usare diversi indirizzi per diverse operazioni.
 
+\paragraph {Creazione dell'indirizzo}
+
+Le chiavi private sono il punto di partenza per la creazione di un nuovo indirizzo: tramite
+quando creiamo un indirizzo a partire da una chiave privata ricavata casualmente, questo è in realtà già esistente nella blockchain.
+Tutti gli indirizzi, \textit{public} e \textit{private} keys sono già esistenti nella blockchain a prescindere, e creando un indirizzo non stiamo facendo altro che appropriarcene di uno a caso.
+È naturale porsi la domanda: "Ma se qualcuno "ottenesse" la mia chiave privata mi ruberebbe tutti i soldi! Non è rischioso?".
+Ebbene, come ho scritto prima, esistono $2^{256}$ chiavi, un numero simile a 1/3 degli atomi in tutto l'universo. La probabilità è praticamente nulla.
 
 \subsubsection {Portafogli}
 
@@ -417,17 +422,13 @@ Con il \textit{cold storage}\footnote{Archiviazione a freddo}, chiave pubblica e
 Sebbene sia necessaria una connessione ad internet per effettuare transazioni, questa non serve per riceverne.
 Gli indirizzi Bitcoin e le transazioni, infatti, hanno un funzionamento estremamente simile a quello degli indirizzi email: se voglio inviare una mail mi serve una connessione a internet, ma il mio indirizzo può ricevere email anche se il mio computer o telefono non è attualmente collegato.
 Troverò le mail ricevute nella casella di arrivo quando effettuo l'accesso al mio account.
-(metto sopra?) quando creiamo un indirizzo a partire da una \textit{private key} ricavata casualmente, questo è in realtà già esistente nella blockchain.
-Tutti gli indirizzi, \textit{public} e \textit{private} keys sono già esistenti nella blockchain a prescindere, e creando un indirizzo non stiamo facendo altro che appropriarcene di uno a caso.
-È naturale porsi la domanda: "Ma se qualcuno "ottenesse" la mia chiave privata mi ruberebbe tutti i soldi! Non è rischioso?".
-Ebbene, come ho scritto prima, esistono $2^{256}$ chiavi, un numero simile a 1/3 degli atomi in tutto l'universo. La probabilità è praticamente nulla.
 I principali tipi di \textit{cold storage} sono:
 
 \begin{itemize}
 \item Digitale: le keys sono salvate sottoforma di file su un computer, un CD, una chiavetta USB...
 \item Carta: si possono scrivere le keys su un pezzo di carta o stampare un \textit{paper wallet}, metodo poco sicuro per la fragilità del materiale.
 \item Metallo: le keys possono essere incise su una lamina di metallo, preferibilmente oro, argento, bronzo, nickel, ottone o cobalto per la resistenza alle alte temperature.
-\item \textit{Hardware wallet}: I portafogli hardware sono dei piccoli dispositivi simili a chiavette USB, in cui la \textit{private key} è contenuta.
+\item \textit{Hardware wallet}: I portafogli hardware sono dei piccoli dispositivi simili a chiavette USB, in cui è contenuta la chiave privata.
 \end{itemize}
 
 \begin{figure}[htb!]
@@ -518,7 +519,7 @@ Fortunatamente, gli sviluppatori hanno elaborato due principali soluzioni per ri
 
 \paragraph {Segregated Witness}
 
-Segregated Witness (comunemente abbreviato in SegWit) è una \textit{soft fork} del Bitcoin introdotta il 21 dicembre 2015 col BIP-141 \cite{bip141}.
+Segregated Witness (comunemente abbreviato in SegWit) è una \textit{soft fork} del Bitcoin introdotta il 21 dicembre 2015 col BIP 141 \cite{bip141}.
 Una \textit{soft fork} è un aggiornamento che viene effettuato alla blockchain già esistente\footnote{A differenza delle \textit{hard forks}, descritte al punto 5.6}, e per far sì che si possa usufruire di questi aggiornamenti è necessario che gli utenti scarichino la versione più recente del software dell'\textit{hot wallet} o di Bitcoin Core (nel caso si voglia operare un \textit{full node}).
 Il funzionamento tecnico è altamente complesso e non ritengo indispensabile includerlo nella tesina.
 SegWit è una grande invenzione perché riduce il peso effettivo delle transazioni in modo da poterne includere un numero maggiore nei blocchi.
@@ -526,7 +527,12 @@ Di conseguenza, SegWit aiuta indirettamente a pagare una tassa di transazione in
 
 \paragraph {Lightning Network}
 
-Il Lightning Network è un'infrastruttura esterna alla blockchain che rende cose veloci
+Il \textit{Lightning Network} è un'infrastruttura esterna alla blockchain che rende le transazioni notevolmente più veloci e meno costose.
+"Esterna alla blockchain", nel senso che le transazioni che utilizzano il \textit{lightning network} non entrano nella \textit{mempool} per poi essere incluse nei blocchi dai \textit{miners}, bensì i fondi vengono direttamente trasferiti dall'una all'altra persona.
+Per effettuare un pagamento, il mittente e il ricevente aprono un canale (\textit{channel}) di pagamento che svolge una funzione simile a quella di una casella di posta.
+La transazione passa attraverso i \textit{nodes}\footnote{Da non confondere con i \textit{nodes} "tradizionali", questi sono specifici del \textit{lightning network}} che la verificano, per poi arrivare al ricevente \cite{lnhow}.
+Le transazioni del \textit{lightning network} prevedono sempre il pagamento di una piccola quota ai \textit{nodes} per incentivare le persone ad operarne, perché una maggiore quantità di \textit{nodes} attivi rendono la rete \textit{Lightning} più efficiente e veloce \cite{lnfees}.
+Il \textit{lightning network} è stato lanciato il 15 marzo 2018 \cite{lightninglaunch} ed è ancora in fase di sviluppo, per cui ci vorrà del tempo per far sì che questa tecnologia diventi completamente stabile e facilmente utilizzabile.
 
 
 \newpage
@@ -545,8 +551,8 @@ In questa sezione spiegherò come entrare in contatto con l'ecosistema delle cri
 Per comodità è consigliabile usare un app per smartphone: sull'App Store dei dispositivi Apple e sul Play Store di quelli Android sono disponibili numerosi portafogli di Bitcoin, ma il funzionamento è lo stesso per tutti.
 Una volta scaricato il portafoglio incomincia la creazione di un nuovo indirizzo che verrà usato per inviare e ricevere bitcoin.
 L'app ci mostrerà il \textit{seed} al quale sono associati i nostri indirizzi (ma talvolta solo uno).
-Il seed dovrà essere copiato e conservato in un luogo sicuro (su carta e/o chiavetta USB), perché nello sfortunato caso in cui perdiamo il nostro smartphone sarà possibile importarlo in un altro dispositivo.
-Una volta confermato il seed saremo in grado di inviare e ricevere Bitcoin al nostro indirizzo.
+Il \textit{seed} dovrà essere copiato e conservato in un luogo sicuro (su carta e/o chiavetta USB), perché nello sfortunato caso in cui perdiamo il nostro smartphone sarà possibile importarlo in un altro dispositivo.
+Una volta confermato il \textit{seed} saremo in grado di inviare e ricevere Bitcoin al nostro indirizzo.
 
 
 \subsection {Come ottenere Bitcoin}
@@ -723,14 +729,14 @@ La blockchain del Bitcoin "originale" può essere clonata indefinitamente. Chiun
 \noindent
 %
 Tecnicamente Litecoin è una \textit{hard fork} del Bitcoin, ma ho deciso di dedicarle un paragrafo a sé stante perché, a differenza delle altre di cui parlerò in seguito, Litecoin introduce numerose differenze e il nome non include la parola "Bitcoin".
-Oggi esistono più di 30 \textit{fork} del Bitcoin: Bitcoin Gold, Bitcoin Candy, Bitcoin Private, Bitcoin Unlimited, Bitcoin Super... Persino Bitcoin Pizza e Bitcoin God.
+Oggi esistono più di 30 \textit{fork} del Bitcoin: Bitcoin Gold, Bitcoin Candy, Bitcoin Private, Bitcoin Unlimited, Bitcoin Super... Persino Bitcoin Pizza e Bitcoin God \cite{btcforks}.
 Quasi tutti i fork vengono visti come delle truffe, come valute che non possiedono nulla di nuovo rispetto all'originale Bitcoin, ma viene sempre data attenzione perché chiunque possiede Bitcoin il momento in cui la blockchain è stata clonata, entra automaticamente in possesso del coin della fork.
 Se un indirizzo ha il bilancio di \textit{x} BTC \emph{prima} che venga lanciata la \textit{hard fork}, per esempio Bitcoin Top (BTT) a quell'indirizzo sarà anche associato \textit{x} BTT.
-Per poter ottenere effettivamente tutti i coin che l'indirizzo "possiede", è necessario scaricare il software di wallet del coin di fork e inserire la private key dell'indirizzo con su il coin di fork.
+Per poter ottenere effettivamente tutti i coin che l'indirizzo "possiede", è necessario scaricare il software di wallet del coin di fork e inserire la chiave privata dell'indirizzo con su il coin di fork.
 Verrà generato un nuovo indirizzo completamente diverso, però con il bilancio di \textit{x} BTT.
-Abbiamo visto prima che la private key dà accesso a tutti i fondi presenti sull'indirizzo a chiunque ne entri in possesso, eppure per ottenere i Fork siamo costretti ad inserirla in un software sconosciuto (perchè quasi tutti i fork non hanno alcuna reputazione: saltano fuori con siti web senza preavviso).
+Abbiamo visto prima che la chiave privata dà accesso a tutti i fondi presenti sull'indirizzo a chiunque ne entri in possesso, eppure per ottenere i Fork siamo costretti ad inserirla in un software sconosciuto (perchè quasi tutti i fork non hanno alcuna reputazione: saltano fuori con siti web senza preavviso).
 Per evitare che un qualche malintenzionato sfrutti la sbadataggine dell'utente e rubi tutti i suoi bitcoin, è bene che I fondi vengano mossi a un altro indirizzo.
-Infatti, sarà comunque possibile prelevare i BTT dal vecchio indirizzo BTC ora svuotato, e non si ha nulla da perdere nel caso qualcuno riuscisse a rubare la private key: all'indirizzo sono associati 0 BTC.
+Infatti, sarà comunque possibile prelevare i BTT dal vecchio indirizzo BTC ora svuotato, e non si ha nulla da perdere nel caso qualcuno riuscisse a rubare la chiave privata: all'indirizzo sono associati 0 BTC.
 
 
 \newpage
@@ -781,7 +787,7 @@ I fatti che hanno causato questo boom non sono certi visto che i mercati delle c
 Si crede che i media abbiano convinto sempre più gente ad investire in questa nuova tecnologia, diffondendo a macchia d'olio l'entusiasmo per le criptovalute.
 Il prezzo del Bitcoin, ma anche della stragrande maggioranza delle altre criptovalute è precipitato nel dicembre del 2017, andando dall'ATH\footnote{\textit{All time high}, il valore più alto del prezzo mai raggiunto prima} del 12 dicembre di \euro{17.230} ai \euro{6000} del 5 Febbraio 2018. Un calo di più del 65\%!
 
-\vspace {0.4cm}
+\vspace {0.5cm}
 \begin{figure}[htb!]
 \makebox [\textwidth] [c] {\includegraphics [width = 14cm] {crash.png}}
 \centering
@@ -871,11 +877,11 @@ In tutti e tre i casi le affermazioni dei governi sono state mal interpretate: l
 Mt. Gox\footnote{"Mt." è \textit{mount} in inglese, "monte"} è il primo grande sito di \textit{exchange} di Bitcoin, creato da Jeb McCaleb nel 18 luglio 2010.
 Il dominio mtgox.com è stato poi venduto allo sviluppatore francese Mark Karpelès nel marzo del 2011; la sede è stata spostata dall'America al Giappone.
 Fin da subito l'\textit{exchange} ha avuto gravi problemi di sicurezza, infatti il 19 giugno 2011 un hacker è riuscito a rubare una grande quantità di bitcoin.
-Nel settembre del 2011 un hacker entrò in possesso delle \textit{private keys} del portafoglio dell'\textit{exchange}, e rubò una quantità di circa 630.000 BTC\footnote{Oggi valgono \euro{4.410.000.000}} fino al 7 febbraio 2014, quando Mt. Gox annunciò una "temporanea sospensione" degli scambi a causa di un \textit{bug} nel loro software.
+Nel settembre del 2011 un hacker entrò in possesso delle chiavi private del portafoglio dell'\textit{exchange}, e rubò una quantità di circa 630.000 BTC\footnote{Oggi valgono \euro{4.410.000.000}} fino al 7 febbraio 2014, quando Mt. Gox annunciò una "temporanea sospensione" degli scambi a causa di un \textit{bug} nel loro software.
 Gli amministratori di Mt. Gox non si accorsero del trasferimento dei bitcoin da parte dell'hacker.
 Questo causò un enorme divario tra la quantità di bitcoin effettiva e quella prevista da Mt. Gox:
 
-\vspace {0.4cm}
+\vspace {0.5cm}
 \begin{figure}[htb!]
 \includegraphics [width = 10cm] {mtgox.png}
 \centering
@@ -910,11 +916,12 @@ Oggi tutti coloro coinvolti nel pubblicizzare Bitconnect, soprattutto chi ha pub
 
 Bitcoin Cash è di gran lunga l'\textit{hard fork} più popolare di tutte, al quarto posto (!) in capitalizzazione di mercato. Come mai è l'unica che ha raggiunto un prezzo così elevato?
 Roger K. Ver è un imprenditore americano che fin dai primi anni della nascita del Bitcoin è stato coinvolto nella scena delle criptovalute.
-Dal primo agosto del 2017, però, quando è stato lanciato Bitcoin Cash, Roger è stato l'esponente principale per il marketing di questa valuta. BCH è nato in Cina, infatti i suoi CEO sono cinesi, e Roger dev'essere stato impiegato per fare propaganda a BCH.
-Tutto ciò non sembra alcunché di preoccupante: è normale se un imprenditore pubblicizza i propri investimenti sperando di ricavare più guadagni, (nel caso che...) ed è normale che sviluppatori paghino una figura eloquente e carismatica per pubblcizzare un prodotto; è così che funziona il marketing.
+Dal primo agosto del 2017, però, quando è stato lanciato Bitcoin Cash, Roger è stato l'esponente principale per il marketing di questa valuta. BCH è nato in Cina, infatti i suoi CEO sono cinesi, e Roger dev'essere stato impiegato per fare pubblicità a BCH.
 Quella di Roger, però, è una spietata propaganda anti-Bitcoin (BTC) e pro-Bitcoin Cash (BCH), che spesso e volentieri arriva alla censura, alle bugie più false e alla corruzione di persone.
+Roger è entrato in possesso del sito bitcoin.com, che su numerose pagine ripete come Bitcoin Cash è una versione aggiornata di Bitcoin. Una cosa che irrita la stragrande maggioranza delle persone è il fatto che su bitcoin.com il Bitcoin originale, BTC, è chiamato Bitcoin Core.
+Il nome Bitcoin Core, paragonato a Bitcoin Cash, fa sembrare le due valute due alternative sullo stesso livello, invece uno (BCH) è un clone dell'originale (BTC).
 
-\vspace {0.4cm}
+\vspace {0.5cm}
 \begin{figure}[htb!]
 \includegraphics [width = 10cm] {bcash.png}
 \centering
@@ -927,15 +934,17 @@ Quella di Roger, però, è una spietata propaganda anti-Bitcoin (BTC) e pro-Bitc
 Le caratteristiche negative del Bitcoin "vero" non sono altro che una errata interpretazione dei fatti, mettendo in risalto ciò che fa apparire Bitcoin Cash come un'alternativa oggettivamente migliore.
 Per esempio, la figura implica che il Bitcoin ha sempre avuto un costo medio per transazione di \$30, mentre in realtà questo è solo avvenuto alla fine del 2017.
 Inoltre, non sono riuscito a trovare una fonte sul dato "3 transazioni al secondo, artificialmente limitate".
-Questi due problemi sono stati per la maggior parte con l'adozione in costante crescita di SegWit\footnote{Vedi punto 3.3.3}.
+Questi due problemi sono stati per la maggior parte risolti con l'adozione in costante crescita di SegWit\footnote{Vedi punto 3.3.3, paragrafo "Segregated Witness"}.
 È vero che il team di sviluppatori del Bitcoin è unico, ma essendo un progetto \textit{open source}, chiunque può contribuire miglioramenti al codice sorgente del software.
-Questo è solo un esempio delle molteplici mezze verità e bugie presenti sul bitcoin.com.
-La tesi base che accomuna Roger e tutti i fan di Bitcoin Cash è quella che BCH introduce delle modifiche al codice di Bitcoin che aumentano la dimensione dei blocchi, che anzichè limitarsi a 1MB arrivano fino a 12MB.
-Questo riduce esponenzialmente la probabilità che i blocchi vengano riempiti di transazioni, innalzando le tasse a livelli esorbitanti\footnote{Vedi punto 3.3.3}.
-Il team di sviluppatori di Bitcoin si ostina a mantenere la dimensione del blocco a 1MB, perchè i blocchi di maggiore dimensioni sono \emph{ancora} più difficili da minare.
-Una difficoltà così elevata di \textit{mining} porta necessariamente a una centralizzazione dell'\textit{hashing power}, che va contro il concetto di Bitcoin e di criptovalute in generale. inoltre, MANCA \cite{bigblocks}
-Roger è entrato in possesso del sito bitcoin.com, che su numerose pagine ripete come BCH è una versione aggiornata di BTC. Una cosa che irrita la stragrande maggioranza delle persone è il fatto che su bitcoin.com il Bitcoin originale, BTC, è chiamato Bitcoin Core.
-Il nome Bitcoin Core, paragonato a Bitcoin Cash, fa sembrare le due valute due alternative sullo stesso livello, invece uno (BCH) è un clone dell'originale (BTC).
+Questo è solo un esempio delle molteplici mezze verità e bugie presenti su bitcoin.com.
+La tesi base che accomuna Roger e tutti i fan di Bitcoin Cash è quella che BCH introduce delle modifiche al codice di Bitcoin che aumentano la dimensione dei blocchi, togliendo il limite di 1MB.
+Questo riduce esponenzialmente la probabilità che i blocchi vengano riempiti di transazioni, innalzando le tasse a livelli esorbitanti.
+Il team di sviluppatori di Bitcoin si ostina a mantenere la dimensione del blocco a 1MB, perchè l'aumento di dimensione del blocco è una minaccia per la decentralizzazione della rete.
+Senza l'impiego di soluzioni come SegWit e Lightning sarà necessario incrementare regolarmente la dimensione del blocco per accomodare la quantità sempre crescente di transazioni effettuate da nuovi utenti.
+I blocchi, aumentando di dimensione, diventano più impegnativi da verificare da parte dei \textit{full nodes}, in quanto è richiesta una maggiore quantità di RAM e una connessione ad internet più veloce.
+Eventualmente, i blocchi saranno talmente difficili da processare che i \textit{nodes} più deboli impiegheranno un tempo maggiore di 10 minuti\footnote{Vedi punto 2.2.2, paragrafo "Tempo per blocco"} per verificarli, rendendo impossibile la verifica di ogni singolo blocco e quindi rendendo il lavoro dei \textit{nodes} inutile.
+Di conseguenza, solo i computer più potenti e costosi opereranno come \textit{full nodes} \cite{bigblocks}.
+Ciò porta a una centralizzazione dell'\textit{hashing power}, che va contro il concetto di decentralizzazione del Bitcoin.
 In Aprile del 2018 bitcoin.com penalizzò ulteriormente la situazione del "vero" Bitcoin definendo "BTC" "Bitcoin Core" e "BCH" (che sarebbe Bitcoin Cash) "Bitcoin".
 Questa mossa fu la goccia che fece traboccare il vaso, perché mentre il fatto di chiamare BTC Bitcoin Core era già una bugia di per sé, sostituire "Bitcoin Cash" con "Bitcoin" era semplicemente inaccettabile.
 A seguito di questa modifica dei termini, bitcoin.com venne denunciato da oltre 1000 persone e fu eventualmente costretto a tornare alle vecchie denominazioni delle valute che, purché volontariamente ingannevoli, non facevano apparire BCH come il "vero" Bitcoin \cite{verlawsuit}.
@@ -954,7 +963,7 @@ La natura deflazionaria della valuta aiuta sicuramente il prezzo: abbiamo visto 
 Tutte le inflazioni sono dovute a un'eccessiva stampa di soldi cartacei, cosa che è impossibile nell'ambito delle criptovalute.
 Un altro fattore concreto che indica un futuro promettente per il Bitcoin è il numero di transazioni giornaliere:
 
-\vspace {0.4cm}
+\vspace {0.5cm}
 \begin{figure}[htb!]
 \makebox [\textwidth] [c] {\includegraphics [width=15cm] {transactions.png}}
 \caption {Transazioni giornaliere a partire dal 2009\\\textit{fonte: blockchain.info}}
@@ -970,6 +979,9 @@ Indipendentemente dal motivo per cui queste transazioni sono state effettuate, �
 \printbibliography
 
 \newpage
+
+
+\pagenumbering{gobble}
 
 \centering
 \vspace*{1cm}

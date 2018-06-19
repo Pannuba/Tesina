@@ -56,23 +56,25 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Seeds}{18}{section*.22}
 \defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Creazione dell'indirizzo}{18}{section*.23}
+\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.2.3}Portafogli}{18}{subsubsection.3.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Cold storage}{18}{section*.23}
+\contentsline {paragraph}{Cold storage}{18}{section*.24}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Hot wallets}{19}{section*.25}
+\contentsline {paragraph}{Hot wallets}{19}{section*.26}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}I problemi del Bitcoin}{19}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.3}I problemi del Bitcoin}{20}{subsection.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.1}Gli attacchi al network}{19}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.1}Gli attacchi al network}{20}{subsubsection.3.3.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.3.2}La parziale centralizzazione}{21}{subsubsection.3.3.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.3.3}Il limite dei blocchi da 1 Megabyte}{21}{subsubsection.3.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Segregated Witness}{22}{section*.27}
+\contentsline {paragraph}{Segregated Witness}{22}{section*.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Lightning Network}{22}{section*.28}
+\contentsline {paragraph}{Lightning Network}{22}{section*.29}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}Utilizzare Bitcoin}{23}{section.4}
 \defcounter {refsection}{0}\relax 
@@ -80,13 +82,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2}Come ottenere Bitcoin}{23}{subsection.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Exchange}{23}{section*.29}
+\contentsline {paragraph}{Exchange}{23}{section*.30}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{ATMs}{23}{section*.30}
+\contentsline {paragraph}{ATMs}{23}{section*.31}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Mining}{24}{section*.31}
+\contentsline {paragraph}{Mining}{24}{section*.32}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Forma di pagamento}{24}{section*.32}
+\contentsline {paragraph}{Forma di pagamento}{24}{section*.33}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.3}Trasferire Bitcoin}{24}{subsection.4.3}
 \defcounter {refsection}{0}\relax 
@@ -94,11 +96,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.1}Ethereum}{25}{subsection.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Smart contracts}{25}{section*.33}
+\contentsline {paragraph}{Smart contracts}{25}{section*.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Mining}{25}{section*.34}
+\contentsline {paragraph}{Mining}{25}{section*.35}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{La deflazione del mercato di schede grafiche}{26}{section*.35}
+\contentsline {paragraph}{La deflazione del mercato di schede grafiche}{26}{section*.36}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.2}Litecoin}{27}{subsection.5.2}
 \defcounter {refsection}{0}\relax 
@@ -114,7 +116,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {6.1}Adozione}{31}{subsection.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Rovereto: i pagamenti in Bitcoin sono la norma}{32}{section*.40}
+\contentsline {paragraph}{Rovereto: i pagamenti in Bitcoin sono la norma}{32}{section*.41}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {6.2}La bolla del 2017: cause e conseguenze}{32}{subsection.6.2}
 \defcounter {refsection}{0}\relax 
@@ -132,4 +134,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {6.3.5}Roger Ver e la truffa di "Bitcoin Cash"}{36}{subsubsection.6.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.4}Il futuro delle criptovalute}{37}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.4}Il futuro delle criptovalute}{38}{subsection.6.4}
