@@ -50,8 +50,8 @@
   \verb https://bitcoin.stackexchange.com/questions/5859/what-are-orphaned-and-
   \verb stale-blocks
   \endverb
-  \field{journaltitle}{Bitcoin StackExchange}
-  \field{year}{2015}
+  \field{journaltitle}{Bitcoin Stack Exchange}
+  \field{year}{2012-12-19}
 \endentry
 
 \entry{antminers9}{misc}{}
@@ -157,60 +157,6 @@
   \field{year}{2016}
 \endentry
 
-\entry{bip13}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Andresen}{A.}%
-     {Gavin}{G.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{AG1}
-  \strng{fullhash}{AG1}
-  \field{title}{Address Format for pay-to-script-hash}
-  \verb{url}
-  \verb https://github.com/bitcoin/bips/blob/master/bip-0013.mediawiki
-  \endverb
-  \field{journaltitle}{Bitcoin Improvement Proposals}
-  \field{day}{18}
-  \field{month}{10}
-  \field{year}{2011}
-\endentry
-
-\entry{p2sh}{article}{}
-  \field{title}{Pay to script hash}
-  \verb{url}
-  \verb https://en.bitcoin.it/wiki/Pay_to_script_hash
-  \endverb
-  \field{journaltitle}{Bitcoin Wiki}
-  \field{year}{2017}
-\endentry
-
-\entry{bip173}{article}{}
-  \name{author}{2}{}{%
-    {{}%
-     {Wuille}{W.}%
-     {Pieter}{P.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Maxwell}{M.}%
-     {Greg}{G.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{WPMG1}
-  \strng{fullhash}{WPMG1}
-  \field{title}{Base32 address format for native v0-16 witness outputs}
-  \verb{url}
-  \verb https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki
-  \endverb
-  \field{journaltitle}{Bitcoin Improvement Proposals}
-  \field{day}{20}
-  \field{month}{03}
-  \field{year}{2017}
-\endentry
-
 \entry{bip32}{article}{}
   \name{author}{1}{}{%
     {{}%
@@ -264,6 +210,82 @@
   \field{day}{10}
   \field{month}{09}
   \field{year}{2013}
+\endentry
+
+\entry{makingaddress}{article}{}
+  \field{title}{What is the relation between the bitcoin address and the
+  corresponding private key?}
+  \verb{url}
+  \verb https://bitcoin.stackexchange.com/questions/21292/what-is-the-relation-
+  \verb between-the-bitcoin-address-and-the-corresponding-private-k
+  \endverb
+  \field{journaltitle}{Bitcoin Stack Exchange}
+  \field{year}{2014-1-29}
+\endentry
+
+\entry{160address}{article}{}
+  \field{title}{ELI5: why does bitcoin have $2^{160}$ possible addresses but
+  many more ($2^{256}$) possible key pairs?}
+  \verb{url}
+  \verb https://www.reddit.com/r/Bitcoin/comments/2mh4be/eli5_why_does_bitcoin_
+  \verb have_2160_possible/
+  \endverb
+  \field{journaltitle}{Reddit.com}
+  \field{year}{2015}
+\endentry
+
+\entry{bip13}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Andresen}{A.}%
+     {Gavin}{G.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{AG1}
+  \strng{fullhash}{AG1}
+  \field{title}{Address Format for pay-to-script-hash}
+  \verb{url}
+  \verb https://github.com/bitcoin/bips/blob/master/bip-0013.mediawiki
+  \endverb
+  \field{journaltitle}{Bitcoin Improvement Proposals}
+  \field{day}{18}
+  \field{month}{10}
+  \field{year}{2011}
+\endentry
+
+\entry{p2sh}{article}{}
+  \field{title}{Pay to script hash}
+  \verb{url}
+  \verb https://en.bitcoin.it/wiki/Pay_to_script_hash
+  \endverb
+  \field{journaltitle}{Bitcoin Wiki}
+  \field{year}{2017}
+\endentry
+
+\entry{bip173}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Wuille}{W.}%
+     {Pieter}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Maxwell}{M.}%
+     {Greg}{G.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{WPMG1}
+  \strng{fullhash}{WPMG1}
+  \field{title}{Base32 address format for native v0-16 witness outputs}
+  \verb{url}
+  \verb https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki
+  \endverb
+  \field{journaltitle}{Bitcoin Improvement Proposals}
+  \field{day}{20}
+  \field{month}{03}
+  \field{year}{2017}
 \endentry
 
 \entry{attacks}{article}{}

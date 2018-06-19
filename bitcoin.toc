@@ -40,29 +40,29 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2}Come e dove si conserva}{16}{subsection.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.1}Indirizzi}{16}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.1}Keys}{16}{subsubsection.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{P2PKH}{17}{section*.17}
+\contentsline {paragraph}{Public key}{17}{section*.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{P2SH SegWit}{17}{section*.18}
+\contentsline {paragraph}{Private key}{17}{section*.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{bech32}{17}{section*.19}
+\contentsline {paragraph}{Seeds}{17}{section*.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.2}Keys}{17}{subsubsection.3.2.2}
+\contentsline {paragraph}{Creazione dell'indirizzo}{17}{section*.20}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Public key}{17}{section*.20}
+\contentsline {subsubsection}{\numberline {3.2.2}Indirizzi}{18}{subsubsection.3.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Private key}{17}{section*.21}
+\contentsline {paragraph}{P2PKH}{18}{section*.21}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Seeds}{18}{section*.22}
+\contentsline {paragraph}{P2SH SegWit}{18}{section*.22}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Creazione dell'indirizzo}{18}{section*.23}
+\contentsline {paragraph}{bech32}{18}{section*.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.3}Portafogli}{18}{subsubsection.3.2.3}
+\contentsline {subsubsection}{\numberline {3.2.3}Portafogli}{19}{subsubsection.3.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Cold storage}{18}{section*.24}
+\contentsline {paragraph}{Cold storage}{19}{section*.24}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Hot wallets}{19}{section*.26}
+\contentsline {paragraph}{Hot wallets}{20}{section*.26}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3}I problemi del Bitcoin}{20}{subsection.3.3}
 \defcounter {refsection}{0}\relax 
@@ -70,7 +70,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.3.2}La parziale centralizzazione}{21}{subsubsection.3.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.3}Il limite dei blocchi da 1 Megabyte}{21}{subsubsection.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.3}Il limite dei blocchi da 1 Megabyte}{22}{subsubsection.3.3.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Segregated Witness}{22}{section*.28}
 \defcounter {refsection}{0}\relax 

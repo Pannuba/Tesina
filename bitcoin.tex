@@ -331,53 +331,22 @@ Per esempio, alle 22:25 del 17 giugno la somma delle tasse di tutte le transazio
 \subsection {Come e dove si conserva}
 
 
-\subsubsection {Indirizzi}
-
-
-Poiché i bitcoin non sono oggetti materiali, si dice che nella blockchain sono associati \textit{x} BTC a ciascun indirizzo.
-Esistono $2^{160}$ diversi indirizzi ( non sto a dire xk xk trpp cmplct)
-Gli indirizzi sono delle stringhe di 34 (nella stragrande maggioranza dei casi) caratteri che possono essere visti come codici IBAN se si vuole rimanere in un contesto finanziario, o anche come indirizzi email.
-Esistono diversi tipi di indirizzo.
-
-\paragraph {P2PKH}
-
-Gli indirizzi P2PKH "\textit{Pay To PubKey Hash}", comunemente chiamati indirizzi "legacy", sono il primo formato di indirizzo, utilizzato esclusivamente fino all'agosto del 2017.
-Questi indirizzi si riconoscono dal fatto che iniziano col carattere '1', per esempio \texttt{12dmWhp2dyog8GQRX3GMFqmFmV3duWUMmN}.
-
-\paragraph {P2SH SegWit}
-
-P2SH significa "Pay To Script Hash".
-Gli indirizzi P2SH sono stati ideati il 18 ottobre del 2011 con il BIP\footnote{\textit{Bitcoin Improvement Proposal}, una proposta di un miglioramento al software del Bitcoin}-13 e lanciati l'1 Aprile del 2012 \cite{bip13}\cite{p2sh}.
-Il lancio di questi indirizzi non avvenne affatto in modo liscio e "indolore": il problema principale fu che tutti i \textit{miners} che non avevano aggiornato il proprio \textit{full node} stavano includendo nei blocchi transazioni ritenute invalide dai loro software.
-La differenza sostanziale con gli indirizzi "normali" è che tramite cose tecniche utilizzano la tecnologia SegWit\footnote{Vedi punto 3.3.3} per ridurre potenzialmente la tassa di transazione.
-Il sistema P2SH richiede però la presenza di uno script che aumenta lievemente il peso della transazione, che non è presente nell'ultimo tipo di indirizzo.
-
-\paragraph {bech32}
-
-Gli indirizzi Bitcoin \textit{bech32} sono stati introdotti il 20 marzo 2017 con il BIP 173 \cite{bip173}.
-Gli indirizzi bech32 implementano SegWit nativamente, e di conseguenza sono quelli con le dimensioni di transazione più inferiori.
-Questo tipo di indirizzo, essendo sotto un punto di vista tecnico molto diverso dagli indirizzi tradizionali (che cominciano con 1 e 3), non è supportato da una moltitudine di siti di compravendita e da portafogli che non riconoscono il \texttt{bc1q} presente all'inizio di tutti questi indirizzi, ma sempre più piattaforme e app si stanno aggiornando per permettere di inviare e ricevere dagli indirizzi bech32.
-
-
 \subsubsection {Keys}
 
 
-Ogni indirizzo Bitcoin è composto due chiavi: una \textit{public key} e una \textit{private key}.
+Ogni indirizzo\footnote{Descritti approfonditamente al punto 3.2.2} Bitcoin è composto due chiavi: una \textit{public key} e una \textit{private key}.
 
 
 \paragraph {Public key}
 
-Da non confondere con l'indirizzo in sé, la chiave pubblica è una forma diversa dell'indirizzo.
-L'indirizzo è la chiave pubblica \textit{hashata}, per questo è di dimensioni più corte. (impreciso, sistemo).
-%Every public key is 256 bits long — sorry, this is mathematical stuff — and the final hash (your wallet address) is 160 bits long.
-%The public key is used to ensure you are the owner of an address that can receive funds.
-%The public key is also mathematically derived from your private key, but using reverse mathematics to derive the private key would take the world’s most powerful %supercomputer many trillion years to crack.
+La \textit{public key}\footnote{In italiano "chiave pubblica"}, è la chiave dalla quale si può ricavare l'indirizzo mediante un processo crittografico chiamato \textit{hashing}.
+Similmente alle \textit{hash}\footnote{Vedi punto 2.2, paragrafo "Le hash"}, esistono poco meno\footnote{"Poco meno" perché esse devono rispettare i parametri posti dall'algoritmo ECDSA, di cui non parlerò per non andare fuori tema} di $2^{256}$ chiavi pubbliche.
+
 
 \paragraph {Private key}
 
-La \textit{private key} (in italiano "chiave privata") è un codice che consente a chiunque di avere accesso ai Bitcoin conservati nell'indirizzo.
-Come le \textit{hash} viste in precendenza, le chiavi private sono numeri di 256 \textit{bit}, che nel sistema numerico esadecimale sono codici di 64 caratteri tra numeri e lettere.
-Come le \textit{hash}, esistono poco meno\footnote{"Poco meno" perché esse devono rispettare i parametri dell'algoritmo ECDSA, di cui non parlerò per non andare fuori tema} di $2^{256}$ chiavi private.
+La \textit{private key}\footnote{In italiano "chiave privata"} è un codice che consente a chiunque di avere accesso ai Bitcoin conservati nell'indirizzo.
+Come le chiavi pubbliche, esistono poco meno di $2^{256}$ chiavi private.
 È paragonabile ad una password che dà accesso ad account di qualunque tipo, l'unica differenza è che non è modificabile.
 
 \paragraph {Seeds}
@@ -402,11 +371,44 @@ Come abbiamo visto nella blockchain tutte le transazioni sono visibili da chiunq
 
 \paragraph {Creazione dell'indirizzo}
 
-Le chiavi private sono il punto di partenza per la creazione di un nuovo indirizzo: tramite
-quando creiamo un indirizzo a partire da una chiave privata ricavata casualmente, questo è in realtà già esistente nella blockchain.
-Tutti gli indirizzi, \textit{public} e \textit{private} keys sono già esistenti nella blockchain a prescindere, e creando un indirizzo non stiamo facendo altro che appropriarcene di uno a caso.
-È naturale porsi la domanda: "Ma se qualcuno "ottenesse" la mia chiave privata mi ruberebbe tutti i soldi! Non è rischioso?".
-Ebbene, come ho scritto prima, esistono $2^{256}$ chiavi, un numero simile a 1/3 degli atomi in tutto l'universo. La probabilità è praticamente nulla.
+Le chiavi private sono il punto di partenza per la creazione di un nuovo indirizzo: tramite complicati processi matematici è possibile ricavare la chiave pubblica da quella privata, dalla quale a sua volta si può ottenere l'indirizzo \cite{makingaddress}.
+Ciascun indirizzo creato a partire da una chiave privata ricavata casualmente, però, è in realtà già esistente nella blockchain.
+Tutti gli indirizzi e le chiavi pubbliche e private sono già esistenti nella blockchain a prescindere, e creando un indirizzo non stiamo facendo altro che appropriarcene di uno a caso.
+%È naturale porsi la domanda: "Ma se qualcuno, creando il proprio indirizzo, "ottenesse" la mia chiave privata sarebbe in grado di rubarmi tutti i soldi! Non è rischioso?".
+%Ebbene, come ho scritto prima, esistono $2^{256}$ chiavi, un numero talmente grande che è inconcepibile dal cervello umano. La probabilità è praticamente nulla.
+
+
+\subsubsection {Indirizzi}
+
+
+Poiché i bitcoin non sono oggetti materiali, si dice che nella blockchain sono associati \textit{x} BTC a ciascun indirizzo.
+Gli indirizzi sono numeri a 160 \textit{bit}, di conseguenza, effettuando un calcolo simile a quello usato per calcolare le \textit{hash} totali\footnote{Vedi punto 2.2, paragrafo "Le hash"}, esistono $2^{160}$ ($1,462 \times 10^{48}$) diversi indirizzi.
+A differenza delle chiavi pubbliche e private, che sono quasi tutti i numeri a 256 \textit{bit}, è stato scelto che gli indirizzi fossero numeri a 160 \textit{bit} per motivi pratici, ovvero quello di rendere gli indirizzi più corti, e per motivi di sicurezza, perché l'algoritmo utilizzato per "accorciarli" difende il Bitcoin da certi attacchi hacker \cite{160address}.
+Questo, però, porta inevitabilmente a dei conflitti, essendoci più chiavi private che indirizzi.
+Infatti, ad ogni indirizzo corrispondono $2^{96}$ chiavi private.
+Nonostante ciò, è comunque impossibile che qualcuno trovi solo \emph{una} di queste $2^{96}$ chiavi, considerando la grandezza dei numeri.
+Gli indirizzi sono delle stringhe di 34 (nella stragrande maggioranza dei casi) caratteri che possono essere visti come codici IBAN se si vuole rimanere in un contesto finanziario, o anche come indirizzi email.
+Esistono diversi tipi di indirizzo.
+
+\paragraph {P2PKH}
+
+Gli indirizzi P2PKH "\textit{Pay To PubKey Hash}", comunemente chiamati indirizzi "legacy", sono il primo formato di indirizzo, utilizzato esclusivamente fino all'agosto del 2017.
+Questi indirizzi si riconoscono dal fatto che iniziano col carattere '1', per esempio \texttt{12dmWhp2dyog8GQRX3GMFqmFmV3duWUMmN}.
+
+\paragraph {P2SH SegWit}
+
+P2SH significa "Pay To Script Hash".
+Gli indirizzi P2SH sono stati ideati il 18 ottobre del 2011 con il BIP\footnote{\textit{Bitcoin Improvement Proposal}, una proposta di un miglioramento al software del Bitcoin}-13 e lanciati l'1 Aprile del 2012 \cite{bip13}\cite{p2sh}.
+Il lancio di questi indirizzi non avvenne affatto in modo liscio e "indolore": il problema principale fu che tutti i \textit{miners} che non avevano aggiornato il proprio \textit{full node} stavano includendo nei blocchi transazioni ritenute invalide dai loro software.
+La differenza sostanziale con gli indirizzi "normali" è che tramite cose tecniche utilizzano la tecnologia SegWit\footnote{Vedi punto 3.3.3} per ridurre potenzialmente la tassa di transazione.
+Il sistema P2SH richiede però la presenza di uno script che aumenta lievemente il peso della transazione, che non è presente nell'ultimo tipo di indirizzo.
+
+\paragraph {bech32}
+
+Gli indirizzi Bitcoin \textit{bech32} sono stati introdotti il 20 marzo 2017 con il BIP 173 \cite{bip173}.
+Gli indirizzi bech32 implementano SegWit nativamente, e di conseguenza sono quelli con le dimensioni di transazione più inferiori.
+Questo tipo di indirizzo, essendo sotto un punto di vista tecnico molto diverso dagli indirizzi tradizionali (che cominciano con 1 e 3), non è supportato da una moltitudine di siti di compravendita e da portafogli che non riconoscono il \texttt{bc1q} presente all'inizio di tutti questi indirizzi, ma sempre più piattaforme e app si stanno aggiornando per permettere di inviare e ricevere dagli indirizzi bech32.
+
 
 \subsubsection {Portafogli}
 
@@ -527,12 +529,12 @@ Di conseguenza, SegWit aiuta indirettamente a pagare una tassa di transazione in
 
 \paragraph {Lightning Network}
 
-Il \textit{Lightning Network} è un'infrastruttura esterna alla blockchain che rende le transazioni notevolmente più veloci e meno costose.
+Il \textit{Lightning Network} è un'infrastruttura esterna alla blockchain lanciata il 15 marzo 2018 \cite{lightninglaunch} che rende le transazioni notevolmente più veloci e meno costose.
 "Esterna alla blockchain", nel senso che le transazioni che utilizzano il \textit{lightning network} non entrano nella \textit{mempool} per poi essere incluse nei blocchi dai \textit{miners}, bensì i fondi vengono direttamente trasferiti dall'una all'altra persona.
 Per effettuare un pagamento, il mittente e il ricevente aprono un canale (\textit{channel}) di pagamento che svolge una funzione simile a quella di una casella di posta.
 La transazione passa attraverso i \textit{nodes}\footnote{Da non confondere con i \textit{nodes} "tradizionali", questi sono specifici del \textit{lightning network}} che la verificano, per poi arrivare al ricevente \cite{lnhow}.
 Le transazioni del \textit{lightning network} prevedono sempre il pagamento di una piccola quota ai \textit{nodes} per incentivare le persone ad operarne, perché una maggiore quantità di \textit{nodes} attivi rendono la rete \textit{Lightning} più efficiente e veloce \cite{lnfees}.
-Il \textit{lightning network} è stato lanciato il 15 marzo 2018 \cite{lightninglaunch} ed è ancora in fase di sviluppo, per cui ci vorrà del tempo per far sì che questa tecnologia diventi completamente stabile e facilmente utilizzabile.
+%Il \textit{lightning network} è stato lanciato il 15 marzo 2018 \cite{lightninglaunch} ed è ancora in fase di sviluppo, per cui ci vorrà del tempo per far sì che questa tecnologia diventi completamente stabile e facilmente utilizzabile.
 
 
 \newpage
