@@ -46,6 +46,7 @@
   }
   \strng{namehash}{WP1}
   \strng{fullhash}{WP1}
+  \field{title}{What are orphaned and stale blocks?}
   \verb{url}
   \verb https://bitcoin.stackexchange.com/questions/5859/what-are-orphaned-and-
   \verb stale-blocks
@@ -213,6 +214,15 @@
 \endentry
 
 \entry{makingaddress}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {S.}{S.}%
+     {Tim}{T.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{ST1}
+  \strng{fullhash}{ST1}
   \field{title}{What is the relation between the bitcoin address and the
   corresponding private key?}
   \verb{url}
@@ -288,10 +298,10 @@
   \field{year}{2017}
 \endentry
 
-\entry{attacks}{article}{}
-  \field{title}{Irreversible Transactions}
+\entry{cold}{article}{}
+  \field{title}{Pay to script hash}
   \verb{url}
-  \verb https://en.bitcoin.it/wiki/Irreversible_Transactions
+  \verb https://en.bitcoin.it/wiki/Cold_storage
   \endverb
   \field{journaltitle}{Bitcoin Wiki}
   \field{year}{2017}
@@ -315,6 +325,15 @@
   \field{day}{02}
   \field{month}{04}
   \field{year}{2018}
+\endentry
+
+\entry{attacks}{article}{}
+  \field{title}{Irreversible Transactions}
+  \verb{url}
+  \verb https://en.bitcoin.it/wiki/Irreversible_Transactions
+  \endverb
+  \field{journaltitle}{Bitcoin Wiki}
+  \field{year}{2017}
 \endentry
 
 \entry{centralization}{article}{}
@@ -386,6 +405,26 @@
   \field{year}{2015}
 \endentry
 
+\entry{lightninglaunch}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Frumkin}{F.}%
+     {Daniel}{D.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{FD1}
+  \strng{fullhash}{FD1}
+  \field{title}{The Economics of Lightning Network Fees}
+  \verb{url}
+  \verb https://www.investinblockchain.com/lightning-network-beta-release/
+  \endverb
+  \field{journaltitle}{Invest In Blockchain}
+  \field{day}{22}
+  \field{month}{03}
+  \field{year}{2018}
+\endentry
+
 \entry{lnhow}{article}{}
   \name{author}{1}{}{%
     {{}%
@@ -428,23 +467,71 @@
   \field{year}{2018}
 \endentry
 
-\entry{lightninglaunch}{article}{}
+\entry{ethorigins}{article}{}
+  \field{title}{Who Created Ethereum?}
+  \verb{url}
+  \verb https://www.coindesk.com/information/who-created-ethereum/
+  \endverb
+  \field{journaltitle}{CoinDesk}
+  \field{year}{2014}
+\endentry
+
+\entry{ethblock1}{article}{}
   \name{author}{1}{}{%
     {{}%
-     {Frumkin}{F.}%
-     {Daniel}{D.}%
+     {Buterin}{B.}%
+     {Vitalik}{V.}%
      {}{}%
      {}{}}%
   }
-  \strng{namehash}{FD1}
-  \strng{fullhash}{FD1}
-  \field{title}{The Economics of Lightning Network Fees}
+  \strng{namehash}{BV1}
+  \strng{fullhash}{BV1}
+  \field{title}{Toward a 12-second Block Time}
   \verb{url}
-  \verb https://www.investinblockchain.com/lightning-network-beta-release/
+  \verb https://blog.ethereum.org/2014/07/11/toward-a-12-second-block-time/
   \endverb
-  \field{journaltitle}{Invest In Blockchain}
-  \field{day}{22}
-  \field{month}{03}
+  \field{journaltitle}{Ethereum Blog}
+  \field{day}{11}
+  \field{month}{07}
+  \field{year}{2014}
+\endentry
+
+\entry{ethblock2}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Gerring}{G.}%
+     {Taylor}{T.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{GT1}
+  \strng{fullhash}{GT1}
+  \field{title}{Why is the average block time 17 seconds?}
+  \verb{url}
+  \verb https://ethereum.stackexchange.com/questions/58/why-is-the-average-bloc
+  \verb k-time-17-seconds
+  \endverb
+  \field{journaltitle}{Ethereum Stack Exchange}
+  \field{year}{2016-01-21}
+\endentry
+
+\entry{ethmax}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {James}{J.}%
+     {Adam}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{JA1}
+  \strng{fullhash}{JA1}
+  \field{title}{Ethereum Creator Vitalik Buterin Proposes Maximum Ether Supply}
+  \verb{url}
+  \verb https://bitcoinist.com/vitalik-buterin-proposes-maximum-ether-supply/
+  \endverb
+  \field{journaltitle}{Bitcoininst.com}
+  \field{day}{02}
+  \field{month}{04}
   \field{year}{2018}
 \endentry
 
@@ -511,10 +598,57 @@
   \field{year}{2014}
 \endentry
 
+\entry{monero}{misc}{}
+  \field{title}{About Monero}
+  \verb{url}
+  \verb https://getmonero.org/resources/about/
+  \endverb
+\endentry
+
+\entry{xmrfees}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Choa}{C.}%
+     {Yao}{Y.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{CY1}
+  \strng{fullhash}{CY1}
+  \field{title}{How much larger are Monero transactions compared to the average
+  Bitcoin transaction?}
+  \verb{url}
+  \verb https://monero.stackexchange.com/questions/211/how-much-larger-are-mone
+  \verb ro-transactions-compared-to-the-average-bitcoin-transact/
+  \endverb
+  \field{journaltitle}{Monero Stack Exchange}
+  \field{year}{2016-07-23}
+\endentry
+
 \entry{nanofaq}{misc}{}
   \verb{url}
   \verb https://nano.org/faq/
   \endverb
+\endentry
+
+\entry{nanopow}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {musback01}{m.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{m1}
+  \strng{fullhash}{m1}
+  \field{title}{How does Nano not require mining?}
+  \verb{url}
+  \verb https://www.reddit.com/r/nanocurrency/comments/830ax6/how_does_nano_not
+  \verb _require_mining/
+  \endverb
+  \field{journaltitle}{Nano subreddit}
+  \field{month}{03}
+  \field{year}{2018}
 \endentry
 
 \entry{whatsripple}{article}{}

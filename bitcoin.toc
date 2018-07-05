@@ -20,7 +20,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.2.1}Target e difficolt\IeC {\`a} di mining}{8}{subsubsection.2.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Tempo per blocco}{9}{section*.8}
+\contentsline {paragraph}{Tempo per blocco}{10}{section*.8}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.2.2}Costi del mining}{10}{subsubsection.2.2.2}
 \defcounter {refsection}{0}\relax 
@@ -134,4 +134,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {6.3.5}Roger Ver e la truffa di "Bitcoin Cash"}{36}{subsubsection.6.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.4}Il futuro delle criptovalute}{38}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.4}Il futuro delle criptovalute}{37}{subsection.6.4}

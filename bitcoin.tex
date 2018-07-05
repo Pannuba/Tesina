@@ -99,7 +99,7 @@ Il Bitcoin\footnote{Nella tesina scriverò "Bitcoin" con la 'B' maiuscola per ri
 Satoshi Nakamoto è conosciuto come l'ideatore e l'iniziale sviluppatore del Bitcoin.
 L'identità di Satoshi è una questione discussa da sempre, e si è sempre cercato di rivelare la sua identità.
 In realtà nessuno sa veramente chi sia, dove abiti, se è un singolo o un gruppo di persone. Sappiamo solo che nei primi anni del Bitcoin è stato attivo sul forum bitcointalk.org fino al 13 dicembre 2010, e che il 31 ottobre 2008 scrisse il \textit{whitepaper}\footnote{"Libro bianco", un documento redatto da un professionista esperto di una materia che offre informazioni di qualità e di interesse ad un pubblico selezionato di utenti.} del Bitcoin contenente la sua ideologia di moneta virtuale.
-Il documento è altamente tecnico e richiede un'elevata conoscenza di informatica e matematica, perciò ritengo superfluo citarne delle parti. \cite{whitepaper}
+Il documento è altamente tecnico e richiede un'elevata conoscenza di informatica e matematica, perciò ritengo superfluo citarne delle parti \cite{whitepaper}.
 
 \paragraph {Confronto con i soldi "tradizionali"}
 
@@ -122,9 +122,9 @@ Esso è:
 \section {Blockchain: cos'è e come funziona}
 
 
-La tecnologia rivoluzionaria utilizzata dal Bitcoin e da tutte le altre criptovalute è chiamata Blockchain.
+La tecnologia rivoluzionaria utilizzata dal Bitcoin e da tutte le altre criptovalute è chiamata "blockchain".
+L'aspetto decentralizzato del Bitcoin gira intorno al fatto che chiunque può scaricare la blockchain sul proprio computer e far sì che si aggiorni in tempo reale: ciò significa che finché esiste in tutto il mondo \emph{almeno} un computer con la blockchain salvata, che prende il nome di \textit{full node}, l'intera rete del Bitcoin e il registro delle transazioni rimangono autentiche e inviolate.
 Come suggerisce il nome, "blockchain" indica una catena di blocchi.
-L'aspetto decentralizzato del Bitcoin gira intorno al fatto che chiunque può scaricare la blockchain e far sì che si aggiorni in tempo reale: ciò significa che finché esiste in tutto il mondo \emph{almeno} un computer con la blockchain salvata, che prende il nome di \textit{full node}, l'intera rete del Bitcoin e il registro delle transazioni rimangono autentiche e inviolate.
 
 \vspace {0.5cm}
 \begin{figure}[htb!]
@@ -136,9 +136,9 @@ L'aspetto decentralizzato del Bitcoin gira intorno al fatto che chiunque può sc
 
 \subsection {Cosa sono i blocchi e che compito svolgono}
 
-Ciascun blocco contiene informazioni sulle transazioni di bitcoin che sono state effettuate di recente.
-Il blocco può essere visto come un contenitore, un hard disk grande 1MB che contiene un determinato numero di transazioni, che hanno un determinato peso espresso per comodità in kilobyte
-Tutte le transazioni di Bitcoin sono permanentemente, irreversibilmente\footnote{Nella maggior parte dei casi, vedi punto 3.3.1} memorizzate nella Blockchain.
+Ciascun blocco contiene informazioni sulle transazioni di bitcoin effettuate.
+Il blocco può essere visto come un contenitore, un \textit{hard disk} grande 1MB che contiene un determinato numero di transazioni, che hanno un determinato peso espresso per comodità in kilobyte.
+Tutte le transazioni di Bitcoin sono permanentemente, irreversibilmente\footnote{Nella stragrande maggioranza dei casi, vedi punto 3.3.1} memorizzate nella blockchain.
 Su un qualunque sito avente la funzione di "block explorer" posso cercare informazioni su ciascun indirizzo Bitcoin (per ora pensiamolo come se fosse un codice IBAN): posso vedere quanti bitcoin quell'indirizzo possiede, da quali indirizzi ha ricevuto quanti bitcoin, e a chi ne ha mandati.
 Sotto un punto di vista pratico, la blockchain del Bitcoin è un file di dimensioni oggi pari a circa 170 Gigabyte.
 La dimensione è così elevata perché in quel file sono contenute le informazioni di oltre 520.000 blocchi scoperti a partire dal primo, chiamato \textit{genesis block}, trovato il 3 gennaio 2009.
@@ -151,9 +151,9 @@ La dimensione è così elevata perché in quel file sono contenute le informazio
 Sebbene non sia tecnicamente corretto, il modo più semplice per spiegare il concetto di \textit{mining} è quello di paragonare i bitcoin a una montagna nella cui roccia sono contenuti minerali preziosi.
 I bitcoin sono, per esempio, l'oro nella roccia.
 Per trovare l'oro bisogna scavare nella roccia della montagna utilizzando speciali apparecchiature quali ruspe, trapani, trivelle.
-I blocchi, per poter essere "scoperti" vengono "minati" dai cosiddetti \textit{miner} ASIC \footnote{\textit{Application specific integrated circuit}, "circuito integrato con una specifica applicazione"}, dei computer specializzati a risolvere un certo tipo di algoritmo che nel \textit{whitepaper} Satoshi definisce come \textit{proof of work}\footnote{Abbreviato "PoW", tradotto "prova di lavoro" o "prova di funzionamento"}: la PoW è l'algoritmo usato dal Bitcoin per confermare le transazioni e avanzare al blocco successivo della blockchain.
+I blocchi, per poter essere "scoperti" vengono "minati" dai cosiddetti \textit{miner} ASIC \footnote{\textit{Application specific integrated circuit}, "circuito integrato con una specifica applicazione"}, dei computer specializzati a risolvere un certo tipo di algoritmo che nel \textit{whitepaper} Satoshi definisce come \textit{Proof of Work}\footnote{Abbreviato "PoW", tradotto "prova di lavoro" o "prova di funzionamento"}: la PoW è l'algoritmo usato dal Bitcoin per confermare le transazioni e avanzare al blocco successivo della blockchain.
 Esso si basa sulla risoluzione di un problema matematico difficile (descritto nei paragrafi successivi) compiuta dai \textit{miners} per poter ottenere una soluzione facilmente verificabile dai \textit{full nodes} in tutto il mondo.
-Lo scopo della \textit{proof of work} e il motivo per cui è presente un difficile problema matematico da risolvere è quello di impedire la generazione illimitata di blocchi e di conseguenza di abusare della blockchain .
+Lo scopo della \textit{proof of work} e il motivo per cui è presente un difficile problema matematico da risolvere è quello di impedire la generazione illimitata di blocchi e di conseguenza di abusare della blockchain.
 
 \paragraph {Le hash}
 
@@ -162,7 +162,8 @@ Il Bitcoin usa l'algoritmo SHA-256, quindi le \textit{hash} indovinate dai \text
 Questo perché come suggerisce il nome, 256 indica il numero di \textit{bits} che costituiscono la stringa.
 Il \textit{bit} è la più piccola unità di misura per quanto riguarda la dimensione di file nel campo dell'informatica, e 8 bit corrispondono a 1 byte.
 Nel sistema numerico esadecimale un carattere "pesa" 8 bit, quindi $256 : 8 = 64$.
-Una \textit{hash} facente parte dell'algoritmo SHA-256 non può essere una qualunque combinazione di 64 numeri e lettere, ma deve rispettare determinati parametri per essere considerata tale, di cui non scriverò per evitare di complicare ulteriormente la situazione.
+Le \textit{hash}, in sostanza, sono numeri talmente grandi che per comodità sono scritti seguendo il sistema esadecimale (numeri e lettere) anziché quello decimale (solo numeri).
+Un'\textit{hash} facente parte dell'algoritmo SHA-256 non può essere una qualunque combinazione di 64 numeri e lettere, ma deve rispettare determinati parametri per essere considerata tale, di cui non scriverò per evitare di complicare ulteriormente la situazione.
 In succinto, per trovare il numero di \textit{hash} totali che si possono ottenere bisogna effettuare il  calcolo $2^{256}$, che corrisponde a circa $1,158 \times 10^{77}$ possibili \textit{hash} da indovinare.
 Le \textit{hash} che portano alla scoperta di uno specifico blocco, però, possono essere più di una.
 
@@ -170,11 +171,10 @@ Le \textit{hash} che portano alla scoperta di uno specifico blocco, però, posso
 
 Per trovare un blocco è necessario che i \textit{miners} trovino un'\textit{hash} che sia inferiore al cosiddetto \textit{target}. Il \textit{target} è un'\textit{hash} che fa da "confine" sotto al quale tutte le \textit{hash} sono accettabili.
 Tutte le \textit{hash} trovate dai \textit{miners} che hanno valore minore del \textit{target} sono valide, e portano alla scoperta di un nuovo blocco.
-Con "difficoltà" si intende, ovviamente, quanto è difficile trovare un blocco, e il suo valore è collegato a quello del \textit{target}.
+Con "difficoltà" si intende quanto è difficile trovare un blocco, e il suo valore è collegato a quello del \textit{target}.
 Più si abbassa il \textit{target}, più si alza la difficoltà, perché abbassandosi il \textit{target} le \textit{hash} valide diventano meno, quindi la probabilità che i \textit{miners} ne trovino una valida si riduce.
 Ma perché dovrebbe abbassarsi il \textit{target}?
-
-Man mano che sempre più \textit{miners} cominciano a lavorare, elevando l'\textit{hashing power} complessivo del network del Bitcoin, se non ci fossero cambi di \textit{target} i blocchi verrebbero trovati con frequenza sempre più elevata.
+Man mano che sempre più \textit{miners} cominciano a lavorare, elevando l'\textit{hashing power}\footnote{"potenza di \textit{hashing}", la somma del lavoro dei \textit{miners} in tutto il mondo espressa in H/s (\textit{hash} al secondo)} complessivo del network del Bitcoin, se non ci fossero cambi di \textit{target} i blocchi verrebbero trovati con frequenza sempre più elevata.
 
 \vspace {0.5cm}
 \begin{figure}[htb!]
@@ -186,7 +186,7 @@ Man mano che sempre più \textit{miners} cominciano a lavorare, elevando l'\text
 \noindent
 %
 L'innalzamento o talvolta anche l'abbassamento della difficoltà avviene ogni 2016 blocchi (circa 2 settimane), quando il network controlla la frequenza con cui questi ultimi blocchi sono stati trovati.
-Modificando la difficoltà in modo proporzionale all'\textit{hashing power} si fa in modo che in media i blocchi continuino ad essere trovati ogni \textasciitilde 10 minuti. Perché 10 minuti?
+Modificando la difficoltà in modo proporzionale all'\textit{hashing power} si fa in modo che in media i blocchi continuino ad essere trovati ogni 10 minuti. Perché 10 minuti?
 
 \paragraph {Tempo per blocco}
 
@@ -195,8 +195,8 @@ Il motivo della scelta è quello di aver trovato un compromesso: sacrificare con
 Nell'intervallo di 10 minuti tutti i \textit{full nodes} hanno tempo sufficiente per accettare e validare l'ultimo blocco trovato e far sì che si propaghi in tutta la rete, impedendo eventuali conflitti su qual è la blockchain autentica.
 Quando non avviene ciò, può capitare che fra due blocchi che vengono trovati in istanti vicini solo uno dei due venga accettato dalla maggioranza dei \textit{full nodes}.
 Il blocco che viene abbandonato è definito \textit{stale block}\footnote{Blocco in stallo}, ovvero un blocco inizialmente considerato valido, ma poi abbandonato perché l'altro blocco trovato è stato accettato più velocemente, dando origine alla blockchain più lunga tra le due, quindi quella più reputabile.
-Per questo con i blocchi di 10 minuti si ha un \textit{mining} più efficiente, perché si riduce la quantità di energia elettrica sprecata per far funzionare dei \textit{miners} che trovano un blocco orfano.
-Quando viene trovato un blocco, tutti i \textit{miners} devono interrompere la ricerca del blocco ormai trovato e cominciare a lavorare su quello successivo.
+Per questo con i blocchi di 10 minuti si ha un \textit{mining} più efficiente, perché si riduce la quantità di energia elettrica sprecata per far funzionare dei \textit{miners} che trovano un blocco in stallo.
+Di conseguenza, quando viene trovato un blocco tutti i \textit{miners} devono interrompere la ricerca del blocco ormai trovato e cominciare a lavorare su quello successivo.
 Se questi non si fermano, troveranno eventualmente un blocco che è gia stato trovato, e che quindi non può essere "attaccato" alla blockchain.
 Un blocco orfano, \textit{orphan block}, invece, è un blocco minato da un \textit{miner} che non può essere accettato nella blockchain perché il \textit{node} del \textit{miner} non si è ancora aggiornato alla blockchain più recente che include il blocco precedente a quello appena trovato.
 Non avendo un "genitore" (\textit{parent}), il blocco trovato dal \textit{miner} non viene propagato agli altri \textit{full nodes} perché non è "collegato" ad altri blocchi.
@@ -211,16 +211,12 @@ A partire dalla versione 0.10 del software del Bitcoin, però, non possono più 
 \vspace {0.2cm}
 \noindent
 %
-Il tempo di 10 minuti di certo riduce la probabilità che vengano creati blocchi in stallo; tuttavia è sempre possibile che nascano.
+Il tempo di 10 minuti riduce notevolmente la probabilità che vengano creati blocchi in stallo, tuttavia è sempre possibile che ne nascano.
 
 \subsubsection {Costi del mining}
 
 I \textit{miner} di Bitcoin che si usano oggi lavorano a velocità comprese tra i 10 e i 14 TH/s\footnote{Tera-hash al secondo} in base al loro consumo energetico, ovvero a oltre dieci trilioni di \textit{hash} trovate in un secondo.
 Questi apparecchi sono molto costosi (quelli di ultima generazione superano i \euro{700} per unità) e utilizzano un'elevata quantità di energia elettrica per funzionare.
-Perchè, allora, c'è gente che spende tutti questi soldi per fare il lavoro di \textit{mining}?
-Ebbene, quando si trova un blocco, oggi il \textit{miner} riceve una quantità pari a 12.5 BTC, pari a circa \euro{90.000} secondo il prezzo attuale.
-Quasi mai, però, la \textit{block reward}\footnote{Ricompensa del blocco} finisce a una singola persona: indovinare l'\textit{hash} che trova il blocco è estremamente difficile!
-Per questo esistono le \textit{pool} di \textit{mining}.
 
 \paragraph {L'uso di elettricità del mining}
 
@@ -238,13 +234,11 @@ Questo è quanto vale per \emph{un} singolo ASIC che produce solo 0,00082 BTC al
 L'\textit{hashing power} dell'intero network del Bitcoin, la somma del lavoro dei \textit{miners} in tutto il mondo espressa in H/s, è di oltre 30.000 TH/s, e consuma un a quantità di elettricità pari a 60 TWh all'anno, ovvero $2,16 \times 10^{77}$ Joule consumati in un anno.
 Questo consumo di elettricità è maggiore dell'utilizzo di elettricità annuale di Algeria (60 TWh/anno), Colombia (52 TWh/anno), Portogallo (47 TWh/s) e Nuova Zelanda (39 TWh/anno) \cite{worldenergy}.
 
-
 \subsubsection {Profitti del mining}
 
-
-Perchè, allora, c'è gente che spende tutti questi soldi per fare il lavoro di \textit{mining}? (lo metto prima o dopo inizio sezione?)
+Perchè, allora, c'è gente che decide di investire una notevole quantità di soldi per compiere il lavoro di \textit{mining}?
 Ebbene, quando si trova un blocco, oggi il \textit{miner} riceve una quantità pari a 12.5 BTC, pari a circa \euro{90.000} secondo il prezzo attuale.
-Quasi mai, però, la \textit{block reward} finisce a una singola persona: indovinare l'\textit{hash} che trova il blocco è estremamente difficile!
+Quasi mai, però, la \textit{block reward}\footnote{"ricompensa del blocco", la quantità di bitcoin che riceve il \textit{miner}} finisce a una singola persona: indovinare l'\textit{hash} che trova il blocco è estremamente difficile!
 Per questo esistono le \textit{pool} di \textit{mining}.
 
 \paragraph {Mining pools}
@@ -264,12 +258,12 @@ Una volta trovato il blocco, la ricompensa di bitcoin si spartisce fra tutti i \
 
 \paragraph {Tassa di transazione}
 
-La scoperta dei blocchi non è l'unico metodo con cui coloro che praticano \textit{mining} guadagnano Bitcoin.
+La scoperta dei blocchi non è l'unico metodo con cui i \textit{miners} guadagnano Bitcoin.
 Ogni transazione di Bitcoin prevede il pagamento di una piccola quota, solitamente compresa tra \euro{0.01} e \euro{1}.
 Questa quota, chiamata \textit{miner fee} serve per incoraggiare i \textit{miner} a selezionare la nostra transazione da includere nel blocco in fase di ricerca.
 Questa tassa è espressa in sat/b, satoshi\footnote{Un satoshi è l'unità di misura più piccola del bitcoin, e corrisponde a $1 \times 10^{-8}$ BTC} per byte.
 Una tassa più elevata riduce il tempo di conferma della transazione, perché preferita dai \textit{miner}. Al contrario, una transazione effettuata con una tassa inferiore alla media impiega più tempo ad essere inclusa in un blocco e quindi ad essere processata, perché i \textit{miner} guadagnano più BTC dalle transazioni più costose.
-Come ho spiegato ciascuna transazione pesa tot kilobyte, quindi, conoscendo il peso in kb della transazione e avendo stabilito il valore della tassa in sat/b\footnote{Spiegherò come si viene a conoscenza di queste due nel punto 3.2.3, paragrafo "Hot wallets"} per scoprire quanto paghiamo effettivamente possiamo ricavare la quantità di bitcoin dalla proporzione.
+Come ho spiegato ciascuna transazione pesa \textit{x} kilobyte, quindi, conoscendo il peso in kb della transazione e avendo stabilito il valore della tassa in sat/b\footnote{Spiegherò come si viene a conoscenza di queste due nel punto 3.2.3, paragrafo "Hot wallets"} per scoprire quanto paghiamo effettivamente possiamo ricavare la quantità di bitcoin dalla proporzione.
 
 $$ nSatoshi : 1 byte = tassa : pesoTransazione $$
 %
@@ -333,15 +327,12 @@ Per esempio, alle 22:25 del 17 giugno la somma delle tasse di tutte le transazio
 
 \subsubsection {Keys}
 
-
 Ogni indirizzo\footnote{Descritti approfonditamente al punto 3.2.2} Bitcoin è composto due chiavi: una \textit{public key} e una \textit{private key}.
-
 
 \paragraph {Public key}
 
 La \textit{public key}\footnote{In italiano "chiave pubblica"}, è la chiave dalla quale si può ricavare l'indirizzo mediante un processo crittografico chiamato \textit{hashing}.
 Similmente alle \textit{hash}\footnote{Vedi punto 2.2, paragrafo "Le hash"}, esistono poco meno\footnote{"Poco meno" perché esse devono rispettare i parametri posti dall'algoritmo ECDSA, di cui non parlerò per non andare fuori tema} di $2^{256}$ chiavi pubbliche.
-
 
 \paragraph {Private key}
 
@@ -352,13 +343,13 @@ Come le chiavi pubbliche, esistono poco meno di $2^{256}$ chiavi private.
 \paragraph {Seeds}
 
 Un \textit{seed} è un codice che svolge una funzione simile a quella della chiave privata: se inserito nel software di un portafoglio ripristina tutti i bitcoin associati ad esso.
-I \textit{seeds} sono stati introdotti nel 2 febbraio 2012 con il BIP 32 \cite{bip32}.
+I \textit{seeds} sono stati introdotti nel 2 febbraio 2012 con il BIP\footnote{\textit{Bitcoin Improvement Proposal}, una proposta di un miglioramento al software del Bitcoin} 32 \cite{bip32}.
 Questi primi \textit{seed} hanno un aspetto simile a quello delle chiavi private, con lunghezza variabile.
 La differenza con le chiavi private è che un \textit{seed} "genera" una o più chiavi private, dalle quali si possono ricavare le chiavi pubbliche e quindi gli indirizzi stessi.
 Di conseguenza, ad un \textit{seed} possono corrispondere un numero indefinito di indirizzi, ovvero di coppie di chiave pubblica e privata.
 Realisticamente, quasi tutti i \textit{seed} usati nei portafogli software comprendono da 1 a 20 indirizzi.
 Esistono diversi tipi di \textit{seed}, ma il formato più famoso è quello della cosiddetta \textit{mnemonic phrase}, una frase di 12 - 20 parole scelte a caso da un elenco di 2048 parole in lingua inglese, introdotta nel 10 settembre 2013 con il BIP 39 \cite{bip39}.
-Il vantaggio dei \textit{seed} rispetto alle singole chiavi private è il fatto che sono più facili da ricordare. Un seed ha un aspetto simile al seguente:
+Il vantaggio dei \textit{seed} rispetto alle singole chiavi private è il fatto che sono più facili da ricordare. Un \textit{seed} ha un aspetto simile al seguente:
 
 \begin{quote}
 
@@ -383,7 +374,7 @@ Tutti gli indirizzi e le chiavi pubbliche e private sono già esistenti nella bl
 
 Poiché i bitcoin non sono oggetti materiali, si dice che nella blockchain sono associati \textit{x} BTC a ciascun indirizzo.
 Gli indirizzi sono numeri a 160 \textit{bit}, di conseguenza, effettuando un calcolo simile a quello usato per calcolare le \textit{hash} totali\footnote{Vedi punto 2.2, paragrafo "Le hash"}, esistono $2^{160}$ ($1,462 \times 10^{48}$) diversi indirizzi.
-A differenza delle chiavi pubbliche e private, che sono quasi tutti i numeri a 256 \textit{bit}, è stato scelto che gli indirizzi fossero numeri a 160 \textit{bit} per motivi pratici, ovvero quello di rendere gli indirizzi più corti, e per motivi di sicurezza, perché l'algoritmo utilizzato per "accorciarli" difende il Bitcoin da certi attacchi hacker \cite{160address}.
+A differenza delle chiavi pubbliche e private, che sono quasi tutti i numeri a 256 \textit{bit}, è stato scelto che gli indirizzi fossero numeri a 160 \textit{bit} per motivi pratici, ovvero quello di rendere gli indirizzi più corti, e per motivi di sicurezza, perché l'algoritmo utilizzato per "accorciarli" difende il Bitcoin da certi attacchi informatici \cite{160address}.
 Questo, però, porta inevitabilmente a dei conflitti, essendoci più chiavi private che indirizzi.
 Infatti, ad ogni indirizzo corrispondono $2^{96}$ chiavi private.
 Nonostante ciò, è comunque impossibile che qualcuno trovi solo \emph{una} di queste $2^{96}$ chiavi, considerando la grandezza dei numeri.
@@ -397,8 +388,8 @@ Questi indirizzi si riconoscono dal fatto che iniziano col carattere '1', per es
 
 \paragraph {P2SH SegWit}
 
-P2SH significa "Pay To Script Hash".
-Gli indirizzi P2SH sono stati ideati il 18 ottobre del 2011 con il BIP\footnote{\textit{Bitcoin Improvement Proposal}, una proposta di un miglioramento al software del Bitcoin}-13 e lanciati l'1 Aprile del 2012 \cite{bip13}\cite{p2sh}.
+P2SH significa "\textit{Pay To Script Hash}".
+Gli indirizzi P2SH sono stati ideati il 18 ottobre del 2011 con il BIP 13 e lanciati l'1 Aprile del 2012 \cite{bip13}\cite{p2sh}.
 Il lancio di questi indirizzi non avvenne affatto in modo liscio e "indolore": il problema principale fu che tutti i \textit{miners} che non avevano aggiornato il proprio \textit{full node} stavano includendo nei blocchi transazioni ritenute invalide dai loro software.
 La differenza sostanziale con gli indirizzi "normali" è che tramite cose tecniche utilizzano la tecnologia SegWit\footnote{Vedi punto 3.3.3} per ridurre potenzialmente la tassa di transazione.
 Il sistema P2SH richiede però la presenza di uno script che aumenta lievemente il peso della transazione, che non è presente nell'ultimo tipo di indirizzo.
@@ -413,7 +404,7 @@ Questo tipo di indirizzo, essendo sotto un punto di vista tecnico molto diverso 
 \subsubsection {Portafogli}
 
 
-Un portafoglio è il metodo usato per conservare e interagire con i Bitcoin che si possiede.
+Un portafoglio è il metodo usato per conservare e interagire con i bitcoin che si possiede.
 I portafogli contengono le chiavi pubbliche e private e di conseguenza l'indirizzo stesso.
 I portafogli si dividono in \textit{hot} e \textit{cold} storage.
 I \textit{cold wallets} sono paragonabili a un salvadanaio o a una cassaforte, mentre i \textit{hot wallets} sono simili ai portafogli che portiamo in giro.
@@ -453,14 +444,14 @@ I principali tipi di \textit{cold storage} sono:
 \vspace {0.2cm}
 \noindent
 %
-Esistono anche dei veri e propri "Bitcoin" fisici, ovvero delle monete materiali con incise le keys.
+Esistono anche dei veri e propri "Bitcoin" fisici, ovvero delle monete materiali con incise le keys \cite{cold}.
 
 \paragraph {Hot wallets}
 
 Gli \textit{hot wallets} sono invece dei portafogli che utilizzano un collegamento a internet per permettere di effettuare pagamenti \emph{dall'}indirizzo in uso.
 Esistono come software, tra cui app per smartphone, programmi per computer o servizi online.
 Certi \textit{hot wallets} permettono di stabilire manualmente la tassa in sat/b, mentre altri la decidono automaticamente in base allo stato della \textit{mempool}.
-Il calcolo della tassa da pagare avviene automaticamente, ma certi portafogli come Electrum hanno la funzione di mostrare il peso in kb della transazione.
+Il calcolo in bitcoin della tassa da pagare avviene automaticamente, ma certi portafogli hanno la funzione di mostrare all'utente il peso in kb della transazione.
 
 
 \subsection {I problemi del Bitcoin}
@@ -468,26 +459,25 @@ Il calcolo della tassa da pagare avviene automaticamente, ma certi portafogli co
 
 \subsubsection {Gli attacchi al network}
 
-
 La rete del Bitcoin può essere abusata da malintenzionati per compiere \textit{double spending}, ovvero l'atto di spendere una stessa quantità di Bitcoin due volte, effettivamente annullando il primo pagamento.
 Il \textit{double spending} è solitamente usato per truffare: dopo aver inviato \textit{x} BTC al ricevente, il truffatore fa subito un attacco di \textit{double spending} inviando a sé stesso la stessa quantità di bitcoin. Il ricevente si troverà con 0 BTC, che sono rimasti al truffatore.
-Esistono tre principali modi per fare \textit{double spending} \cite{attacks}:
+Esistono tre principali modi per fare \textit{double spending}:
 
 \begin{itemize}
 \item \textit{Race attack}: questo tipo di attacco avviene alle transazioni non ancora confermate (quindi ancora nella \textit{mempool}).
 Il truffatore fa un pagamento a sé stesso con una tassa di transazione inferiore a 1 sat/b in modo da propagare la transazione ai \textit{nodes} che accettano transazioni con una tassa molto bassa.
 Questi sono una minoranza, perché la maggior parte dei \textit{full nodes} ha un limite di 1 sat/b come tassa minima.
 Subito dopo, il truffatore ripete la transazione al mercante, questa volta con una tassa più elevata: i \textit{nodes} con una maggiore tassa minima accettano la seconda transazione considerandola come l'unica avvenuta di recente, ma quelli che avevano accettato la prima la rifiutano, perché è uguale a quella accettata in precendenza.
-Di conseguenza, la prima transazione passa alla \textit{mempool} senza problemi, mentre la seconda, quella fatta al mercante, non viene processata \cite{raceattack}.
+Di conseguenza, la prima transazione passa alla \textit{mempool} senza problemi, mentre la seconda, quella fatta al mercante, non viene processata \cite{raceattack}\cite{attacks}.
 \item \textit{Finney attack}: un altro metodo di attacco che colpisce le transazioni con 0 conferme. L'attacco Finney richiede che il truffatore abbia la possibilità di fare \textit{mining} e quindi di generare nuovi blocchi.
 Quando questo trova un blocco, non lo diffonde ai \textit{full nodes} per poi includerlo nella blockchain, ma se lo tiene per sé.
 In questo blocco il truffatore compie una transazione a sé stesso.
-Subito dopo aver pagato il mercante, prima che la transazione legittima venga confermata, il truffatore "rilascia" il blocco che ha tenuto fermo, facendolo confermare prima di quello in cui è avvenuto il pagamento al mercante.
+Subito dopo aver pagato il mercante, prima che la transazione legittima venga confermata, il truffatore "rilascia" il blocco che ha tenuto fermo, facendolo confermare prima di quello in cui è avvenuto il pagamento al mercante\cite{attacks}.
 \item \textit{Majority attack}: più comumemente conosciuto come "\textit{51\%}" o "\textit{>50\% attack}", è il tipo di attacco più temuto perché può essere applicato a qualunque transazione, indipendentemente dal numero di conferme ricevute\footnote{Ricordo che una conferma corrisponde a un blocco trovato dopo aver effettuato il pagamento.
 Più conferme rendono una transazione più sicura perché questa viene "superata" da un maggior numero di blocchi}.
 Un attacco 51\% si può effettuare solo se un singolo possiede più della metà dell'\textit{hashrate} di tutta la rete del Bitcoin.
 Dopo aver pagato il mercante, questo attende \textit{x} conferme e poi invia la sua merce.
-Il truffatore sdoppia la blockchain e su questa ripete il pagamento a un indirizzo in suo controllo; in seguito impiega il 51\% dell'\textit{hashrate} per minare blocchi sul suo clone privato della blockchain, e dopo aver trovato un numero di blocchi maggiore al numero di conferme attese manda "live" la sua blockchain ai \textit{full nodes} in tutto il mondo per sostituire quella più corta, nella quale il mercante aveva ricevuto bitcoin.
+Il truffatore sdoppia la blockchain e su questa ripete il pagamento a un indirizzo in suo controllo; in seguito impiega il 51\% dell'\textit{hashrate} per minare blocchi sul suo clone privato della blockchain, e dopo aver trovato un numero di blocchi maggiore al numero di conferme attese manda "live" la sua blockchain ai \textit{full nodes} in tutto il mondo per sostituire quella più corta, nella quale il mercante aveva ricevuto bitcoin\cite{attacks}.
 \end{itemize}
 
 
@@ -610,12 +600,11 @@ Esistono numerosissime criptovalute. Il sito coinmarketcap.com ne lista ben 1640
 \subsection {Ethereum}
 
 
-Ethereum (ETH) è una valuta ideata nel 2013 da Vitalik Buterin e lanciata nel 2014. %https://www.coindesk.com/information/who-created-ethereum/
-Il \textit{whitepaper} stabilisce un tempo di blocco pari a 12 secondi, che per motivi tecnici è effettivamente intorno ai 15-17 secondi. %https://blog.ethereum.org/2014/07/11/toward-a-12-second-block-time/
-%https://ethereum.stackexchange.com/questions/58/why-is-the-average-block-time-17-seconds
+Ethereum (ETH) è una valuta ideata nel 2013 da Vitalik Buterin e lanciata nel 2014 \cite{ethorigins}.
+Il \textit{whitepaper} stabilisce un tempo di blocco pari a 12 secondi, che per motivi tecnici è effettivamente intorno ai 15-17 secondi \cite{ethblock1} \cite{ethblock2}.
 È stato scelto un tempo così inferiore rispetto ai 10 minuti del Bitcoin perché oggi la maggioranza del mondo utilizza una connessione a internet abbastanza veloce da poter diffondere i blocchi ai \textit{full nodes} con rapidità.
 Inoltre, a seguito di un miglioramento del software della blockchain, con l'utilizzo di nuove tecnologie si riducono al minimo i blocchi orfani trovati, nonostante un tempo di blocco così breve.
-Non esiste un limite massimo di ETH che possono esistere, tuttavia Vitalik ha proposto di mettere un limite a 120.204.432 ETH per evitare un'inflazione della valuta.
+Non esiste un limite massimo di ETH che possono esistere, tuttavia Vitalik ha proposto di mettere un limite a 120.204.432 ETH per evitare un'inflazione della valuta \cite{ethmax}.
 
 \paragraph {Smart contracts}
 
@@ -632,8 +621,6 @@ Questo perché il \textit{mining} di Ethereum non utilizza l'algoritmo SHA-256 c
 La più grande differenza tra i due algoritmi è che Ethash richiede una quantità di RAM\footnote{\textit{Random Access Memory, memoria ad accesso casuale}} ben maggiore di quella dei \textit{miner} ASIC.
 Le schede grafiche dei computer desktop, comunemente chiamate GPU\footnote{\textit{Graphics Processing Unit}}, grazie alla maggior quantità di RAM (superiore a 4GB nella maggior parte delle schede moderne), sono effettivamente l'unico mezzo in grado di cercare e trovare i blocchi di Ethereum.
 In questo modo Vitalik ha impedito agli ASIC di minare Ethereum, rendendo il lavoro possibile esclusivamente alle GPU. Ma perché?
-I \textit{miner} ASIC sono apparecchiature costose ed estremamente potenti, presenti in quantità limitata perché concentrate in enormi \textit{farm} e sottomesse al monopolio delle \textit{pools} cinesi.
-Questi due fattori sono grandi minacce per la decentralizzazione della valuta.
 Le schede grafiche sono presenti in quasi tutti i computer di fascia medio-alta, e il prezzo di una GPU è normalmente intorno ai \euro{200} - \euro{400}.
 Questo rende Ethereum potenzialmente "minabile" da una grandissima quantità di persone, e ciò impedisce la centralizzazione dell'\textit{hashing power}, riducendo la possibilità di attacchi 51\%.
 
@@ -673,9 +660,9 @@ Per bilanciare la maggior quantità di litecoin che possono esistere, l'\textit{
 \subsection {Monero}
 
 
-Monero (XMR) è un altcoin creato in aprile 2014 che ha come prima preoccupazione quella della privacy. %https://getmonero.org/resources/about/
+Monero (XMR) è un altcoin creato in aprile 2014 che ha come prima preoccupazione quella della privacy.
 Monero è l'unica criptovaluta che è completamente intracciabile. Come abbiamo visto con il Bitcoin, nella blockchain possiamo trovare informazioni su tutto quello che avviene: il bilancio di qualunque indirizzo, chi manda quanto a chi.
-Con Monero tutto questo non è possibile. Mentre ha una blockchain come tutte le altre criptovalute, non è possibile vedere le transazioni che avvengono dall'uno all'altro indirizzo, e non è nemmeno possibile visualizzare il saldo.
+Con Monero tutto questo non è possibile. Mentre ha una blockchain come tutte le altre criptovalute, non è possibile vedere le transazioni che avvengono dall'uno all'altro indirizzo, e non è nemmeno possibile visualizzare il saldo \cite{monero}.
 
 \vspace {0.5cm}
 \begin{figure}[htb!]
@@ -690,20 +677,21 @@ Questo rende Monero una valuta estremamente utile a chiunque voglia nascondere i
 Purtroppo, come tutte le tecnologie a favore della privacy, Monero può essere utilizzato anche da evasori delle tasse, truffatori e da venditori di merce illegale.
 Monero ha un tempo stabilito di scoperta blocchi di 2 minuti, rendendo le transazioni relativamente veloci.
 Inizialmente il tempo per trovare il blocco successivo era di 1 minuto, ma poi è stato aumentato a 2 minuti per ridurre la quantità di blocchi orfani e perché i blocchi non venivano sufficientemente "riempiti" di transazioni.
-Le transazioni di Monero, per essere anonime, hanno un peso in kb notevole, per questo le tasse di transazione sono più elevate di quelle della maggior parte delle altre criptovalute. %https://monero.stackexchange.com/questions/211/how-much-larger-are-monero-transactions-compared-to-the-average-bitcoin-transact/6166#6166
+Le transazioni di Monero, per essere anonime, hanno un peso in kb notevole pari a circa otto volte quello delle transazioni di Bitcoin, per questo le tasse di transazione sono più elevate di quelle della maggior parte delle altre criptovalute \cite{xmrfees}.
+
 
 \subsection {Nano}
 
 
 Inizialmente chiamata RaiBlocks\footnote{il passaggio da RaiBlocks a Nano è avvenuto il 31 gennaio 2018}, Nano è una criptovaluta creata nel 2015 da Colin LeMahieu.
-Nano non prevede l'impiego di \textit{miners} per validare le proprie transazioni \cite{nanofaq}.
-Esistono in totale 133.248.290 NANO, distribuiti gratuitamente fino all'ottobre 2017 tramite un sito che inviava una piccola quantità di Nano a chiunque completasse un \textit{captcha}, una parola da trascrivere in una casella di testo per confermare di non essere un robot programmato per abusare del sistema di distribuzione gratuita.
+Nano non prevede l'impiego di \textit{miners} per validare le proprie transazioni.
+Esistono in totale 133.248.290 NANO, distribuiti gratuitamente fino all'ottobre 2017 tramite un sito che inviava una piccola quantità di Nano a chiunque completasse un \textit{captcha}, una parola da trascrivere in una casella di testo per confermare di non essere un robot programmato per abusare del sistema di distribuzione gratuita \cite{nanofaq}.
 È veramente interessante sotto il punto di vista tecnico perché è la prima che usa la tecnologia \textit{Block Lattice}\footnote{Da non confondere con la parola italiana, \textit{lattice [/'let.is/]} significa reticolo, intreccio} in sostanza, anziché dipendere da una singola blockchain come fanno tutte le altre valute, ogni singolo indirizzo \emph{è} una blockchain a sé stante.
 Questa tecnologia permette di effettuare transazioni estremamente veloci rispetto a quelle del Bitcoin (che impiegano un'ora per essere ritenute pienamente concluse), con una durata inferiore ai 2 secondi, talvolta letteralmente istantanee.
-Non è l'unico vantaggio.%https://www.reddit.com/r/nanocurrency/comments/830ax6/how_does_nano_not_require_mining/
+Non è l'unico vantaggio.
 La \textit{Block Lattice} rende tutte le transazioni di Nano completamente gratuite: Nano non necessita di \textit{mining} per funzionare, quindi non è previsto il pagamento di alcuna tassa di transazione.
 Quella di Nano, però, non è una rete autosufficiente, ed è comunque necessaria una forma di pagamento da parte degli utenti.
-Gli utenti, infatti, impiegano il lavoro del processore del proprio computer o smartphone per processare la transazione da sé stessi: anziché pagare dei \textit{miners}, è possibile coprire il costo della transazione sprecando XX joule di energia grazie all'efficienza della tecnologia della \textit{block lattice}.
+Gli utenti, infatti, impiegano il lavoro del processore del proprio computer o smartphone per processare la transazione da sé stessi: grazie all'efficienza della tecnologia della \textit{block lattice}, anziché pagare i \textit{miners}, per coprire il costo della transazione è sufficiente una piccola quantità di Joule di energia elettrica usata dai processori dei dispositivi \cite{nanopow}.
 
 
 \subsection {Ripple}
@@ -807,12 +795,11 @@ Durante esso, infatti, molte fabbriche e mercati finanziari chiudono per ferie, 
 
 
 Il 24 ottobre del 1929 è il giorno che marcò il crollo della Borsa di Wall Street, che ebbe come conseguenza il fallimento di molte imprese, una riduzione della domanda da parte di altri stati, e una forte crescita della disoccupazione, raggiungendo i 13 milioni di disoccupati nel 1932.
-Tra le principali cause di questa crisi ci sono la sovrapproduzione di merce. detto così sembra fatto da un bambino delle elementari
-Gli Stati Uniti erano grandi fornitori di merce e dané all'Europa, e il progressivo aumento della domanda ha portato gli USA ad incrementare la produzione industriale, grazie anche alla diffusione del Taylorismo e della generale innovazione tecnologica.
+La principale causa di questa crisi è quella della sovrapproduzione: gli Stati Uniti erano grandi fornitori di merce all'Europa, e il progressivo aumento della domanda ha portato gli USA ad incrementare la produzione industriale, grazie anche alla diffusione del Taylorismo e della generale innovazione tecnologica.
 A partire dal 1926, però, l'Europa e poi il Giappone ridussero notevolmente la domanda agli Stati Uniti perché anche questi beneficiarono del progresso tecnologico che ha avuto inizio in America.
 Questo portò a un'eccessiva produzione di merce che non venne mai venduta all'Europa perché non richiesta.
 Un'altra enorme causa di questa crisi fu l'andamento dell'economia mondiale: era puramente un'economia di carta, basata su opinioni e speculazioni.
-Gli scambi di azioni e gli investimenti di imprenditori verso le diverse aziende era una scommessa su quale attività avrebbe fatto successo, facendo ricavare profitti a chi avesse investito. \cite{crisi29}
+Gli scambi di azioni e gli investimenti di imprenditori verso le diverse aziende era una scommessa su quale attività avrebbe fatto successo, facendo ricavare profitti a chi avesse investito \cite{crisi29}.
 
 %\paragraph {La ricorrenza dei "crash" dei mercati}
 %
@@ -833,21 +820,18 @@ Gli scambi di azioni e gli investimenti di imprenditori verso le diverse aziende
 
 Il Bitcoin e le criptovalute in generale sono frequentemente soggetto di controversie. La nuova tecnologia della blockchain è criticata da molti imprenditori, e numerosissime truffe girano intorno alla parziale anonimità della valuta \cite{controversy}.
 
-
 \subsubsection {Moneta per scambi illegali}
-
 
 Inizialmente il Bitcoin, ma oggi anche altre criptovalute (speciamente quelle centrate sulla privacy), sono usate per compiere scambi di merce proibita, principalmente droga e armi.
 Nel dark web, infatti, esistono numerosi siti dove è possibile acquistare merce illegale tramite criptovalute.
 Fino al 2013, nei primi anni del Bitcoin, infatti, la valuta era quasi esclusivamente utilizzata per fare acquisti sul \textit{marketplace} chiamato Silk Road\footnote{Strada di seta}, chiuso dall'FBI nell'ottobre del 2013.
 L'accusa alle criptovalute di essere monete "da mercato nero" è secondo molti una forma di FUD, \textit{fear, uncertainty, doubt}\footnote{Paura, incertezza, dubbio: tecnica per incutere timore nella gente inesperta riguardo a qualcosa}, per il semplice fatto che la moneta cartacea, il \textit{cash} è anch'essa una forma di denaro da sempre usata per atti/motivi illeciti, anch'essa anonima, più del Bitcoin! 
 
-
 \subsubsection {Il ban del Bitcoin in certi stati}
-
 
 Il Bitcoin non è ben visto dai governi perché le sue transazioni \textit{peer-to-peer} rendono obsolete le banche, da cui questi traggono guadagno, e in generale gli stati non possono controllare il prezzo e la liquidità del Bitcoin.
 Certi paesi sono addirittura arrivati a proclamare leggi che rendono illegale l'uso del Bitcoin, alcuni lasciando qualche libertà, altri nemmeno \cite{legality}.
+Tra questi troviamo:
 
 \begin{itemize}
 \item Algeria
@@ -872,9 +856,7 @@ In tutti e tre i casi le affermazioni dei governi sono state mal interpretate: l
 %È stato poi scoperto che la Corea del Sud non stava facendo altro che vietare lo scambio di Bitcoin tramite account anonimi per rendere i mercati più stabili e %sicuri \cite{koreanot}.
 %Questi non sono altro che tentativi di FUD, storie inventate per dare una cattiva immagine al Bitcoin che portano a un abbassamento del prezzo.
 
-
 \subsubsection {Mt. Gox}
-
 
 Mt. Gox\footnote{"Mt." è \textit{mount} in inglese, "monte"} è il primo grande sito di \textit{exchange} di Bitcoin, creato da Jeb McCaleb nel 18 luglio 2010.
 Il dominio mtgox.com è stato poi venduto allo sviluppatore francese Mark Karpelès nel marzo del 2011; la sede è stata spostata dall'America al Giappone.
@@ -900,21 +882,17 @@ L'1 agosto 2015 Mark Karpèles venne arrestato dalle autorità di Tokyo, accusat
 L'11 luglio 2017, il giorno del processo, venne scoperto che i due \textit{bot} erano infatti operati dallo stesso CEO Mark Karpèles \cite{karpelesbot}.
 L'hacker responsabile del furto dei 630.000 BTC, Alexander Vinnik, è stato arrestato dalle autorità americane in Grecia il 26 luglio 2017, e BTC-e, un'\textit{exchange} russa, è stata sequestrata (ma non chiusa) dall'FBI a partire dal 25 luglio 2017, accusata di aver assistito Vinnik nel nascondere 300.000 bitcoin rubati \cite{mtgox}.
 
-
 \subsubsection {Bitconnect}
-
 
 Bitconnect è un altcoin con un tasso di interesse variabile dallo 0.1\% all'1\% che aumentava quotidianamente i profitti di chiunque ne possedesse.
 Non era ben chiaro chi fosse il creatore, e molti erano già dubbiosi dell'affermazione di arricchire magicamente chiunque ne comprasse.
 Tra il 14 e il 17 Gennaio 2018 il prezzo di Bitconnect è crollato da \euro{273} a \euro{30}, arrivando agli \euro{0.55} di oggi.
 Si è scoperto che l'intero progetto Bitconnect non era altro che un'\textit{exit scam}, una truffa in cui i complici spariscono improvvisamente, lasciando gli investitori a mani vuote.
-In particolare Bitconnect è stato uno schema Ponzi, un tipo di truffa in cui il truffatore promette guadagni a chiunque si indebitasse con lui, per poi sparire.
+In particolare Bitconnect è stato uno schema Ponzi, un modello di truffa in cui il truffatore promette guadagni a chiunque si indebitasse con lui, per poi sparire.
 Il nome Ponzi deriva da Charles Ponzi, un italo-americano che si arricchì notevolmente tra il 1918 e il 1920 compiendo ripetutamente questo tipo di truffa \cite{ponzi}.
 Oggi tutti coloro coinvolti nel pubblicizzare Bitconnect, soprattutto chi ha pubblicato video su YouTube che incitavano all'acquisto della valuta, sono sotto investigazione.
 
-
 \subsubsection {Roger Ver e la truffa di "Bitcoin Cash"}
-
 
 Bitcoin Cash è di gran lunga l'\textit{hard fork} più popolare di tutte, al quarto posto (!) in capitalizzazione di mercato. Come mai è l'unica che ha raggiunto un prezzo così elevato?
 Roger K. Ver è un imprenditore esperto di criptovalute.
@@ -973,7 +951,7 @@ Un altro fattore concreto che indica un futuro promettente per il Bitcoin è il 
 \vspace {0.2cm}
 \noindent
 %
-Indipendentemente dal motivo per cui queste transazioni sono state effettuate, è logico pensare che un aumento così progressivo nell'uso del Bitcoin sia un fattore promettente nel suo futuro.
+Indipendentemente dal motivo per cui queste transazioni sono state effettuate, è logico pensare che un aumento così progressivo nell'uso del Bitcoin sia un segnale positivo per il suo futuro.
 
 
 \newpage
@@ -982,6 +960,7 @@ Indipendentemente dal motivo per cui queste transazioni sono state effettuate, �
 
 \newpage
 
+\shipout\null
 
 \pagenumbering{gobble}
 
