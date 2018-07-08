@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex version 2.6 $
+% $ biblatex bbl format version 2.9 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -16,880 +16,1021 @@
   {}
 \endgroup
 
-\entry{whitepaper}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Nakamoto}{N.}%
-     {Satoshi}{S.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{NS1}
-  \strng{fullhash}{NS1}
-  \field{title}{Bitcoin: A Peer-to-Peer Electronic Cash System}
-  \verb{url}
-  \verb https://bitcoin.org/bitcoin.pdf
-  \endverb
-  \field{journaltitle}{bitcoin.org}
-  \field{day}{31}
-  \field{month}{10}
-  \field{year}{2008}
-\endentry
+\datalist[entry]{none/global//global/global}
+  \entry{whitepaper}{article}{}
+    \name{author}{1}{}{%
+      {{hash=NS}{%
+         family={Nakamoto},
+         familyi={N\bibinitperiod},
+         given={Satoshi},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{NS1}
+    \strng{fullhash}{NS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Bitcoin: A Peer-to-Peer Electronic Cash System}
+    \verb{url}
+    \verb https://bitcoin.org/bitcoin.pdf
+    \endverb
+    \field{journaltitle}{bitcoin.org}
+    \field{day}{31}
+    \field{month}{10}
+    \field{year}{2008}
+  \endentry
 
-\entry{staleorphans}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Wuille}{W.}%
-     {Pieter}{P.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{WP1}
-  \strng{fullhash}{WP1}
-  \field{title}{What are orphaned and stale blocks?}
-  \verb{url}
-  \verb https://bitcoin.stackexchange.com/questions/5859/what-are-orphaned-and-
-  \verb stale-blocks
-  \endverb
-  \field{journaltitle}{Bitcoin Stack Exchange}
-  \field{year}{2012-12-19}
-\endentry
+  \entry{staleorphans}{article}{}
+    \name{author}{1}{}{%
+      {{hash=WP}{%
+         family={Wuille},
+         familyi={W\bibinitperiod},
+         given={Pieter},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WP1}
+    \strng{fullhash}{WP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{What are orphaned and stale blocks?}
+    \verb{url}
+    \verb https://bitcoin.stackexchange.com/questions/5859/what-are-orphaned-an
+    \verb d-stale-blocks
+    \endverb
+    \field{journaltitle}{Bitcoin Stack Exchange}
+    \field{year}{2012-12-19}
+  \endentry
 
-\entry{antminers9}{misc}{}
-  \verb{url}
-  \verb https://shop.bitmain.com/antminer_s9_asic_bitcoin_miner.htm?flag=specif
-  \verb ications
-  \endverb
-  \field{journaltitle}{Bitmain.com}
-\endentry
+  \entry{antminers9}{misc}{}
+    \verb{url}
+    \verb https://shop.bitmain.com/antminer_s9_asic_bitcoin_miner.htm?flag=spec
+    \verb ifications
+    \endverb
+    \field{journaltitle}{Bitmain.com}
+  \endentry
 
-\entry{antminerv9}{misc}{}
-  \verb{url}
-  \verb https://shop.bitmain.com/product/detail?pid=000201802051016159150g4OS2h
-  \verb k0661
-  \endverb
-  \field{journaltitle}{Bitmain.com}
-\endentry
+  \entry{antminerv9}{misc}{}
+    \verb{url}
+    \verb https://shop.bitmain.com/product/detail?pid=000201802051016159150g4OS
+    \verb 2hk0661
+    \endverb
+    \field{journaltitle}{Bitmain.com}
+  \endentry
 
-\entry{s9profit}{misc}{}
-  \verb{url}
-  \verb https://www.asicminervalue.com/miners/bitmain/antminer-s9-14th
-  \endverb
-  \field{journaltitle}{ASICMinerValue.com}
-\endentry
+  \entry{s9profit}{misc}{}
+    \verb{url}
+    \verb https://www.asicminervalue.com/miners/bitmain/antminer-s9-14th
+    \endverb
+    \field{journaltitle}{ASICMinerValue.com}
+  \endentry
 
-\entry{chinaaverage}{article}{}
-  \field{title}{Average electricity prices around the world: \$/kWh}
-  \verb{url}
-  \verb https://www.ovoenergy.com/guides/energy-guides/average-electricity-pric
-  \verb es-kwh.html
-  \endverb
-  \field{journaltitle}{OVOEnergy.com}
-\endentry
+  \entry{chinaaverage}{article}{}
+    \field{labeltitlesource}{title}
+    \field{title}{Average electricity prices around the world: \$/kWh}
+    \verb{url}
+    \verb https://www.ovoenergy.com/guides/energy-guides/average-electricity-pr
+    \verb ices-kwh.html
+    \endverb
+    \field{journaltitle}{OVOEnergy.com}
+  \endentry
 
-\entry{chinaless}{article}{}
-  \name{author}{5}{}{%
-    {{}%
-     {Han}{H.}%
-     {Shangfeng}{S.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Zhang}{Z.}%
-     {Baosheng}{B.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Sun}{S.}%
-     {Xiaoyang}{X.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Han}{H.}%
-     {Song}{S.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Höök}{H.}%
-     {Mikael}{M.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{HS+1}
-  \strng{fullhash}{HSZBSXHSHM1}
-  \field{title}{China’s Energy Transition in the Power and Transport Sectors
-  from a Substitution Perspective}
-  \verb{url}
-  \verb mdpi.com/1996-1073/10/5/600/pdf
-  \endverb
-  \field{journaltitle}{Energies}
-  \field{day}{29}
-  \field{month}{04}
-  \field{year}{2017}
-\endentry
+  \entry{chinaless}{article}{}
+    \name{author}{5}{}{%
+      {{hash=HS}{%
+         family={Han},
+         familyi={H\bibinitperiod},
+         given={Shangfeng},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=ZB}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Baosheng},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=SX}{%
+         family={Sun},
+         familyi={S\bibinitperiod},
+         given={Xiaoyang},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=HS}{%
+         family={Han},
+         familyi={H\bibinitperiod},
+         given={Song},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=HM}{%
+         family={Höök},
+         familyi={H\bibinitperiod},
+         given={Mikael},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HS+1}
+    \strng{fullhash}{HSZBSXHSHM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{China’s Energy Transition in the Power and Transport
+  Sectors from a Substitution Perspective}
+    \verb{url}
+    \verb mdpi.com/1996-1073/10/5/600/pdf
+    \endverb
+    \field{journaltitle}{Energies}
+    \field{day}{29}
+    \field{month}{04}
+    \field{year}{2017}
+  \endentry
 
-\entry{worldenergy}{misc}{}
-  \field{title}{World Power consumption}
-  \verb{url}
-  \verb https://yearbook.enerdata.net/electricity/electricity-domestic-consumpt
-  \verb ion-data.html
-  \endverb
-  \field{journaltitle}{Enerdata.net}
-\endentry
+  \entry{worldenergy}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{title}{World Power consumption}
+    \verb{url}
+    \verb https://yearbook.enerdata.net/electricity/electricity-domestic-consum
+    \verb ption-data.html
+    \endverb
+    \field{journaltitle}{Enerdata.net}
+  \endentry
 
-\entry{mempool}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Deneuville}{D.}%
-     {Marion}{M.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{DM1}
-  \strng{fullhash}{DM1}
-  \field{title}{An in-depth guide into how the mempool works}
-  \verb{url}
-  \verb https://blog.kaiko.com/an-in-depth-guide-into-how-the-mempool-works-c75
-  \verb 8b781c608
-  \endverb
-  \field{journaltitle}{Kaiko News}
-  \field{day}{12}
-  \field{month}{10}
-  \field{year}{2016}
-\endentry
+  \entry{mempool}{article}{}
+    \name{author}{1}{}{%
+      {{hash=DM}{%
+         family={Deneuville},
+         familyi={D\bibinitperiod},
+         given={Marion},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DM1}
+    \strng{fullhash}{DM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{An in-depth guide into how the mempool works}
+    \verb{url}
+    \verb https://blog.kaiko.com/an-in-depth-guide-into-how-the-mempool-works-c
+    \verb 758b781c608
+    \endverb
+    \field{journaltitle}{Kaiko News}
+    \field{day}{12}
+    \field{month}{10}
+    \field{year}{2016}
+  \endentry
 
-\entry{bip32}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Wuille}{W.}%
-     {Pieter}{P.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{WP1}
-  \strng{fullhash}{WP1}
-  \field{title}{Hierarchical Deterministic Wallets}
-  \verb{url}
-  \verb https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki
-  \endverb
-  \field{journaltitle}{Bitcoin Improvement Proposals}
-  \field{day}{11}
-  \field{month}{02}
-  \field{year}{2017}
-\endentry
+  \entry{bip32}{article}{}
+    \name{author}{1}{}{%
+      {{hash=WP}{%
+         family={Wuille},
+         familyi={W\bibinitperiod},
+         given={Pieter},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WP1}
+    \strng{fullhash}{WP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Hierarchical Deterministic Wallets}
+    \verb{url}
+    \verb https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki
+    \endverb
+    \field{journaltitle}{Bitcoin Improvement Proposals}
+    \field{day}{11}
+    \field{month}{02}
+    \field{year}{2017}
+  \endentry
 
-\entry{bip39}{article}{}
-  \name{author}{4}{}{%
-    {{}%
-     {Palatinus}{P.}%
-     {Marek}{M.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Rusnak}{R.}%
-     {Pavol}{P.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Voisine}{V.}%
-     {Aaron}{A.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Bowe}{B.}%
-     {Sean}{S.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{PM+1}
-  \strng{fullhash}{PMRPVABS1}
-  \field{title}{Mnemonic code for generating deterministic keys}
-  \verb{url}
-  \verb https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki
-  \endverb
-  \field{journaltitle}{Bitcoin Improvement Proposals}
-  \field{day}{10}
-  \field{month}{09}
-  \field{year}{2013}
-\endentry
+  \entry{bip39}{article}{}
+    \name{author}{4}{}{%
+      {{hash=PM}{%
+         family={Palatinus},
+         familyi={P\bibinitperiod},
+         given={Marek},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=RP}{%
+         family={Rusnak},
+         familyi={R\bibinitperiod},
+         given={Pavol},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=VA}{%
+         family={Voisine},
+         familyi={V\bibinitperiod},
+         given={Aaron},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=BS}{%
+         family={Bowe},
+         familyi={B\bibinitperiod},
+         given={Sean},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PM+1}
+    \strng{fullhash}{PMRPVABS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Mnemonic code for generating deterministic keys}
+    \verb{url}
+    \verb https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki
+    \endverb
+    \field{journaltitle}{Bitcoin Improvement Proposals}
+    \field{day}{10}
+    \field{month}{09}
+    \field{year}{2013}
+  \endentry
 
-\entry{makingaddress}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {S.}{S.}%
-     {Tim}{T.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{ST1}
-  \strng{fullhash}{ST1}
-  \field{title}{What is the relation between the bitcoin address and the
+  \entry{makingaddress}{article}{}
+    \name{author}{1}{}{%
+      {{hash=ST}{%
+         family={S.},
+         familyi={S\bibinitperiod},
+         given={Tim},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ST1}
+    \strng{fullhash}{ST1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{What is the relation between the bitcoin address and the
   corresponding private key?}
-  \verb{url}
-  \verb https://bitcoin.stackexchange.com/questions/21292/what-is-the-relation-
-  \verb between-the-bitcoin-address-and-the-corresponding-private-k
-  \endverb
-  \field{journaltitle}{Bitcoin Stack Exchange}
-  \field{year}{2014-1-29}
-\endentry
+    \verb{url}
+    \verb https://bitcoin.stackexchange.com/questions/21292/what-is-the-relatio
+    \verb n-between-the-bitcoin-address-and-the-corresponding-private-k
+    \endverb
+    \field{journaltitle}{Bitcoin Stack Exchange}
+    \field{year}{2014-1-29}
+  \endentry
 
-\entry{160address}{article}{}
-  \field{title}{ELI5: why does bitcoin have $2^{160}$ possible addresses but
+  \entry{160address}{article}{}
+    \field{labeltitlesource}{title}
+    \field{title}{ELI5: why does bitcoin have $2^{160}$ possible addresses but
   many more ($2^{256}$) possible key pairs?}
-  \verb{url}
-  \verb https://www.reddit.com/r/Bitcoin/comments/2mh4be/eli5_why_does_bitcoin_
-  \verb have_2160_possible/
-  \endverb
-  \field{journaltitle}{Reddit.com}
-  \field{year}{2015}
-\endentry
+    \verb{url}
+    \verb https://www.reddit.com/r/Bitcoin/comments/2mh4be/eli5_why_does_bitcoi
+    \verb n_have_2160_possible/
+    \endverb
+    \field{journaltitle}{Reddit.com}
+    \field{year}{2015}
+  \endentry
 
-\entry{bip13}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Andresen}{A.}%
-     {Gavin}{G.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{AG1}
-  \strng{fullhash}{AG1}
-  \field{title}{Address Format for pay-to-script-hash}
-  \verb{url}
-  \verb https://github.com/bitcoin/bips/blob/master/bip-0013.mediawiki
-  \endverb
-  \field{journaltitle}{Bitcoin Improvement Proposals}
-  \field{day}{18}
-  \field{month}{10}
-  \field{year}{2011}
-\endentry
+  \entry{bip13}{article}{}
+    \name{author}{1}{}{%
+      {{hash=AG}{%
+         family={Andresen},
+         familyi={A\bibinitperiod},
+         given={Gavin},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AG1}
+    \strng{fullhash}{AG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Address Format for pay-to-script-hash}
+    \verb{url}
+    \verb https://github.com/bitcoin/bips/blob/master/bip-0013.mediawiki
+    \endverb
+    \field{journaltitle}{Bitcoin Improvement Proposals}
+    \field{day}{18}
+    \field{month}{10}
+    \field{year}{2011}
+  \endentry
 
-\entry{p2sh}{article}{}
-  \field{title}{Pay to script hash}
-  \verb{url}
-  \verb https://en.bitcoin.it/wiki/Pay_to_script_hash
-  \endverb
-  \field{journaltitle}{Bitcoin Wiki}
-  \field{year}{2017}
-\endentry
+  \entry{p2sh}{article}{}
+    \field{labeltitlesource}{title}
+    \field{title}{Pay to script hash}
+    \verb{url}
+    \verb https://en.bitcoin.it/wiki/Pay_to_script_hash
+    \endverb
+    \field{journaltitle}{Bitcoin Wiki}
+    \field{year}{2017}
+  \endentry
 
-\entry{bip173}{article}{}
-  \name{author}{2}{}{%
-    {{}%
-     {Wuille}{W.}%
-     {Pieter}{P.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Maxwell}{M.}%
-     {Greg}{G.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{WPMG1}
-  \strng{fullhash}{WPMG1}
-  \field{title}{Base32 address format for native v0-16 witness outputs}
-  \verb{url}
-  \verb https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki
-  \endverb
-  \field{journaltitle}{Bitcoin Improvement Proposals}
-  \field{day}{20}
-  \field{month}{03}
-  \field{year}{2017}
-\endentry
+  \entry{bip173}{article}{}
+    \name{author}{2}{}{%
+      {{hash=WP}{%
+         family={Wuille},
+         familyi={W\bibinitperiod},
+         given={Pieter},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=MG}{%
+         family={Maxwell},
+         familyi={M\bibinitperiod},
+         given={Greg},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WPMG1}
+    \strng{fullhash}{WPMG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Base32 address format for native v0-16 witness outputs}
+    \verb{url}
+    \verb https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki
+    \endverb
+    \field{journaltitle}{Bitcoin Improvement Proposals}
+    \field{day}{20}
+    \field{month}{03}
+    \field{year}{2017}
+  \endentry
 
-\entry{cold}{article}{}
-  \field{title}{Pay to script hash}
-  \verb{url}
-  \verb https://en.bitcoin.it/wiki/Cold_storage
-  \endverb
-  \field{journaltitle}{Bitcoin Wiki}
-  \field{year}{2017}
-\endentry
+  \entry{cold}{article}{}
+    \field{labeltitlesource}{title}
+    \field{title}{Pay to script hash}
+    \verb{url}
+    \verb https://en.bitcoin.it/wiki/Cold_storage
+    \endverb
+    \field{journaltitle}{Bitcoin Wiki}
+    \field{year}{2017}
+  \endentry
 
-\entry{raceattack}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Chayannes}{C.}%
-     {Jason}{J.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{CJ1}
-  \strng{fullhash}{CJ1}
-  \field{title}{Double Spending a 0-Conf Bitcoin Transaction}
-  \verb{url}
-  \verb https://jasonc.me/blog/bitcoin-double-spend
-  \endverb
-  \field{journaltitle}{Jason C. Blog}
-  \field{day}{02}
-  \field{month}{04}
-  \field{year}{2018}
-\endentry
+  \entry{raceattack}{article}{}
+    \name{author}{1}{}{%
+      {{hash=CJ}{%
+         family={Chayannes},
+         familyi={C\bibinitperiod},
+         given={Jason},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CJ1}
+    \strng{fullhash}{CJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Double Spending a 0-Conf Bitcoin Transaction}
+    \verb{url}
+    \verb https://jasonc.me/blog/bitcoin-double-spend
+    \endverb
+    \field{journaltitle}{Jason C. Blog}
+    \field{day}{02}
+    \field{month}{04}
+    \field{year}{2018}
+  \endentry
 
-\entry{attacks}{article}{}
-  \field{title}{Irreversible Transactions}
-  \verb{url}
-  \verb https://en.bitcoin.it/wiki/Irreversible_Transactions
-  \endverb
-  \field{journaltitle}{Bitcoin Wiki}
-  \field{year}{2017}
-\endentry
+  \entry{attacks}{article}{}
+    \field{labeltitlesource}{title}
+    \field{title}{Irreversible Transactions}
+    \verb{url}
+    \verb https://en.bitcoin.it/wiki/Irreversible_Transactions
+    \endverb
+    \field{journaltitle}{Bitcoin Wiki}
+    \field{year}{2017}
+  \endentry
 
-\entry{centralization}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Homakov}{H.}%
-     {Egor}{E.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{HE1}
-  \strng{fullhash}{HE1}
-  \field{title}{Stop. Calling. Bitcoin. Decentralized.}
-  \verb{url}
-  \verb https://medium.com/@homakov/stop-calling-bitcoin-decentralized-cb703d69
-  \verb dc27
-  \endverb
-  \field{journaltitle}{Medium.com}
-  \field{year}{2017}
-\endentry
+  \entry{centralization}{article}{}
+    \name{author}{1}{}{%
+      {{hash=HE}{%
+         family={Homakov},
+         familyi={H\bibinitperiod},
+         given={Egor},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HE1}
+    \strng{fullhash}{HE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Stop. Calling. Bitcoin. Decentralized.}
+    \verb{url}
+    \verb https://medium.com/@homakov/stop-calling-bitcoin-decentralized-cb703d
+    \verb 69dc27
+    \endverb
+    \field{journaltitle}{Medium.com}
+    \field{year}{2017}
+  \endentry
 
-\entry{highfees}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Lee}{L.}%
-     {Timothy~B.}{T.~B.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{LTB1}
-  \strng{fullhash}{LTB1}
-  \field{title}{Skyrocketing fees are fundamentally changing bitcoin}
-  \verb{url}
-  \verb https://arstechnica.com/tech-policy/2017/12/bitcoin-fees-rising-high/
-  \endverb
-  \field{journaltitle}{Ars Technica}
-  \field{day}{19}
-  \field{month}{12}
-  \field{year}{2017}
-\endentry
+  \entry{highfees}{article}{}
+    \name{author}{1}{}{%
+      {{hash=LTB}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Timothy\bibnamedelima B.},
+         giveni={T\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LTB1}
+    \strng{fullhash}{LTB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Skyrocketing fees are fundamentally changing bitcoin}
+    \verb{url}
+    \verb https://arstechnica.com/tech-policy/2017/12/bitcoin-fees-rising-high/
+    \endverb
+    \field{journaltitle}{Ars Technica}
+    \field{day}{19}
+    \field{month}{12}
+    \field{year}{2017}
+  \endentry
 
-\entry{bip141}{article}{}
-  \name{author}{3}{}{%
-    {{}%
-     {Lombrozo}{L.}%
-     {Eric}{E.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Lau}{L.}%
-     {Johnson}{J.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Wuille}{W.}%
-     {Pieter}{P.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{LELJWP1}
-  \strng{fullhash}{LELJWP1}
-  \field{title}{Segregated Witness (Consensus layer)}
-  \verb{url}
-  \verb https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki
-  \endverb
-  \field{journaltitle}{Bitcoin Improvement Proposals}
-  \field{day}{21}
-  \field{month}{12}
-  \field{year}{2015}
-\endentry
+  \entry{bip141}{article}{}
+    \name{author}{3}{}{%
+      {{hash=LE}{%
+         family={Lombrozo},
+         familyi={L\bibinitperiod},
+         given={Eric},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={Lau},
+         familyi={L\bibinitperiod},
+         given={Johnson},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=WP}{%
+         family={Wuille},
+         familyi={W\bibinitperiod},
+         given={Pieter},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LELJWP1}
+    \strng{fullhash}{LELJWP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Segregated Witness (Consensus layer)}
+    \verb{url}
+    \verb https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki
+    \endverb
+    \field{journaltitle}{Bitcoin Improvement Proposals}
+    \field{day}{21}
+    \field{month}{12}
+    \field{year}{2015}
+  \endentry
 
-\entry{lightninglaunch}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Frumkin}{F.}%
-     {Daniel}{D.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{FD1}
-  \strng{fullhash}{FD1}
-  \field{title}{The Economics of Lightning Network Fees}
-  \verb{url}
-  \verb https://www.investinblockchain.com/lightning-network-beta-release/
-  \endverb
-  \field{journaltitle}{Invest In Blockchain}
-  \field{day}{22}
-  \field{month}{03}
-  \field{year}{2018}
-\endentry
+  \entry{lightninglaunch}{article}{}
+    \name{author}{1}{}{%
+      {{hash=FD}{%
+         family={Frumkin},
+         familyi={F\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FD1}
+    \strng{fullhash}{FD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{The Economics of Lightning Network Fees}
+    \verb{url}
+    \verb https://www.investinblockchain.com/lightning-network-beta-release/
+    \endverb
+    \field{journaltitle}{Invest In Blockchain}
+    \field{day}{22}
+    \field{month}{03}
+    \field{year}{2018}
+  \endentry
 
-\entry{lnhow}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Schor}{S.}%
-     {Lukas}{L.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{SL1}
-  \strng{fullhash}{SL1}
-  \field{title}{Bitcoin Lightning Network — 7 Things You Should Know}
-  \verb{url}
-  \verb https://medium.com/@argongroup/bitcoin-lightning-network-7-things-you-s
-  \verb hould-know-604ef687af5a
-  \endverb
-  \field{journaltitle}{Argon Group}
-  \field{day}{10}
-  \field{month}{01}
-  \field{year}{2018}
-\endentry
+  \entry{lnhow}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SL}{%
+         family={Schor},
+         familyi={S\bibinitperiod},
+         given={Lukas},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SL1}
+    \strng{fullhash}{SL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Bitcoin Lightning Network — 7 Things You Should Know}
+    \verb{url}
+    \verb https://medium.com/@argongroup/bitcoin-lightning-network-7-things-you
+    \verb -should-know-604ef687af5a
+    \endverb
+    \field{journaltitle}{Argon Group}
+    \field{day}{10}
+    \field{month}{01}
+    \field{year}{2018}
+  \endentry
 
-\entry{lnfees}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Goro}{G.}%
-     {Justin}{J.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{GJ1}
-  \strng{fullhash}{GJ1}
-  \field{title}{Lightning Network Beta Goes Live on the Bitcoin Mainnet}
-  \verb{url}
-  \verb https://medium.com/social-evolution/the-economics-of-lightning-network-
-  \verb fees-76f0926da82
-  \endverb
-  \field{journaltitle}{Social Evolution}
-  \field{day}{18}
-  \field{month}{01}
-  \field{year}{2018}
-\endentry
+  \entry{lnfees}{article}{}
+    \name{author}{1}{}{%
+      {{hash=GJ}{%
+         family={Goro},
+         familyi={G\bibinitperiod},
+         given={Justin},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GJ1}
+    \strng{fullhash}{GJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Lightning Network Beta Goes Live on the Bitcoin Mainnet}
+    \verb{url}
+    \verb https://medium.com/social-evolution/the-economics-of-lightning-networ
+    \verb k-fees-76f0926da82
+    \endverb
+    \field{journaltitle}{Social Evolution}
+    \field{day}{18}
+    \field{month}{01}
+    \field{year}{2018}
+  \endentry
 
-\entry{ethorigins}{article}{}
-  \field{title}{Who Created Ethereum?}
-  \verb{url}
-  \verb https://www.coindesk.com/information/who-created-ethereum/
-  \endverb
-  \field{journaltitle}{CoinDesk}
-  \field{year}{2014}
-\endentry
+  \entry{ethorigins}{article}{}
+    \field{labeltitlesource}{title}
+    \field{title}{Who Created Ethereum?}
+    \verb{url}
+    \verb https://www.coindesk.com/information/who-created-ethereum/
+    \endverb
+    \field{journaltitle}{CoinDesk}
+    \field{year}{2014}
+  \endentry
 
-\entry{ethblock1}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Buterin}{B.}%
-     {Vitalik}{V.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{BV1}
-  \strng{fullhash}{BV1}
-  \field{title}{Toward a 12-second Block Time}
-  \verb{url}
-  \verb https://blog.ethereum.org/2014/07/11/toward-a-12-second-block-time/
-  \endverb
-  \field{journaltitle}{Ethereum Blog}
-  \field{day}{11}
-  \field{month}{07}
-  \field{year}{2014}
-\endentry
+  \entry{ethblock1}{article}{}
+    \name{author}{1}{}{%
+      {{hash=BV}{%
+         family={Buterin},
+         familyi={B\bibinitperiod},
+         given={Vitalik},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BV1}
+    \strng{fullhash}{BV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Toward a 12-second Block Time}
+    \verb{url}
+    \verb https://blog.ethereum.org/2014/07/11/toward-a-12-second-block-time/
+    \endverb
+    \field{journaltitle}{Ethereum Blog}
+    \field{day}{11}
+    \field{month}{07}
+    \field{year}{2014}
+  \endentry
 
-\entry{ethblock2}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Gerring}{G.}%
-     {Taylor}{T.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{GT1}
-  \strng{fullhash}{GT1}
-  \field{title}{Why is the average block time 17 seconds?}
-  \verb{url}
-  \verb https://ethereum.stackexchange.com/questions/58/why-is-the-average-bloc
-  \verb k-time-17-seconds
-  \endverb
-  \field{journaltitle}{Ethereum Stack Exchange}
-  \field{year}{2016-01-21}
-\endentry
+  \entry{ethblock2}{article}{}
+    \name{author}{1}{}{%
+      {{hash=GT}{%
+         family={Gerring},
+         familyi={G\bibinitperiod},
+         given={Taylor},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GT1}
+    \strng{fullhash}{GT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Why is the average block time 17 seconds?}
+    \verb{url}
+    \verb https://ethereum.stackexchange.com/questions/58/why-is-the-average-bl
+    \verb ock-time-17-seconds
+    \endverb
+    \field{journaltitle}{Ethereum Stack Exchange}
+    \field{year}{2016-01-21}
+  \endentry
 
-\entry{ethmax}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {James}{J.}%
-     {Adam}{A.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{JA1}
-  \strng{fullhash}{JA1}
-  \field{title}{Ethereum Creator Vitalik Buterin Proposes Maximum Ether Supply}
-  \verb{url}
-  \verb https://bitcoinist.com/vitalik-buterin-proposes-maximum-ether-supply/
-  \endverb
-  \field{journaltitle}{Bitcoininst.com}
-  \field{day}{02}
-  \field{month}{04}
-  \field{year}{2018}
-\endentry
+  \entry{ethmax}{article}{}
+    \name{author}{1}{}{%
+      {{hash=JA}{%
+         family={James},
+         familyi={J\bibinitperiod},
+         given={Adam},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{JA1}
+    \strng{fullhash}{JA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Ethereum Creator Vitalik Buterin Proposes Maximum Ether
+  Supply}
+    \verb{url}
+    \verb https://bitcoinist.com/vitalik-buterin-proposes-maximum-ether-supply/
+    \endverb
+    \field{journaltitle}{Bitcoininst.com}
+    \field{day}{02}
+    \field{month}{04}
+    \field{year}{2018}
+  \endentry
 
-\entry{nickszabo}{report}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Szabo}{S.}%
-     {Nick}{N.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{SN1}
-  \strng{fullhash}{SN1}
-  \field{chapter}{The Idea of Smart Contracts}
-  \field{title}{Formalizing and Securing Relationships on Public Networks}
-  \verb{url}
-  \verb http://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literat
-  \verb ure/LOTwinterschool2006/szabo.best.vwh.net/idea.html
-  \endverb
-  \field{type}{techreport}
-  \field{year}{1997}
-\endentry
+  \entry{nickszabo}{report}{}
+    \name{author}{1}{}{%
+      {{hash=SN}{%
+         family={Szabo},
+         familyi={S\bibinitperiod},
+         given={Nick},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SN1}
+    \strng{fullhash}{SN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{chapter}{The Idea of Smart Contracts}
+    \field{title}{Formalizing and Securing Relationships on Public Networks}
+    \verb{url}
+    \verb http://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Liter
+    \verb ature/LOTwinterschool2006/szabo.best.vwh.net/idea.html
+    \endverb
+    \field{type}{techreport}
+    \field{year}{1997}
+  \endentry
 
-\entry{ethboom}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {CustardFilled}{C.}%
-     {}{}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{C1}
-  \strng{fullhash}{C1}
-  \field{title}{Video card prices and Cryptocurrency mining - what's going on?}
-  \verb{url}
-  \verb https://www.reddit.com/r/buildapc/comments/6jl60i/video_card_prices_and
-  \verb _cryptocurrency_mining_whats/
-  \endverb
-  \field{journaltitle}{BuildAPC subreddit}
-  \field{month}{06}
-  \field{year}{2017}
-\endentry
+  \entry{ethboom}{article}{}
+    \name{author}{1}{}{%
+      {{hash=C}{%
+         family={CustardFilled},
+         familyi={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{C1}
+    \strng{fullhash}{C1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Video card prices and Cryptocurrency mining - what's going
+  on?}
+    \verb{url}
+    \verb https://www.reddit.com/r/buildapc/comments/6jl60i/video_card_prices_a
+    \verb nd_cryptocurrency_mining_whats/
+    \endverb
+    \field{journaltitle}{BuildAPC subreddit}
+    \field{month}{06}
+    \field{year}{2017}
+  \endentry
 
-\entry{silverprice}{misc}{}
-  \verb{url}
-  \verb https://silverprice.org
-  \endverb
-  \field{journaltitle}{SilverPrice.org}
-\endentry
+  \entry{silverprice}{misc}{}
+    \verb{url}
+    \verb https://silverprice.org
+    \endverb
+    \field{journaltitle}{SilverPrice.org}
+  \endentry
 
-\entry{goldprice}{misc}{}
-  \verb{url}
-  \verb https://goldprice.org
-  \endverb
-  \field{journaltitle}{GoldPrice.org}
-\endentry
+  \entry{goldprice}{misc}{}
+    \verb{url}
+    \verb https://goldprice.org
+    \endverb
+    \field{journaltitle}{GoldPrice.org}
+  \endentry
 
-\entry{ltcvsbtc}{article}{}
-  \field{title}{What is the Difference Between Litecoin and Bitcoin?}
-  \verb{url}
-  \verb https://coindesk.com/information/comparing-litecoin-bitcoin/
-  \endverb
-  \field{journaltitle}{CoinDesk}
-  \field{year}{2014}
-\endentry
+  \entry{ltcvsbtc}{article}{}
+    \field{labeltitlesource}{title}
+    \field{title}{What is the Difference Between Litecoin and Bitcoin?}
+    \verb{url}
+    \verb https://coindesk.com/information/comparing-litecoin-bitcoin/
+    \endverb
+    \field{journaltitle}{CoinDesk}
+    \field{year}{2014}
+  \endentry
 
-\entry{monero}{misc}{}
-  \field{title}{About Monero}
-  \verb{url}
-  \verb https://getmonero.org/resources/about/
-  \endverb
-\endentry
+  \entry{monero}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{title}{About Monero}
+    \verb{url}
+    \verb https://getmonero.org/resources/about/
+    \endverb
+  \endentry
 
-\entry{xmrfees}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Choa}{C.}%
-     {Yao}{Y.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{CY1}
-  \strng{fullhash}{CY1}
-  \field{title}{How much larger are Monero transactions compared to the average
-  Bitcoin transaction?}
-  \verb{url}
-  \verb https://monero.stackexchange.com/questions/211/how-much-larger-are-mone
-  \verb ro-transactions-compared-to-the-average-bitcoin-transact/
-  \endverb
-  \field{journaltitle}{Monero Stack Exchange}
-  \field{year}{2016-07-23}
-\endentry
+  \entry{xmrfees}{article}{}
+    \name{author}{1}{}{%
+      {{hash=CY}{%
+         family={Choa},
+         familyi={C\bibinitperiod},
+         given={Yao},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CY1}
+    \strng{fullhash}{CY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{How much larger are Monero transactions compared to the
+  average Bitcoin transaction?}
+    \verb{url}
+    \verb https://monero.stackexchange.com/questions/211/how-much-larger-are-mo
+    \verb nero-transactions-compared-to-the-average-bitcoin-transact/
+    \endverb
+    \field{journaltitle}{Monero Stack Exchange}
+    \field{year}{2016-07-23}
+  \endentry
 
-\entry{nanofaq}{misc}{}
-  \verb{url}
-  \verb https://nano.org/faq/
-  \endverb
-\endentry
+  \entry{nanofaq}{misc}{}
+    \verb{url}
+    \verb https://nano.org/faq/
+    \endverb
+  \endentry
 
-\entry{nanopow}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {musback01}{m.}%
-     {}{}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{m1}
-  \strng{fullhash}{m1}
-  \field{title}{How does Nano not require mining?}
-  \verb{url}
-  \verb https://www.reddit.com/r/nanocurrency/comments/830ax6/how_does_nano_not
-  \verb _require_mining/
-  \endverb
-  \field{journaltitle}{Nano subreddit}
-  \field{month}{03}
-  \field{year}{2018}
-\endentry
+  \entry{nanopow}{article}{}
+    \name{author}{1}{}{%
+      {{hash=m}{%
+         family={musback01},
+         familyi={m\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{m1}
+    \strng{fullhash}{m1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{How does Nano not require mining?}
+    \verb{url}
+    \verb https://www.reddit.com/r/nanocurrency/comments/830ax6/how_does_nano_n
+    \verb ot_require_mining/
+    \endverb
+    \field{journaltitle}{Nano subreddit}
+    \field{month}{03}
+    \field{year}{2018}
+  \endentry
 
-\entry{whatsripple}{article}{}
-  \field{title}{What is Ripple?}
-  \verb{url}
-  \verb https://bitcoinmagazine.com/guides/what-ripple/
-  \endverb
-  \field{journaltitle}{Bitcoin Magazine}
-  \field{year}{2018}
-\endentry
+  \entry{whatsripple}{article}{}
+    \field{labeltitlesource}{title}
+    \field{title}{What is Ripple?}
+    \verb{url}
+    \verb https://bitcoinmagazine.com/guides/what-ripple/
+    \endverb
+    \field{journaltitle}{Bitcoin Magazine}
+    \field{year}{2018}
+  \endentry
 
-\entry{ripple}{misc}{}
-  \field{title}{Market performance}
-  \verb{url}
-  \verb https://ripple.com/xrp/market-performance/
-  \endverb
-  \field{journaltitle}{Ripple.com}
-\endentry
+  \entry{ripple}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{title}{Market performance}
+    \verb{url}
+    \verb https://ripple.com/xrp/market-performance/
+    \endverb
+    \field{journaltitle}{Ripple.com}
+  \endentry
 
-\entry{btcforks}{misc}{}
-  \field{title}{Full List of Bitcoin Forks}
-  \verb{url}
-  \verb https://www.forks.net/list/Bitcoin/
-  \endverb
-  \field{journaltitle}{Forks.net}
-\endentry
+  \entry{btcforks}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{title}{Full List of Bitcoin Forks}
+    \verb{url}
+    \verb https://www.forks.net/list/Bitcoin/
+    \endverb
+    \field{journaltitle}{Forks.net}
+  \endentry
 
-\entry{dubai}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Williams-Grut}{W.-G.}%
-     {Oscar}{O.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{WGO1}
-  \strng{fullhash}{WGO1}
-  \field{title}{50 luxury flats in Dubai have been sold for bitcoin — and one
-  buyer bought 10}
-  \verb{url}
-  \verb http://uk.businessinsider.com/50-dubai-luxury-flats-sold-for-bitcoin-an
-  \verb d-one-buyer-bought-10-2018-2?IR=T
-  \endverb
-  \field{journaltitle}{Business Insider UK}
-  \field{day}{10}
-  \field{month}{02}
-  \field{year}{2018}
-\endentry
+  \entry{dubai}{article}{}
+    \name{author}{1}{}{%
+      {{hash=WGO}{%
+         family={Williams-Grut},
+         familyi={W\bibinitperiod-G\bibinitperiod},
+         given={Oscar},
+         giveni={O\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WGO1}
+    \strng{fullhash}{WGO1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{50 luxury flats in Dubai have been sold for bitcoin — and
+  one buyer bought 10}
+    \verb{url}
+    \verb http://uk.businessinsider.com/50-dubai-luxury-flats-sold-for-bitcoin-
+    \verb and-one-buyer-bought-10-2018-2?IR=T
+    \endverb
+    \field{journaltitle}{Business Insider UK}
+    \field{day}{10}
+    \field{month}{02}
+    \field{year}{2018}
+  \endentry
 
-\entry{accepting}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Chokun}{C.}%
-     {Jonas}{J.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{CJ2}
-  \strng{fullhash}{CJ2}
-  \field{title}{Who Accepts Bitcoins As Payment? List of Companies, Stores,
+  \entry{accepting}{article}{}
+    \name{author}{1}{}{%
+      {{hash=CJ}{%
+         family={Chokun},
+         familyi={C\bibinitperiod},
+         given={Jonas},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CJ2}
+    \strng{fullhash}{CJ2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Who Accepts Bitcoins As Payment? List of Companies, Stores,
   Shops}
-  \verb{url}
-  \verb https://99bitcoins.com/who-accepts-bitcoins-payment-companies-stores-ta
-  \verb ke-bitcoins/
-  \endverb
-  \field{journaltitle}{99Bitcoins.com}
-  \field{day}{15}
-  \field{month}{03}
-  \field{year}{2018}
-\endentry
+    \verb{url}
+    \verb https://99bitcoins.com/who-accepts-bitcoins-payment-companies-stores-
+    \verb take-bitcoins/
+    \endverb
+    \field{journaltitle}{99Bitcoins.com}
+    \field{day}{15}
+    \field{month}{03}
+    \field{year}{2018}
+  \endentry
 
-\entry{rovereto}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Gozzi}{G.}%
-     {Alessia}{A.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{GA1}
-  \strng{fullhash}{GA1}
-  \field{title}{Rovereto e la rivoluzione bitcoin, dal dentista al caffè qui
+  \entry{rovereto}{article}{}
+    \name{author}{1}{}{%
+      {{hash=GA}{%
+         family={Gozzi},
+         familyi={G\bibinitperiod},
+         given={Alessia},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GA1}
+    \strng{fullhash}{GA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Rovereto e la rivoluzione bitcoin, dal dentista al caffè qui
   si paga in criptovaluta}
-  \verb{url}
-  \verb https://www.quotidiano.net/economia/rovereto-bitcoin-1.3824236
-  \endverb
-  \field{journaltitle}{Quotidiano.net}
-  \field{day}{02}
-  \field{month}{04}
-  \field{year}{2018}
-\endentry
+    \verb{url}
+    \verb https://www.quotidiano.net/economia/rovereto-bitcoin-1.3824236
+    \endverb
+    \field{journaltitle}{Quotidiano.net}
+    \field{day}{02}
+    \field{month}{04}
+    \field{year}{2018}
+  \endentry
 
-\entry{crisi29}{incollection}{}
-  \name{author}{2}{}{%
-    {{}%
-     {Bernardi}{B.}%
-     {Alberto~De}{A.~D.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Guarracino}{G.}%
-     {Scipione}{S.}%
-     {}{}%
-     {}{}}%
-  }
-  \name{editor}{1}{}{%
-    {{}%
-     {Mondadori}{M.}%
-     {Bruno}{B.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{BADGS1}
-  \strng{fullhash}{BADGS1}
-  \field{booktitle}{La realtà del passato 3: il novecento e il mondo attuale}
-  \field{chapter}{7}
-  \field{pages}{561}
-  \field{title}{La Grande depressione}
-  \field{year}{2014}
-\endentry
+  \entry{crisi29}{incollection}{}
+    \name{author}{2}{}{%
+      {{hash=BAD}{%
+         family={Bernardi},
+         familyi={B\bibinitperiod},
+         given={Alberto\bibnamedelima De},
+         giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Guarracino},
+         familyi={G\bibinitperiod},
+         given={Scipione},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=MB}{%
+         family={Mondadori},
+         familyi={M\bibinitperiod},
+         given={Bruno},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BADGS1}
+    \strng{fullhash}{BADGS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{La realtà del passato 3: il novecento e il mondo
+  attuale}
+    \field{chapter}{7}
+    \field{pages}{561}
+    \field{title}{La Grande depressione}
+    \field{year}{2014}
+  \endentry
 
-\entry{controversy}{article}{}
-  \field{title}{Why is Bitcoin so controversial?}
-  \verb{url}
-  \verb https://blog.unocoin.com/why-is-bitcoin-so-controversial-527caf8ee4c7
-  \endverb
-  \field{journaltitle}{Unocoin Blog}
-  \field{day}{17}
-  \field{month}{10}
-  \field{year}{2017}
-\endentry
+  \entry{controversy}{article}{}
+    \field{labeltitlesource}{title}
+    \field{title}{Why is Bitcoin so controversial?}
+    \verb{url}
+    \verb https://blog.unocoin.com/why-is-bitcoin-so-controversial-527caf8ee4c7
+    \endverb
+    \field{journaltitle}{Unocoin Blog}
+    \field{day}{17}
+    \field{month}{10}
+    \field{year}{2017}
+  \endentry
 
-\entry{legality}{article}{}
-  \field{title}{Legality of bitcoin by country or territory}
-  \verb{url}
-  \verb https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country_or_territo
-  \verb ry
-  \endverb
-  \field{journaltitle}{Wikipedia}
-  \field{year}{2018}
-\endentry
+  \entry{silkroad}{article}{}
+    \name{author}{1}{}{%
+      {{hash=PJ}{%
+         family={Pagliery},
+         familyi={P\bibinitperiod},
+         given={Jose},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PJ1}
+    \strng{fullhash}{PJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{FBI shuts down online drug market Silk Road}
+    \verb{url}
+    \verb http://money.cnn.com/2013/10/02/technology/silk-road-shut-down/index.
+    \verb html
+    \endverb
+    \field{journaltitle}{CNN Tech}
+    \field{day}{02}
+    \field{month}{10}
+    \field{year}{2013}
+  \endentry
 
-\entry{karpelesbot}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Suberg}{S.}%
-     {William}{W.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{SW1}
-  \strng{fullhash}{SW1}
-  \field{title}{Mt. Gox Trial Update: Karpeles Admits ‘Willy Bot’
+  \entry{legality}{article}{}
+    \field{labeltitlesource}{title}
+    \field{title}{Legality of bitcoin by country or territory}
+    \verb{url}
+    \verb https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country_or_terri
+    \verb tory
+    \endverb
+    \field{journaltitle}{Wikipedia}
+    \field{year}{2018}
+  \endentry
+
+  \entry{karpelesbot}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SW}{%
+         family={Suberg},
+         familyi={S\bibinitperiod},
+         given={William},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SW1}
+    \strng{fullhash}{SW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Mt. Gox Trial Update: Karpeles Admits ‘Willy Bot’
   Existence}
-  \verb{url}
-  \verb https://cointelegraph.com/news/mt-gox-trial-update-karpeles-admits-will
-  \verb y-bot-existence
-  \endverb
-  \field{journaltitle}{Cointelegraph}
-  \field{day}{11}
-  \field{month}{07}
-  \field{year}{2017}
-\endentry
+    \verb{url}
+    \verb https://cointelegraph.com/news/mt-gox-trial-update-karpeles-admits-wi
+    \verb lly-bot-existence
+    \endverb
+    \field{journaltitle}{Cointelegraph}
+    \field{day}{11}
+    \field{month}{07}
+    \field{year}{2017}
+  \endentry
 
-\entry{mtgox}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Eichholz}{E.}%
-     {Liesl}{L.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{EL1}
-  \strng{fullhash}{EL1}
-  \field{title}{MtGox, BTC-e, and the Missing Coins: A living timeline of the
+  \entry{mtgox}{article}{}
+    \name{author}{1}{}{%
+      {{hash=EL}{%
+         family={Eichholz},
+         familyi={E\bibinitperiod},
+         given={Liesl},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{EL1}
+    \strng{fullhash}{EL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{MtGox, BTC-e, and the Missing Coins: A living timeline of the
   greatest cyber crime ever}
-  \verb{url}
-  \verb https://bravenewcoin.com/news/mtgox-btc-e-and-the-missing-coins-a-livin
-  \verb g-timeline-of-the-greatest-cyber-crime-ever/
-  \endverb
-  \field{journaltitle}{Brave New Coin}
-  \field{day}{17}
-  \field{month}{08}
-  \field{year}{2017}
-\endentry
+    \verb{url}
+    \verb https://bravenewcoin.com/news/mtgox-btc-e-and-the-missing-coins-a-liv
+    \verb ing-timeline-of-the-greatest-cyber-crime-ever/
+    \endverb
+    \field{journaltitle}{Brave New Coin}
+    \field{day}{17}
+    \field{month}{08}
+    \field{year}{2017}
+  \endentry
 
-\entry{ponzi}{article}{}
-  \field{title}{Charles Ponzi Biography}
-  \verb{url}
-  \verb https://www.biography.com/people/charles-ponzi-20650909
-  \endverb
-  \field{journaltitle}{Biography.com}
-  \field{day}{03}
-  \field{month}{04}
-  \field{year}{2015}
-\endentry
+  \entry{ponzi}{article}{}
+    \field{labeltitlesource}{title}
+    \field{title}{Charles Ponzi Biography}
+    \verb{url}
+    \verb https://www.biography.com/people/charles-ponzi-20650909
+    \endverb
+    \field{journaltitle}{Biography.com}
+    \field{day}{03}
+    \field{month}{04}
+    \field{year}{2015}
+  \endentry
 
-\entry{bigblocks}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Young}{Y.}%
-     {Joseph}{J.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{YJ1}
-  \strng{fullhash}{YJ1}
-  \field{title}{The Centralization Issue of Scaling BTC Solely by Block Size
+  \entry{bigblocks}{article}{}
+    \name{author}{1}{}{%
+      {{hash=YJ}{%
+         family={Young},
+         familyi={Y\bibinitperiod},
+         given={Joseph},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{YJ1}
+    \strng{fullhash}{YJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{The Centralization Issue of Scaling BTC Solely by Block Size
   Increase}
-  \verb{url}
-  \verb https://newsbtc.com/2017/11/12/61408/
-  \endverb
-  \field{journaltitle}{News BTC}
-  \field{day}{12}
-  \field{month}{11}
-  \field{year}{2017}
-\endentry
+    \verb{url}
+    \verb https://newsbtc.com/2017/11/12/61408/
+    \endverb
+    \field{journaltitle}{News BTC}
+    \field{day}{12}
+    \field{month}{11}
+    \field{year}{2017}
+  \endentry
 
-\entry{verlawsuit}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Huillet}{H.}%
-     {Marie}{M.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{HM1}
-  \strng{fullhash}{HM1}
-  \field{title}{Bitcoin Cash Opposers Scrap Lawsuit Against Bitcoin.com, Citing
-  Lack Of Cash}
-  \verb{url}
-  \verb https://cointelegraph.com/news/pro-btc-movement-scraps-lawsuit-against-
-  \verb vers-bitcoincom-citing-lack-of-funds
-  \endverb
-  \field{journaltitle}{Cointelegraph}
-  \field{day}{04}
-  \field{month}{05}
-  \field{year}{2018}
-\endentry
-
-\lossort
-\endlossort
-
+  \entry{verlawsuit}{article}{}
+    \name{author}{1}{}{%
+      {{hash=HM}{%
+         family={Huillet},
+         familyi={H\bibinitperiod},
+         given={Marie},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HM1}
+    \strng{fullhash}{HM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Bitcoin Cash Opposers Scrap Lawsuit Against Bitcoin.com,
+  Citing Lack Of Cash}
+    \verb{url}
+    \verb https://cointelegraph.com/news/pro-btc-movement-scraps-lawsuit-agains
+    \verb t-vers-bitcoincom-citing-lack-of-funds
+    \endverb
+    \field{journaltitle}{Cointelegraph}
+    \field{day}{04}
+    \field{month}{05}
+    \field{year}{2018}
+  \endentry
+\enddatalist
 \endinput

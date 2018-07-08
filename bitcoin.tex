@@ -222,9 +222,9 @@ Questi apparecchi sono molto costosi (quelli di ultima generazione superano i \e
 
 I \textit{miner} ASIC usano una notevole quantità di energia. Prendendo in considerazione quelli di ultima generazione, il più potente, il Bitmain Antminer S9 (14 TH/s) consuma circa 1300 W \cite{antminers9}; il più debole, l'Antminer V9 (4 TH/s) 1000 W \cite{antminerv9}.
 In media, un S9 che lavora in una \textit{pool} di \textit{mining} fa guadagnare circa 0,00082 BTC al giorno, ovvero circa \euro{5,5} \cite{s9profit}.
-Considerando che le \textit{farm} sono locate in paesi come la Cina in cui l'elettricità costa poco, intorno ai \euro{0.04}/kWh\footnote{Il costo medio per kWh in Cina è di \euro{0,07} \cite{chinaaverage}, ma l'energia pulita generata dai pannelli solari e dalle turbine costa molto meno \cite{chinaless}}, un S9 costa circa \euro{1} al giorno in elettricità.
+Considerando che le \textit{farm}\footnote{Letteralmente "fattorie", luoghi in cui si impiegano numerosi \textit{miners} per ricavare ingenti quantità di bitcoin} sono locate in paesi come la Cina in cui l'elettricità costa poco, intorno ai \euro{0.04}/kWh\footnote{Il costo medio per kWh in Cina è di \euro{0,07} \cite{chinaaverage}, ma l'energia pulita generata dai pannelli solari e dalle turbine costa molto meno \cite{chinaless}}, un S9 costa circa \euro{1} al giorno in elettricità.
 Un \textit{miner}, quindi, fa guadagnare almeno \euro{4} al giorno considerando il costo dell'elettricità.
-Ho già scritto che i \textit{miner} hanno un prezzo notevole, infatti un Antminer S9 costa attualmente \textasciitilde \euro{717}.
+Ho già scritto che i \textit{miners} hanno un prezzo notevole, infatti un Antminer S9 costa attualmente \textasciitilde \euro{717}.
 Prima di cominciare a guadagnare un profitto nel \textit{mining}, bisogna calcolare il tempo impiegato per coprire il costo dell'attrezzatura di \textit{mining}.
 Questo tempo si chiama ROI\footnote{\textit{Return on investment}}, e nel caso della situazione presa come esempio, ovvero quella di guadagnare \euro{4} al giorno con un S9, il ROI è pari a 179 giorni, infatti
 
@@ -236,7 +236,7 @@ Questo consumo di elettricità è maggiore dell'utilizzo di elettricità annuale
 
 \subsubsection {Profitti del mining}
 
-Perchè, allora, c'è gente che decide di investire una notevole quantità di soldi per compiere il lavoro di \textit{mining}?
+Perché, allora, c'è gente che decide di investire una notevole quantità di soldi per compiere il lavoro di \textit{mining}?
 Ebbene, quando si trova un blocco, oggi il \textit{miner} riceve una quantità pari a 12.5 BTC, pari a circa \euro{90.000} secondo il prezzo attuale.
 Quasi mai, però, la \textit{block reward}\footnote{"ricompensa del blocco", la quantità di bitcoin che riceve il \textit{miner}} finisce a una singola persona: indovinare l'\textit{hash} che trova il blocco è estremamente difficile!
 Per questo esistono le \textit{pool} di \textit{mining}.
@@ -292,7 +292,7 @@ Eventualmente tutti i bitcoin verranno minati, e i profitti dei \textit{miners} 
 
 
 La \textit{mempool} è il luogo in cui si trovano tutte le transazioni effettuate non ancora confermate dai \textit{miners}.
-Si può dire che una volta effettuate, le transazioni si mettono in lista d'attesa nella \textit{mempool}, aspettando che un \textit{miner} le includano nel blocco in fase di ricerca.
+Si può dire che una volta effettuate, le transazioni si mettono in lista d'attesa nella \textit{mempool}, aspettando che un \textit{miner} le includa nel blocco in fase di ricerca.
 Ciascun \textit{full node} ha una propria mempool, di dimensione massima variabile a seconda della quantità di RAM del computer.
 Per prevenire eventuali \textit{crash} dei \textit{full nodes} causati dall'esaurimento di RAM per contenere la mempool, il software del Bitcoin stabilisce automaticamente una tassa di transazione minima che impedisce alle transazioni con tassa inferiore al limite di entrare nella \textit{mempool} di quel \textit{node} \cite{mempool}.
 
@@ -418,9 +418,9 @@ Troverò le mail ricevute nella casella di arrivo quando effettuo l'accesso al m
 I principali tipi di \textit{cold storage} sono:
 
 \begin{itemize}
-\item Digitale: le keys sono salvate sottoforma di file su un computer, un CD, una chiavetta USB...
-\item Carta: si possono scrivere le keys su un pezzo di carta o stampare un \textit{paper wallet}, metodo poco sicuro per la fragilità del materiale.
-\item Metallo: le keys possono essere incise su una lamina di metallo, preferibilmente oro, argento, bronzo, nickel, ottone o cobalto per la resistenza alle alte temperature.
+\item Digitale: le chiavi sono salvate sottoforma di file su un computer, un CD, una chiavetta USB...
+\item Carta: si possono scrivere le chiavi su un pezzo di carta o stampare un \textit{paper wallet}, metodo poco sicuro per la fragilità del materiale.
+\item Metallo: le chiavi possono essere incise su una lamina di metallo, preferibilmente oro, argento, bronzo, nickel, ottone o cobalto per la resistenza alle alte temperature.
 \item \textit{Hardware wallet}: I portafogli hardware sono dei piccoli dispositivi simili a chiavette USB, in cui è contenuta la chiave privata.
 \end{itemize}
 
@@ -472,7 +472,7 @@ Di conseguenza, la prima transazione passa alla \textit{mempool} senza problemi,
 \item \textit{Finney attack}: un altro metodo di attacco che colpisce le transazioni con 0 conferme. L'attacco Finney richiede che il truffatore abbia la possibilità di fare \textit{mining} e quindi di generare nuovi blocchi.
 Quando questo trova un blocco, non lo diffonde ai \textit{full nodes} per poi includerlo nella blockchain, ma se lo tiene per sé.
 In questo blocco il truffatore compie una transazione a sé stesso.
-Subito dopo aver pagato il mercante, prima che la transazione legittima venga confermata, il truffatore "rilascia" il blocco che ha tenuto fermo, facendolo confermare prima di quello in cui è avvenuto il pagamento al mercante\cite{attacks}.
+Subito dopo aver pagato il mercante, prima che la transazione legittima venga confermata, il truffatore "rilascia" il blocco che ha tenuto fermo, facendolo confermare prima di quello in cui è avvenuto il pagamento al mercante \cite{attacks}.
 \item \textit{Majority attack}: più comumemente conosciuto come "\textit{51\%}" o "\textit{>50\% attack}", è il tipo di attacco più temuto perché può essere applicato a qualunque transazione, indipendentemente dal numero di conferme ricevute\footnote{Ricordo che una conferma corrisponde a un blocco trovato dopo aver effettuato il pagamento.
 Più conferme rendono una transazione più sicura perché questa viene "superata" da un maggior numero di blocchi}.
 Un attacco 51\% si può effettuare solo se un singolo possiede più della metà dell'\textit{hashrate} di tutta la rete del Bitcoin.
@@ -506,7 +506,8 @@ Non ci sono \textit{pools} con una percentuale di \textit{hashrate} maggiore al 
 Nell'inverno del 2017 l'improvviso incremento del numero di transazioni ha avuto un impatto decisamente negativo sulla tassa di transazione media.
 Un qualunque pagamento in Bitcoin poteva costare fino ai \euro{25} \cite{highfees}.
 La causa di tutto questo è il fatto che la dimensione di 1MB dei blocchi non era sufficiente per farci stare tutte le transazioni nella \textit{mempool}.
-I software dei portafogli, per poter far confermare le transazioni degli utenti, hanno automaticamente aumentato il valore della tassa in sat/b per rendere la transazione effettuata preferibile ai \textit{miners}, che la includono nel blocco in fase di ricerca.
+I software dei portafogli, per poter far confermare le transazioni degli utenti, hanno automaticamente aumentato il valore della tassa in sat/b per rendere la transazione effettuata preferibile ai \textit{miners}
+ che la includono nel blocco in fase di ricerca.
 Fortunatamente, gli sviluppatori hanno elaborato due principali soluzioni per ridurre, se non eliminare, il problema delle tasse elevate.
 
 \paragraph {Segregated Witness}
@@ -544,7 +545,7 @@ Per comodità è consigliabile usare un app per smartphone: sull'App Store dei d
 Una volta scaricato il portafoglio incomincia la creazione di un nuovo indirizzo che verrà usato per inviare e ricevere bitcoin.
 L'app ci mostrerà il \textit{seed} al quale sono associati i nostri indirizzi (ma talvolta solo uno).
 Il \textit{seed} dovrà essere copiato e conservato in un luogo sicuro (su carta e/o chiavetta USB), perché nello sfortunato caso in cui perdiamo il nostro smartphone sarà possibile importarlo in un altro dispositivo.
-Una volta confermato il \textit{seed} saremo in grado di inviare e ricevere Bitcoin al nostro indirizzo.
+Una volta inserito il \textit{seed} saremo in grado di inviare e ricevere Bitcoin col nostro indirizzo.
 
 
 \subsection {Come ottenere Bitcoin}
@@ -553,7 +554,7 @@ Una volta confermato il \textit{seed} saremo in grado di inviare e ricevere Bitc
 \paragraph {Exchange}
 
 
-Il metodo più veloce e utilizzato è quello di acquistarlo su un sito di \textit{exchange}\footnote{"Scambio", siti di compravendita di valute}. Esistono moltissimi siti che permettono di acquistare Bitcoin con bonifico bancario o semplicemente con una carta di credito.
+Il metodo più veloce e utilizzato è quello di utilizzare un sito di \textit{exchange}\footnote{"Scambio", siti di compravendita di valute}. Esistono moltissimi siti che permettono di acquistare Bitcoin con bonifico bancario o semplicemente con una carta di credito.
 Coinbase è di gran lunga l'exchange più famosa del mondo, ma ne esistono una moltitudine.
 Basta aprire un account, collegare il proprio conto o la carta di credito, verificare la propria identità con passaporto o carta d'identità e compare bitcoin è questione di secondi.
 Una volta acquistato, è consigliabile spostare i propri bitcoin su un portafoglio indipendente da quello dell'exchange.
@@ -562,8 +563,8 @@ Ritengo che non valga la pena di rischiare di perdere tutti i propri bitcoin per
 
 \paragraph {ATMs}
 
-Esistono dei veri e propri "Bancomat" in cui anzichè prelevare soldi dal proprio conto bancario è possibile acquistare e vendere criptovalute.
-Sono comodi, veloci ed anonimi, ma c'è sempre il rischio di venire derubati tramite forza fisica; si paga un bonus per la comodità e al giorno d'oggi sono ancora molto poco diffuse.
+Esistono dei veri e propri "Bancomat" in cui anziché prelevare soldi dal proprio conto bancario è possibile acquistare e vendere criptovalute.
+Sono comodi, veloci ed anonimi, ma c'è sempre il rischio di venire derubati tramite forza fisica; si paga un bonus per la comodità e al giorno d'oggi sono ancora molto poco diffusi.
 Si può trovare una mappa online con la posizione di questi ATM in tutto il mondo su coinatmradar.com.
 
 \paragraph {Mining}
@@ -575,7 +576,7 @@ Ovvio che per una persona inesperta il \textit{mining} è fuori portata, ma è c
 
 Al posto di soldi in contanti o carta di credito è possibile accettare Bitcoin come forma di pagamento per merce o servizi offerti in vita reale e online.
 Esistono infatti diversi sistemi automatizzati che consentono ai mercanti di accettare criptovalute velocemente e in sicurezza.
-Coinbase Commerce, per esempio, si integra con i siti web mostrando un'interfaccia di pagamento che permette di scegliere la criptovaluta con cui pagare e l'indirizzo verso cui pagare. Il pagamento è concluso solo quando Coinbase riceve il pagamento della quota, che reindirizza al portafoglio del mercante
+Coinbase Commerce, per esempio, si integra con i siti web mostrando un'interfaccia di pagamento che permette di scegliere la criptovaluta con cui pagare e l'indirizzo verso cui pagare. Il pagamento è concluso solo quando Coinbase riceve il pagamento della quota, che reindirizza al portafoglio del mercante.
 
 
 \subsection {Trasferire Bitcoin}
@@ -584,8 +585,8 @@ Coinbase Commerce, per esempio, si integra con i siti web mostrando un'interfacc
 Un tipico trasferimento da persona a persona avviene con gli smartphone.
 Il ricevente va nella sezione "ricevi" della propria app, che gli mostrerà un codice QR che decifrato corrisponde all'indirizzo di pagamento.
 Il pagatore va nella sezione "paga", e tramite la fotocamera del proprio telefono scansiona il codice QR del ricevente.
-Una volta scansionato, l'app del pagatore chiederà la quantità di bitcoin da inviare. Una volta stabilito, il pagamento avverrà e il ricevente rieceve si dai.
-Per i pagamenti online è possibile anche utilizzare un computer. Il processo è lo stesso, l'unica differenza è che anziché scansionare un codice QR, colui o colei che effettua il pagamento dovrà semplicemente copiare e incollare l'indirizzo nel campo di pagamento del portafoglio.
+Una volta scansionato, l'app del pagatore chiederà la quantità di bitcoin da inviare, che verrà trasferita non appena egli conferma l'operazione.
+Per i pagamenti online è possibile anche utilizzare un computer. Il processo è lo stesso, l'unica differenza è che anziché scansionare un codice QR, colui o colei che effettua il pagamento dovrà semplicemente copiare e incollare l'indirizzo del ricevente nel campo di pagamento del portafoglio.
 
 
 \newpage
@@ -594,17 +595,17 @@ Per i pagamenti online è possibile anche utilizzare un computer. Il processo è
 \section {Non solo Bitcoin}
 
 
-Esistono numerosissime criptovalute. Il sito coinmarketcap.com ne lista ben 1640. Ritengo indispensabile spendere almeno qualche pagina per parlare delle valute più rilevanti, perchè una diffusa convinzione, per quanto falsa, è che il Bitcoin è l'unica criptovaluta. Tutte le criptovalute che non sono Bitcoin prendono il nome di "altcoin" (\textit{alternative coin}).
+Esistono numerosissime criptovalute. Il sito coinmarketcap.com ne lista ben 1640. Ritengo indispensabile spendere almeno qualche pagina per parlare delle valute più rilevanti, perché una diffusa convinzione, per quanto falsa, è che il Bitcoin è l'unica criptovaluta. Tutte le criptovalute che non sono Bitcoin prendono il nome di "altcoin" (\textit{alternative coin}).
 
 
 \subsection {Ethereum}
 
 
 Ethereum (ETH) è una valuta ideata nel 2013 da Vitalik Buterin e lanciata nel 2014 \cite{ethorigins}.
-Il \textit{whitepaper} stabilisce un tempo di blocco pari a 12 secondi, che per motivi tecnici è effettivamente intorno ai 15-17 secondi \cite{ethblock1} \cite{ethblock2}.
+Il \textit{whitepaper} stabilisce un tempo di blocco pari a 12 secondi, che per motivi tecnici è effettivamente intorno ai 15-17 secondi \cite{ethblock1}\cite{ethblock2}.
 È stato scelto un tempo così inferiore rispetto ai 10 minuti del Bitcoin perché oggi la maggioranza del mondo utilizza una connessione a internet abbastanza veloce da poter diffondere i blocchi ai \textit{full nodes} con rapidità.
 Inoltre, a seguito di un miglioramento del software della blockchain, con l'utilizzo di nuove tecnologie si riducono al minimo i blocchi orfani trovati, nonostante un tempo di blocco così breve.
-Non esiste un limite massimo di ETH che possono esistere, tuttavia Vitalik ha proposto di mettere un limite a 120.204.432 ETH per evitare un'inflazione della valuta \cite{ethmax}.
+Attualmente può essere minata una quantità indefinita di Ethereum, tuttavia Vitalik ha proposto di mettere un limite a 120.204.432 ETH per evitare un'inflazione della valuta \cite{ethmax}.
 
 \paragraph {Smart contracts}
 
@@ -619,7 +620,7 @@ In precedenza mi sono concentrato sul processo di \textit{mining} del Bitcoin, m
 La principale differenza tra il \textit{mining} di Bitcoin e di Ethereum è che Ethereum non richiede gli ASIC, ma si può effettuare con l'uso di schede grafiche per computer.
 Questo perché il \textit{mining} di Ethereum non utilizza l'algoritmo SHA-256 come il Bitcoin, bensì l'algoritmo Ethash\footnote{Chiamato in passato Dagger-Hashimoto perché include delle caratteristiche presenti in questi due algoritmi}.
 La più grande differenza tra i due algoritmi è che Ethash richiede una quantità di RAM\footnote{\textit{Random Access Memory, memoria ad accesso casuale}} ben maggiore di quella dei \textit{miner} ASIC.
-Le schede grafiche dei computer desktop, comunemente chiamate GPU\footnote{\textit{Graphics Processing Unit}}, grazie alla maggior quantità di RAM (superiore a 4GB nella maggior parte delle schede moderne), sono effettivamente l'unico mezzo in grado di cercare e trovare i blocchi di Ethereum.
+Le schede grafiche dei computer desktop, comunemente chiamate GPU\footnote{\textit{Graphics Processing Unit}}, grazie alla maggior quantità di RAM (superiore a 4GB nella maggior parte delle schede moderne), sono effettivamente l'unico mezzo in grado di fare il \textit{mining} di Ethereum.
 In questo modo Vitalik ha impedito agli ASIC di minare Ethereum, rendendo il lavoro possibile esclusivamente alle GPU. Ma perché?
 Le schede grafiche sono presenti in quasi tutti i computer di fascia medio-alta, e il prezzo di una GPU è normalmente intorno ai \euro{200} - \euro{400}.
 Questo rende Ethereum potenzialmente "minabile" da una grandissima quantità di persone, e ciò impedisce la centralizzazione dell'\textit{hashing power}, riducendo la possibilità di attacchi 51\%.
@@ -684,7 +685,6 @@ Le transazioni di Monero, per essere anonime, hanno un peso in kb notevole pari 
 
 
 Inizialmente chiamata RaiBlocks\footnote{il passaggio da RaiBlocks a Nano è avvenuto il 31 gennaio 2018}, Nano è una criptovaluta creata nel 2015 da Colin LeMahieu.
-Nano non prevede l'impiego di \textit{miners} per validare le proprie transazioni.
 Esistono in totale 133.248.290 NANO, distribuiti gratuitamente fino all'ottobre 2017 tramite un sito che inviava una piccola quantità di Nano a chiunque completasse un \textit{captcha}, una parola da trascrivere in una casella di testo per confermare di non essere un robot programmato per abusare del sistema di distribuzione gratuita \cite{nanofaq}.
 È veramente interessante sotto il punto di vista tecnico perché è la prima che usa la tecnologia \textit{Block Lattice}\footnote{Da non confondere con la parola italiana, \textit{lattice [/'let.is/]} significa reticolo, intreccio} in sostanza, anziché dipendere da una singola blockchain come fanno tutte le altre valute, ogni singolo indirizzo \emph{è} una blockchain a sé stante.
 Questa tecnologia permette di effettuare transazioni estremamente veloci rispetto a quelle del Bitcoin (che impiegano un'ora per essere ritenute pienamente concluse), con una durata inferiore ai 2 secondi, talvolta letteralmente istantanee.
@@ -700,14 +700,14 @@ Gli utenti, infatti, impiegano il lavoro del processore del proprio computer o s
 Ripple (XRP) è un altcoin creato nel 2012 dalla Ripple Foundation.
 La sua particolarità sta nel fatto che Ripple mira ad essere una valuta fortemente legata all'ambito bancario, utilizzata come un bene digitale per compiere scambi di valore tra banche \cite{whatsripple}.
 La principale critica a Ripple è quella di non essere decentralizzato come la stragrande maggioranza delle criptovalute, bensì la Ripple Foundation ha una forte influenza sull'andamento della valuta.
-Ripple è un coin \textit{premined}, che non è generato tramite \textit{mining}, infatti per entrarne in possesso è solamente possibile acquistarne direttamente dalla Foundation.
+Ripple è un altcoin \textit{premined}, che non è generato tramite \textit{mining}, infatti per entrarne in possesso è solamente possibile acquistarne direttamente dalla Foundation.
 Per questo, la Ripple Foundation possiede oltre il 50\% di tutti i ripple, circa 50.000.000.000 XRP \cite{ripple}. Questo le permette di modificare artificialmente il prezzo.
 
 
 \subsection {Bitcoin "hard forks"}
 
 
-La blockchain del Bitcoin "originale" può essere clonata indefinitamente. Chiunque può prendere il codice sorgente del Bitcoin, applicarci qualche modifica e mandarlo "live", rendendo disponibili dei wallet al download e impiegando qualche \textit{miner} per processare le transazioni del "nuovo" bitcoin.
+La blockchain del Bitcoin "originale" può essere clonata indefinitamente. Chiunque può prendere il codice sorgente del Bitcoin, applicarci qualche modifica e mandarlo "live", rendendo disponibili dei portafogli al download e impiegando qualche \textit{miner} per processare le transazioni del "nuovo" bitcoin.
 
 \vspace {0.5cm}
 \begin{figure}[htb!]
@@ -720,11 +720,10 @@ La blockchain del Bitcoin "originale" può essere clonata indefinitamente. Chiun
 %
 Tecnicamente Litecoin è una \textit{hard fork} del Bitcoin, ma ho deciso di dedicarle un paragrafo a sé stante perché, a differenza delle altre di cui parlerò in seguito, Litecoin introduce numerose differenze e il nome non include la parola "Bitcoin".
 Oggi esistono più di 30 \textit{fork} del Bitcoin: Bitcoin Gold, Bitcoin Candy, Bitcoin Private, Bitcoin Unlimited, Bitcoin Super... Persino Bitcoin Pizza e Bitcoin God \cite{btcforks}.
-Quasi tutti i fork vengono visti come delle truffe, come valute che non possiedono nulla di nuovo rispetto all'originale Bitcoin, ma viene sempre data attenzione perché chiunque possiede Bitcoin il momento in cui la blockchain è stata clonata, entra automaticamente in possesso del coin della fork.
-Se un indirizzo ha il bilancio di \textit{x} BTC \emph{prima} che venga lanciata la \textit{hard fork}, per esempio Bitcoin Top (BTT) a quell'indirizzo sarà anche associato \textit{x} BTT.
-Per poter ottenere effettivamente tutti i coin che l'indirizzo "possiede", è necessario scaricare il software di wallet del coin di fork e inserire la chiave privata dell'indirizzo con su il coin di fork.
+quasi tutte le \textit{hard fork} non hanno alcuna reputazione: non introducono alcuna novità sotto il punto di vista tecnico, i rispettivi siti web sono privi di informazioni e i creatori (spesso anonimi) rimangono assenti dopo l'iniziale annuncio della loro nuova criptovaluta; tuttavia viene sempre data attenzione perché chiunque possiede Bitcoin nel momento in cui la blockchain è stata clonata entra automaticamente in possesso del nuovo altcoin: se un indirizzo ha il bilancio di \textit{x} BTC \emph{prima} che venga lanciata la \textit{hard fork}, per esempio Bitcoin Top (BTT) a quell'indirizzo sarà anche associato \textit{x} BTT.
+Per poter ottenere effettivamente tutti i coin che l'indirizzo "possiede" è necessario scaricare il portafoglio della valuta derivata dall'\textit{hard fork} e inserire la chiave privata dell'indirizzo Bitcoin.
 Verrà generato un nuovo indirizzo completamente diverso, però con il bilancio di \textit{x} BTT.
-Abbiamo visto prima che la chiave privata dà accesso a tutti i fondi presenti sull'indirizzo a chiunque ne entri in possesso, eppure per ottenere i Fork siamo costretti ad inserirla in un software sconosciuto (perchè quasi tutti i fork non hanno alcuna reputazione: saltano fuori con siti web senza preavviso).
+Abbiamo visto prima che la chiave privata dà accesso a tutti i fondi presenti sull'indirizzo a chiunque ne entri in possesso, eppure per ottenere i coin delle \textit{hard forks} siamo costretti ad inserirla in un software sconosciuto.
 Per evitare che un qualche malintenzionato sfrutti la sbadataggine dell'utente e rubi tutti i suoi bitcoin, è bene che I fondi vengano mossi a un altro indirizzo.
 Infatti, sarà comunque possibile prelevare i BTT dal vecchio indirizzo BTC ora svuotato, e non si ha nulla da perdere nel caso qualcuno riuscisse a rubare la chiave privata: all'indirizzo sono associati 0 BTC.
 
@@ -740,7 +739,7 @@ Infatti, sarà comunque possibile prelevare i BTT dal vecchio indirizzo BTC ora 
 \subsection {Adozione}
 
 
-Il Bitcoin è una valuta relativamente nuova nata neanche 10 anni fa, e il fatto che utilizza una tecnologia sconosiuta prima d'ora limita l'adozione da parte di mercanti e imprese.
+Il Bitcoin è una valuta relativamente nuova nata neanche 10 anni fa, e il fatto che utilizza una tecnologia sconosciuta prima d'ora limita l'adozione da parte di mercanti e imprese.
 Nonostante ciò, sempre più servizi stanno cominciando ad accettare criptovalute come forma di pagamento, tra cui:
 
 \begin{itemize}
@@ -823,8 +822,8 @@ Il Bitcoin e le criptovalute in generale sono frequentemente soggetto di controv
 \subsubsection {Moneta per scambi illegali}
 
 Inizialmente il Bitcoin, ma oggi anche altre criptovalute (speciamente quelle centrate sulla privacy), sono usate per compiere scambi di merce proibita, principalmente droga e armi.
-Nel dark web, infatti, esistono numerosi siti dove è possibile acquistare merce illegale tramite criptovalute.
-Fino al 2013, nei primi anni del Bitcoin, infatti, la valuta era quasi esclusivamente utilizzata per fare acquisti sul \textit{marketplace} chiamato Silk Road\footnote{Strada di seta}, chiuso dall'FBI nell'ottobre del 2013.
+Nel dark web\footnote{Una rete nascosta in cui tutti gli utenti sono intracciabili grazie all'uso di un software che nasconde l'indirizzo IP}, infatti, esistono numerosi siti dove è possibile acquistare merce illegale tramite criptovalute.
+Fino al 2013, nei primi anni del Bitcoin, infatti, la valuta era quasi esclusivamente utilizzata per fare acquisti sul \textit{marketplace} chiamato Silk Road\footnote{Strada di seta}, chiuso dall'FBI nell'ottobre del 2013 \cite{silkroad}.
 L'accusa alle criptovalute di essere monete "da mercato nero" è secondo molti una forma di FUD, \textit{fear, uncertainty, doubt}\footnote{Paura, incertezza, dubbio: tecnica per incutere timore nella gente inesperta riguardo a qualcosa}, per il semplice fatto che la moneta cartacea, il \textit{cash} è anch'essa una forma di denaro da sempre usata per atti/motivi illeciti, anch'essa anonima, più del Bitcoin! 
 
 \subsubsection {Il ban del Bitcoin in certi stati}
@@ -846,7 +845,7 @@ Tra questi troviamo:
 %
 Canada, India e Thailandia hanno vietato l'acquisto di Bitcoin utilizzando le banche statali come mezzo, per esempio tramite bonifico o carta di credito.
 Ci sono inoltre stati episodi di FUD in cui si credeva che India, Cina e Corea del Sud avessero intenzione di rendere il Bitcoin illegale.
-In tutti e tre i casi le affermazioni dei governi sono state mal interpretate: la regolazione dei mercati serve solo a renderli più stabili e sicuri, e non necessariamente la mancanza di supporto da parte dello stato significa che considera il Bitcoin illegale.
+In tutti e tre i casi le affermazioni dei governi sono state mal interpretate: la regolazione dei mercati serve solo a renderli più stabili e sicuri, e non necessariamente la mancanza di supporto da parte dello stato significa che esso considera il Bitcoin illegale.
 %\paragraph {FUD sul ban di India e Corea del Sud}
 %
 %Nell'aprile del 2018 \cite{indiafud}.
@@ -896,7 +895,7 @@ Oggi tutti coloro coinvolti nel pubblicizzare Bitconnect, soprattutto chi ha pub
 
 Bitcoin Cash è di gran lunga l'\textit{hard fork} più popolare di tutte, al quarto posto (!) in capitalizzazione di mercato. Come mai è l'unica che ha raggiunto un prezzo così elevato?
 Roger K. Ver è un imprenditore esperto di criptovalute.
-Dal primo agosto del 2017, quando è stato lanciato Bitcoin Cash, Roger è stato l'esponente principale per il marketing di questa valuta. BCH è nato in Cina, i suoi CEO sono cinesi, e Roger dev'essere stato impiegato per fare pubblicità a BCH.
+Dal primo agosto del 2017, quando è stato lanciato Bitcoin Cash, Roger è stato l'esponente principale per il marketing di questa valuta.
 Quella di Roger, però, è una spietata propaganda anti-Bitcoin (BTC) e pro-Bitcoin Cash (BCH), che spesso e volentieri arriva alla censura, alle bugie più false e alla corruzione di persone.
 Roger è entrato in possesso del sito bitcoin.com, che su numerose pagine ripete come Bitcoin Cash è una versione aggiornata di Bitcoin. Una cosa che irrita la stragrande maggioranza delle persone è il fatto che su bitcoin.com il Bitcoin originale, BTC, è chiamato Bitcoin Core.
 Il nome Bitcoin Core, paragonato a Bitcoin Cash, fa sembrare le due valute due alternative sullo stesso livello, invece uno (BCH) è un clone dell'originale (BTC).
@@ -919,7 +918,7 @@ Questi due problemi sono stati per la maggior parte risolti con l'adozione in co
 Questo è solo un esempio delle molteplici mezze verità e bugie presenti su bitcoin.com.
 La tesi base che accomuna Roger e tutti i fan di Bitcoin Cash è quella che BCH introduce delle modifiche al codice di Bitcoin che aumentano la dimensione dei blocchi, togliendo il limite di 1MB.
 Questo riduce esponenzialmente la probabilità che i blocchi vengano riempiti di transazioni, innalzando le tasse a livelli esorbitanti.
-Il team di sviluppatori di Bitcoin si ostina a mantenere la dimensione del blocco a 1MB, perchè l'aumento di dimensione del blocco è una minaccia per la decentralizzazione della rete.
+Il team di sviluppatori di Bitcoin si ostina a mantenere la dimensione del blocco a 1MB, perché l'aumento di dimensione del blocco è una minaccia per la decentralizzazione della rete.
 Senza l'impiego di soluzioni come SegWit e Lightning sarà necessario incrementare regolarmente la dimensione del blocco per accomodare la quantità sempre crescente di transazioni effettuate da nuovi utenti.
 I blocchi, aumentando di dimensione, diventano più impegnativi da verificare da parte dei \textit{full nodes}, in quanto è richiesta una maggiore quantità di RAM e una connessione ad internet più veloce.
 Eventualmente, i blocchi saranno talmente difficili da processare che i \textit{nodes} più deboli impiegheranno un tempo maggiore di 10 minuti\footnote{Vedi punto 2.2.2, paragrafo "Tempo per blocco"} per verificarli, rendendo impossibile la verifica di ogni singolo blocco e quindi rendendo il lavoro dei \textit{nodes} inutile.
